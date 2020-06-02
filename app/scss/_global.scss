@@ -15,7 +15,7 @@ body {
   font-family: 'Circe-Regular';
   font-weight: 400;
   @include adaptiv-font(26, 4);
-  letter-spacing: 0.10em;
+  letter-spacing: 0.010em;
   color: $txt-color;
 }
 
@@ -91,6 +91,27 @@ h1,h2,h3,h4,h5,h6,p {
   line-height: 1.61em;
   color: $txt-color;
   letter-spacing: 0.024em;
+}
+
+.form__btn {
+  padding: 18px 79.3px;
+  text-transform: uppercase;
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  @include adaptiv-font(25, 10);
+  line-height: 1.14em;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid $btn-title-color;
+  background: $btn-bg-color;
+  &:hover {
+    color: $btn-title-color;
+    border: 2px solid $btn-title-color;
+    border-radius: 8.5px;
+    background: #FFFFFF;
+  }
 }
 
 

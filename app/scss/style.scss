@@ -48,7 +48,7 @@
 
   a {
     font-family: 'MuseoSansCyrl-Medium';
-    font-weight: 500;
+    font-weight: 600;
     @include adaptiv-font(24, 4);
     line-height: 1.22em;
     color: $txt-color;
@@ -104,7 +104,7 @@
 .header__login {
   .header__login-txt {
     font-family: 'MuseoSansCyrl-Medium';
-    font-weight: 500;
+    font-weight: 600;
     padding: 0 0 18px 17px;
 
     &::before {
@@ -216,7 +216,7 @@
 /*---------------services------------------*/
 .services {
   background-color: $services-bg;
-  padding: 97px 0 113px;
+  padding: 101px 0 115px;
   text-align: center;
 }
 
@@ -230,7 +230,7 @@
   @include adaptiv-font(43, 20);
   text-transform: capitalize;
   letter-spacing: 0.0001em;
-  padding: 0 0 46px 0;
+  padding: 0 0 41px 0;
 }
 
 .services__top {
@@ -276,6 +276,7 @@
 
   &:nth-child(2) {
     padding: 39px 68px 16px 67px;
+
     img {
       max-width: 75px;
       margin-bottom: 17px;
@@ -286,6 +287,7 @@
     padding: 50px 57px 23px 55px;
     line-height: 1.42em;
     letter-spacing: .01em;
+
     img {
       max-width: 123px;
       margin-bottom: 20px;
@@ -296,6 +298,7 @@
     padding: 47px 62px 16px 55px;
     line-height: 1.3em;
     letter-spacing: .01em;
+
     img {
       max-width: 84px;
       margin-bottom: 20px;
@@ -306,6 +309,7 @@
     padding: 33px 58px 16px 55px;
     line-height: 1.42em;
     letter-spacing: .02em;
+
     img {
       max-width: 96px;
       margin-bottom: 19px;
@@ -316,6 +320,7 @@
     padding: 40px 58px 16px 58px;
     line-height: 1.42em;
     letter-spacing: .02em;
+
     img {
       max-width: 88px;
       margin-bottom: 21px;
@@ -326,6 +331,7 @@
     padding: 40px 58px 16px 58px;
     line-height: 1.42em;
     letter-spacing: .02em;
+
     img {
       max-width: 95px;
       margin-bottom: 14px;
@@ -339,7 +345,7 @@
 
 /*-------------we-can------------*/
 .we-can {
-  padding: 95px 0 103px;
+  padding: 93px 0 103px;
 }
 
 .we-can__container {
@@ -356,18 +362,19 @@
 .we-can__info {
   max-width: 580px;
   width: 100%;
-  padding: 3px 0 0 0;
+  padding: 8px 0 0 0;
 }
 
 .we-can__title {
-  padding: 0 118px 84px 0;
+  padding: 0 118px 80px 0;
   @include adaptiv-font(40, 18);
   line-height: 1.48em;
   letter-spacing: 0.0001em;
+
   span {
     right: 2px;
     top: 50%;
-    transform: translate(0, -20%);
+    transform: translate(0, -23%);
   }
 }
 
@@ -406,7 +413,7 @@
 
 /*-----------------helping-------------------*/
 .helping {
-  padding: 201px 0 209px;
+  padding: 207px 0 209px;
   max-width: 1680px;
   width: 100%;
   margin: 0 auto;
@@ -423,18 +430,20 @@
 }
 
 .helping__title {
-  padding: 0 0 45px 0;
+  padding: 0 0 39px 0;
   @include adaptiv-font(40, 18);
   line-height: 1.58em;
   letter-spacing: 0.0001em;
+  text-transform: capitalize;
 }
 
 .helping__btn {
   a {
-    padding: 22px 51px 16px;
+    padding: 20px 51px 17px;
     border: 2px solid $btn-bg-color;
     color: $btn-title-color;
     background-color: $nav-btn-bg;
+
     &:hover {
       color: #FFFFFF;
       background: $btn-bg-color;
@@ -445,7 +454,7 @@
 
 /*----------------choose------------------*/
 .choose {
-  padding: 104px 0 103px;
+  padding: 104px 0 65px;
 }
 
 .choose__container {
@@ -455,7 +464,7 @@
 }
 
 .choose__title {
-  padding: 0 95px 37px 0;
+  padding: 0 95px 39px 0;
   text-align: center;
   @include adaptiv-font(40, 18);
   line-height: 1.58em;
@@ -488,6 +497,7 @@
   @include adaptiv-font(25, 10);
   padding: 0 0 0 63px;
   position: relative;
+
   span {
     position: absolute;
     left: 0;
@@ -516,8 +526,275 @@
 }
 
 
+/*----------------form------------------*/
+.form {
+  padding: 102px 0 104px;
+  background-color: $form-bg-color;
+}
+
+.form__container {
+  max-width: 1374px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__content {
+  max-width: 542px;
+  width: 100%;
+  background-image: url("../img/form-bg.png");
+  background-position: top 19px center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding-left: 73px;
+  padding-right: 88px;
+}
+
+.form__title {
+  @include adaptiv-font(40, 18);
+  letter-spacing: 0.059em;
+  line-height: 1.56em;
+  text-transform: capitalize;
+  padding: 0 0 41px 0;
+}
+
+.form__box {
+  max-width: 802px;
+  width: 100%;
+  padding: 13px 73px 0 0;
+
+  label,
+  input,
+  textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+  }
+
+  label + label {
+    padding-left: 12px;
+  }
+
+  input,
+  textarea {
+    padding: 9px 11px 8px 22px;
+    font-family: 'Circe-Regular';
+    font-weight: 400;
+    @include adaptiv-font(20, 8);
+    line-height: 1.6em;
+    letter-spacing: .06em;
+
+    &::placeholder {
+      color: $input-placeholder-color;
+    }
+
+    &:focus {
+      color: $txt-color;
+    }
+  }
+
+  .form__box-group {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  input[placeholder="Name"] {
+    max-width: 210px;
+  }
+
+  input[placeholder="Address"] {
+    max-width: 316px;
+  }
+
+  input[placeholder="DOB"] {
+    max-width: 163px;
+  }
+
+  input[placeholder="Email"] {
+    max-width: 389px;
+  }
+
+  input[placeholder="Phone Number"] {
+    max-width: 320px;
+  }
+
+  label {
+    textarea {
+      outline: none;
+      resize: none;
+      width: 99.93%;
+      min-height: 107px;
+      margin-bottom: 11px;
+    }
+  }
+}
+
+/*--------------partners--------------*/
+.partners {
+  padding: 100px 0 118px;
+}
+
+.partners__container {
+  max-width: 1298px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.partners__title {
+  text-align: center;
+  letter-spacing: -0.03em;
+  padding: 0 0 36px 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding: 3px 25px 0 25px;
+}
+
+.swiper-slide {
+  text-align: center;
+  @include adaptiv-font(18, 8);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  width: 207px !important;
+  margin: 0 21px;
+  img {
+    width: 80%;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $swiper-arrow-color;
+  &::after {
+    font-size: 22px;
+  }
+}
 
 
+/*------------footer---------------*/
+.footer {
+  padding: 57px 0 65px;
+  background-color: $footer-bg;
+  @include adaptiv-font(20, 10);
+  line-height: 1.55em;
+}
+
+.footer__container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  max-width: 162px;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.footer__about {
+  max-width: 214px;
+  width: 100%;
+}
+
+.footer__about-title,
+.footer__contacts-title,
+.footer__phones-title {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  @include adaptiv-font(24, 10);
+  line-height: 1em;
+  letter-spacing: 0.01em;
+  color: $txt-color;
+  padding: 0 0 21px 0;
+}
+
+.footer__about {
+
+  a {
+    position: relative;
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $txt-color;
+      bottom: 0;
+    }
+    &:hover:after {
+      display: block;
+    }
+  }
+}
+
+.footer__phones {
+  ul {
+    a {
+      font-family: 'Circe-Bold';
+      font-weight: 700;
+      @include adaptiv-font(18, 10);
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: $txt-color;
+        bottom: 0;
+      }
+      &:hover {
+        color: #AE7669;
+      }
+      &:hover:after {
+        background-color: #AE7669;
+      }
+    }
+  }
+}
+
+
+
+
+.footer__login {
+  a {
+    font-family: 'MuseoSansCyrl-Medium';
+    font-weight: 600;
+    padding: 0 0 18px 33px;
+    position: relative;
+    @include adaptiv-font(24, 4);
+    line-height: 1.22em;
+    letter-spacing: 0.01em;
+    color: $txt-color;
+
+    &::before {
+      content: "\f101";
+      @include adaptiv-font(26, 4);
+      left: 0;
+      font-family: "Flaticon";
+      color: $nav-icon-color;
+      position: absolute;
+      top: 0;
+    }
+  }
+}
 
 
 
