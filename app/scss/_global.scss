@@ -1,0 +1,98 @@
+@import "vars";
+@import "mixins";
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  /*font-family: 'TrajanPro3-Regular';*/
+  font-family: 'Circe-Regular';
+  font-weight: 400;
+  @include adaptiv-font(26, 4);
+  letter-spacing: 0.10em;
+  color: $txt-color;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+.header__container {
+  max-width: 1379px;
+  padding: 0 5px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.default-btn {
+  a{
+    font-family: 'Circe-Bold';
+    font-weight: 700;
+    @include adaptiv-font(26, 4);
+    line-height: 1.14em;
+    letter-spacing: 0.009em;
+    color: #FFFFFF;
+    background: $btn-bg-color;
+    border-radius: 8px;
+    padding: 22px 43px 19px;
+
+    &:hover {
+      color: $btn-title-color;
+      background-color: $btn-bg-hover-color;
+      border-radius: 8.5px;
+    }
+  }
+}
+
+.default-title {
+  font-family: 'TrajanPro3-Regular';
+  font-weight: 400;
+  @include adaptiv-font(46, 20);
+  line-height: 1.43em;
+  letter-spacing: 0.041em;
+  color: $default-title-color;
+  position: relative;
+  span {
+    font-family: 'WildernessTypeface-Regular';
+    font-weight: 400;
+    @include adaptiv-font(161, 20);
+    line-height: .30em;
+    letter-spacing: 0.0001em;
+    color: $default-span-color;
+    position: absolute;
+    right: 25px;
+    bottom: -8px;
+  }
+}
+
+.default-txt {
+  font-family: 'Circe-Regular';
+  font-weight: 400;
+  @include adaptiv-font(25, 10);
+  line-height: 1.61em;
+  color: $txt-color;
+  letter-spacing: 0.024em;
+}
+
+
+
+
