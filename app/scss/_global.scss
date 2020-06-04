@@ -14,7 +14,7 @@ body {
   /*font-family: 'TrajanPro3-Regular';*/
   font-family: 'Circe-Regular';
   font-weight: 400;
-  @include adaptiv-font(26, 4);
+  @include adaptiv-font(26, 20);
   letter-spacing: 0.010em;
   color: $txt-color;
 }
@@ -36,18 +36,11 @@ h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }
 
-.header__container {
-  max-width: 1379px;
-  padding: 0 5px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .default-btn {
   a{
     font-family: 'Circe-Bold';
     font-weight: 700;
-    @include adaptiv-font(26, 4);
+    @include adaptiv-font(26, 24);
     line-height: 1.14em;
     letter-spacing: 0.009em;
     color: #FFFFFF;
@@ -66,41 +59,41 @@ h1,h2,h3,h4,h5,h6,p {
 .default-title {
   font-family: 'TrajanPro3-Regular';
   font-weight: 400;
-  @include adaptiv-font(46, 20);
+  @include adaptiv-font(46, 35);
   line-height: 1.43em;
-  letter-spacing: 0.041em;
+  letter-spacing: 0.002em;
   color: $default-title-color;
   position: relative;
   span {
     font-family: 'WildernessTypeface-Regular';
     font-weight: 400;
-    @include adaptiv-font(161, 20);
+    @include adaptiv-font(145, 92);
     line-height: .30em;
-    letter-spacing: 0.0001em;
+    letter-spacing: 0.003em;
     color: $default-span-color;
     position: absolute;
-    right: 25px;
-    bottom: -8px;
+    right: 23px;
+    bottom: -10px;
   }
 }
 
 .default-txt {
   font-family: 'Circe-Regular';
   font-weight: 400;
-  @include adaptiv-font(25, 10);
+  @include adaptiv-font(25, 21);
   line-height: 1.61em;
   color: $txt-color;
-  letter-spacing: 0.024em;
+  letter-spacing: -0.0078em;
 }
 
 .form__btn {
-  padding: 18px 79.3px;
+  padding: 16px 79.3px;
   text-transform: uppercase;
   font-family: 'Circe-Bold';
   font-weight: 700;
-  @include adaptiv-font(25, 10);
+  @include adaptiv-font(25, 25);
   line-height: 1.14em;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.02em;
   color: #FFFFFF;
   outline: none;
   border-radius: 8px;

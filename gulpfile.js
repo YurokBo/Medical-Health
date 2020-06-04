@@ -26,7 +26,9 @@ gulp.task('scss', function () {
 gulp.task('css', async function () {
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
-        'node_modules/swiper/css/swiper.min.css'
+        'node_modules/swiper/css/swiper.min.css',
+        'node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
+        'node_modules/owl.carousel/dist/assets/owl.theme.default.min.css',
     ])
         .pipe(concat('_libs.scss'))
         .pipe(gulp.dest('app/scss'))
@@ -46,6 +48,7 @@ gulp.task('script', function () {
 gulp.task('js', async function () {
     return gulp.src([
         'node_modules/swiper/js/swiper.min.js',
+        'node_modules/owl.carousel/dist/owl.carousel.min.js',
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

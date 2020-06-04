@@ -21,6 +21,7 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
+    "owl.carousel": "^2.3.4",
     "swiper": "^5.4.1"
   }
 }

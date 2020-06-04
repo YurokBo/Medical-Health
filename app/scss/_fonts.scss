@@ -33,6 +33,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Circe-ExtraBold';
   src: url('../fonts/Circe-ExtraBold.eot');
@@ -212,4 +213,12 @@
 
 .flaticon-user:before {
   content: "\f101";
+}
+
+.flaticon-null:before {
+  content: "\f102";
+}
+
+.flaticon-null-1:before {
+  content: "\f103";
 }
