@@ -6,7 +6,7 @@
 
 /*-------------header--------------*/
 .header {
-  padding: 32px 0 23px 0;
+  padding: 32px 0 23.5px 0;
 }
 
 .header__container {
@@ -26,6 +26,8 @@
 .header__logo {
   max-width: 374px;
   width: 100%;
+
+  padding: 6px 0 0 0;
 
   img {
     //max-width: 374px;
@@ -50,14 +52,14 @@
   }
 
   li + li {
-    padding-left: 41px;
+    padding-left: 36px;
   }
 
   a {
     font-family: 'MuseoSansCyrl-Medium';
     font-weight: 600;
-    @include adaptiv-font(24, 4);
-    line-height: 1.22em;
+    @include adaptiv-font(22, 22);
+    line-height: 1em;
     color: $txt-color;
     text-transform: uppercase;
     letter-spacing: 0.004em;
@@ -78,16 +80,17 @@
 
   a:first-child {
     position: relative;
-    @include adaptiv-font(20, 4);
-    line-height: 1.22em;
-    letter-spacing: 0.01em;
+    @include adaptiv-font(20, 20);
+    line-height: 1em;
+    letter-spacing: -0.056em;
     color: $txt-color;
 
     &::before {
       font-family: "Flaticon";
       color: $nav-icon-color;
       position: absolute;
-      top: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
@@ -98,12 +101,13 @@
   .header__phone-phone {
     font-family: 'MuseoSansCyrl-Bold';
     font-weight: 700;
-    padding: 0 14px 18px 35px;
+    padding: 0 14px 0 35px;
+    margin-bottom: 18px;
 
     &::before {
       content: "\f100";
       left: 2px;
-      @include adaptiv-font(24, 4);
+      @include adaptiv-font(24, 20);
     }
   }
 }
@@ -112,12 +116,13 @@
   .header__login-txt {
     font-family: 'MuseoSansCyrl-Medium';
     font-weight: 600;
-    padding: 0 0 18px 17px;
+    padding: 0 0 0 17px;
+    margin-bottom: 18px;
 
     &::before {
       content: "\f101";
-      @include adaptiv-font(22, 4);
-      left: 15px;
+      @include adaptiv-font(22, 20);
+      left: 14px;
     }
   }
 }
@@ -126,24 +131,28 @@
 .header__login-btn {
   font-family: 'Circe-Bold';
   font-weight: 700;
-  @include adaptiv-font(20, 4);
+  @include adaptiv-font(20, 20);
   color: $nav-btn-color;
-  letter-spacing: 0.05em;
+  letter-spacing: -0.001em;
+  line-height: 1.02em;
   border: 2px solid $nav-btn-color;
   border-radius: 8px;
   background-color: $nav-btn-bg;
 
+
   &:hover {
     background-color: $nav-btn-bg-hover;
   }
+
 }
 
 .header__phone-btn {
-  padding: 17px 32px 17px 32px;
+  padding: 19px 33px 16px 28px;
+  letter-spacing: -0.002em;
 }
 
 .header__login-btn {
-  padding: 17px 19px 17px 20px;
+  padding: 19px 19px 16px 17px;
 }
 
 
@@ -194,13 +203,19 @@
   a {
     padding: 22px 39px 19px;
     @include adaptiv-font(24, 24);
+
+    &:active {
+      color: #AE7669;
+      background-color: #F8E3DB;
+      border-radius: 8.5px;
+    }
   }
 
 }
 
 /*---------about---------*/
 .about {
-  padding: 99px 0 141px;
+  padding: 71px 0 141px;
 }
 
 .about__container {
@@ -218,6 +233,7 @@
   max-width: 431px;
   width: 100%;
   @include adaptiv-font(46, 35);
+  letter-spacing: 0.009em;
 }
 
 .about__info {
@@ -269,6 +285,7 @@
 }
 
 .services__content-item {
+  display: inline-block;
   max-width: 270px;
   width: 100%;
   min-height: 234px;
@@ -291,7 +308,7 @@
     display: block;
   }
 
-  &:hover {
+  &:active {
     transform: scale(1.04);
     box-shadow: 0px 3px 30px $services-item-border;
   }
@@ -415,6 +432,7 @@
   max-width: 201px;
   width: 100%;
   padding-top: 2px;
+
   &:nth-child(3),
   &:nth-child(4) {
     padding-top: 0;
@@ -429,6 +447,7 @@
   letter-spacing: 0.0001em;
   color: $item-number-color;
   padding: 0 0 13px 0;
+
   &:nth-child(1),
   &:nth-child(2) {
     padding: 0 0 16px 0;
@@ -482,7 +501,8 @@
     background-color: $nav-btn-bg;
     letter-spacing: -0.038em;
     @include adaptiv-font(25, 24);
-    &:hover {
+
+    &:active {
       color: #FFFFFF;
       background: $btn-bg-color;
     }
@@ -523,10 +543,12 @@
 
 .choose__content-right {
   max-width: 604px;
+
   .choose__content-item {
     &:nth-child(1) {
       padding-right: 24px;
     }
+
     &:nth-child(2) {
       padding-right: 8px;
     }
@@ -695,7 +717,7 @@
 
 /*--------------partner--------------*/
 .partner {
-  padding: 100px 0 113px;
+  padding: 100px 0 122px;
 }
 
 .partner__container {
@@ -706,7 +728,8 @@
 
 .partner__title {
   text-align: center;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.037em;
+  @include adaptiv-font(44, 35);
   padding: 0 0 36px 0;
 }
 
@@ -732,16 +755,17 @@
   z-index: -1;
 }
 
-.partner .owl-carousel .owl-nav .owl-prev{
-  left: -40px;
+.partner .owl-carousel .owl-nav .owl-prev {
+  left: -3px;
   outline: none;
   position: absolute;
 }
 
-.partner .owl-carousel .owl-nav .owl-next{
-  right: -40px;
+.partner .owl-carousel .owl-nav .owl-next {
+  right: 3px;
   position: absolute;
   outline: none;
+
   img {
     transform: rotate(180deg);
   }
@@ -755,9 +779,9 @@
 
 /*------------footer---------------*/
 .footer {
-  padding: 64px 0 45px;
+  padding: 62px 0 45.3px;
   background-color: $footer-bg;
-  @include adaptiv-font(20, 20);
+  @include adaptiv-font(20, 19);
   line-height: 1.55em;
 }
 
@@ -779,6 +803,7 @@
 
   img {
     width: 100%;
+
     &:nth-child(2) {
       display: none;
     }
@@ -790,9 +815,10 @@
   width: 100%;
   padding-top: 3px;
   margin-right: 90px;
+
   a {
-    line-height: 1.7em;
-    letter-spacing: 0.034em;
+    //line-height: 1.7em;
+    letter-spacing: -0.001em;
     position: relative;
 
     &::after {
@@ -805,7 +831,7 @@
       bottom: 5px;
     }
 
-    &:hover:after {
+    &:active:after {
       display: block;
     }
   }
@@ -816,9 +842,9 @@
 .footer__phones-title {
   font-family: 'Circe-Bold';
   font-weight: 700;
-  @include adaptiv-font(26, 20);
+  @include adaptiv-font(26, 21);
   line-height: 1em;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.023em;
   color: $txt-color;
   padding: 0 0 21px 0;
 }
@@ -827,14 +853,17 @@
 .footer__contacts {
   max-width: 328px;
   width: 100%;
-  line-height: 1.7em;
-  letter-spacing: 0.034em;
+  //line-height: 1.7em;
+  letter-spacing: -0.001em;
+
   .footer__employee {
     padding-bottom: 7px;
   }
+
   .footer__participants {
     padding-bottom: 17px;
   }
+
   .footer__email {
     font-family: 'Circe-Bold';
     font-weight: 700;
@@ -844,17 +873,23 @@
 .footer__phones {
   max-width: 305px;
   width: 100%;
-  line-height: 1.48em;
-  letter-spacing: -0.004em;
+  line-height: 1.38em;
+  letter-spacing: -0.045em;;
   padding: 0 0 20px 0;
+
+  .footer__phones-title {
+    padding: 0 0 16px 0;
+  }
+
   ul {
     a {
       font-family: 'Circe-Bold';
       font-weight: 700;
-      @include adaptiv-font(18, 10);
+      @include adaptiv-font(17, 17);
       letter-spacing: 0.04em;
       position: relative;
       padding-left: 7px;
+      /*border-bottom: 1px solid $txt-color;*/
       &::after {
         content: "";
         display: block;
@@ -865,11 +900,11 @@
         bottom: 4px;
       }
 
-      &:hover {
+      &:active {
         color: #AE7669;
       }
 
-      &:hover:after {
+      &:active:after {
         background-color: #AE7669;
       }
     }
@@ -878,19 +913,20 @@
 
 .footer__login {
   padding: 0 0 26px 0;
+
   a {
     font-family: 'MuseoSansCyrl-Medium';
     font-weight: 600;
     padding: 0 0 18px 42px;
     position: relative;
-    @include adaptiv-font(27, 25);
+    @include adaptiv-font(25, 25);
     line-height: 1.22em;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.02em;
     color: $txt-color;
 
     &::before {
       content: "\f101";
-      @include adaptiv-font(31, 28);
+      @include adaptiv-font(28, 28);
       left: 0;
       font-family: "Flaticon";
       color: $nav-icon-color;
@@ -900,20 +936,168 @@
   }
 }
 
-.footer__login-top {
-  display: none;
-}
 
 .header__phone-icon {
   display: none;
 }
 
-.header__menu-burger {
+.menu-burger__btn {
   display: none;
 }
 
+/*------------------burger--------------------*/
+.menu-burger__inner {
+  position: absolute;
+  text-align: center;
+  background-color: $burger-menu-bg;
+  max-width: 100%;
+  height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: -100vh;
+  overflow: hidden;
+  transition: all .5s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
+.menu-burger__close {
+  position: relative;
 
+  a {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    padding: 50px 20px;
+
+    &::before {
+      content: "\f104";
+      font-family: "Flaticon";
+      position: absolute;
+      right: 22px;
+      top: 25px;
+      color: $btn-title-color;
+    }
+  }
+}
+
+.menu-burger__content {
+  //padding: 103px 0 0 0;
+}
+
+.menu-burger__menu {
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  li {
+    display: block;
+    width: 100%;
+
+    &:last-child {
+      border-bottom: 2px solid $burger-menu-nav-border;
+    }
+  }
+
+  a {
+    font-family: 'Circe-Regular';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1em;
+    color: $burger-menu-nav-color;
+    text-transform: capitalize;
+    letter-spacing: 0.004em;
+    border-top: 2px solid $burger-menu-nav-border;
+    width: 100%;
+    padding: 20px 20px;
+
+    &:active {
+      color: #714d47;
+      background-color: rgba(239, 204, 191, 0.5);
+    }
+  }
+}
+
+.menu-burger__login {
+  width: 100%;
+  background-color: $burger-menu-login-bg;
+  margin: 0 0 10px 0;
+
+  /*&:active {
+    background-color: black;
+  }*/
+
+  a {
+    font-family: 'MuseoSansCyrl-Medium';
+    font-weight: 600;
+    padding: 20px 20px 25px 37px;
+    position: relative;
+
+    &::before {
+      content: "\f101";
+      font-family: "Flaticon";
+      color: $burger-menu-nav-color;
+      font-size: 24px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+    }
+
+    &:active {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 113px;
+        height: 2px;
+        background-color: $txt-color;
+        bottom: 15px;
+        right: 20px;
+
+        &::before {
+          color: $txt-color;
+        }
+      }
+    }
+  }
+}
+
+.menu-burger__btn-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+
+  .menu-burger__phone-btn,
+  .menu-burger__login-btn {
+    font-family: 'Circe-Bold';
+    font-weight: 700;
+    font-size: 20px;
+    color: $nav-btn-color;
+    letter-spacing: 0.05em;
+    border: 2px solid $nav-btn-color;
+    border-radius: 8px;
+    background-color: $nav-btn-bg;
+    padding: 20px 20px;
+
+    &:active {
+      color: $btn-title-color;
+      background-color: $btn-bg-hover-color;
+    }
+  }
+
+  .menu-burger__phone-btn {
+    margin: 0 0 10px 0;
+  }
+}
+
+.active__menu-burger {
+  margin-top: 0;
+}
 
 
 @import "media";

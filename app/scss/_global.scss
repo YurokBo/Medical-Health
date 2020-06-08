@@ -17,6 +17,7 @@ body {
   @include adaptiv-font(26, 20);
   letter-spacing: 0.010em;
   color: $txt-color;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 a {
@@ -48,9 +49,9 @@ h1,h2,h3,h4,h5,h6,p {
     border-radius: 8px;
     padding: 22px 43px 19px;
 
-    &:hover {
-      color: $btn-title-color;
-      background-color: $btn-bg-hover-color;
+    &:active {
+      color: #AE7669;
+      background-color: #F8E3DB;
       border-radius: 8.5px;
     }
   }
@@ -99,7 +100,8 @@ h1,h2,h3,h4,h5,h6,p {
   border-radius: 8px;
   border: 2px solid $btn-title-color;
   background: $btn-bg-color;
-  &:hover {
+  cursor: pointer;
+  &:active {
     color: $btn-title-color;
     border: 2px solid $btn-title-color;
     border-radius: 8.5px;

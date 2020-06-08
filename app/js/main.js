@@ -1,5 +1,6 @@
 $(function () {
-    $(".partner .partner__carousel").owlCarousel({
+    let owl = $(".partner .partner__carousel");
+    owl.owlCarousel({
         loop: true,
         nav: true,
         dots: false,
@@ -18,9 +19,16 @@ $(function () {
                 items: 5
             }
         }
-
     });
 
+    owl.on('mousewheel', '.owl-stage', function (e) {
+        if (e.deltaY>0) {
+            owl.trigger('next.owl');
+        } else {
+            owl.trigger('prev.owl');
+        }
+        e.preventDefault();
+    });
 });
 
 
@@ -55,7 +63,7 @@ $(function () {
                         "place": daPlace,
                         "breakpoint": daBreakpoint,
                         "type": daType
-                    }
+                    };
                     number++;
                 }
             }
@@ -166,3 +174,64 @@ $(function () {
         //const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     }
 }());
+
+
+document.addEventListener('scroll', () => {
+    const scrollBtn = document.querySelector('.scrollUp');
+    window.scrollY > 713 ? scrollBtn.classList.add('scrollUp__show') : scrollBtn.classList.remove('scrollUp__show');
+});
+
+document.addEventListener('click', e => {
+   const menuBurgerInner = document.querySelector('.menu-burger__inner');
+    openMenu(e, menuBurgerInner);
+    closeMenu(e, menuBurgerInner);
+    scrollUp(e);
+});
+
+function openMenu(e, elem) {
+    const menuBurgerBtn = e.target.closest('.menu-burger__btn');
+
+    if (!menuBurgerBtn) {
+        return;
+    }
+
+    elem.classList.add('active__menu-burger');
+}
+
+function closeMenu(e, elem) {
+    const menuBurgerClose = e.target.closest('.menu-burger__close');
+
+    if (!menuBurgerClose) {
+        return;
+    }
+
+    elem.classList.remove('active__menu-burger');
+}
+
+function scrollUp(e) {
+   const scrollBtn = e.target.closest('.scrollUp');
+
+   if(!scrollBtn) {
+       return
+   }
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+    });
+}
+
+
+window.addEventListener("resize", () => {
+
+    screenWidthDetection()
+
+});
+
+function screenWidthDetection() {
+    const menuBurgerInner = document.querySelector('.menu-burger__inner');
+    if (window.matchMedia("(min-width: 1355px)").matches) {
+        menuBurgerInner.classList.remove('active__menu-burger');
+    }
+}

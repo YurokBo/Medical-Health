@@ -28,7 +28,7 @@ gulp.task('css', async function () {
         'node_modules/normalize.css/normalize.css',
         'node_modules/swiper/css/swiper.min.css',
         'node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
-        'node_modules/owl.carousel/dist/assets/owl.theme.default.min.css',
+        /*'node_modules/owl.carousel/dist/assets/owl.theme.default.min.css',*/
     ])
         .pipe(concat('_libs.scss'))
         .pipe(gulp.dest('app/scss'))

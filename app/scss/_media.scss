@@ -1,7 +1,65 @@
-@media (max-width: 1355px) and (min-width: 320px) {
+@media (min-width: 1024px) {
+  .default-btn {
+    a {
+      &:hover {
+        color: $btn-title-color;
+        background-color: $btn-bg-hover-color;
+        border-radius: 8.5px;
+      }
+    }
+  }
+
+  .services__content-item {
+    &:hover {
+      transform: scale(1.04);
+      box-shadow: 0px 3px 30px $services-item-border;
+    }
+  }
+  .helping__btn {
+    a {
+      &:hover {
+        color: #FFFFFF;
+        background: $btn-bg-color;
+      }
+    }
+  }
+
+  .form__btn {
+    &:hover {
+      color: $btn-title-color;
+      border: 2px solid $btn-title-color;
+      border-radius: 8.5px;
+      background: #FFFFFF;
+    }
+  }
+
+  .footer__about {
+    a {
+      &:hover:after {
+        display: block;
+      }
+    }
+  }
+
+  .footer__phones {
+    ul {
+      a {
+        &:hover {
+          color: #AE7669;
+        }
+
+        &:hover:after {
+          background-color: #AE7669;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) /*and (min-width: 320px)*/ {
   /*--------header---------------*/
   .header {
-    padding: 16.5px 0 15.8px 0;
+    padding: 12px 0 14px 0;
   }
 
   .header__inner {
@@ -20,8 +78,9 @@
   }
 
   .header__phone-icon,
-  .header__menu-burger {
+  .menu-burger__btn {
     display: block;
+    padding-top: 3px;
 
     &::before {
       font-family: 'Flaticon';
@@ -34,7 +93,7 @@
       content: "\f102";
     }
   }
-  .header__menu-burger {
+  .menu-burger__btn {
     &::before {
       content: "\f103";
     }
@@ -43,7 +102,7 @@
   /*----------quality------------*/
   .quality {
     position: relative;
-    padding: 237px 0 108px;
+    padding: 236px 0 107.7px;
     background: linear-gradient(0, rgba(#D3BAB3, 1) 45%, rgba(255, 255, 255, .1) 70%), url('../img/quality-bg.jpg') no-repeat top;
     background-size: 193%;
   }
@@ -113,7 +172,7 @@
 
   /*------------services--------------*/
   .services {
-    padding: 96px 0 108px;
+    padding: 96px 0 109px;
   }
 
   .services__top {
@@ -155,11 +214,6 @@
 
     span {
       display: block;
-    }
-
-    &:hover {
-      transform: scale(1.09);
-      box-shadow: 0px 3px 30px $services-item-border;
     }
 
     &:nth-child(2) {
@@ -464,7 +518,7 @@
 
   /*----------partner------------------*/
   .partner {
-    padding: 98px 0 82px;
+    padding: 98px 0 87px;
     text-align: center;
   }
   .partner__title {
@@ -473,14 +527,25 @@
     padding: 0 0 36px 0;
   }
 
-  .owl-carousel .owl-item img {
-    width: 64%;
+  .partner__carousel {
+    .item {
+      width: 255px !important;
+    }
   }
+
+  .partner .owl-carousel .owl-nav .owl-prev {
+    left: 31px;
+  }
+
+  .partner .owl-carousel .owl-nav .owl-next {
+    right: 34px;
+  }
+
 
 
   /*------------------footer-------------------*/
   .footer {
-    padding: 101px 0 45px;
+    padding: 101px 0 110px;
     line-height: 1.55em;
   }
 
@@ -514,7 +579,7 @@
     text-align: center;
     display: block;
     padding-right: 33px;
-    margin-bottom: 14px;
+    margin-bottom: 4px;
 
     a {
       letter-spacing: -0.03em;
@@ -525,9 +590,10 @@
   .footer__contacts,
   .footer__phones {
     display: inline-block;
+
     a {
       line-height: 1em;
-    }/*HERE*/
+    }
   }
 
   .footer__about,
@@ -536,23 +602,278 @@
   }
 
   .footer__about {
-    max-width: 40%;
+    max-width: 50%;
     margin-right: 0;
     padding-top: 0;
+    position: relative;
+    top: -40px;
 
-
+    a {
+      letter-spacing: 0.018em;
+    }
   }
 
   .footer__contacts {
-    max-width: 40%;
+    max-width: 100%;
+    line-height: 1.47em;
+    letter-spacing: 0.023em;
+
+    .footer__contacts-title {
+      letter-spacing: 0.056em
+    }
+
+    .footer__employee {
+      padding-bottom: 0;
+    }
+
+    .footer__participants {
+      padding-bottom: 8px;
+    }
   }
 
   .footer__phones {
-    max-width: 40%;
-    /*position: relative;
-    top: -27px;*/
+    padding: 0 0 10px 35px;
+    max-width: 47%;
+    position: relative;
+    top: 8px;
+
+    .footer__phones-title {
+      font-size: 23px;
+    }
+
+    ul {
+      li {
+        letter-spacing: -0.03em;
+        padding-bottom: 9px;
+        line-height: 1.5em;
+      }
+
+      a {
+        display: block;
+        line-height: 1.2em;
+        padding-left: 0;
+        letter-spacing: 0.01em;
+
+        &::after {
+          width: 58%;
+          bottom: 0;
+        }
+
+      }
+    }
+  }
+
+  .footer__about-title,
+  .footer__contacts-title,
+  .footer__phones-title {
+    letter-spacing: 0.01em;
+    padding: 0 0 15px 0;
+  }
+
+  /*----------scroll up--------------*/
+  .scrollUp {
+    width: 45px;
+    height: 45px;
+    background-color: #EFCCBF;
+    border-radius: 50%;
+    position: fixed;
+    top: 40px;
+    right: 33px;
+    z-index: 99999;
+    display: none;
+
+    a {
+      width: 45px;
+      height: 45px;
+      background-color: #EFCCBF;
+      border-radius: 50%;
+      position: fixed;
+      top: 40px;
+      right: 33px;
+
+      &::before {
+        position: absolute;
+        font-family: "Flaticon";
+        font-size: 26px;
+        content: "\f105";
+        color: #FFFFFF;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:active {
+        background-color: #714D47;
+      }
+    }
+  }
+
+  .scrollUp__show {
+    display: block;
+    transition: .5s;
+  }
+
+  .menu-burger__inner {
+    position: absolute;
+    text-align: center;
+    background-color: $burger-menu-bg;
+    max-width: 100%;
+    height: 100vh;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: -100vh;
+    overflow: hidden;
+    transition: all .5s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .menu-burger__close {
+    position: relative;
+
+    a {
+      outline: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      padding: 50px 20px;
+
+      &::before {
+        content: "\f104";
+        font-family: "Flaticon";
+        position: absolute;
+        right: 22px;
+        top: 25px;
+        color: $btn-title-color;
+      }
+    }
+  }
+
+  .menu-burger__content {
+    //padding: 103px 0 0 0;
+  }
+
+  .menu-burger__menu {
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    li {
+      display: block;
+      width: 100%;
+
+      &:last-child {
+        border-bottom: 2px solid $burger-menu-nav-border;
+      }
+    }
+
+    a {
+      font-family: 'Circe-Regular';
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 1em;
+      color: $burger-menu-nav-color;
+      text-transform: capitalize;
+      letter-spacing: 0.004em;
+      border-top: 2px solid $burger-menu-nav-border;
+      width: 100%;
+      padding: 20px 20px;
+
+      &:active {
+        color: #714d47;
+        background-color: rgba(239, 204, 191, 0.5);
+      }
+    }
+  }
+
+  .menu-burger__login {
+    width: 100%;
+    background-color: $burger-menu-login-bg;
+    margin: 0 0 41px 0;
+
+    a {
+      font-family: 'MuseoSansCyrl-Medium';
+      font-weight: 600;
+      padding: 18px 18px 27px 29px;
+      position: relative;
+      letter-spacing: 0.1em;
+      width: 100%;
+
+
+      &::before {
+        content: "\f101";
+        font-family: "Flaticon";
+        color: $burger-menu-nav-color;
+        font-size: 26px;
+        left: 29%;
+        top: 46%;
+        transform: translateY(-50%);
+        position: absolute;
+
+      }
+
+      &:active {
+        background: rgba(239, 204, 191, 0.5);
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 27%;
+          height: 1.5px;
+          background-color: #714D47;
+          bottom: 22px;
+          left: 51%;
+          transform: translateX(-50%);
+        }
+
+        &::before {
+          color: #714D47;
+        }
+      }
+    }
+
+  }
+
+  .menu-burger__btn-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 54%;
+
+    .menu-burger__phone-btn,
+    .menu-burger__login-btn {
+      font-family: 'Circe-Bold';
+      font-weight: 700;
+      font-size: 20px;
+      color: $nav-btn-color;
+      letter-spacing: 0.001em;
+      line-height: 1em;
+      border: 2px solid $nav-btn-color;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 18px 20px;
+
+      &:active {
+        color: #FFFFFF;
+        background-color: #AE7669;
+      }
+    }
+
+    .menu-burger__phone-btn {
+      margin: 0 0 18px 0;
+      background: rgba(239, 204, 191, 0.5);
+    }
+  }
+
+  .active__menu-burger {
+    margin-top: 0;
   }
 
   /*----------media finished--------------------------------------------------------------------------------------*/
+
 }
+
 
