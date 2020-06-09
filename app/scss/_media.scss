@@ -1,3 +1,15 @@
+@media screen and (min-width: 1680px) {
+  .quality,
+  .helping,
+  .form__container{
+    max-width: 100%;
+  }
+
+  .form__container{
+    max-width: 50%;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .choose__content {
     flex-wrap: wrap;
@@ -446,6 +458,10 @@
     max-width: 305px;
     padding-top: 15px;
   }
+
+  .helping {
+    background-position: right;
+  }
 }
 
 @media screen and (max-width: 970px) {
@@ -463,6 +479,7 @@
     &:last-child {
       display: none;
     }
+
     &:nth-child(7) {
       margin: 0 auto;
     }
@@ -472,9 +489,13 @@
       margin-bottom: 33px;
     }
   }
+
+  .helping {
+    background-position: right -165px center;
+  }
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 860px) {
   .services__content-items {
     padding: 0 220px;
   }
@@ -555,19 +576,19 @@
   }
 }
 
-@media screen and (max-width: 820px){
+@media screen and (max-width: 820px) {
   .services__content-items {
     padding: 0 200px;
   }
 }
 
-@media screen and (max-width: 770px){
+@media screen and (max-width: 770px) {
   .services__content-items {
     padding: 0 170px;
   }
 }
 
-@media screen and (max-width: 710px){
+@media screen and (max-width: 710px) {
   .services__content-items {
     padding: 0 140px;
   }
@@ -576,6 +597,10 @@
 @media screen and (max-width: 660px) {
   .services__content-items {
     padding: 0 110px;
+  }
+
+  .helping {
+    background-position: right -269px center;
   }
 }
 
@@ -649,8 +674,7 @@
   }
 }
 
-@media screen and (max-width: 480px) /*and (min-width: 320px)*/{
-
+@media screen and (max-width: 480px) {
   /*----------quality------------*/
   .quality {
     position: relative;
@@ -788,7 +812,7 @@
       padding: 26px 32px 5px 30px;
       line-height: 1.42em;
       letter-spacing: .02em;
-      margin-left: 108px;
+      margin: 0 auto;
 
       img {
         max-width: 65px;
@@ -945,11 +969,11 @@
     padding-left: 0;
   }
 
- .footer__logo {
-   position: relative;
-   left: 50%;
-   transform: translateX(-50%);
- }
+  .footer__logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   .footer__login {
     text-align: center;
@@ -1216,15 +1240,23 @@
   }
 }
 
+@media screen and (max-width: 465px) {
+  .helping {
+    background: linear-gradient(0, #f1e3de 54%, rgba(255, 255, 255, 0.1) 100%), url(../img/helping-bg.jpg) no-repeat top right -66px;
+    background-size: 186%;
+  }
+}
+
 @media screen and (max-width: 462px) {
   .footer__phones {
     top: 22px;
   }
-
   .helping {
-    background: linear-gradient(0, #f1e3de 54%, rgba(255,255,255,0.1) 100%),url(../img/helping-bg.jpg) no-repeat top right -56px;
+    background: linear-gradient(0, #f1e3de 54%, rgba(255, 255, 255, 0.1) 100%), url(../img/helping-bg.jpg) no-repeat top right -117px;
+    background-size: 230%;
   }
 }
+
 
 @media screen and (max-width: 450px) {
   .services__content-items {
@@ -1236,8 +1268,177 @@
   }
 }
 
+@media screen and (max-width: 440px) {
+  .services__txt:last-child {
+    padding: 0;
+  }
+  .we-can__title span {
+    top: 77%;
+  }
+
+  .form__box {
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .form__content {
+    text-align: center;
+    padding: 33px 10px 43px;
+  }
+
+  .about__inner {
+    padding: 0 10px;
+  }
+  .about__info {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .about__title span {
+    top: 66%;
+  }
+
+  .quality {
+    background: linear-gradient(0, #d3bab3 45%, rgba(255, 255, 255, 0.1) 58%), url(../img/quality-bg.jpg) no-repeat top;
+    background-size: 223%;
+  }
+}
+
 @media screen and (max-width: 431px) {
   .we-can__item:nth-child(3) {
     padding-bottom: 71px;
   }
 }
+
+@media screen and (max-width: 393px) {
+  .services__content-item:nth-child(1),
+  .services__content-item:nth-child(2),
+  .services__content-item:nth-child(3),
+  .services__content-item:nth-child(4),
+  .services__content-item:nth-child(5),
+  .services__content-item:nth-child(6) {
+    margin-bottom: 33px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 387px) {
+  .helping {
+    background: linear-gradient(0, #f1e3de 54%, rgba(255, 255, 255, 0.1) 100%), url(../img/helping-bg.jpg) no-repeat top right -175px;
+    background-size: 280%;
+  }
+  .helping__title {
+    padding: 0 0 105px;
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .footer__about {
+    max-width: 100%;
+    top: 0;
+  }
+  .footer__phones {
+    max-width: 100%;
+    top: 22px;
+
+    ul a {
+      display: inline;
+      padding-left: 2px;
+
+      &:after {
+        right: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .footer__contacts {
+    padding-top: 25px;
+  }
+
+  .choose__content {
+    padding: 0 10px 0 10px;
+  }
+
+  .footer__logo {
+    max-width: 100%;
+  }
+
+  .partner__carousel .item {
+    width: 155px !important;
+  }
+}
+
+@media screen and (max-width: 373px) {
+  .quality {
+    background-size: 250%;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .header__logo img {
+    width: 80%;
+  }
+  .helping__title {
+    padding: 0 5px 105px;
+  }
+
+}
+
+@media screen and (max-width: 356px) {
+  .header__container,
+  .about__container,
+  .we-can__container,
+  .helping__container {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .footer__about,
+  .footer__phones,
+  .footer__contacts {
+    padding-left: 10px;
+  }
+
+  .header__logo {
+    max-width: 205px;
+  }
+
+  .choose__content {
+    padding: 0 5px;
+  }
+
+  .choose__content-left .choose__content-item:nth-child(1),
+  .choose__content-left .choose__content-item:nth-child(2),
+  .choose__content-right .choose__content-item:nth-child(2) {
+    padding-right: 0;
+  }
+
+  .choose__content-left .choose__content-item:nth-child(2) .choose__content-question {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 340px) {
+
+  .quality__title {
+    letter-spacing: -.08em;
+  }
+}
+
+@media screen and (max-width: 334px) {
+  .quality {
+    background-size: 265%;
+  }
+}
+
