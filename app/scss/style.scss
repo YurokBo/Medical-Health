@@ -155,14 +155,19 @@
   padding: 19px 19px 16px 17px;
 }
 
+.header__btn-box {
+  display: none;
+}
+
 
 /*----------------quality--------------------*/
-.quality {
+/*----------------helping-hand--------------------*/
+.quality,
+.helping-hand {
   max-width: 1680px;
   width: 100%;
   margin: 0 auto;
   padding: 179px 0 131px;
-  background-image: url("../img/quality-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -170,8 +175,22 @@
   color: #FFFFFF;
 }
 
+.quality {
+  background-image: url("../img/quality-bg.jpg");
+}
+
+.helping-hand {
+  background-image: url("../img/helping-hand-bg.jpg");
+}
+
 .quality__container {
   max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.helping-hand__container {
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
 }
@@ -189,7 +208,23 @@
   }
 }
 
-.quality__subtitle {
+.helping-hand__title {
+  font-family: 'TrajanPro3-Regular';
+  font-weight: 400;
+  @include adaptiv-font(45, 26);
+  line-height: 1.23em;
+  letter-spacing: 0.002em;
+  color: #FFFFFF;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  span {
+    display: block;
+  }
+}
+
+.quality__subtitle,
+.helping-hand__subtitle {
   display: block;
   font-family: 'WildernessTypeface-Regular';
   font-weight: 400;
@@ -199,7 +234,8 @@
   padding-bottom: 129px;
 }
 
-.quality__btn {
+.quality__btn,
+.helping-hand__btn {
   a {
     padding: 22px 39px 19px;
     @include adaptiv-font(24, 24);
@@ -249,34 +285,42 @@
 
 
 /*---------------services------------------*/
-.services {
+/*---------------care-services------------------*/
+.services,
+.care-services{
   background-color: $services-bg;
   padding: 101px 0 114px;
   text-align: center;
 }
 
-.services__container {
-  max-width: 1171px;
+.services__container,
+.care-services__container {
+  max-width: 1165px;
+  padding: 0 5px;
   width: 100%;
   margin: 0 auto;
 }
 
-.services__title {
+.services__title,
+.care-services__title {
   @include adaptiv-font(43, 35);
   text-transform: capitalize;
   letter-spacing: -0.024em;
   padding: 0 0 40px 0;
 }
 
-.services__top {
+.services__top,
+.care-services__top {
   padding: 0 0 41px 0;
 }
 
-.services__txt {
+.services__txt,
+.care-services__txt {
   line-height: 1.46em;
 }
 
-.services__content-items {
+.services__content-items,
+.care-services__content-items {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
@@ -284,7 +328,27 @@
   min-height: 497px;
 }
 
-.services__content-item {
+.care-services__content-items-top,
+.care-services__content-items-bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.care-services__content-items-top {
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+}
+
+.care-services__content-items-bottom {
+  justify-content: space-between;
+  max-width: 74.5%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.services__content-item,
+.care-services__content-item {
   display: inline-block;
   max-width: 270px;
   width: 100%;
@@ -312,6 +376,9 @@
     transform: scale(1.04);
     box-shadow: 0px 3px 30px $services-item-border;
   }
+}
+
+.services__content-item {
 
   &:nth-child(2) {
     padding: 39px 68px 16px 67px;
@@ -374,6 +441,12 @@
 
   &:last-child {
     padding: 99px 41px 16px 38px;
+  }
+}
+
+.care-services__content-item {
+  .services__content-items-bottom {
+
   }
 }
 
@@ -515,13 +588,15 @@
   padding: 104px 0 69px;
 }
 
-.choose__container {
+.choose__container,
+.questioner__container {
   max-width: 1356px;
   width: 100%;
   margin: 0 auto;
 }
 
-.choose__title {
+.choose__title,
+.questioner__title {
   padding: 0 95px 39px 0;
   text-align: center;
   @include adaptiv-font(40, 36);
@@ -529,22 +604,27 @@
   letter-spacing: 0.01em;
 }
 
-.choose__content {
+.choose__content,
+.questioner__content {
   display: flex;
   justify-content: space-between;
   padding-right: 52px;
 }
 
 .choose__content-left,
-.choose__content-right {
+.choose__content-right,
+.questioner__content-left,
+.questioner__content-right {
   max-width: 580px;
   width: 100%;
 }
 
-.choose__content-right {
+.choose__content-right,
+.questioner__content-right {
   max-width: 604px;
 
-  .choose__content-item {
+  .choose__content-item,
+  .questioner__content-item {
     &:nth-child(1) {
       padding-right: 24px;
     }
@@ -555,14 +635,17 @@
   }
 }
 
-.choose__content-item {
+.choose__content-item,
+.questioner__content-item {
   max-width: 620px;
   width: 100%;
   padding-bottom: 35px;
 }
 
 .choose__content-question,
-.choose__content-answer {
+.choose__content-answer,
+.questioner__content-question,
+.questioner__content-answer {
   @include adaptiv-font(25, 22);
   padding: 0 0 0 63px;
   position: relative;
@@ -580,7 +663,8 @@
   }
 }
 
-.choose__content-question {
+.choose__content-question,
+.questioner__content-question {
   font-family: 'Circe-Bold';
   font-weight: 700;
   line-height: 1.5em;
@@ -588,7 +672,8 @@
   padding-bottom: 10px;
 }
 
-.choose__content-answer {
+.choose__content-answer,
+.questioner__content-answer {
   font-family: 'Circe-Regular';
   font-weight: 400;
   line-height: 1.49em;
@@ -1099,6 +1184,171 @@
 .active__menu-burger {
   margin-top: 0;
 }
+
+
+/*------------------------index__services-homecare----------------------------------------*/
+/*------------------------index__services-skilledcare----------------------------------------*/
+/*----------home-care --------------*/
+.home-care,
+.skilled-care {
+  padding: 171px 0 127px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.home-care {
+  background-image: url("../img/home-care-bg.jpg");
+}
+.skilled-care {
+  background-image: url("../img/skilled-care-bg.jpg");
+}
+
+.home-care__container,
+.skilled-care__container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home-care__title,
+.skilled-care__title {
+  @include adaptiv-font(46, 42);
+  text-transform: uppercase;
+  color: $home-care__title;
+  line-height: 1.23em;
+  padding: 0 0 59px 0;
+}
+
+.home-care__txt {
+  display: inline;
+}
+.home-care__btn {
+  margin: 59px 0 0 0;
+}
+
+.skilled-care__info {
+  padding: 0 30px;
+}
+
+.skilled-care__txt {
+  display: inline;
+  &:last-child {
+    display: block;
+    padding: 0 0 59px 0;
+  }
+}
+
+/*----------------what-is --------*/
+.what-is,
+.what-is-skilled {
+  padding: 107px 0 102px;
+}
+
+.what-is__container,
+.what-is-skilled__container {
+  max-width: 1132px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.what-is__title,
+.advantages__title,
+.how-much__title,
+.what-is-skilled__title,
+.how-much-skilled__title {
+  text-align: center;
+  @include adaptiv-font(40, 35);
+  line-height: 1.13em;
+  padding: 0 0 29px 0;
+}
+
+/*-----------advantages--------------*/
+.advantages {
+  padding: 107px 0 90px;
+  background-color: $advantages-bg;
+}
+
+.advantages__container {
+  max-width: 1225px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.advantages__info-text {
+  &:last-child {
+    padding: 30px 0 30px;
+  }
+}
+
+.advantages__checkbox {
+  li {
+    position: relative;
+    padding: 0 0 0 43px;
+    line-height: 1.96em;
+    img {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+/*----------how-much-------------*/
+/*----how-much-skilled---*/
+.how-much {
+  padding: 0 0 112px;
+}
+
+.how-much-skilled {
+  padding: 107px 0 112px;
+}
+
+.how-much__container,
+.how-much-skilled__container {
+  max-width: 1206px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.how-much__info-text,
+.how-much-skilled__info-text {
+  &:last-child {
+    padding: 30px 0 0;
+  }
+}
+
+/*--------------questioner-------------*/
+.questioner__container {
+  padding: 107px 0 97px;
+}
+
+.questioner__title {
+  &:last-child {
+    display: none;
+  }
+}
+
+/*--------------------what-is-skilled----------------------*/
+.what-is-skilled {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @import "media";
