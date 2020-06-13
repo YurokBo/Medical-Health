@@ -218,6 +218,7 @@
   position: relative;
   text-transform: uppercase;
   padding-bottom: 10px;
+
   span {
     display: block;
   }
@@ -287,7 +288,7 @@
 /*---------------services------------------*/
 /*---------------care-services------------------*/
 .services,
-.care-services{
+.care-services {
   background-color: $services-bg;
   padding: 101px 0 114px;
   text-align: center;
@@ -588,6 +589,10 @@
   padding: 104px 0 69px;
 }
 
+.advocacy-choose {
+  padding: 107px 0 97px;
+}
+
 .choose__container,
 .questioner__container {
   max-width: 1356px;
@@ -595,13 +600,24 @@
   margin: 0 auto;
 }
 
+.advocacy-choose__container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .choose__title,
-.questioner__title {
+.questioner__title,
+.advocacy-choose__title {
   padding: 0 95px 39px 0;
   text-align: center;
   @include adaptiv-font(40, 36);
   line-height: 1.5em;
   letter-spacing: 0.01em;
+}
+
+.advocacy-choose__title {
+  padding: 0 0 45px;
 }
 
 .choose__content,
@@ -635,6 +651,11 @@
   }
 }
 
+.advocacy-choose__content {
+  max-width: 1090px;
+  width: 100%;
+}
+
 .choose__content-item,
 .questioner__content-item {
   max-width: 620px;
@@ -645,7 +666,9 @@
 .choose__content-question,
 .choose__content-answer,
 .questioner__content-question,
-.questioner__content-answer {
+.questioner__content-answer,
+.advocacy-choose__content-question,
+.advocacy-choose__content-answer {
   @include adaptiv-font(25, 22);
   padding: 0 0 0 63px;
   position: relative;
@@ -664,7 +687,8 @@
 }
 
 .choose__content-question,
-.questioner__content-question {
+.questioner__content-question,
+.advocacy-choose__content-question {
   font-family: 'Circe-Bold';
   font-weight: 700;
   line-height: 1.5em;
@@ -673,13 +697,53 @@
 }
 
 .choose__content-answer,
-.questioner__content-answer {
+.questioner__content-answer,
+.advocacy-choose__content-answer {
   font-family: 'Circe-Regular';
   font-weight: 400;
   line-height: 1.49em;
   letter-spacing: -.013em
 }
 
+
+.advocacy-choose__content-item {
+  margin-bottom: 34px;
+  .advocacy-choose__content-question {
+    &:nth-child(3) {
+      padding-bottom: 35px;
+    }
+  }
+}
+
+.advocacy-choose__content-links {
+  padding: 0 0 0 63px;
+
+  a {
+    display: inline;
+    line-height: 1.1em;
+    color: #AE7669;
+    max-width: 596px;
+
+    /*----------underline------------*/
+    background: 0 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #AE7669 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=#AE7669, GradientType=0);
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-size: 1px 1px;
+    text-decoration: none;
+  }
+
+  a:first-child {
+    display: block;
+    margin-bottom: 25px;
+    max-width: 131px;
+  }
+
+  a:last-child {
+    max-width: 596px;
+  }
+}
 
 /*----------------form------------------*/
 .form {
@@ -1189,22 +1253,29 @@
 /*------------------------index__services-homecare----------------------------------------*/
 /*------------------------index__services-skilledcare----------------------------------------*/
 /*------------------------index__services-transportation----------------------------------------*/
+/*------------------------index__services-advocacy-------------------------------------------*/
+/*------------------------index__services-pest-control-------------------------------------------*/
 /*----------home-care --------------*/
 .home-care,
 .skilled-care,
-.transportation {
+.transportation,
+.advocacy,
+.pest-control {
   padding: 171px 0 127px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
 }
+
 .transportation {
   padding: 177px 0;
 }
+
 .home-care {
   background-image: url("../img/home-care-bg.jpg");
 }
+
 .skilled-care {
   background-image: url("../img/skilled-care-bg.jpg");
 }
@@ -1212,21 +1283,41 @@
 .transportation {
   background-image: url("../img/transportation-bg.jpg");
 }
+.pest-control {
+  background-image: url("../img/pest-control-bg.jpg");
+}
+
+.advocacy {
+  padding: 185px 0 127px;
+}
+
+.advocacy {
+  background-image: url("../img/advocacy-bg.jpg");
+}
 
 .home-care__container,
 .skilled-care__container,
-.transportation__container {
+.transportation__container,
+.advocacy__container{
   max-width: 1110px;
   width: 100%;
   margin: 0 auto;
 }
+.pest-control__container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .transportation__content {
   padding: 0 115px;
 }
 
 .home-care__title,
 .skilled-care__title,
-.transportation__title {
+.transportation__title,
+.advocacy__title,
+.pest-control__title {
   @include adaptiv-font(46, 42);
   text-transform: uppercase;
   color: $home-care__title;
@@ -1234,9 +1325,15 @@
   padding: 0 0 59px 0;
 }
 
+.advocacy__title,
+.advocacy__info {
+  padding: 0 0 87px 0;
+}
+
 .home-care__txt {
   display: inline;
 }
+
 .home-care__btn {
   margin: 59px 0 0 0;
 }
@@ -1247,13 +1344,19 @@
 
 .skilled-care__txt {
   display: inline;
+
   &:last-child {
     display: block;
     padding: 0 0 59px 0;
   }
 }
+
 .transportation__info {
   padding: 0 30px;
+}
+
+.pest-control__info {
+  padding: 0 0 59px;
 }
 
 .transportation__txt {
@@ -1261,19 +1364,29 @@
   padding: 0 0 65px 0;
 }
 
+
 /*----------------what-is --------*/
 .what-is,
 .what-is-skilled,
-.what-is-transportation {
+.what-is-transportation,
+.what-is-advocacy,
+.what-is-pest {
   padding: 107px 0 102px;
 }
 
 .what-is__container,
 .what-is-skilled__container,
-.what-is-transportation__container {
+.what-is-transportation__container,
+.what-is-advocacy__container,
+.what-is-pest__container {
   max-width: 1132px;
   width: 100%;
   margin: 0 auto;
+}
+
+.what-is-advocacy__container,
+.what-is-pest__container {
+  max-width: 1230px;
 }
 
 .what-is__title,
@@ -1282,12 +1395,16 @@
 .what-is-skilled__title,
 .how-much-skilled__title,
 .what-is-transportation__title,
-.how-much-transportation__title {
+.how-much-transportation__title,
+.what-is-advocacy__title,
+.how-much-advocacy__title,
+.what-is-pest__title {
   text-align: center;
   @include adaptiv-font(40, 35);
   line-height: 1.13em;
-  padding: 0 0 29px 0;
+  padding: 0 0 30px 0;
 }
+
 .what-is-transportation__title {
   p {
     display: inline;
@@ -1325,6 +1442,8 @@
     position: relative;
     padding: 0 0 0 43px;
     line-height: 1.96em;
+    letter-spacing: -0.009em;
+
     img {
       position: absolute;
       left: 0;
@@ -1336,21 +1455,25 @@
 
 .advantages-transportation__checkbox {
   padding-right: 86px;
+
   li {
     position: relative;
     padding: 0 0 0 43px;
     line-height: 1.5em;
+
     img {
       position: absolute;
       left: 0;
       top: 25%;
       transform: translateY(-50%);
     }
+
     &:nth-child(1),
     &:nth-child(2),
     &:nth-child(3) {
       padding-right: 47px;
     }
+
     &:nth-child(4) {
       img {
         top: 47%;
@@ -1360,11 +1483,21 @@
   }
 }
 
+.advantages__checkbox {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*----------how-much-------------*/
 /*----how-much-skilled---*/
 /*----how-much-transportation---*/
-.how-much {
+.how-much,
+.how-much-advocacy {
   padding: 0 0 112px;
+}
+
+.pest-how-much {
+  padding-top: 107px;
 }
 
 .how-much-skilled,
@@ -1374,22 +1507,31 @@
 
 .how-much__container,
 .how-much-skilled__container,
-.how-much-transportation__container {
+.how-much-transportation__container,
+.how-much-advocacy__container{
   max-width: 1206px;
   width: 100%;
   margin: 0 auto;
 }
+
 .how-much-skilled__inner,
 .how-much-transportation__inner {
   .how-much__title {
     display: none;
   }
 }
+
 .how-much__info-text,
 .how-much-skilled__info-text,
 .how-much-transportation__info-text {
   &:last-child {
     padding: 30px 0 0;
+  }
+}
+.how-much-advocacy__info {
+  padding-left: 52px;
+  span {
+    text-transform: uppercase;
   }
 }
 
@@ -1403,22 +1545,6 @@
     display: none;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @import "media";
