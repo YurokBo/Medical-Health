@@ -179,6 +179,7 @@ $(function () {
     function customAdapt() {
         //const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     }
+
 }());
 
 

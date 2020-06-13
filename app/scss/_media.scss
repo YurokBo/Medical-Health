@@ -1278,7 +1278,7 @@
   .footer__login {
     text-align: center;
     display: block;
-    padding-right: 33px;
+    padding: 19px 33px 0 0;
     margin-bottom: 4px;
     background-color: $footer-bg;
 
@@ -1563,40 +1563,51 @@
 
   /*----------what-is---------*/
   .what-is,
-  .what-is-skilled {
+  .what-is-skilledб
+  .what-is-transportation {
     padding: 93.34px 0 ;
   }
 
   .what-is__inner,
-  .what-is-skilled__inner {
+  .what-is-skilled__inner,
+  .what-is-transportation__inner {
     padding: 0 32px 0 34px;
   }
 
   .what-is__title,
-  .what-is-skilled__title {
+  .what-is-skilled__title,
+  .what-is-transportation__title {
     padding: 0 68px 29px;
     line-height: 1.33em;
+  }
+  .what-is-transportation__title {
+    padding: 0 0 29px;
+    p {
+      display: block;
+    }
   }
 
   .what-is__info,
   .what-is-skilled__info {
     padding-right: 41px;
   }
-
-  .what-is-skilled__info {
-    text-align: left;
+  .what-is-transportation__info {
+    padding-right: 47px;
   }
 
   /*------------advantages------------*/
-  .advantages {
+  .advantages,
+  .advantages-transportation {
     padding: 101px 0;
   }
 
-  .advantages__content {
+  .advantages__content,
+  .advantages-transportation__content {
     padding: 0 33px;
   }
 
-  .advantages__title {
+  .advantages__title,
+  .advantages-transportation__title {
     padding: 0 0 50px 0;
   }
 
@@ -1607,26 +1618,76 @@
     }
   }
 
-  .advantages__checkbox {
+  .advantages__checkbox,
+  .advantages-transportation__checkbox {
     li {
       letter-spacing: -.0034em;
     }
   }
 
+  .advantages-transportation__checkbox {
+    padding-right: 0;
+    li + li {
+      padding-top: 14px;
+    }
+    li {
+      position: relative;
+      line-height: 1.44em;
+      img {
+        position: absolute;
+        left: 0;
+        top: 13%;
+        transform: translateY(-50%);
+      }
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        padding-right: 0;
+      }
+      &:nth-child(2),
+      &:nth-child(4) {
+        img {
+          top: 28%;
+          transform: translateY(-50%);
+        }
+      }
+      &:nth-child(3) {
+        img {
+          top: 21%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+
   /*---------how-much-----------*/
   .how-much__inner,
-  .how-much-skilled__inner {
+  .how-much-skilled__inner,
+  .how-much-transportation__inner {
     padding: 0 33px;
   }
 
   .how-much__info-text,
-  .how-much-skilled__info-text {
+  .how-much-skilled__info-text,
+  .how-much-transportation__info-text {
     display: inline;
     &:last-child {
       display: block;
       padding-right: 67px;
     }
   }
+
+  .how-much-skilled__inner,
+  .how-much-transportation__inner {
+    .how-much__title {
+      display: block;
+    }
+    .how-much-transportation__title,
+    .how-much-skilled__title {
+      display: none;
+    }
+  }
+
 
   /*--------skilled-care----------*/
   .skilled-care {
@@ -1652,6 +1713,21 @@
 
   .skilled-care__info {
     padding: 0 20px;
+  }
+
+  /*-----------transportation-----------------*/
+  .transportation {
+    padding: 164px 0 120px;
+    background-image: url("../img/transportation-bg-mobile.jpg");
+  }
+  .transportation__content {
+    padding: 0;
+  }
+  .transportation__title {
+    padding: 0 0 78px 0;
+  }
+  .transportation__txt {
+    padding: 0 0 90px 0;
   }
 }
 
