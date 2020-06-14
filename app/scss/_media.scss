@@ -1582,7 +1582,8 @@
   .what-is,
   .what-is-skilled,
   .what-is-transportation,
-  .what-is-advocacy {
+  .what-is-advocacy,
+  .what-is-pest {
     padding: 93.34px 0;
   }
 
@@ -1617,13 +1618,20 @@
 
   /*------------advantages------------*/
   .advantages,
-  .advantages-transportation {
+  .advantages-transportation,
+  .pest-advantages {
     padding: 101px 0;
   }
 
   .advantages__content,
   .advantages-transportation__content {
     padding: 0 33px;
+  }
+
+  .pest-advantages__content {
+    max-width: 421px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .advantages__title,
@@ -1691,10 +1699,33 @@
   }
   .advantages__checkbox {
     flex-direction: column;
+
     .advantages__checkbox-right {
       li:nth-child(9) {
-         img {
+        img {
           top: 26%
+        }
+      }
+    }
+  }
+
+  .pest-advantages__checkbox {
+    padding-right: 42px;
+
+    li {
+      img {
+        top: 25%;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        img {
+          top: 17%;
+        }
+      }
+      &:nth-child(4) {
+        img {
+          top: 13%;
         }
       }
     }
@@ -1728,10 +1759,10 @@
       display: none;
     }
   }
-.how-much-advocacy__inner {
-  max-width: 404px;
-  width: 100%;
-}
+  .how-much-advocacy__inner {
+    max-width: 404px;
+    width: 100%;
+  }
 
   /*--------skilled-care----------*/
   .skilled-care {
@@ -1788,11 +1819,11 @@
   .advocacy__info {
     padding: 0 55px 75px;
   }
-  
+
   /*-------------pest control----------------------*/
   .pest-control {
     background-image: url('../img/pest-control-bg-mobile.jpg');
-    padding: 160px 0 114px;
+    padding: 150px 0 104px;
   }
   .pest-control__title {
     padding-bottom: 72px;
@@ -1803,16 +1834,86 @@
     width: 100%;
     margin: 0 auto;
     padding-bottom: 88px;
+
     .pest-control__txt {
       &:nth-child(1),
-      &:nth-child(3),
       &:nth-child(4),
       &:nth-child(5) {
         display: none;
       }
+      &:nth-child(2) {
+        span {
+          display: none;
+        }
+      }
     }
   }
 
+  .what-is-pest__info {
+    max-width: 414px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 15px;
+  }
+
+  /*-------urgent care--------------*/
+  .urgent-care {
+    padding: 300px 0 130px;
+    background-image: url('../img/urgent-care-bg-mobile.png');
+  }
+  .urgent-care__title {
+    padding: 0 0 175px;
+  }
+
+  .coming-soon {
+    padding: 179px 0 150px;
+  }
+
+  /*-------philanthropy--------------*/
+  .philanthropy {
+    padding: 272px 0 129px;
+    background-image: url('../img/philanthropy-bg-mobile.jpg');
+  }
+/*------------index about------------*/
+  /*-------if-family-------*/
+  .if-family {
+    padding: 269px 0 108px;
+    background-image: url('../img/family-bg-mobile.jpg');
+  }
+
+  .if-family__container,
+  .what-is-family__container {
+    max-width: 414px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .if-family__title {
+    padding: 0 0 178px;
+
+    span {
+      font-size: 107px;
+      color: #AC8478;
+      left: 0;
+      right: 0;
+      top: 118px;
+      transform: rotate(0);
+    }
+  }
+
+  .what-is-family {
+    padding: 104px 0 103px;
+  }
+
+  .what-is-family__title {
+    padding: 0 0 43px;
+  }
+
+  /*----------policy-------*/
+  .policy {
+    padding: 259px 0 113px;
+    background-image: url('../img/policy-bg-mobile.jpg');
+  }
 
 }
 
@@ -1828,6 +1929,7 @@
   .care-services__top {
     padding: 0 8px 39px;
   }
+
 }
 
 @media screen and (max-width: 465px) {

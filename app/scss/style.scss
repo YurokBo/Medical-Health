@@ -1255,12 +1255,20 @@
 /*------------------------index__services-transportation----------------------------------------*/
 /*------------------------index__services-advocacy-------------------------------------------*/
 /*------------------------index__services-pest-control-------------------------------------------*/
-/*----------home-care --------------*/
+/*------------------------index__services-urgent-care-------------------------------------------*/
+/*------------------------index__services-philanthropy-------------------------------------------*/
+/*------------------------index__about-------------------------------------------------------*/
+/*------------index Policy Of Confidentiality--------------*/
+/*----------home-care ----top----------*/
 .home-care,
 .skilled-care,
 .transportation,
 .advocacy,
-.pest-control {
+.pest-control,
+.urgent-care,
+.philanthropy,
+.if-family,
+.policy {
   padding: 171px 0 127px;
   background-size: cover;
   background-position: center;
@@ -1289,10 +1297,25 @@
 
 .advocacy {
   padding: 185px 0 127px;
+  background-image: url("../img/advocacy-bg.jpg");
 }
 
-.advocacy {
-  background-image: url("../img/advocacy-bg.jpg");
+.urgent-care {
+  padding: 281px 0 110px;
+  background-image: url("../img/urgent-care-bg.jpg");
+}
+.philanthropy {
+  padding: 263px 0 165px;
+  background-image: url("../img/philanthropy-bg.jpg");
+}
+.if-family{
+  padding: 199px 0 131px;
+  background-image: url('../img/family-bg.jpg');
+}
+
+.policy {
+  padding: 255px 0 130px;
+  background-image: url('../img/policy-bg.jpg');
 }
 
 .home-care__container,
@@ -1317,7 +1340,11 @@
 .skilled-care__title,
 .transportation__title,
 .advocacy__title,
-.pest-control__title {
+.pest-control__title,
+.urgent-care__title,
+.philanthropy__title,
+.if-family__title,
+.policy__title {
   @include adaptiv-font(46, 42);
   text-transform: uppercase;
   color: $home-care__title;
@@ -1328,6 +1355,32 @@
 .advocacy__title,
 .advocacy__info {
   padding: 0 0 87px 0;
+}
+
+.urgent-care__title {
+  padding: 0 0 170px;
+}
+.philanthropy__title {
+  padding: 0 0 133px;
+}
+
+.if-family__title {
+  padding: 0 0 247px;
+  span {
+    font-family: 'WildernessTypeface-Regular';
+    font-weight: 400;
+    font-size: 166.76px;
+    color: #ffffff;
+    text-transform: capitalize;
+    left: 0;
+    right: -5px;
+    top: 73px;
+    transform: rotate(-4.49deg);
+  }
+}
+
+.policy__title {
+  padding: 0 0 156px;
 }
 
 .home-care__txt {
@@ -1370,7 +1423,8 @@
 .what-is-skilled,
 .what-is-transportation,
 .what-is-advocacy,
-.what-is-pest {
+.what-is-pest,
+.what-is-family {
   padding: 107px 0 102px;
 }
 
@@ -1385,8 +1439,11 @@
 }
 
 .what-is-advocacy__container,
-.what-is-pest__container {
+.what-is-pest__container,
+.what-is-family__container {
   max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .what-is__title,
@@ -1398,7 +1455,10 @@
 .how-much-transportation__title,
 .what-is-advocacy__title,
 .how-much-advocacy__title,
-.what-is-pest__title {
+.what-is-pest__title,
+.pest-advantages__title,
+.coming-soon__title,
+.what-is-family__title {
   text-align: center;
   @include adaptiv-font(40, 35);
   line-height: 1.13em;
@@ -1411,15 +1471,23 @@
   }
 }
 
+.what-is-family__info {
+  p + p {
+    margin-top: 40px;
+  }
+}
+
 /*-----------advantages--------------*/
 .advantages,
-.advantages-transportation {
+.advantages-transportation,
+.pest-advantages {
   padding: 107px 0 90px;
   background-color: $advantages-bg;
 }
 
 .advantages__container,
-.advantages-transportation__container {
+.advantages-transportation__container,
+.pest-advantages__container {
   max-width: 1225px;
   width: 100%;
   margin: 0 auto;
@@ -1431,13 +1499,15 @@
   text-transform: capitalize;
 }
 
+.advantages__info-text,
 .advantages__info-text {
   &:last-child {
     padding: 30px 0 30px;
   }
 }
 
-.advantages__checkbox {
+.advantages__checkbox,
+.pest-advantages__checkbox{
   li {
     position: relative;
     padding: 0 0 0 43px;
@@ -1486,6 +1556,10 @@
 .advantages__checkbox {
   display: flex;
   justify-content: space-between;
+}
+
+.pest-advantages__checkbox {
+  margin-bottom: 39px;
 }
 
 /*----------how-much-------------*/
@@ -1545,6 +1619,20 @@
     display: none;
   }
 }
+
+/*-------urgent care coming soon--------------*/
+.coming-soon {
+  padding: 261px 0 200px;
+  text-align: center;
+}
+
+.coming-soon__title {
+  text-transform: capitalize;
+}
+
+
+
+
 
 
 @import "media";
