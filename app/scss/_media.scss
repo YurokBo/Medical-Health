@@ -1723,6 +1723,7 @@
           top: 17%;
         }
       }
+
       &:nth-child(4) {
         img {
           top: 13%;
@@ -1841,6 +1842,7 @@
       &:nth-child(5) {
         display: none;
       }
+
       &:nth-child(2) {
         span {
           display: none;
@@ -1874,7 +1876,7 @@
     padding: 272px 0 129px;
     background-image: url('../img/philanthropy-bg-mobile.jpg');
   }
-/*------------index about------------*/
+  /*------------index about------------*/
   /*-------if-family-------*/
   .if-family {
     padding: 269px 0 108px;
@@ -1915,6 +1917,65 @@
     background-image: url('../img/policy-bg-mobile.jpg');
   }
 
+  /*------Q-A------*/
+  .Q-A {
+    padding: 219px 0 107px;
+    background-image: url(../img/q&a-bg-mobile.jpg);
+  }
+  .Q-A__container {
+    max-width: 414px;
+  }
+  .Q-A__container .Q-A__content {
+    padding: 0;
+  }
+  .Q-A__title {
+
+    p {
+      display: block;
+
+      &:last-child {
+        letter-spacing: -0.04em;
+      }
+    }
+  }
+  .Q-A-questioner__container {
+    max-width: 434px;
+  }
+
+  /*----------partners---------*/
+  .our-partners {
+    padding: 250px 0 108px;
+    background-image: url('../img/our-partners-bg-mobile.jpg');
+  }
+  .our-partners__title {
+    padding: 0 0 197px;
+  }
+  .what-is-choices {
+    padding: 74px 0 91px;
+  }
+  .what-is-choices__container,
+  .partner-choose__container {
+    max-width: 414px;
+  }
+  .what-is-choices__advantages-checkbox {
+    padding-left: 0;
+    ul {
+      li {
+        line-height: 1.5em;
+        padding: 0 0 0 37px;
+        img {
+          top: 25%;
+        }
+      }
+      a {
+        font-size: 20px;
+        letter-spacing: -.01em;
+      }
+      li + li {
+        margin-top: 10px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 470px) {

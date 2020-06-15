@@ -28,7 +28,7 @@ $(function () {
     });
 
     owl.on('mousewheel', '.owl-stage', function (e) {
-        if (e.deltaY>0) {
+        if (e.deltaY > 0) {
             owl.trigger('next.owl');
         } else {
             owl.trigger('prev.owl');
@@ -189,10 +189,11 @@ document.addEventListener('scroll', () => {
 });
 
 document.addEventListener('click', e => {
-   const menuBurgerInner = document.querySelector('.menu-burger__inner');
+    const menuBurgerInner = document.querySelector('.menu-burger__inner');
     openMenu(e, menuBurgerInner);
     closeMenu(e, menuBurgerInner);
     scrollUp(e);
+    activePlus(e);
 });
 
 function openMenu(e, elem) {
@@ -216,11 +217,11 @@ function closeMenu(e, elem) {
 }
 
 function scrollUp(e) {
-   const scrollBtn = e.target.closest('.scrollUp');
+    const scrollBtn = e.target.closest('.scrollUp');
 
-   if(!scrollBtn) {
-       return
-   }
+    if (!scrollBtn) {
+        return
+    }
 
     window.scrollTo({
         top: 0,
@@ -229,6 +230,21 @@ function scrollUp(e) {
     });
 }
 
+function activePlus(e) {
+    const vacancyList = e.target.closest('.vacancy__list');
+
+    if (!vacancyList) {
+        return;
+    }
+
+    if (vacancyList) {
+        const vacancyPlus = vacancyList.querySelector('.vacancy__plus'),
+            vacancyItem = vacancyList.querySelector('.vacancy__item');
+        vacancyPlus.classList.toggle('vacancy__plus-active');
+        vacancyItem.classList.toggle('vacancy__item-active');
+    }
+
+}
 
 window.addEventListener("resize", () => {
 

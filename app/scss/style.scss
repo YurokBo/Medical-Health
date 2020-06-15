@@ -593,6 +593,10 @@
   padding: 107px 0 97px;
 }
 
+.partner-choose {
+  padding: 0 0 109px;
+}
+
 .choose__container,
 .questioner__container {
   max-width: 1356px;
@@ -600,7 +604,8 @@
   margin: 0 auto;
 }
 
-.advocacy-choose__container {
+.advocacy-choose__container,
+.partner-choose__container {
   max-width: 1230px;
   width: 100%;
   margin: 0 auto;
@@ -608,7 +613,8 @@
 
 .choose__title,
 .questioner__title,
-.advocacy-choose__title {
+.advocacy-choose__title,
+.partner-choose__title {
   padding: 0 95px 39px 0;
   text-align: center;
   @include adaptiv-font(40, 36);
@@ -616,7 +622,8 @@
   letter-spacing: 0.01em;
 }
 
-.advocacy-choose__title {
+.advocacy-choose__title,
+.partner-choose__title {
   padding: 0 0 45px;
 }
 
@@ -651,7 +658,8 @@
   }
 }
 
-.advocacy-choose__content {
+.advocacy-choose__content,
+.partner-choose__content {
   max-width: 1090px;
   width: 100%;
 }
@@ -668,7 +676,11 @@
 .questioner__content-question,
 .questioner__content-answer,
 .advocacy-choose__content-question,
-.advocacy-choose__content-answer {
+.advocacy-choose__content-answer,
+.Q-A-questioner__content-question,
+.Q-A-questioner__content-answer,
+.partner-choose__content-question,
+.partner-choose__content-answer {
   @include adaptiv-font(25, 22);
   padding: 0 0 0 63px;
   position: relative;
@@ -688,7 +700,9 @@
 
 .choose__content-question,
 .questioner__content-question,
-.advocacy-choose__content-question {
+.advocacy-choose__content-question,
+.Q-A-questioner__content-question,
+.partner-choose__content-question {
   font-family: 'Circe-Bold';
   font-weight: 700;
   line-height: 1.5em;
@@ -698,7 +712,9 @@
 
 .choose__content-answer,
 .questioner__content-answer,
-.advocacy-choose__content-answer {
+.advocacy-choose__content-answer,
+.Q-A-questioner__content-answer,
+.partner-choose__content-answer {
   font-family: 'Circe-Regular';
   font-weight: 400;
   line-height: 1.49em;
@@ -706,16 +722,20 @@
 }
 
 
-.advocacy-choose__content-item {
+.advocacy-choose__content-item,
+.partner-choose__content-item {
   margin-bottom: 34px;
-  .advocacy-choose__content-question {
+
+  .advocacy-choose__content-question,
+  .partner-choose__content-question {
     &:nth-child(3) {
       padding-bottom: 35px;
     }
   }
 }
 
-.advocacy-choose__content-links {
+.advocacy-choose__content-links,
+.partner-choose__content-links {
   padding: 0 0 0 63px;
 
   a {
@@ -1258,7 +1278,10 @@
 /*------------------------index__services-urgent-care-------------------------------------------*/
 /*------------------------index__services-philanthropy-------------------------------------------*/
 /*------------------------index__about-------------------------------------------------------*/
-/*------------index Policy Of Confidentiality--------------*/
+/*------------------------index__Policy Of Confidentiality--------------*/
+/*------------------------index__Questions and Answers--------------*/
+/*------------------------index__Partners--------------*/
+/*------------------------index__Career--------------*/
 /*----------home-care ----top----------*/
 .home-care,
 .skilled-care,
@@ -1268,7 +1291,10 @@
 .urgent-care,
 .philanthropy,
 .if-family,
-.policy {
+.policy,
+.Q-A,
+.our-partners,
+.join {
   padding: 171px 0 127px;
   background-size: cover;
   background-position: center;
@@ -1291,6 +1317,7 @@
 .transportation {
   background-image: url("../img/transportation-bg.jpg");
 }
+
 .pest-control {
   background-image: url("../img/pest-control-bg.jpg");
 }
@@ -1304,11 +1331,13 @@
   padding: 281px 0 110px;
   background-image: url("../img/urgent-care-bg.jpg");
 }
+
 .philanthropy {
   padding: 263px 0 165px;
   background-image: url("../img/philanthropy-bg.jpg");
 }
-.if-family{
+
+.if-family {
   padding: 199px 0 131px;
   background-image: url('../img/family-bg.jpg');
 }
@@ -1318,18 +1347,44 @@
   background-image: url('../img/policy-bg.jpg');
 }
 
+.Q-A {
+  padding: 228px 0 147px;
+  background-image: url('../img/q&a-bg.jpg');
+}
+
+.our-partners {
+  padding: 243px 0 192px;
+  background-image: url('../img/our-partners-bg.jpg');
+}
+
+.join {
+  padding: 184px 0 125px;
+  background-image: url('../img/join-bg.jpg');
+}
+
 .home-care__container,
 .skilled-care__container,
 .transportation__container,
-.advocacy__container{
+.advocacy__container {
   max-width: 1110px;
   width: 100%;
   margin: 0 auto;
 }
+
 .pest-control__container {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
+}
+
+.Q-A__container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+
+  .Q-A__content {
+    padding: 0 190px;
+  }
 }
 
 .transportation__content {
@@ -1344,7 +1399,10 @@
 .urgent-care__title,
 .philanthropy__title,
 .if-family__title,
-.policy__title {
+.policy__title,
+.Q-A__title,
+.our-partners__title,
+.join__title {
   @include adaptiv-font(46, 42);
   text-transform: uppercase;
   color: $home-care__title;
@@ -1360,12 +1418,16 @@
 .urgent-care__title {
   padding: 0 0 170px;
 }
+
 .philanthropy__title {
   padding: 0 0 133px;
 }
 
-.if-family__title {
+
+.if-family__title,
+.join__title {
   padding: 0 0 247px;
+
   span {
     font-family: 'WildernessTypeface-Regular';
     font-weight: 400;
@@ -1379,8 +1441,27 @@
   }
 }
 
+.join__title {
+  padding: 0 0 244px;
+  color: #ffffff;
+
+  span {
+    right: -28px;
+    top: 85px;
+  }
+}
+
 .policy__title {
   padding: 0 0 156px;
+}
+
+
+.Q-A__title {
+  padding: 0 0 125px;
+}
+
+.our-partners__title {
+  padding: 0 0 126px;
 }
 
 .home-care__txt {
@@ -1424,7 +1505,8 @@
 .what-is-transportation,
 .what-is-advocacy,
 .what-is-pest,
-.what-is-family {
+.what-is-family,
+.what-is-choices {
   padding: 107px 0 102px;
 }
 
@@ -1440,7 +1522,9 @@
 
 .what-is-advocacy__container,
 .what-is-pest__container,
-.what-is-family__container {
+.what-is-family__container,
+.what-is-choices__container,
+.interested-in__container {
   max-width: 1230px;
   width: 100%;
   margin: 0 auto;
@@ -1458,7 +1542,12 @@
 .what-is-pest__title,
 .pest-advantages__title,
 .coming-soon__title,
-.what-is-family__title {
+.what-is-family__title,
+.Q-A-questioner__title,
+.what-is-choices__title,
+.interested-in__title,
+.become__title,
+.vacancy__title {
   text-align: center;
   @include adaptiv-font(40, 35);
   line-height: 1.13em;
@@ -1471,16 +1560,40 @@
   }
 }
 
+.what-is-choices__title {
+  padding: 0 0 45px;
+}
+
+.interested-in__title {
+  padding: 0 0 54px;
+}
+
+.become__title {
+  padding: 0 0 49px;
+}
+
 .what-is-family__info {
   p + p {
     margin-top: 40px;
   }
 }
 
+.what-is-choices__info {
+  p {
+    margin-top: 40px;
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+}
+
 /*-----------advantages--------------*/
 .advantages,
 .advantages-transportation,
-.pest-advantages {
+.pest-advantages,
+.become {
   padding: 107px 0 90px;
   background-color: $advantages-bg;
 }
@@ -1489,6 +1602,12 @@
 .advantages-transportation__container,
 .pest-advantages__container {
   max-width: 1225px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.become__container {
+  max-width: 1230px;
   width: 100%;
   margin: 0 auto;
 }
@@ -1507,7 +1626,10 @@
 }
 
 .advantages__checkbox,
-.pest-advantages__checkbox{
+.pest-advantages__checkbox,
+.Q-A-questioner__advantages-checkbox,
+.what-is-choices__advantages-checkbox,
+.become__checkbox {
   li {
     position: relative;
     padding: 0 0 0 43px;
@@ -1562,6 +1684,29 @@
   margin-bottom: 39px;
 }
 
+.Q-A-questioner__advantages-checkbox {
+  padding-left: 64px;
+}
+
+.what-is-choices__advantages-checkbox {
+  padding-left: 55px;
+
+  ul {
+    a {
+      display: inline;
+      line-height: 1.1em;
+      color: #AE7669;
+      background: 0 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #AE7669 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=#AE7669, GradientType=0);
+      background-repeat: repeat-x;
+      background-position: 0 90%;
+      background-size: 2px 2px;
+      text-decoration: none;
+    }
+  }
+}
+
 /*----------how-much-------------*/
 /*----how-much-skilled---*/
 /*----how-much-transportation---*/
@@ -1582,7 +1727,7 @@
 .how-much__container,
 .how-much-skilled__container,
 .how-much-transportation__container,
-.how-much-advocacy__container{
+.how-much-advocacy__container {
   max-width: 1206px;
   width: 100%;
   margin: 0 auto;
@@ -1602,8 +1747,10 @@
     padding: 30px 0 0;
   }
 }
+
 .how-much-advocacy__info {
   padding-left: 52px;
+
   span {
     text-transform: uppercase;
   }
@@ -1630,9 +1777,185 @@
   text-transform: capitalize;
 }
 
+/*----Q-A-questioner------*/
+.Q-A-questioner {
+  padding: 107px 0 84px;
+}
+
+.Q-A-questioner__container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Q-A-questioner__title {
+  padding: 0 0 42px;
+}
+
+.Q-A-questioner__content-item {
+  margin-bottom: 34px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*----------interested-in----------*/
+.interested-in {
+  padding: 110px 0;
+}
+
+.become__info {
+  p + p {
+    margin-top: 12px;
+  }
+
+  p {
+    &:last-child {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.become__checkbox {
+  ul {
+    li:first-child {
+      img {
+        top: 25%;
+      }
+    }
+  }
+}
+
+/*---------vacancy----------*/
+.vacancy {
+  padding: 107px 0 66px;
+}
+
+.vacancy__container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 
+.vacancy__top {
+  margin-bottom: 40px;
+}
 
+.vacancy__list-title {
+  padding: 0 0 22px;
+}
+
+.vacancy__list {
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 0 51px;
+  border-bottom: 1.5px solid #AC8478;;
+  position: relative;
+
+  .vacancy__active-passive {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #AC8478;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+
+    span {
+      position: absolute;
+      width: 11px;
+      height: 2px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #AC8478;
+    }
+
+    span.vacancy__plus {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(90deg);
+      display: block;
+    }
+
+    span.vacancy__plus-active {
+      display: none;
+    }
+  }
+}
+
+.vacancy__plus {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  display: block;
+}
+
+.vacancy__name,
+.vacancy__responsibility-title,
+.vacancy__requirement-title {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.13em;
+  text-transform: uppercase;
+}
+
+.vacancy__name {
+  text-transform: capitalize;
+}
+
+.vacancy__responsibility-title,
+.vacancy__requirement-title {
+  background: 0 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, $txt-color 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=$txt-color, GradientType=0);
+  background-repeat: repeat-x;
+  background-position: 0 87%;
+  background-size: 1px 1px;
+  text-decoration: none;
+  display: inline;
+}
+
+.vacancy__responsibility {
+  margin: 0 0 26px;
+}
+
+.vacancy__requirement {
+  margin: 0 0 32px;
+}
+
+.vacancy__responsibility-info,
+.vacancy__requirement-info {
+  padding: 12px 0 0 52px;
+
+  ol,
+  li {
+    list-style-type: disc;
+    margin: 0;
+  }
+
+  ol {
+    padding: 0 0 0 20px;
+  }
+}
+
+.vacancy__item {
+  display: none;
+  padding: 28px 0 60px;
+}
+
+.vacancy__item-active {
+  display: block;
+}
+
+.vacancy__list + .vacancy__list {
+  margin-top: 22px;
+}
 
 
 @import "media";
