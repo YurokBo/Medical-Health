@@ -1,6 +1,8 @@
 $(function () {
-    let owl = $(".partner .partner__carousel");
-    owl.owlCarousel({
+    let owlPartner = $(".partner .partner__carousel"),
+        owlJobs = $(".featured-job .featured-job__carousel");
+
+    owlPartner.owlCarousel({
         loop: true,
         nav: true,
         dots: false,
@@ -27,7 +29,7 @@ $(function () {
         }
     });
 
-    owl.on('mousewheel', '.owl-stage', function (e) {
+    owlPartner.on('mousewheel', '.owl-stage', function (e) {
         if (e.deltaY > 0) {
             owl.trigger('next.owl');
         } else {
@@ -35,9 +37,29 @@ $(function () {
         }
         e.preventDefault();
     });
+
+    owlJobs.owlCarousel({
+        loop: true,
+        items: 3,
+        nav: true,
+        dots: false,
+        navText: ["<img src='img/chevron.png'>", "<img src='img/chevron.png'>"],
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 1
+            },
+            1200: {
+                items: 3
+            }
+        }
+    })
 });
 
-
+/*-------this is a function which change blocks place-------*/
 (function () {
     let originalPositions = [];
     let daElements = document.querySelectorAll('[data-da]');
