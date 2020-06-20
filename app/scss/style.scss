@@ -2198,7 +2198,8 @@
       background-color: #FFFFFF;
       padding: 19px 60.65px 18px;
 
-      &:hover {
+      &:hover,
+      &:active {
         background: $nav-btn-color;
         color: #ffffff;
       }
