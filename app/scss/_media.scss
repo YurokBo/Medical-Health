@@ -2116,31 +2116,36 @@
   }
 
   /*----------index__Career Job Search---------*/
+  /*----------index__Career Job Details---------*/
   .job-search-result {
     padding: 104px 0 48px;
   }
 
-  .job-search-result__container {
+  .job-search-result__container{
     max-width: 414px;
   }
 
-  .job-search-result__title {
+  .job-search-result__title,
+  .job-details__title {
     font-size: 28px;
     line-height: 1.1em;
     margin-bottom: 54px;
     text-align: center;
   }
 
-  .job-search-result__subtitle {
+  .job-search-result__subtitle,
+  .job-details__subtitle {
     font-size: 22px;
     line-height: 1.44em;
     margin-bottom: 37px;
+  }
+  .job-details__subtitle {
+    text-align: center;
   }
 
   .job-search-result__item {
     padding-bottom: 38px;
     max-width: 414px;
-
   }
 
   .job-search-result__item + .job-search-result__item {
@@ -2169,6 +2174,36 @@
   }
 
 
+/*------------job-details--------------*/
+  .job-details {
+   padding: 104px 0;
+  }
+
+  .job-details__container {
+    max-width: 414px;
+  }
+
+  .job-details__item-description {
+    .job-details__item-responsibility {
+      font-size: 22px;
+    }
+
+  }
+
+  .job-details__item-responsibility-title,
+  .job-details__item-responsibility-info,
+  .job-details__item-requirement-title,
+  .job-details__item-requirement-info {
+    font-size: 22px;
+  }
+
+  .job-details__item-btn-box {
+    margin: 0 auto;
+  }
+
+  .job-details__item-responsibility-info, .job-details__item-requirement-info {
+    padding: 12px 22px 0 63px;;
+  }
 }
 
 @media screen and (max-width: 470px) {
