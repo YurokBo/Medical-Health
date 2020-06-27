@@ -104,7 +104,8 @@ h1, h2, h3, h4, h5, h6, p {
   background: $btn-bg-color;
   cursor: pointer;
 
-  &:active {
+  &:active,
+  &:hover {
     color: $btn-title-color;
     border: 2px solid $btn-title-color;
     border-radius: 8.5px;
@@ -180,3 +181,91 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.active-passive {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #AC8478;
+  top: 0;
+  //left: 0;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    width: 11px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #AC8478;
+  }
+
+  span.plus {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    display: block;
+  }
+
+  span.plus-active {
+    display: none;
+  }
+}
+.plus {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  display: block;
+}
+
+.radio__btn {
+
+}
+
+.radio__input {
+  display: none;
+  position: absolute;
+  -webkit-appearance: none;
+}
+
+.radio__label {
+  padding-left: 40px;
+  cursor: pointer;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 2px solid #AC8478;
+    z-index: 1;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: #ac8478;
+    z-index: 2;
+    opacity: 0;
+  }
+}
+
+.radio__input:checked + .radio__label:before {
+  background-color: transparent;
+}
+
+
+.radio__input:checked + .radio__label:after {
+  opacity: 1;
+}

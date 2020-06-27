@@ -260,9 +260,9 @@ function activePlus(e) {
     }
 
     if (vacancyList) {
-        const vacancyPlus = vacancyList.querySelector('.vacancy__plus'),
+        const vacancyPlus = vacancyList.querySelector('.plus'),
             vacancyItem = vacancyList.querySelector('.vacancy__item');
-        vacancyPlus.classList.toggle('vacancy__plus-active');
+        vacancyPlus.classList.toggle('plus-active');
         vacancyItem.classList.toggle('vacancy__item-active');
     }
 

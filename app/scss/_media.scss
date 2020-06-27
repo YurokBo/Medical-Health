@@ -2187,7 +2187,6 @@
     .job-details__item-responsibility {
       font-size: 22px;
     }
-
   }
 
   .job-details__item-responsibility-title,
@@ -2201,9 +2200,164 @@
     margin: 0 auto;
   }
 
-  .job-details__item-responsibility-info, .job-details__item-requirement-info {
+  .job-details__item-responsibility-info,
+  .job-details__item-requirement-info {
     padding: 12px 22px 0 63px;;
   }
+
+
+  /*   index__need care form   */
+  /*   index__transfer-now   */
+  .need-care-form {
+    padding: 52px 0 108px;
+  }
+  .transfer-now {
+    padding: 14px 0 108px;
+  }
+
+  .need-care-form__container,
+  .transfer-now__container {
+    max-width: 414px;
+  }
+
+  .need-care-form__title-box,
+  .transfer-now__title-box {
+    margin-bottom: 52px;
+    max-width: 414px;
+    text-align: center;
+    padding: 37px 0 22px;
+  }
+
+  .transfer-now__title-box {
+    padding: 37px 0 210px;
+    max-width: 414px;
+    width: 100%;
+    margin-bottom: 125px;
+  }
+
+  .need-care-form__title,
+  .transfer-now__title {
+    font-size: 28px;
+    line-height: 1.37em;
+
+    br {
+      display: block;
+    }
+  }
+
+  .transfer-now__title {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 157px;
+  }
+  .transfer-now__text {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 194px;
+    font-size: 22px;
+  }
+
+  .need-care-form__inner,
+  .transfer-now__inner {
+    max-width: 370px;
+    margin: 0 auto;
+    text-align: center;
+    label {
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 13px 24px;
+    }
+  }
+
+  /*   index__need-care-thanks   */
+  /*   index__transfer-now-thanks   */
+  .need-care-thanks {
+    padding: 214px 0 263px;
+  }
+
+  .transfer-now-thanks {
+    padding: 193px 0 275px;
+  }
+
+  .need-care-thanks__container,
+  .transfer-now-thanks__container {
+    max-width: 414px;
+  }
+
+  .need-care-thanks__title-box,
+  .transfer-now-thanks__title-box {
+    padding: 25px 90px ;
+
+    .need-care-thanks__title,
+    .transfer-now-thanks__title {
+      font-size: 28px;
+      line-height: 1.48em;
+    }
+    .transfer-now-thanks__text {
+      font-size: 22px;
+      position: relative;
+      top: 60px;
+      top: 60px;
+    }
+
+    br {
+      display: block;
+    }
+  }
+  .transfer-now-thanks__title {
+    position: relative;
+    top: 50px;
+  }
+  .transfer-now-thanks__title-box {
+    padding: 0 70px;
+  }
+
+  /*  index__my-account-sign-in  */
+  .my-account-sign-in {
+    padding: 51px 0 103px;
+  }
+
+  .my-account-sign-in__title-box {
+    margin-bottom: 59px;
+    padding: 67px 0 40px;
+    .my-account-sign-in__title {
+      line-height: 1.4em;
+      br {
+        display: block;
+      }
+    }
+  }
+  .my-account-sign-in__content {
+    margin-bottom: 56px;
+  }
+  .my-account-sign-in__inner {
+    label {
+      margin-bottom: 20px;
+    }
+    input {
+      font-size: 18px;
+      padding: 14.67px 24px;
+    }
+  }
+  .my-account-sign-in__btn-group {
+    .my-account-sign-in__form-btn{
+      padding: 13.34px 52.9px 13px;
+    }
+
+    .my-account-sign-in__register-btn {
+      a {
+        padding: 13.34px 45.56px 13px;
+      }
+    }
+  }
+
+
+
+
+
 }
 
 @media screen and (max-width: 470px) {
