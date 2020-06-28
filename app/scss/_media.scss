@@ -2121,7 +2121,7 @@
     padding: 104px 0 48px;
   }
 
-  .job-search-result__container{
+  .job-search-result__container {
     max-width: 414px;
   }
 
@@ -2174,9 +2174,9 @@
   }
 
 
-/*------------job-details--------------*/
+  /*------------job-details--------------*/
   .job-details {
-   padding: 104px 0;
+    padding: 104px 0;
   }
 
   .job-details__container {
@@ -2264,9 +2264,11 @@
     max-width: 370px;
     margin: 0 auto;
     text-align: center;
+
     label {
       margin-bottom: 20px;
     }
+
     input {
       padding: 13px 24px;
     }
@@ -2289,13 +2291,14 @@
 
   .need-care-thanks__title-box,
   .transfer-now-thanks__title-box {
-    padding: 25px 90px ;
+    padding: 25px 90px;
 
     .need-care-thanks__title,
     .transfer-now-thanks__title {
       font-size: 28px;
       line-height: 1.48em;
     }
+
     .transfer-now-thanks__text {
       font-size: 22px;
       position: relative;
@@ -2316,34 +2319,54 @@
   }
 
   /*  index__my-account-sign-in  */
-  .my-account-sign-in {
+  /*  index__my-account-my-account-register  */
+  .my-account-sign-in,
+  .my-account-register {
     padding: 51px 0 103px;
   }
 
-  .my-account-sign-in__title-box {
+  .my-account-register {
+    padding: 57px 0 108.34px;
+  }
+
+  .my-account-sign-in__title-box,
+  .my-account-register__title-box {
     margin-bottom: 59px;
     padding: 67px 0 40px;
-    .my-account-sign-in__title {
+
+    .my-account-sign-in__title,
+    .my-account-register__title {
       line-height: 1.4em;
+
       br {
         display: block;
       }
     }
   }
-  .my-account-sign-in__content {
+
+  .my-account-register__title-box {
+    padding: 67px 0;
+  }
+
+  .my-account-sign-in__content,
+  .my-account-register__content {
     margin-bottom: 56px;
   }
-  .my-account-sign-in__inner {
+
+  .my-account-sign-in__inner,
+  .my-account-register__inner {
     label {
       margin-bottom: 20px;
     }
+
     input {
       font-size: 18px;
       padding: 14.67px 24px;
     }
   }
+
   .my-account-sign-in__btn-group {
-    .my-account-sign-in__form-btn{
+    .my-account-sign-in__form-btn {
       padding: 13.34px 52.9px 13px;
     }
 
@@ -2351,6 +2374,71 @@
       a {
         padding: 13.34px 45.56px 13px;
       }
+    }
+  }
+
+  .my-account-register__btn-group {
+    .my-account-register__form-btn {
+      padding: 13.34px 46.38px 13px;
+    }
+
+    .my-account-register__back-btn {
+      a {
+        padding: 13.34px 60.78px 13px;
+      }
+    }
+  }
+
+
+  /*    index__my-account-submit-time-sheet    */
+  .my-account-submit-time-sheet {
+    padding: 123px 0 108px;
+  }
+
+  .my-account-submit-time-sheet__container {
+    max-width: 414px;
+  }
+
+  .my-account-submit-time-sheet__title-box {
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  .my-account-submit-time-sheet__title {
+    font-size: 28px;
+  }
+
+  .my-account-submit-time-sheet__content {
+    padding-left: 0;
+  }
+
+  .my-account-submit-time-sheet__content-text {
+    margin-bottom: 8px;
+    font-size: 22px;
+  }
+
+  .my-account-submit-time-sheet__content-list {
+    padding: 0;
+    margin-bottom: 40px;
+
+    ul {
+      font-size: 22px;
+    }
+
+    li {
+      padding-left: 46px;
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .my-account-submit-time-sheet__btn {
+    margin-left: 0;
+    text-align: center;
+
+    a {
+      padding: 6px 35px;
     }
   }
 

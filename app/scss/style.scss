@@ -2259,7 +2259,7 @@
   .apply-now__personal-info-right,
   .apply-now__application-info-left,
   .apply-now__application-info-right {
-    max-width: 568px;
+    max-width: 570px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -2475,19 +2475,27 @@
 
 
 /*  index__my-account-sign-in  */
-.my-account-sign-in {
+/*  index__my-account-my-account-register  */
+.my-account-sign-in,
+.my-account-register {
   padding: 99px 0 154px;
   background: rgba(241, 227, 222, 0.5);
   text-align: center;
 }
 
-.my-account-sign-in__container {
+.my-account-register {
+  padding: 107px 0 162px;
+}
+
+.my-account-sign-in__container,
+.my-account-register__container {
   max-width: 414px;
   width: 100%;
   margin: 0 auto;
 }
 
-.my-account-sign-in__title-box {
+.my-account-sign-in__title-box,
+.my-account-register__title-box {
   background-image: url('../img/need-care-thanks-logo-bg.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -2495,7 +2503,8 @@
   padding: 45px 0;
   margin-bottom: 36px;
 
-  .my-account-sign-in__title {
+  .my-account-sign-in__title,
+  .my-account-register__title {
     font-family: 'TrajanPro3-Regular';
     font-weight: 400;
     font-size: 28px;
@@ -2509,7 +2518,8 @@
   }
 }
 
-.my-account-sign-in__inner {
+.my-account-sign-in__inner,
+.my-account-register__inner {
   max-width: 370px;
   width: 100%;
   margin: 0 auto;
@@ -2553,16 +2563,20 @@
   }
 }
 
-.my-account-sign-in__content {
+.my-account-sign-in__content,
+.my-account-register__content {
   margin-bottom: 30px;
 }
 
-.my-account-sign-in__btn-group {
+.my-account-sign-in__btn-group,
+.my-account-register__btn-group {
   display: flex;
   justify-content: space-between;
 
   .my-account-sign-in__form-btn,
-  .my-account-sign-in__register-btn a {
+  .my-account-sign-in__register-btn a,
+  .my-account-register__form-btn,
+  .my-account-register__back-btn a {
     outline: none;
     cursor: pointer;
     background: rgba(239, 204, 191, 0.5);
@@ -2588,32 +2602,354 @@
       padding: 8.34px 46.38px 8px;
     }
   }
+
+  .my-account-register__form-btn {
+    padding: 8.34px 47.38px 8px;
+  }
+
+  .my-account-register__back-btn {
+    a {
+      padding: 8.34px 61.69px 8px;
+      background: rgba(241, 227, 222, 0.5);
+    }
+  }
+}
+
+.my-account-register__content-top {
+  margin-bottom: 56px;
 }
 
 
+/*    index__my-account-submit-time-sheet    */
+.my-account-submit-time-sheet {
+  padding: 90px 0 100px;
+  background-color: rgba(241, 227, 222, 0.5);
+}
+
+.my-account-submit-time-sheet__container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.my-account-submit-time-sheet__title-box {
+  margin-bottom: 40px;
+}
+
+.my-account-submit-time-sheet__title {
+  font-family: 'TrajanPro3-Regular';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.13em;
+  text-transform: capitalize;
+  color: #AC8478;
+}
+
+.my-account-submit-time-sheet__content {
+  padding-left: 27px;
+}
+
+.my-account-submit-time-sheet__content-text {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.my-account-submit-time-sheet__content-list {
+  padding: 0 110px 0 49px;
+  margin-bottom: 40px;
+
+  ul {
+    font-size: 24px;
+  }
+
+  li {
+    list-style: none;
+    background: url("../img/check.png") no-repeat 0 5px;
+    padding-left: 50px;
+    line-height: 1.55em;
+
+    span {
+      font-family: 'Circe-Bold';
+      font-weight: 700;
+    }
+  }
+}
 
 
+.my-account-submit-time-sheet__btn {
+  margin-left: 100px;
+
+  a {
+    text-align: center;
+    font-family: 'Circe-Bold';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 113.9%;
+    color: #AE7669;
+    background: rgba(249, 237, 228, 0.35);
+    border: 2px solid #AE7669;
+    border-radius: 8.52398px;
+    padding: 6px 25px;
+
+    &:hover,
+    &:active {
+      background: #AE7669;
+      color: #FFFFFF;
+    }
+
+    span {
+      display: block;
+      text-transform: uppercase;
+    }
+  }
+}
 
 
+/*    index__my-account-main     */
+/*----------welcome----------*/
+.welcome {
+  padding: 82px 0 42px;
+  background-image: url('../img/my-account-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome__container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.welcome__title-box {
+  background-image: url('../img/my-account-logo-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 24px 0 6px 59px;
+  margin-bottom: 215px;
+}
+
+.welcome__title {
+  font-family: 'TrajanPro3-Regular';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.13em;
+  text-transform: capitalize;
+  color: #AC8478;
+  margin-bottom: 24px;
+}
+
+.welcome__person-name {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.34em;
+  color: #565656;
+}
+
+.welcome__btn-group {
+  display: flex;
+
+}
+
+.welcome__submit-time-sheet-btn,
+.welcome__create-time-sheet-btn {
+  a {
+    background: rgba(239, 204, 191, 0.5);
+    border: 2px solid #AE7669;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Circe-Bold';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.14em;
+    color: #AE7669;
+    text-align: center;
+    padding: 5.34px 24.84px;
+
+    &:hover,
+    &:active {
+      background: #AE7669;
+      color: #ffffff;
+    }
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.welcome__submit-time-sheet-btn {
+  margin-right: 30px;
+  a {
+    background: rgba(249, 237, 228, 0.35);
+  }
+}
+
+/*------account--------*/
+.account {
+  padding: 70px 0 114px;
+  background-color: rgba(241, 227, 222, 0.5);
+}
+
+.account__container {
+  max-width: 1370px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.account__content-title-box {
+  padding: 5px 0 4px;
+  background-color: rgba(239, 204, 191, 0.5);
+}
+
+.account__content-item_container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.account__content-title-box {
+  position: relative;
+
+  .active-passive {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.account__content-title {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.6em;
+  color: #AC8478;
+}
+
+.account__content-info {
+  padding: 60px 0 114px;
+}
+
+.account__content-item_container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.account__form {
+  margin-bottom: 60px;
+  .account__form-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .account__form-left,
+  .account__form-right {
+    max-width: 570px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
 
+    label {
+      display: block;
+      margin-bottom: 7px;
 
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
 
+    span {
+      display: inline-block;
+      max-width: 190px;
+      width: 100%;
+      font-size: 20px;
+      line-height: 1.6em;
+    }
 
+    input {
+      max-width: 370px;
+      width: 100%;
+      background: #FFFFFF;
+      border: 2px solid #EFCCBF;
+      font-size: 20px;
+      line-height: 1.6em;
+      padding: 5px 24px;
+      outline: none;
 
+      &:hover {
+        border: 2px solid #AC8478;
+      }
 
+      &:focus {
+        border: 2px solid #AC8478;
+      }
+    }
 
+    input[name="zip"] {
+      max-width: 170px;
+    }
+  }
+}
 
+.account__form-content {
+  margin-bottom: 30px;
+}
 
+.account__form-btn {
+  outline: none;
+  background: rgba(239, 204, 191, 0.5);
+  border: 2px solid #AE7669;
+  border-radius: 8px;
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.14em;
+  color: #AE7669;
+  text-transform: capitalize;
+  padding: 8.34px 63.1px 8px;
 
+  &:hover,
+  &:active {
+    background: #AE7669;
+    color: #ffffff;
+  }
+}
 
+.account__change_login-password-form {
 
+}
 
+.account__change_title-box {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 43px;
 
+  .active-passive {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 
+.account__change_title {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4em;
+  color: #565656;
+}
 
-
-
+.account__change_form-box {
+  max-width: 570px;
+  width: 100%;
+  margin-left: 100px;
+}
 
 
 
