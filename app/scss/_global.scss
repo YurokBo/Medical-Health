@@ -25,6 +25,7 @@ a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 ul,
@@ -36,6 +37,10 @@ li {
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 .default-btn {

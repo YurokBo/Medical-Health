@@ -2782,6 +2782,7 @@
 
 .welcome__submit-time-sheet-btn {
   margin-right: 30px;
+
   a {
     background: rgba(249, 237, 228, 0.35);
   }
@@ -2799,19 +2800,19 @@
   margin: 0 auto;
 }
 
-.account__content-title-box {
+.account__content-item-title-box {
   padding: 5px 0 4px;
   background-color: rgba(239, 204, 191, 0.5);
 }
 
-.account__content-item_container {
+.account__content-item-title-box_container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
 
 }
 
-.account__content-title-box {
+.account__content-title-inner {
   position: relative;
 
   .active-passive {
@@ -2841,6 +2842,7 @@
 
 .account__form {
   margin-bottom: 60px;
+
   .account__form-content {
     display: flex;
     justify-content: space-between;
@@ -2921,11 +2923,11 @@
   }
 }
 
-.account__change_login-password-form {
+.account__change-data-form {
 
 }
 
-.account__change_title-box {
+.account__change-data_title-box {
   position: relative;
   padding-left: 50px;
   margin-bottom: 43px;
@@ -2937,7 +2939,7 @@
   }
 }
 
-.account__change_title {
+.account__change-data_title {
   font-family: 'Circe-Bold';
   font-weight: 700;
   font-size: 24px;
@@ -2945,27 +2947,442 @@
   color: #565656;
 }
 
-.account__change_form-box {
-  max-width: 570px;
+.account__change-data_form-box {
+  max-width: 576px;
   width: 100%;
   margin-left: 100px;
 }
 
+.account__actual-data {
+  margin-bottom: 50px;
+}
+
+.account__actual-login-box {
+  margin-bottom: 10px;
+}
+
+.account__actual-login-title,
+.account__actual-login,
+.account__actual-password-title,
+.account__actual-password {
+  display: inline-block;
+  color: #565656;
+  font-size: 20px;
+  line-height: 1.6em;
+}
+
+.account__actual-login-title,
+.account__actual-password-title {
+  font-family: 'Circe-Regular';
+  font-weight: 400;
+  max-width: 207px;
+  width: 100%;
+
+}
+
+.account__actual-login,
+.account__actual-password {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+
+  span {
+    font-size: 26px;
+    line-height: 1.4em;
+  }
+}
+
+.account__change_text {
+  font-size: 20px;
+  line-height: 1.37em;
+  margin-bottom: 38px;
+}
+
+.account__change_form {
+  max-width: 576px;
+  width: 100%;
+}
+
+.account__change_form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  label {
+    display: block;
+    margin-bottom: 7px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  span {
+    display: inline-block;
+    max-width: 200px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+
+  input {
+    max-width: 370px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 2px solid #EFCCBF;
+    font-size: 20px;
+    line-height: 1.6em;
+    padding: 5px 24px;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      border: 2px solid #AC8478;
+    }
+  }
+
+  .account__change_form-new {
+    margin-bottom: 35px;
+  }
+}
+
+.account__change_form-btn {
+  outline: none;
+  background-color: rgba(239, 204, 191, 0.5);
+  border: 2px solid #AE7669;
+  border-radius: 8px;
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.14em;
+  color: #AE7669;
+  padding: 8.17px 50.75px;
+  position: relative;
+  left: 51%;
+  transform: translateX(-51%);
+
+  &:hover,
+  &:active {
+    background: #AE7669;
+    color: #ffffff;
+  }
+}
+
+.account__before-start-list {
+  ul {
+
+  }
+
+  li + li {
+    margin-top: 28px;
+  }
+
+  li {
+    list-style: none;
+    background: url("../img/check.png") no-repeat 0 8px;
+    padding-left: 50px;
+    line-height: 1.55em;
+
+    span {
+      font-family: 'Circe-Bold';
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 2em;
+      display: block;
+    }
+
+    a {
+      border: 2px solid #AE7669;
+      border-radius: 8px;
+      font-family: 'Circe-Bold';
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.14em;
+      color: #AE7669;
+
+      &:hover,
+      &:active {
+        background: #AE7669;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.account__valid-id_title,
+.account__PPD-test_title,
+.account__DHS-certification_title {
+  margin-bottom: 25px;
+}
+
+.account__valid-id_btn,
+.account__PPD-test_btn,
+.account__DHS-certification_btn,
+.account__100-questions_btn-download,
+.account__100-questions_btn-submit,
+.steps__btn {
+  position: relative;
+  left: 35px;
+
+  a {
+    padding: 8.17px 50.36px;
+  }
+}
+
+.account__fingerprint-background_title {
+  margin-bottom: 15px;
+}
+
+.account__fingerprint-background_text {
+  padding: 0 0 15px 78px;
+  font-size: 24px;
+}
+
+.instruction {
+  .instruction__title-box {
+    position: relative;
+    padding: 0 0 0 46px;
+    margin-bottom: 28px;
+
+    .instruction__title {
+      font-family: 'Circe-Bold';
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.34em;
+      display: inline-block;
+
+      background: 0 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, $txt-color 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=$txt-color, GradientType=0);
+      background-repeat: repeat-x;
+      background-position: 0 84%;
+      background-size: 1.5px 1.5px;
+    }
+
+    .active-passive {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .instruction__list {
+    padding-left: 35px;
+
+    .instruction__item-1,
+    .instruction__item-2 {
+      background: none;
+      padding-left: 11px;
+      line-height: 1.34em;
+
+      ul {
+        counter-reset: list;
+      }
+
+      li + li {
+        margin-top: 5px;
+      }
+
+      li {
+        padding-left: 45px;
+        background: none;
+        font-family: 'Circe-Regular';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.55em;
+        list-style: none;
+
+        &:before {
+          font-family: 'Circe-Bold';
+          font-weight: 700;
+          font-size: 24px;
+          content: counter(list, lower-alpha) ") ";
+          counter-increment: list;
+          width: 29px;
+          display: inline-block;
+        }
+
+        a {
+          border: none;
+          font-size: 24px;
+          line-height: 1.6em;
+
+          background: 0 0;
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #AE7669 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=#AE7669, GradientType=0);
+          background-repeat: repeat-x;
+          background-position: 0 84%;
+          background-size: 2px 2px;
+
+          &:hover,
+          &:active {
+            color: #c8a097;
+            background: 0 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #c8a097 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=#c8a097, GradientType=0);
+            background-repeat: repeat-x;
+            background-position: 0 84%;
+            background-size: 2px 2px;
+          }
+        }
+
+      }
+
+      span {
+        margin-bottom: 20px;
+        line-height: 1.34em;
+        display: inline-block;
+
+        background: 0 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, $txt-color 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=$txt-color, GradientType=0);
+        background-repeat: repeat-x;
+        background-position: 0 84%;
+        background-size: 1.5px 1.5px;
+      }
+
+      .instruction__subitem {
+        list-style-type: none; /* Убираем исходные маркеры */
+        counter-reset: item; /* Обнуляем счетчик списка */
+        li:before {
+          content: counter(item) ') '; /* Добавляем к числам скобку */
+          counter-increment: item; /* Задаём имя счетчика */
+        }
+      }
+    }
+  }
+}
+
+.account__DHS-certification {
+  span {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset: item; /* Обнуляем счетчик списка */
+    padding-left: 50px;
+    margin-bottom: 25px;
+    li {
+      font-size: 24px;
+    }
+  }
+
+  li + li {
+    margin-top: 0;
+  }
 
 
+  li {
+    background: none;
+
+    &:before {
+      list-style-image: none;
+      content: counter(item) ') '; /* Добавляем к числам скобку */
+      counter-increment: item; /* Задаём имя счетчика */
+      font-family: 'Circe-Bold';
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+
+  .account__DHS-certification_btn {
+    left: 100px;
+  }
+}
+
+.account__100-questions {
+  span {
+    margin-bottom: 10px;
+  }
+
+  p {
+    padding-left: 30px;
+    margin-bottom: 15px;
+  }
+
+  .account__100-questions_btn-download,
+  .account__100-questions_btn-submit {
+    left: 100px;
+  }
+
+  .account__100-questions_btn-download {
+    margin-bottom: 25px;
+
+    a {
+      padding: 8.17px 37.72px;
+    }
+  }
+
+  .account__100-questions_btn-submit {
+    a {
+      padding: 8.17px 51.52px;
+    }
+  }
+}
+
+.account__submit-picture {
+  .steps {
+    padding-left: 30px;
 
 
+    .steps__step-one,
+    .steps__step-two,
+    .steps__step-three {
+      span,
+      p {
+        display: inline;
 
+      }
+    }
 
+    img {
+      display: block;
+      position: relative;
+      left: 70px;
+    }
 
+    .steps__step-one {
 
+      ul {
+        padding-left: 75px;
+        li {
+          font-size: 24px;
+          background: none;
+          list-style: disc;
+          padding-left: 0;
+        }
+      }
 
+      li + li {
+        margin-top: 0;
+      }
+    }
 
+    .steps__btn {
+      left: 75px;
 
+      a {
+        padding: 8.17px 21.24px;
+      }
+    }
 
+    .steps__step-two {
+      margin-bottom: 23px;
+      p {
+        display: inline-block;
+        margin-bottom: 13px;
+      }
+    }
 
-
-
+    .steps__step-three {
+      p {
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
 
 
 @import "media";
