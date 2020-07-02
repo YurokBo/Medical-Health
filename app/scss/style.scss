@@ -1893,7 +1893,6 @@
   margin-bottom: 1px;
 }
 
-
 .vacancy__name {
   text-transform: capitalize;
 }
@@ -2750,7 +2749,6 @@
 
 .welcome__btn-group {
   display: flex;
-
 }
 
 .welcome__submit-time-sheet-btn,
@@ -2809,7 +2807,6 @@
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
-
 }
 
 .account__content-title-inner {
@@ -2884,6 +2881,12 @@
       padding: 5px 24px;
       outline: none;
 
+      &::placeholder {
+        visibility: hidden;
+        color: $input-placeholder-color;
+        font-size: 18px;
+      }
+
       &:hover {
         border: 2px solid #AC8478;
       }
@@ -2950,7 +2953,7 @@
 .account__change-data_form-box {
   max-width: 576px;
   width: 100%;
-  margin-left: 100px;
+  padding-left: 100px;
 }
 
 .account__actual-data {
@@ -3009,6 +3012,7 @@
   margin-bottom: 30px;
 
   label {
+    max-width: 370px;
     display: block;
     margin-bottom: 7px;
 
@@ -3026,7 +3030,7 @@
   }
 
   input {
-    max-width: 370px;
+
     width: 100%;
     background: #FFFFFF;
     border: 2px solid #EFCCBF;
@@ -3034,6 +3038,12 @@
     line-height: 1.6em;
     padding: 5px 24px;
     outline: none;
+
+    &::placeholder {
+      visibility: hidden;
+      color: $input-placeholder-color;
+      font-size: 18px;
+    }
 
     &:hover,
     &:focus {
@@ -3191,6 +3201,7 @@
         font-size: 24px;
         line-height: 1.55em;
         list-style: none;
+        list-style-position: inside;
 
         &:before {
           font-family: 'Circe-Bold';
@@ -3242,6 +3253,7 @@
       }
 
       .instruction__subitem {
+        list-style-position: inside;
         list-style-type: none; /* Убираем исходные маркеры */
         counter-reset: item; /* Обнуляем счетчик списка */
         li:before {
@@ -3263,6 +3275,7 @@
     counter-reset: item; /* Обнуляем счетчик списка */
     padding-left: 50px;
     margin-bottom: 25px;
+
     li {
       font-size: 24px;
     }
@@ -3346,6 +3359,7 @@
 
       ul {
         padding-left: 75px;
+
         li {
           font-size: 24px;
           background: none;
@@ -3369,6 +3383,7 @@
 
     .steps__step-two {
       margin-bottom: 23px;
+
       p {
         display: inline-block;
         margin-bottom: 13px;
@@ -3384,5 +3399,173 @@
   }
 }
 
+.activate-adp__content {
+  font-size: 24px;
+  line-height: 1.5em;
+
+  .activate-adp__text {
+    margin-bottom: 30px;
+  }
+
+  .activate-adp__list {
+    margin-bottom: 30px;
+
+    ul {
+      padding-left: 70px;
+    }
+
+    li {
+      list-style: disc;
+    }
+  }
+
+  .activate-adp__registration-process {
+    padding-left: 100px;
+
+    .activate-adp__registration-process_title {
+      font-family: 'Circe-Bold';
+      font-weight: 700;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 26px;
+
+      background: 0 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, $txt-color 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=$txt-color, GradientType=0);
+      background-repeat: repeat-x;
+      background-position: 0 84%;
+      background-size: 1.5px 1.5px;
+    }
+  }
+
+  .activate-adp__registration-process_info {
+    padding-left: 100px;
+  }
+
+  .activate-adp__registration-process_receive-PIC {
+    margin-bottom: 25px;
+
+    ul {
+      padding-left: 70px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      list-style: disc;
+    }
+  }
+
+  .activate-adp__registration-process_go-to {
+    margin-bottom: 25px;
+  }
+
+  span {
+    font-family: 'Circe-Bold';
+    font-weight: 700;
+  }
+
+  a {
+    display: inline-block;
+    color: #AE7669;
+    white-space: normal;
+
+    background: 0 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #AE7669 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=#AE7669, GradientType=0);
+    background-repeat: repeat-x;
+    background-position: 0 84%;
+    background-size: 1.5px 1.5px;
+
+    &:hover,
+    &:focus {
+      color: #C8A097;
+
+      background: 0 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #C8A097 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=#C8A097, GradientType=0);
+      background-repeat: repeat-x;
+      background-position: 0 84%;
+      background-size: 1.5px 1.5px;
+    }
+  }
+
+  .activate-adp__registration-process_reg-video {
+    a {
+      display: inline;
+    }
+  }
+}
+
+.evv__content {
+  font-size: 24px;
+
+  .evv__content-info {
+    margin-bottom: 23px;
+
+
+    p + p {
+      margin-top: 18px;
+    }
+  }
+
+  .evv__content-list {
+    span {
+      font-family: 'Circe-Bold';
+      font-weight: 700;
+      line-height: 1.5em;
+    }
+
+    ul {
+      padding-left: 70px;
+    }
+
+    li {
+      line-height: 1.5em;
+      list-style: disc;
+    }
+
+    a {
+      display: inline-block;
+      color: #AE7669;
+      white-space: normal;
+      letter-spacing: .001em;
+
+      background: 0 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #AE7669 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=#AE7669, GradientType=0);
+      background-repeat: repeat-x;
+      background-position: 0 84%;
+      background-size: 1.5px 1.5px;
+
+      &:hover,
+      &:focus {
+        color: #C8A097;
+
+        background: 0 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #C8A097 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=#C8A097, GradientType=0);
+        background-repeat: repeat-x;
+        background-position: 0 84%;
+        background-size: 1.5px 1.5px;
+      }
+    }
+  }
+}
+
+.news__content {
+  font-size: 24px;
+}
+
+.account__content-info {
+  display: none;
+}
+
+.account__content-info-active {
+  display: block;
+}
+
+.account__content-item + .account__content-item {
+  margin-top: 14px;
+}
 
 @import "media";

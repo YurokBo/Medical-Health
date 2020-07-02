@@ -2427,6 +2427,7 @@
 
     li {
       padding-left: 46px;
+
       span {
         display: block;
       }
@@ -2441,6 +2442,333 @@
       padding: 6px 35px;
     }
   }
+
+
+  /*    index__my-account-main     */
+  /*----------welcome----------*/
+  .welcome {
+    padding: 290px 0 52px;
+    background-image: url('../img/my-account-bg-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+  }
+
+  .welcome__container {
+    max-width: 414px;
+  }
+
+  .welcome__title-box {
+    background-position: center;
+    padding: 24px 0 15px;
+    margin-bottom: 56px;
+  }
+
+  .welcome__title {
+    margin-bottom: 5px;
+  }
+
+  .welcome__person-name {
+    font-size: 26px;
+    line-height: 1.34em;
+    color: #565656;
+  }
+
+  .welcome__btn-group {
+    flex-direction: column;
+  }
+
+  .welcome__submit-time-sheet-btn {
+    margin-bottom: 20px;
+  }
+
+  .welcome__submit-time-sheet-btn {
+    margin-right: 0;
+  }
+
+  .welcome__submit-time-sheet-btn,
+  .welcome__create-time-sheet-btn {
+    a {
+      padding: 5.34px 35.06px;
+    }
+  }
+
+  /*------account--------*/
+  .account {
+    padding: 52px 0 108px;
+  }
+
+  .account__container {
+    max-width: 414px;
+  }
+
+  .account__content-item-title-box {
+    padding: 12px 0 12px;
+  }
+
+  .account__content-item-title-box_container {
+    max-width: 350px;
+  }
+
+  .account__content-item + .account__content-item {
+    margin-top: 16px;
+  }
+
+  .account__content-info {
+    padding: 56px 0 109px;
+  }
+
+  .account__content-item_container {
+     max-width: 414px;
+   }
+
+  .account__form {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto 55px;
+
+
+    .account__form-content {
+      display: block;
+    }
+
+    .account__form-left,
+    .account__form-right {
+      max-width: 370px;
+
+      label {
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 20px;
+        }
+      }
+
+      span {
+        display: none;
+      }
+
+      input {
+        font-size: 18px;
+        padding: 14.67px 32px;
+
+        &::placeholder {
+          visibility: visible;
+        }
+      }
+
+      input[name="zip"] {
+        max-width: 370px;
+      }
+    }
+  }
+  .account__form-right {
+    label {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .account__form-content {
+    margin-bottom: 26px;
+  }
+
+  .account__form-btn {
+    padding: 13.34px 62.05px 13px;;
+  }
+
+  .account__change-data_title-box {
+    padding-left: 44px;
+    margin-bottom: 20px;
+  }
+
+  .account__change-data_title {
+    font-size: 18px;
+  }
+
+  .account__change-data_form-box {
+    max-width: 414px;
+    width: 100%;
+    padding-left: 18px;
+  }
+
+  .account__actual-data {
+    margin-bottom: 25px;
+  }
+
+  .account__actual-login-title,
+  .account__actual-login,
+  .account__actual-password-title,
+  .account__actual-password {
+    font-size: 18px;
+  }
+
+  .account__actual-login,
+  .account__actual-password {
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .account__change_text {
+    font-size: 18px;
+    margin-bottom: 26px;
+  }
+
+  .account__change_form {
+    max-width: 370px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .account__change_form-content {
+    margin-bottom: 26px;
+
+    label {
+      display: block;
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    span {
+      display: none;
+    }
+
+    input {
+      font-size: 18px;
+      padding: 14px 32px;
+
+      &::placeholder {
+        visibility: visible;
+      }
+    }
+
+    .account__change_form-new {
+      margin-bottom: 28px;
+    }
+  }
+
+  .account__change_form-btn {
+    padding: 13.17px 49.75px;
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .account__valid-id_title,
+  .account__PPD-test_title,
+  .account__DHS-certification_title {
+    margin-bottom: 15px;
+  }
+
+  .account__valid-id_btn,
+  .account__PPD-test_btn,
+  .account__DHS-certification_btn,
+  .account__100-questions_btn-download,
+  .account__100-questions_btn-submit,
+  .steps__btn {
+    left: 0;
+
+    a {
+      padding: 13.17px 49.49px;
+    }
+  }
+
+  .account__before-start-list {
+
+    li + li {
+      margin-top: 25px;
+    }
+
+    li {
+      padding-left: 44px;
+
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .account__fingerprint-background_title {
+    margin-bottom: 10px;
+  }
+
+  .account__fingerprint-background_text {
+    padding: 0 0 15px 0;
+    font-size: 18px;
+  }
+
+  .instruction {
+    .instruction__title-box {
+      padding: 0 0 0 34px;
+      margin-bottom: 15px;
+
+      .instruction__title {
+        font-size: 18px;
+      }
+    }
+
+    .instruction__list {
+      padding-left: 23px;
+
+      .instruction__item-1,
+      .instruction__item-2 {
+        background: none;
+        padding-left: 11px;
+
+        li {
+          padding-left: 0;
+
+          font-size: 18px;
+
+          &:before {
+            font-size: 18px;
+            width: 29px;
+            display: inline-block;
+          }
+
+          a {
+            font-size: 18px;
+          }
+        }
+
+        span {
+          margin-bottom: 20px;
+          line-height: 1.34em;
+          display: inline-block;
+
+          background: 0 0;
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, $txt-color 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=$txt-color, GradientType=0);
+          background-repeat: repeat-x;
+          background-position: 0 84%;
+          background-size: 1.5px 1.5px;
+        }
+
+        .instruction__subitem {
+          list-style-type: none; /* Убираем исходные маркеры */
+          counter-reset: item; /* Обнуляем счетчик списка */
+          li:before {
+            content: counter(item) ') '; /* Добавляем к числам скобку */
+            counter-increment: item; /* Задаём имя счетчика */
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
 
 
 

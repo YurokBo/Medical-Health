@@ -216,6 +216,7 @@ document.addEventListener('click', e => {
     closeMenu(e, menuBurgerInner);
     scrollUp(e);
     activePlus(e);
+    activeAccount(e);
 });
 
 function openMenu(e, elem) {
@@ -266,6 +267,26 @@ function activePlus(e) {
         vacancyItem.classList.toggle('vacancy__item-active');
     }
 
+}
+
+function activeAccount(e) {
+    const target = e.target,
+        accountContentItem = target.closest('.account__content-item');
+
+        /*accountContentItemTitleBox = target.closest('.account__content-item-title-box')*/
+
+    if (!target) {
+        return;
+    }
+
+    if (target) {
+
+        const plus = accountContentItem.querySelector('.plus'),
+        accountContentInfo = accountContentItem.querySelector('.account__content-info');
+
+        plus.classList.add('plus-active');
+        accountContentInfo.classList.add('account__content-info-active');
+    }
 }
 
 window.addEventListener("resize", () => {
