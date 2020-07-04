@@ -2951,7 +2951,6 @@
 }
 
 .account__change-data_form-box {
-  max-width: 576px;
   width: 100%;
   padding-left: 100px;
 }
@@ -2978,7 +2977,7 @@
 .account__actual-password-title {
   font-family: 'Circe-Regular';
   font-weight: 400;
-  max-width: 207px;
+  max-width: 200px;
   width: 100%;
 
 }
@@ -3001,7 +3000,7 @@
 }
 
 .account__change_form {
-  max-width: 576px;
+  max-width: 580px;
   width: 100%;
 }
 
@@ -3012,7 +3011,7 @@
   margin-bottom: 30px;
 
   label {
-    max-width: 370px;
+    max-width: 580px;
     display: block;
     margin-bottom: 7px;
 
@@ -3030,7 +3029,7 @@
   }
 
   input {
-
+    max-width: 370px;
     width: 100%;
     background: #FFFFFF;
     border: 2px solid #EFCCBF;
@@ -3187,6 +3186,19 @@
 
       ul {
         counter-reset: list;
+
+        span {
+          margin-bottom: 0;
+          font-family: 'Circe-Regular';
+          font-weight: 400;
+          background-position: 0 90%;
+        }
+      }
+
+      #hr-email {
+        display: block;
+        background: none;
+        margin-bottom: 26px;
       }
 
       li + li {
@@ -3194,16 +3206,16 @@
       }
 
       li {
-        padding-left: 45px;
+        padding-left: 95px;
         background: none;
         font-family: 'Circe-Regular';
         font-weight: 400;
         font-size: 24px;
         line-height: 1.55em;
-        list-style: none;
-        list-style-position: inside;
 
         &:before {
+          position: relative;
+          margin: 0 0 0 -31px;
           font-family: 'Circe-Bold';
           font-weight: 700;
           font-size: 24px;
@@ -3236,7 +3248,6 @@
             background-size: 2px 2px;
           }
         }
-
       }
 
       span {
@@ -3253,12 +3264,49 @@
       }
 
       .instruction__subitem {
+        padding-left: 72px;
+
+        span {
+          margin-bottom: 0;
+          font-weight: 700;
+        }
+
+        li {
+          padding-left: 0;
+        }
+
         list-style-position: inside;
         list-style-type: none; /* Убираем исходные маркеры */
         counter-reset: item; /* Обнуляем счетчик списка */
         li:before {
           content: counter(item) ') '; /* Добавляем к числам скобку */
           counter-increment: item; /* Задаём имя счетчика */
+        }
+      }
+
+      .instruction-list-img {
+        position: relative;
+        left: 5px;
+        width: 224px;
+        height: 316px;
+        background-color: #ffffff;
+        text-align: center;
+        margin: 10px 0;
+
+        &:focus,
+        &:hover {
+          img {
+            width: 150%;
+          }
+        }
+      }
+    }
+
+    .instruction__item-1 {
+      p {
+        &:last-child,
+        &:nth-child(n-1) {
+          font-weight: 700;
         }
       }
     }
@@ -3273,30 +3321,28 @@
   ul {
     list-style-type: none; /* Убираем исходные маркеры */
     counter-reset: item; /* Обнуляем счетчик списка */
-    padding-left: 50px;
+    padding-left: 80px;
     margin-bottom: 25px;
 
     li {
       font-size: 24px;
+      background: none;
+
+      &:before {
+        position: relative;
+        margin: 0 0 0 -28px;
+        list-style-image: none;
+        content: counter(item) ') '; /* Добавляем к числам скобку */
+        counter-increment: item; /* Задаём имя счетчика */
+        font-family: 'Circe-Bold';
+        font-weight: 700;
+        font-size: 24px;
+      }
     }
   }
 
   li + li {
     margin-top: 0;
-  }
-
-
-  li {
-    background: none;
-
-    &:before {
-      list-style-image: none;
-      content: counter(item) ') '; /* Добавляем к числам скобку */
-      counter-increment: item; /* Задаём имя счетчика */
-      font-family: 'Circe-Bold';
-      font-weight: 700;
-      font-size: 24px;
-    }
   }
 
   .account__DHS-certification_btn {
@@ -3492,6 +3538,7 @@
   .activate-adp__registration-process_reg-video {
     a {
       display: inline;
+      word-wrap: break-word;
     }
   }
 }
@@ -3548,6 +3595,10 @@
         background-position: 0 84%;
         background-size: 1.5px 1.5px;
       }
+    }
+
+    br {
+      display: none;
     }
   }
 }

@@ -2516,12 +2516,12 @@
   }
 
   .account__content-info {
-    padding: 56px 0 109px;
+    padding: 56px 0 93px;
   }
 
   .account__content-item_container {
-     max-width: 414px;
-   }
+    max-width: 414px;
+  }
 
   .account__form {
     max-width: 370px;
@@ -2686,9 +2686,11 @@
 
     li {
       padding-left: 44px;
+      background-position: 0 0;
 
       span {
         font-size: 18px;
+        line-height: 1.44em;
       }
     }
   }
@@ -2720,15 +2722,25 @@
         background: none;
         padding-left: 11px;
 
+        ul {
+          padding-left: 26px;
+        }
+
         li {
           padding-left: 0;
-
           font-size: 18px;
 
           &:before {
+            margin: 0 0 0 -26px;
             font-size: 18px;
-            width: 29px;
+            width: 25px;
             display: inline-block;
+          }
+
+          &:nth-child(2) {
+            a {
+              font-size: 13px;
+            }
           }
 
           a {
@@ -2738,28 +2750,213 @@
 
         span {
           margin-bottom: 20px;
-          line-height: 1.34em;
-          display: inline-block;
-
-          background: 0 0;
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, $txt-color 100%);
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=$txt-color, GradientType=0);
-          background-repeat: repeat-x;
-          background-position: 0 84%;
-          background-size: 1.5px 1.5px;
         }
 
         .instruction__subitem {
-          list-style-type: none; /* Убираем исходные маркеры */
-          counter-reset: item; /* Обнуляем счетчик списка */
-          li:before {
-            content: counter(item) ') '; /* Добавляем к числам скобку */
-            counter-increment: item; /* Задаём имя счетчика */
-          }
+          letter-spacing: -0.03em;
+          font-size: 18px;
         }
       }
     }
   }
+
+  .account__DHS-certification {
+
+    ul {
+      padding-left: 12px;
+      margin-bottom: 22px;
+
+      li + li {
+        margin-top: 0;
+      }
+
+      li {
+        font-size: 18px;
+
+        &:before {
+          margin: 0 17px 0 -37px;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .account__DHS-certification_btn {
+      left: 59px;
+    }
+  }
+
+  .account__100-questions {
+
+    p {
+      font-size: 18px;
+    }
+
+    .account__100-questions_btn-download,
+    .account__100-questions_btn-submit {
+      left: 81px;
+    }
+
+    .account__100-questions_btn-download {
+      a {
+        padding: 13.17px 36.9px;
+      }
+    }
+
+    .account__100-questions_btn-submit {
+      a {
+        padding: 13.17px 50.65px;
+      }
+    }
+  }
+
+  .account__submit-picture {
+    .steps {
+      padding-left: 0;
+      font-size: 18px;
+
+      .steps__step-one,
+      .steps__step-two,
+      .steps__step-three {
+        span,
+        p {
+         font-size: 18px;
+        }
+      }
+
+      img {
+        left: 0;
+      }
+
+      .steps__step-one {
+
+        ul {
+          padding-left: 45px;
+
+          li {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .steps__btn {
+        left: 85px;
+
+        a {
+          padding: 13.17px 20.52px;
+        }
+      }
+    }
+  }
+
+  .activate-adp__content {
+    font-size: 18px;
+    line-height: 1.44em;
+
+    .activate-adp__text {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .activate-adp__list {
+      margin-bottom: 10px;
+      font-size: 18px;
+
+      .default-txt {
+        font-size: 18px;
+      }
+
+      ul {
+        padding-left: 40px;
+        font-size: 18px;
+      }
+    }
+
+    .activate-adp__registration-process {
+      padding-left: 0;
+
+      .activate-adp__registration-process_title {
+        margin-bottom: 15px;
+      }
+    }
+
+    .activate-adp__registration-process_info {
+      padding-left: 21px;
+      font-size: 18px;
+    }
+
+    .activate-adp__registration-process_receive-PIC {
+      margin-bottom: 25px;
+
+      p {
+        &:nth-child(2) {
+          margin-bottom: 20px;
+        }
+      }
+
+      ul {
+        padding-left: 33px;
+      }
+    }
+
+    .activate-adp__registration-process_go-to {
+      margin-bottom: 20px;
+    }
+
+    .activate-adp__registration-process_reg-video {
+      a {
+        display: inline;
+
+      }
+    }
+  }
+
+  .evv__content {
+    font-size: 18px;
+    .evv__content-info {
+      margin-bottom: 15px;
+
+      p {
+        font-size: 18px;
+      }
+      p + p {
+        margin-top: 15px;
+      }
+    }
+
+    .evv__content-list {
+      span {
+        display: block;
+        margin-bottom: 15px;
+        line-height: 1.44em;
+      }
+
+      ul {
+        padding-left: 0;
+      }
+
+      li {
+        line-height: 1.44em;
+      }
+
+      a {
+        display: inline;
+      }
+
+      br {
+        display: block;
+      }
+    }
+  }
+
+  .news__content {
+    font-size: 18px;
+  }
+
+
+
+
+
+
 
 
 
