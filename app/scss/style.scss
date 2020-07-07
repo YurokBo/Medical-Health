@@ -3619,4 +3619,303 @@
   margin-top: 14px;
 }
 
+
+/*   index__my-account-create-timesheet   */
+.table-timesheet {
+  padding: 117px 0 114px;
+  background-color: rgba(241, 227, 222, 0.5);
+}
+
+.table-timesheet__container {
+  max-width: 1229px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.table-timesheet__title-box {
+  margin-bottom: 57px;
+}
+
+.table-timesheet__title {
+  font-family: 'TrajanPro3-Regular';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.13em;
+  text-transform: capitalize;
+  color: #AC8478;
+}
+
+.table-timesheet__content {
+  padding: 28px 29px 31px 31px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+/*------table-------*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+table, td, th {
+  border: 3px solid #AC8478;
+}
+
+td, th {
+  padding: 3px;
+  width: 30px;
+  height: 35px;
+}
+
+th {
+  background-color: #FFFFFF;
+}
+
+.table {
+  color: #565656;
+}
+
+.table__date-cell {
+  width: 273px;
+}
+
+.table__date {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6em;
+  text-align: center;
+  padding: 146px 0 87px;
+  width: 273px;
+}
+
+.table__date-visit {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+.table__time-visit {
+  font-family: 'Circe-Regular';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6em;
+
+  .table__visit-number {
+   padding-left: 17px;
+    margin-bottom: 6px;
+    label,
+    input {
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #565656;
+      font-family: 'Circe-Regular';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1em;
+      color: #565656;
+      max-width: 50px;
+      width: 100%;
+      height: 20px;
+      display: inline-block;
+    }
+  }
+
+  .table__visit-time-in,
+  .table__visit-time-out {
+    padding-left: 17px;
+
+    span {
+      display: block;
+      margin-bottom: 6px;
+    }
+  }
+}
+
+
+.table__com-ref {
+  background-color: rgba(241, 227, 222, 0.5);
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6em;
+  text-align: center;
+
+  td {
+    width: 63.84px;
+    border-right: 2px solid #EFCCBF;
+    border-left: 2px solid #EFCCBF;
+  }
+
+  td {
+    &:first-child {
+      background-color: #FFFFFF;
+      width: 273px;
+      border: 3px solid #AC8478;
+    }
+  }
+}
+
+.table__items {
+  td {
+    border-top: 2px solid #AC8478;
+    border-bottom: 2px solid #AC8478;
+  }
+}
+
+.table__item {
+  width: 273px;
+  padding: 7.5px 0 7.5px 30px;
+  background-color: rgba(241, 227, 222, 0.5);
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+.table__employee-name,
+.table__participant-name {
+  font-family: 'Circe-Regular';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6em;
+  padding: 17px 0 20px 31px;
+
+  .table__employee-name_title,
+  .table__participant-name_title {
+    margin-bottom: 12px;
+  }
+
+  label,
+  input {
+    max-width: 130px;
+    width: 100%;
+    height: 20px;
+    display: block;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #EFCCBF;
+    font-family: 'Circe-Bold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.6em;
+    color: #565656;
+  }
+}
+
+.table__agreement {
+  font-family: 'Circe-Regular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2em;
+  padding: 19px 11px 12px 20px;
+}
+
+.table__agreement-btn {
+  text-align: center;
+}
+
+.table__btn-submit {
+  outline: none;
+  background: rgba(239, 204, 191, 0.5);
+  border: 2px solid #AE7669;
+  border-radius: 8.52398px;
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.14em;
+  color: #AE7669;
+  padding: 9.5px 19.34px;
+
+  &:hover,
+  &:active {
+    background: #AE7669;
+    color: #ffffff;
+  }
+}
+
+.table__participant-sign,
+.table__employee-sign {
+  position: relative;
+}
+
+.table__sign {
+  font-family: 'Circe-Regular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6em;
+  color: #E4C3B7;
+  text-transform: capitalize;
+  position: absolute;
+  left: 14px;
+  bottom: 4px;
+}
+
+.radio_btn {
+  position: relative;
+
+
+  .radio__input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+  }
+
+  .radio__label {
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 18px;
+
+      background: transparent;
+      border-radius: 2px;
+      border: 2px solid #E4C3B7;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 18px;
+
+      background-color: #AC8478;
+      border-radius: 2px;
+      border: 2px solid #AC8478;
+      background-image: url('../img/check-refuse.png');
+      background-position: center;
+      background-size: 12px;
+      background-repeat: no-repeat;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+  }
+}
+
+
+
+
+
+
+
+
 @import "media";

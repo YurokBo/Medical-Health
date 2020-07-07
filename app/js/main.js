@@ -56,7 +56,13 @@ $(function () {
                 items: 3
             }
         }
-    })
+    });
+
+    /*$('input[name="daterange"]').daterangepicker({
+        opens: 'left'
+    }, function(start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    });*/
 });
 
 /*-------this is a function which change blocks place-------*/
@@ -216,7 +222,7 @@ document.addEventListener('click', e => {
     closeMenu(e, menuBurgerInner);
     scrollUp(e);
     activePlus(e);
-    activeAccount(e);
+    //activeAccount(e);
 });
 
 function openMenu(e, elem) {
@@ -269,11 +275,10 @@ function activePlus(e) {
 
 }
 
-function activeAccount(e) {
-    const target = e.target,
-        accountContentItem = target.closest('.account__content-item');
+/*function activeAccount(e) {
+    const accountContentItem = e.target.closest('.account__content-item');
 
-        /*accountContentItemTitleBox = target.closest('.account__content-item-title-box')*/
+        accountContentItemTitleBox = target.closest('.account__content-item-title-box');
 
     if (!target) {
         return;
@@ -287,7 +292,7 @@ function activeAccount(e) {
         plus.classList.add('plus-active');
         accountContentInfo.classList.add('account__content-info-active');
     }
-}
+}*/
 
 window.addEventListener("resize", () => {
 
