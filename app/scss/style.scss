@@ -3705,8 +3705,9 @@ th {
   line-height: 1.6em;
 
   .table__visit-number {
-   padding-left: 17px;
+    padding-left: 17px;
     margin-bottom: 6px;
+
     label,
     input {
       outline: none;
@@ -3744,13 +3745,13 @@ th {
   line-height: 1.6em;
   text-align: center;
 
-  td {
-    width: 63.84px;
+  td:nth-child(odd) {
     border-right: 2px solid #EFCCBF;
-    border-left: 2px solid #EFCCBF;
+    /*border-left: 2px solid #EFCCBF;*/
   }
 
   td {
+    width: 63.84px;
     &:first-child {
       background-color: #FFFFFF;
       width: 273px;
@@ -3856,7 +3857,8 @@ th {
 
 .radio_btn {
   position: relative;
-
+  /*border-right: 2px solid #EFCCBF;
+  border-left: 2px solid #EFCCBF;*/
 
   .radio__input {
     -webkit-appearance: none;
@@ -3864,12 +3866,15 @@ th {
     position: absolute;
   }
 
-  .radio__label {
+  .ref,
+  .com {
     cursor: pointer;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    width: 18px;
+    height: 18px;
 
     &:before {
       content: "";
@@ -3877,7 +3882,7 @@ th {
       width: 18px;
       height: 18px;
 
-      background: transparent;
+      background-color: transparent;
       border-radius: 2px;
       border: 2px solid #E4C3B7;
 
@@ -3885,36 +3890,63 @@ th {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 1;
+      z-index: -1;
     }
 
     &:after {
       content: "";
       display: block;
-      width: 18px;
-      height: 18px;
 
-      background-color: #AC8478;
+      background-color: transparent;
       border-radius: 2px;
       border: 2px solid #AC8478;
-      background-image: url('../img/check-refuse.png');
       background-position: center;
-      background-size: 12px;
+      background-size: 18px;
       background-repeat: no-repeat;
+
+      opacity: 0;
+      transition: opacity .1s;
 
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 2;
+      z-index: 200;
     }
+  }
+
+  .ref {
+    &:after {
+      background-image: url('../img/check-refuse.png');
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .com {
+    &:after {
+      background-image: url('../img/check-comply.png');
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .radio__input:checked + .ref:before,
+  .radio__input:checked + .com:before {
+    background-color: transparent;
+    border-color: #AC8478;
+  }
+
+  .radio__input:checked + .ref:after,
+  .radio__input:checked + .com:after {
+    opacity: 1;
   }
 }
 
-
-
-
-
+.table__items /*.radio_btn:nth-child(2n+2)*/ td:nth-child(2n+2) {
+  border-right: /*6px solid*/ #EFCCBF;
+  border-left: /*6px solid*/ #EFCCBF;
+}
 
 
 
