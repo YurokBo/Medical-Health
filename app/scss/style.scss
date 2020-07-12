@@ -2216,13 +2216,28 @@
 
 /*-------apply-now__personal-info--------*/
 /*-------apply-now__application-info--------*/
+/*-------apply-now__emergency-contact--------*/
 .apply-now__personal-info,
-.apply-now__application-info {
+.apply-now__application-info,
+.apply-now__emergency-contact,
+.apply-now__present-previous-employment,
+.apply-now__previous-employment,
+.apply-now__educational-background,
+.apply-now__professional-qualifications,
+.apply-now__professional-reference,
+.apply-now__submit {
   margin-bottom: 77px;
 }
 
 .apply-now__personal-info-title-box,
-.apply-now__application-info-title-box {
+.apply-now__application-info-title-box,
+.apply-now__emergency-contact-title-box,
+.apply-now__present-previous-employment-title-box,
+.apply-now__previous-employment-title-box,
+.apply-now__educational-background-title-box,
+.apply-now__professional-qualifications-title-box,
+.apply-now__professional-reference-title-box,
+.apply-now__submit-title-box {
   font-family: 'Circe-Bold';
   font-weight: 700;
   font-size: 24px;
@@ -2233,7 +2248,14 @@
   margin-bottom: 30px;
 }
 
-.apply-now__application-info-title-container {
+.apply-now__application-info-title-container,
+.apply-now__emergency-contact-title-container,
+.apply-now__present-previous-employment-title-container,
+.apply-now__previous-employment-title-container,
+.apply-now__educational-background-title-container,
+.apply-now__professional-qualifications-title-container,
+.apply-now__professional-reference-title-container,
+.apply-now__submit-title-container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
@@ -2264,10 +2286,12 @@
     justify-content: space-between;
     flex-direction: column;
 
-
     label {
-      display: block;
+      //display: block;
       margin-bottom: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
       &:last-child {
         margin-bottom: 0;
@@ -2276,10 +2300,10 @@
 
     span {
       display: inline-block;
-      max-width: 190px;
+      max-width: 207px;
       width: 100%;
       font-size: 20px;
-      line-height: 1.6em;
+      line-height: 1.46em;
     }
 
     input {
@@ -2304,7 +2328,369 @@
     input[name="zip"] {
       max-width: 170px;
     }
+
+    .zip {
+      justify-content: normal;
+    }
   }
+
+  .apply-now__application-info-left,
+  .apply-now__application-info-right {
+    label {
+      margin-bottom: 13px;
+    }
+
+    span {
+      letter-spacing: -0.02em;
+      line-height: 1.16em;
+    }
+  }
+}
+
+.apply-now__emergency-contact-inner,
+.apply-now__professional-reference-inner {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+
+  .apply-now__emergency-contact-top,
+  .apply-now__emergency-contact-bottom,
+  .apply-now__professional-reference-top,
+  .apply-now__professional-reference-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    label {
+      //display: block;
+      max-width: 570px;
+      width: 100%;
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    span {
+      display: inline-block;
+      max-width: 207px;
+      width: 100%;
+      font-size: 20px;
+      line-height: 1.46em;
+    }
+
+    input {
+      max-width: 370px;
+      width: 100%;
+      background: #FFFFFF;
+      border: 2px solid #EFCCBF;
+      font-size: 20px;
+      line-height: 1.6em;
+      padding: 5px 24px;
+      outline: none;
+
+      &:hover {
+        border: 2px solid #AC8478;
+      }
+
+      &:focus {
+        border: 2px solid #AC8478;
+      }
+    }
+  }
+
+  .apply-now__emergency-contact-top,
+  .apply-now__professional-reference-top {
+    margin-bottom: 20px;
+  }
+}
+
+.apply-now__present-previous-employment-inner,
+.apply-now__previous-employment-inner,
+.apply-now__educational-background-inner {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+
+  label {
+    //display: block;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .zip,
+  .supervisor-name {
+    justify-content: normal;
+  }
+
+  span {
+    display: inline-block;
+    max-width: 207px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.46em;
+  }
+
+  input {
+    max-width: 370px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 2px solid #EFCCBF;
+    font-size: 20px;
+    line-height: 1.6em;
+    padding: 5px 24px;
+    outline: none;
+
+    &:hover {
+      border: 2px solid #AC8478;
+    }
+
+    &:focus {
+      border: 2px solid #AC8478;
+    }
+  }
+
+  input[name="zip"],
+  input[name="supervisor-name"] {
+    justify-content: left;
+    max-width: 170px;
+  }
+
+
+  .apply-now__present-previous-employment-top,
+  .apply-now__present-previous-employment-middle,
+  .apply-now__previous-employment-top,
+  .apply-now__previous-employment-middle,
+  .apply-now__educational-background-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+
+    .apply-now__present-previous-employment-top_left,
+    .apply-now__present-previous-employment-top_right,
+    .apply-now__present-previous-employment-middle_left,
+    .apply-now__present-previous-employment-middle_right,
+    .apply-now__previous-employment-top_left,
+    .apply-now__previous-employment-top_right,
+    .apply-now__previous-employment-middle_left,
+    .apply-now__previous-employment-middle_right,
+    .apply-now__educational-background-bottom_left,
+    .apply-now__educational-background-bottom_right {
+      max-width: 570px;
+      width: 100%;
+    }
+  }
+
+  .apply-now__present-previous-employment-bottom,
+  .apply-now__previous-employment-bottom,
+  .apply-now__educational-background-top {
+    max-width: 1170px;
+    width: 100%;
+
+    input {
+      max-width: 971px;
+    }
+
+    span {
+      line-height: 1.1em;
+    }
+  }
+
+  .apply-now__educational-background-top {
+    margin-bottom: 7px;
+  }
+}
+
+.apply-now__professional-qualifications-inner {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+
+  label {
+    //display: block;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  span {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.46em;
+  }
+
+  .apply-now__professional-qualifications-top {
+    align-items: center;
+
+    span {
+      max-width: 570px;
+      width: 100%;
+      letter-spacing: -0.01em;
+      //display: block;
+    }
+
+    label {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 7px;
+    }
+
+    textarea {
+      //display: block;
+      max-width: 570px;
+      width: 100%;
+      resize: none;
+      outline: none;
+      white-space: nowrap;
+      border: 2px solid #EFCCBF;
+      height: 46px;
+      padding: 10px 24px 10px 24px;
+      font-size: 20px;
+      //line-height: 1.6em;
+      color: #565656;
+
+      &:hover {
+        border: 2px solid #AC8478;
+      }
+
+      &:focus {
+        border: 2px solid #AC8478;
+      }
+
+      &:last-child {
+        max-width: 1170px;
+        margin-top: 7px;
+      }
+    }
+
+  }
+
+  .apply-now__professional-qualifications-bottom {
+    span {
+      max-width: 298px;
+    }
+
+    input {
+      max-width: 869px;
+      width: 100%;
+      background: #FFFFFF;
+      border: 2px solid #EFCCBF;
+      font-size: 20px;
+      line-height: 1.6em;
+      padding: 5px 24px;
+      outline: none;
+
+      &:hover {
+        border: 2px solid #AC8478;
+      }
+
+      &:focus {
+        border: 2px solid #AC8478;
+      }
+    }
+  }
+}
+
+.employment-desired,
+.authorized-to-work,
+.convicted-crime,
+.US-citizen,
+.smoke-tobacco {
+  display: flex;
+  align-items: center;
+  padding: 14px 0 19px;
+
+  .radio_btn-group {
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .radio_btn {
+    display: block;
+
+    .radio__input {
+      -webkit-appearance: none;
+      appearance: none;
+      left: 0;
+    }
+
+    .radio__label {
+      text-transform: capitalize;
+      font-size: 20px;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      width: 142px;
+      height: 18px;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+
+        background-color: transparent;
+        border-radius: 50%;
+        border: 2px solid #E4C3B7;
+
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        z-index: 1;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+
+        background-color: #AC8478;
+        border-radius: 50%;
+
+        opacity: 0;
+        transition: opacity .1s;
+
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translate(0, -50%);
+        z-index: 2;
+      }
+    }
+
+    .radio__input:checked + .radio__label:before {
+      border-color: #AC8478;
+    }
+
+    .radio__input:checked + .radio__label:after {
+      opacity: 1;
+    }
+  }
+
 }
 
 
@@ -3658,7 +4044,8 @@ table {
   border-spacing: 0
 }
 
-table, td, th {
+table, /*td,*/
+th {
   border: 3px solid #AC8478;
 }
 
@@ -3672,12 +4059,43 @@ th {
   background-color: #FFFFFF;
 }
 
+.table__com-ref {
+  border-bottom: 3px solid #AC8478;
+
+  td:nth-child(odd) {
+    border-right: 3px solid #AC8478;
+  }
+
+  td:nth-child(even) {
+    border-right: 2px solid #EFCCBF;
+  }
+}
+
+.table__items {
+  td {
+    border-top: 2px solid #AC8478;
+    border-bottom: 2px solid #AC8478;
+  }
+
+  .radio_btn:nth-child(odd) {
+    border-right: 3px solid #AC8478;
+  }
+
+  .radio_btn:nth-child(even) {
+    border-right: 2px solid #EFCCBF;
+  }
+}
+
 .table {
   color: #565656;
 }
 
 .table__date-cell {
   width: 273px;
+
+  .period {
+    margin-bottom: 152px;
+  }
 }
 
 .table__date {
@@ -3703,6 +4121,7 @@ th {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6em;
+  text-align: left;
 
   .table__visit-number {
     padding-left: 17px;
@@ -3736,7 +4155,6 @@ th {
   }
 }
 
-
 .table__com-ref {
   background-color: rgba(241, 227, 222, 0.5);
   font-family: 'Circe-Bold';
@@ -3745,25 +4163,14 @@ th {
   line-height: 1.6em;
   text-align: center;
 
-  td:nth-child(odd) {
-    border-right: 2px solid #EFCCBF;
-    /*border-left: 2px solid #EFCCBF;*/
-  }
-
   td {
     width: 63.84px;
+
     &:first-child {
       background-color: #FFFFFF;
       width: 273px;
       border: 3px solid #AC8478;
     }
-  }
-}
-
-.table__items {
-  td {
-    border-top: 2px solid #AC8478;
-    border-bottom: 2px solid #AC8478;
   }
 }
 
@@ -3775,6 +4182,7 @@ th {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.6em;
+  border-right: 3px solid #AC8478;
 }
 
 .table__employee-name,
@@ -3784,6 +4192,7 @@ th {
   font-size: 18px;
   line-height: 1.6em;
   padding: 17px 0 20px 31px;
+  text-align: left;
 
   .table__employee-name_title,
   .table__participant-name_title {
@@ -3857,8 +4266,6 @@ th {
 
 .radio_btn {
   position: relative;
-  /*border-right: 2px solid #EFCCBF;
-  border-left: 2px solid #EFCCBF;*/
 
   .radio__input {
     -webkit-appearance: none;
@@ -3890,7 +4297,7 @@ th {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: -1;
+      z-index: 1;
     }
 
     &:after {
@@ -3911,7 +4318,7 @@ th {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 200;
+      z-index: 2;
     }
   }
 
@@ -3942,12 +4349,6 @@ th {
     opacity: 1;
   }
 }
-
-.table__items /*.radio_btn:nth-child(2n+2)*/ td:nth-child(2n+2) {
-  border-right: /*6px solid*/ #EFCCBF;
-  border-left: /*6px solid*/ #EFCCBF;
-}
-
 
 
 @import "media";

@@ -151,7 +151,7 @@
                                 <span>City:</span>
                                 <input type="text" name="city">
                             </label>
-                            <label>
+                            <label class="zip">
                                 <span>Zip:</span>
                                 <input type="text" name="zip">
                             </label>
@@ -177,27 +177,56 @@
                                 <span>Date Available:</span>
                                 <input type="text" name="date-available">
                             </label>
-                            <label>
+                            <div class="employment-desired">
                                 <span>Employment Desired:</span>
-                                <input type="radio" name="full-time">
-                                <input type="radio" name="part-time">
-                            </label>
-                            <label>
-                                <span>Are you authorized to work in the U.S.?</span>
-                                <input type="radio" name="yes">
-                                <input type="radio" name="no">
-                            </label>
-                            <label>
-                                <span>Have you ever been convicted of a crime?</span>
-                                <input type="radio" name="yes">
-                                <input type="radio" name="no">
-                            </label>
+                                <div class="radio_btn-group">
+                                    <div class="radio_btn">
+                                        <input class="radio__input" type="radio" name="part-full-time" id="full-time">
+                                        <label class="radio__label" for="full-time">Full time</label>
+                                    </div>
+                                    <div class="radio_btn">
+                                        <input class="radio__input" type="radio" name="part-full-time" id="part-time">
+                                        <label class="radio__label" for="part-time">Part time</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="authorized-to-work">
+                                <span>Are you authorized <br>
+                                    to work in the U.S.?</span>
+                                <div class="radio_btn-group">
+                                    <div class="radio_btn">
+                                        <input class="radio__input" type="radio" name="authorized-to-work"
+                                               id="authorized-yes">
+                                        <label class="radio__label" for="authorized-yes">yes</label>
+                                    </div>
+                                    <div class="radio_btn">
+                                        <input class="radio__input" type="radio" name="authorized-to-work"
+                                               id="authorized-no">
+                                        <label class="radio__label" for="authorized-no">no</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="convicted-crime">
+                                <span>Have you ever been <br>convicted of a crime?</span>
+                                <div class="radio_btn-group">
+                                    <div class="radio_btn">
+                                        <input class="radio__input" type="radio" name="convicted-crime"
+                                               id="convicted-crime-yes">
+                                        <label class="radio__label" for="convicted-crime-yes">yes</label>
+                                    </div>
+                                    <div class="radio_btn">
+                                        <input class="radio__input" type="radio" name="convicted-crime"
+                                               id="convicted-crime-no">
+                                        <label class="radio__label" for="convicted-crime-no">no</label>
+                                    </div>
+                                </div>
+                            </div>
                             <label>
                                 <span>Languages Spoken?</span>
                                 <input type="text" name="language">
                             </label>
                             <label>
-                                <span>Availability (days and time)</span>
+                                <span>Availability <br>(days and time)</span>
                                 <input type="text" name="availability">
                             </label>
                             <label>
@@ -210,18 +239,18 @@
                                 <span>Desire Salary:</span>
                                 <input type="text" name="desire-salary">
                             </label>
-                            <div class="radio__btn">
+                            <div class="US-citizen">
                                 <span>Are you a U.S. citizen?</span>
-                                <label class="radio__label">
-                                    <div class="radio">
-                                        <input class="radio__input" type="radio" name="citizen">yes
+                                <div class="radio_btn-group">
+                                    <div class="radio_btn">
+                                        <input class="radio__input" type="radio" name="US-citizen" id="US-citizen-yes">
+                                        <label class="radio__label" for="US-citizen-yes">yes</label>
                                     </div>
-                                </label>
-                                <label class="radio__label">
-                                    <div class="radio">
-                                        <input class="radio__input" type="radio" name="citizen">no
+                                    <div class="radio_btn">
+                                        <input class="radio__input" type="radio" name="US-citizen" id="US-citizen-no">
+                                        <label class="radio__label" for="US-citizen-no">no</label>
                                     </div>
-                                </label>
+                                </div>
                             </div>
                             <label>
                                 <span>How long have you been a PA resident?</span>
@@ -235,11 +264,21 @@
                                 <span>Allergies?</span>
                                 <input type="text" name="allergies">
                             </label>
-                            <label>
+                            <div class="smoke-tobacco">
                                 <span>Do you smoke tobacco?</span>
-                                <input type="radio" name="yes">
-                                <input type="radio" name="no">
-                            </label>
+                                <div class="radio_btn-group">
+                                    <div class="radio_btn">
+                                        <input class="radio__input" type="radio" name="smoke-tobacco"
+                                               id="smoke-tobacco-yes">
+                                        <label class="radio__label" for="smoke-tobacco-yes">yes</label>
+                                    </div>
+                                    <div class="radio_btn">
+                                        <input class="radio__input" type="radio" name="smoke-tobacco"
+                                               id="smoke-tobacco-no">
+                                        <label class="radio__label" for="smoke-tobacco-no">no</label>
+                                    </div>
+                                </div>
+                            </div>
                             <label>
                                 <span>How far are you willing to drive for a case?</span>
                                 <input type="text" name="willing-to-drive">
@@ -249,57 +288,374 @@
                 </div>
 
                 <div class="apply-now__emergency-contact">
-                    <div class="apply-now__personal-info-title-box">
-                        <div class="apply-now__application-info-title-container">
-                            <div class="apply-now__personal-info-title">Personal Information</div>
+                    <div class="apply-now__emergency-contact-title-box">
+                        <div class="apply-now__emergency-contact-title-container">
+                            <div class="apply-now__emergency-contact-title">Personal Information</div>
+                            <div class="active-passive">
+                                <span class="minus"></span>
+                                <span class="plus"></span>
+                            </div>
                         </div>
                     </div>
-                    <div class="apply-now__personal-info-inner">
-                        <div class="apply-now__personal-info-left">
+                    <div class="apply-now__emergency-contact-inner">
+                        <div class="apply-now__emergency-contact-top">
                             <label>
-                                <span>First Name:</span>
-                                <input type="text" name="first-name">
+                                <span>Primary Contact Name:</span>
+                                <input type="text" name="primary-contact-name">
                             </label>
                             <label>
-                                <span>DOB:</span>
-                                <input type="text" name="dob">
+                                <span>Relationship:</span>
+                                <input type="text" name="relationship">
                             </label>
                             <label>
-                                <span>Phone Number:</span>
-                                <input type="text" name="phone">
-                            </label>
-                            <label>
-                                <span>Address:</span>
-                                <input type="text" name="address">
-                            </label>
-                            <label>
-                                <span>State:</span>
-                                <input type="text" name="state">
+                                <span>Phone:</span>
+                                <input type="text" name="Phone">
                             </label>
                         </div>
-                        <div class="apply-now__personal-info-right">
+                        <div class="apply-now__emergency-contact-bottom">
                             <label>
-                                <span>Last Name:</span>
-                                <input type="text" name="last-name">
+                                <span>Primary Contact Name:</span>
+                                <input type="text" name="primary-contact-name">
                             </label>
                             <label>
-                                <span>SSN:</span>
-                                <input type="text" name="ssn">
+                                <span>Relationship:</span>
+                                <input type="text" name="relationship">
                             </label>
                             <label>
-                                <span>Email:</span>
-                                <input type="text" name="email">
-                            </label>
-                            <label>
-                                <span>City:</span>
-                                <input type="text" name="city">
-                            </label>
-                            <label>
-                                <span>Zip:</span>
-                                <input type="text" name="zip">
+                                <span>Phone:</span>
+                                <input type="text" name="Phone">
                             </label>
                         </div>
                     </div>
+                </div>
+
+                <div class="apply-now__present-previous-employment">
+                    <div class="apply-now__present-previous-employment-title-box">
+                        <div class="apply-now__present-previous-employment-title-container">
+                            <div class="apply-now__present-previous-employment-title">Present / Previous Employment
+                            </div>
+                            <div class="active-passive">
+                                <span class="minus"></span>
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apply-now__present-previous-employment-inner">
+                        <div class="apply-now__present-previous-employment-top">
+                            <div class="apply-now__present-previous-employment-top_left">
+                                <label>
+                                    <span>Name of Employer:</span>
+                                    <input type="text" name="name-of-employer:">
+                                </label>
+                                <label>
+                                    <span>Dates Employed:</span>
+                                    <input type="text" name="dates-employed">
+                                </label>
+                                <label>
+                                    <span>City:</span>
+                                    <input type="text" name="city">
+                                </label>
+                                <label class="zip">
+                                    <span>Zip:</span>
+                                    <input type="text" name="zip">
+                                </label>
+                            </div>
+                            <div class="apply-now__present-previous-employment-top_right">
+                                <label>
+                                    <span>Job Title:</span>
+                                    <input type="text" name="job-title">
+                                </label>
+                                <label>
+                                    <span>Address:</span>
+                                    <input type="text" name="address">
+                                </label>
+                                <label>
+                                    <span>State:</span>
+                                    <input type="text" name="state">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="apply-now__present-previous-employment-middle">
+                            <div class="apply-now__present-previous-employment-middle_left">
+                                <label>
+                                    <span>Phone:</span>
+                                    <input type="text" name="phone">
+                                </label>
+                            </div>
+                            <div class="apply-now__present-previous-employment-middle_right">
+                                <label class="supervisor-name">
+                                    <span>Supervisor’s Name:</span>
+                                    <input type="text" name="supervisor-name">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="apply-now__present-previous-employment-bottom">
+                            <label>
+                                <span>Description of job duties:</span>
+                                <input type="text" name="description-of-job-duties">
+                            </label>
+                            <label>
+                                <span>Reason for leaving:</span>
+                                <input type="text" name="reason-for-leaving">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="apply-now__previous-employment">
+                    <div class="apply-now__previous-employment-title-box">
+                        <div class="apply-now__previous-employment-title-container">
+                            <div class="apply-now__previous-employment-title">Previous Employment</div>
+                            <div class="active-passive">
+                                <span class="minus"></span>
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apply-now__previous-employment-inner">
+                        <div class="apply-now__previous-employment-top">
+                            <div class="apply-now__previous-employment-top_left">
+                                <label>
+                                    <span>Name of Employer:</span>
+                                    <input type="text" name="name-of-employer:">
+                                </label>
+                                <label>
+                                    <span>Dates Employed:</span>
+                                    <input type="text" name="dates-employed">
+                                </label>
+                                <label>
+                                    <span>City:</span>
+                                    <input type="text" name="city">
+                                </label>
+                                <label class="zip">
+                                    <span>Zip:</span>
+                                    <input type="text" name="zip">
+                                </label>
+                            </div>
+                            <div class="apply-now__previous-employment-top_right">
+                                <label>
+                                    <span>Job Title:</span>
+                                    <input type="text" name="job-title">
+                                </label>
+                                <label>
+                                    <span>Address:</span>
+                                    <input type="text" name="address">
+                                </label>
+                                <label>
+                                    <span>State:</span>
+                                    <input type="text" name="state">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="apply-now__previous-employment-middle">
+                            <div class="apply-now__previous-employment-middle_left">
+                                <label>
+                                    <span>Phone:</span>
+                                    <input type="text" name="phone">
+                                </label>
+                            </div>
+                            <div class="apply-now__previous-employment-middle_right">
+                                <label class="supervisor-name">
+                                    <span>Supervisor’s Name:</span>
+                                    <input type="text" name="supervisor-name">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="apply-now__previous-employment-bottom">
+                            <label>
+                                <span>Description of job duties:</span>
+                                <input type="text" name="description-of-job-duties">
+                            </label>
+                            <label>
+                                <span>Reason for leaving:</span>
+                                <input type="text" name="reason-for-leaving">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="apply-now__educational-background">
+                    <div class="apply-now__educational-background-title-box">
+                        <div class="apply-now__educational-background-title-container">
+                            <div class="apply-now__educational-background-title">Educational Background</div>
+                            <div class="active-passive">
+                                <span class="minus"></span>
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apply-now__educational-background-inner">
+                        <div class="apply-now__educational-background-top">
+                            <label>
+                                <span>High School / College Other:</span>
+                                <input type="text" name="school-college">
+                            </label>
+                        </div>
+
+                        <div class="apply-now__educational-background-bottom">
+                            <div class="apply-now__educational-background-bottom_left">
+                                <label>
+                                    <span>Location:</span>
+                                    <input type="text" name="location">
+                                </label>
+                            </div>
+                            <div class="apply-now__educational-background-bottom_right">
+                                <label>
+                                    <span>Graduated?</span>
+                                    <input type="text" name="graduated">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="apply-now__professional-qualifications">
+                    <div class="apply-now__professional-qualifications-title-box">
+                        <div class="apply-now__professional-qualifications-title-container">
+                            <div class="apply-now__professional-qualifications-title">Professional Qualifications</div>
+                            <div class="active-passive">
+                                <span class="minus"></span>
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apply-now__professional-qualifications-inner">
+                        <div class="apply-now__professional-qualifications-top">
+                            <label>
+                                <span>Professional / Technical / Management Qualifications and Training:</span>
+                                <textarea type="text" name="qualifications-and-training"></textarea>
+                                <textarea type="text" name="qualifications-and-training"></textarea>
+                            </label>
+                        </div>
+
+                        <div class="apply-now__professional-qualifications-bottom">
+                            <label>
+                                <span>Course Duration and Details:</span>
+                                <input type="text" name="course">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="apply-now__professional-reference">
+                    <div class="apply-now__professional-reference-title-box">
+                        <div class="apply-now__professional-reference-title-container">
+                            <div class="apply-now__professional-reference-title">Professional Reference</div>
+                            <div class="active-passive">
+                                <span class="minus"></span>
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apply-now__professional-reference-inner">
+                        <div class="apply-now__professional-reference-top">
+                            <label>
+                                <span>Co-worker Name:</span>
+                                <input type="text" name="co-worker-name">
+                            </label>
+                            <label>
+                                <span>Position:</span>
+                                <input type="text" name="position">
+                            </label>
+                            <label>
+                                <span>Phone:</span>
+                                <input type="text" name="Phone">
+                            </label>
+                        </div>
+                        <div class="apply-now__professional-reference-bottom">
+                            <label>
+                                <span>Co-worker Name:</span>
+                                <input type="text" name="co-worker-name">
+                            </label>
+                            <label>
+                                <span>Position:</span>
+                                <input type="text" name="position">
+                            </label>
+                            <label>
+                                <span>Phone:</span>
+                                <input type="text" name="Phone">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="apply-now__submit">
+                    <div class="apply-now__submit-title-box">
+                        <div class="apply-now__submit-title-container">
+                            <div class="apply-now__submit-title">Submit</div>
+                            <div class="active-passive">
+                                <span class="minus"></span>
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apply-now__submit-inner">
+                        <div class="apply-now__submit-container">
+                            <div class="apply-now__submit_date">
+                                <label>
+                                    <span>Submission Date</span>
+                                    <input type="text" name="submission-date">
+                                </label>
+                            </div>
+                            <div class="apply-now__submit_load-resume-form">
+                                <form class="load-resume">
+                                    <div class="load-resume__description">
+                                        Please, load documents (ID, SSN, DCW Certification, PPD or Chest X-Ray, License,
+                                        Other).
+                                    </div>
+                                    <div class="load-resume__btn-box">
+                                        <label>
+                                            <input type="submit" class="load-resume__btn">
+                                        </label>
+                                    </div>
+                                    <div class="load-resume__formats-accepted">
+                                        Formats accepted: .doc / .docx / .pdf / .txt
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="apply-now__submit_confirm-info">
+                                <label for="confirm-info">
+                                    I hereby confirm that the information provided on my application is correct and true
+                                    to the best of my knowledge. I understand that providing false/misleading
+                                    information or omissions may result in the termination of my employment. I hereby
+                                    authorize the company to confirm all statements contained in my application and
+                                    resume to the extent permitted by federal, state, or local law and I agree to
+                                    complete and requisite autjorization forms. I release all parties from any liability
+                                    arising out of this provision and the use of such information.
+                                </label>
+                                <input type="checkbox" name="confirm-info" id="confirm-info">
+                            </div>
+                            <div class="apply-now__submit_captcha">
+                                <div class="apply-now__submit_captcha-form"></div>
+                                <div class="apply-now__submit_captcha-info">
+                                    <p>
+                                        I understand that this application is not a contract, offer, or promise of
+                                        employment. I acknowledge that employment with the company is on an “at will”
+                                        basis.
+                                    </p>
+                                    <p>
+                                        I acknowledge that the company requires all staff to report sanction,
+                                        convictions,
+                                        suspensions, censures, or revocation action taken against them by federal,
+                                        state,
+                                        local, or other professional entities. These sanctions may include but not
+                                        limited
+                                        to infractions against professional licensure, criminal history convictions,
+                                        history
+                                        of child abuse, managed care organization, etc.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="apply-now__submit-btn-box">
+                    <button type="submit">Submit</button>
                 </div>
             </form>
         </div>
