@@ -271,3 +271,12 @@ button {
 .radio__input:checked + .radio__label:after {
   opacity: 1;
 }
+
+.hide {
+  position: absolute;
+  overflow: hidden;
+  z-index: -100;
+  width: .1px;
+  height: .1px;
+  opacity: 0;
+}

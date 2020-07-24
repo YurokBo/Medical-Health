@@ -2224,9 +2224,12 @@
 .apply-now__previous-employment,
 .apply-now__educational-background,
 .apply-now__professional-qualifications,
-.apply-now__professional-reference,
-.apply-now__submit {
+.apply-now__professional-reference {
   margin-bottom: 77px;
+}
+
+.apply-now__submit {
+  margin-bottom: 40px;
 }
 
 .apply-now__personal-info-title-box,
@@ -2379,7 +2382,7 @@
 
     span {
       display: inline-block;
-      max-width: 207px;
+      max-width: 200px;
       width: 100%;
       font-size: 20px;
       line-height: 1.46em;
@@ -2556,6 +2559,7 @@
 
     textarea {
       //display: block;
+      overflow-y: hidden;
       max-width: 570px;
       width: 100%;
       resize: none;
@@ -2690,9 +2694,286 @@
       opacity: 1;
     }
   }
-
 }
 
+/*    load resume form    */
+.apply-now__submit-container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.apply-now__submit_date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 570px;
+  width: 100%;
+  margin-bottom: 30px;
+
+  font-size: 20px;
+  line-height: 1.37em;
+
+  label {
+    display: block;
+  }
+
+  input {
+    max-width: 370px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 2px solid #EFCCBF;
+    font-size: 20px;
+    line-height: 1.6em;
+    padding: 5px 24px;
+    outline: none;
+
+    &:hover {
+      border: 2px solid #AC8478;
+    }
+
+    &:focus {
+      border: 2px solid #AC8478;
+    }
+  }
+}
+
+.apply-now__submit_load-resume-form {
+  margin-bottom: 57px;
+}
+
+.load-resume__description {
+  font-size: 20px;
+  line-height: 1.37em;
+
+  margin-bottom: 22px;
+}
+
+.load-resume__btn-box {
+  margin-bottom: 12px;
+}
+
+.load-resume__label {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.14em;
+  color: $btn-title-color;
+
+  border: 2px solid #AE7669;
+  border-radius: 8.52398px;
+
+  padding: 5.3px 29.3px 3.7px;
+
+  &:hover,
+  &:active {
+    background-color: $btn-bg-color;
+    color: #FFFFFF;
+  }
+}
+
+.load-resume__formats-accepted {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+.apply-now__submit_confirm-info_box {
+  margin-bottom: 43px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.apply-now__submit_confirm-info_text {
+  max-width: 1117px;
+
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.apply-now__submit_confirm-info_checkbox {
+  position: relative;
+  .confirm-info__input {
+    -webkit-appearance: none;
+    appearance: none;
+    left: 0;
+  }
+
+  .confirm-info__label {
+
+    font-size: 20px;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 26px;
+      height: 26px;
+
+      background-color: #F8F1EE;
+      border-radius: 3px;
+      border: 3px solid rgba(172,132,120, 0.54);
+
+
+      position: absolute;
+      top: 1px;
+      left: 0;
+      transform: translate(0, 0);
+      z-index: 1;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+
+      background-color: #F8F1EE;
+      border: 3px solid #AC8478;
+      border-radius: 3px;
+
+      background-image: url('../img/check-comply.png');
+      width: 26px;
+      height: 26px;
+      background-position: center;
+      background-size: 26px;
+      background-repeat: no-repeat;
+
+      opacity: 0;
+      transition: opacity .1s;
+
+      position: absolute;
+      top: 1px;
+      left: 0;
+      transform: translate(0, 0);
+      z-index: 2;
+    }
+  }
+
+  .confirm-info__input:checked + .confirm-info__label:before {
+    border-color: #AC8478;
+  }
+
+  .confirm-info__input:checked + .confirm-info__label:after {
+    opacity: 1;
+  }
+}
+
+.apply-now__submit_captcha {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+.apply-now__submit_captcha-form {
+  max-width: 269px;
+  width: 100%;
+}
+
+.apply-now__submit_captcha-info {
+  font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: -.01em;
+
+  max-width: 803px;
+  width: 100%;
+
+  p{
+    &:first-child {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.submit__btn {
+  font-size: 24px;
+  line-height: 1.14em;
+  letter-spacing: 0.05em;
+
+  padding: 16.84px 64.2px;
+}
+
+
+
+
+/*.ref,
+.com {
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 18px;
+  height: 18px;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    background-color: transparent;
+    border-radius: 2px;
+    border: 2px solid #E4C3B7;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+
+    background-color: transparent;
+    border-radius: 2px;
+    border: 2px solid #AC8478;
+    background-position: center;
+    background-size: 18px;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    transition: opacity .1s;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+}
+
+.ref {
+  &:after {
+    background-image: url('../img/check-refuse.png');
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.com {
+  &:after {
+    background-image: url('../img/check-comply.png');
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.radio__input:checked + .ref:before,
+.radio__input:checked + .com:before {
+  background-color: transparent;
+  border-color: #AC8478;
+}
+
+.radio__input:checked + .ref:after,
+.radio__input:checked + .com:after {
+  opacity: 1;
+}*/
 
 /*   index__need care form   */
 /*   index__transfer-now   */

@@ -596,10 +596,8 @@
                     <div class="apply-now__submit-inner">
                         <div class="apply-now__submit-container">
                             <div class="apply-now__submit_date">
-                                <label>
-                                    <span>Submission Date</span>
-                                    <input type="text" name="submission-date">
-                                </label>
+                                <label for="submission-date">Submission Date</label>
+                                <input type="text" name="submission-date" id="submission-date">
                             </div>
                             <div class="apply-now__submit_load-resume-form">
                                 <form class="load-resume">
@@ -608,17 +606,20 @@
                                         Other).
                                     </div>
                                     <div class="load-resume__btn-box">
-                                        <label>
-                                            <input type="submit" class="load-resume__btn">
-                                        </label>
+                                        <input type="file" class="load-resume__input hide" id="load-resume">
+                                        <label for="load-resume" class="load-resume__label">File Resume</label>
                                     </div>
                                     <div class="load-resume__formats-accepted">
                                         Formats accepted: .doc / .docx / .pdf / .txt
                                     </div>
                                 </form>
                             </div>
-                            <div class="apply-now__submit_confirm-info">
-                                <label for="confirm-info">
+                            <div class="apply-now__submit_confirm-info_box">
+                                <div class="apply-now__submit_confirm-info_checkbox">
+                                    <input type="checkbox" name="confirm-info" id="confirm-info" class="confirm-info__input" checked>
+                                    <label for="confirm-info" class="confirm-info__label"></label>
+                                </div>
+                                <div class="apply-now__submit_confirm-info_text">
                                     I hereby confirm that the information provided on my application is correct and true
                                     to the best of my knowledge. I understand that providing false/misleading
                                     information or omissions may result in the termination of my employment. I hereby
@@ -626,8 +627,7 @@
                                     resume to the extent permitted by federal, state, or local law and I agree to
                                     complete and requisite autjorization forms. I release all parties from any liability
                                     arising out of this provision and the use of such information.
-                                </label>
-                                <input type="checkbox" name="confirm-info" id="confirm-info">
+                                </div>
                             </div>
                             <div class="apply-now__submit_captcha">
                                 <div class="apply-now__submit_captcha-form"></div>
@@ -650,13 +650,14 @@
                                     </p>
                                 </div>
                             </div>
+
+                            <div class="apply-now__submit-btn-box">
+                                <button type="submit" class="submit__btn form__btn">Submit</button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="apply-now__submit-btn-box">
-                    <button type="submit">Submit</button>
-                </div>
             </form>
         </div>
     </div>
