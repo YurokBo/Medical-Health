@@ -132,6 +132,7 @@ button {
 
 .search-form__inner {
   padding: 0 30px;
+
   form {
     display: flex;
     justify-content: space-between;
@@ -153,6 +154,7 @@ button {
       font-weight: 400;
       font-size: 20px;
       line-height: 1.6em;
+
       &::placeholder {
         color: #efccbf;
       }
@@ -210,13 +212,13 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(90deg);
-    transition: all .2s ;
+    transition: all .2s;
     opacity: 1;
   }
 
   span.plus-active {
     opacity: 0;
-    transition: all .2s ;
+    transition: all .2s;
   }
 }
 
@@ -235,6 +237,7 @@ button {
   padding-left: 40px;
   cursor: pointer;
   position: relative;
+
   &:before {
     position: absolute;
     content: "";
@@ -279,4 +282,16 @@ button {
   width: .1px;
   height: .1px;
   opacity: 0;
+}
+
+/*    пустой блок, чтобы вытащить основной контент из-под шапки   */
+.content {
+  padding-top: 152.5px;
+}
+
+
+/*---------------*/
+.ui-timepicker-container,
+.ui-timepicker-standard {
+  font-size: 16px;
 }

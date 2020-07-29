@@ -58,11 +58,40 @@ $(function () {
         }
     });
 
-    /*$('input[name="daterange"]').daterangepicker({
-        opens: 'left'
-    }, function(start, end, label) {
-        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-    });*/
+    /*datapicker*/
+    $(".datepicker, .periodpicker").datepicker({
+        dateFormat: 'y/mm/dd'
+    });
+    $(".choose-week-from, .choose-week-to").datepicker({
+        dateFormat: 'y.mm.dd'
+    });
+
+    /*timepicker*/
+    $('.time-visit').timepicker({
+        timeFormat: 'HH:mm p',
+        interval: 15,
+        minTime: '00:00',
+        maxTime: '23:45',
+        /*defaultTime: '11',*/
+        startTime: '00:15',
+        dynamic: false,
+        dropdown: true,
+        scrollbar: true
+    });
+
+    /*yearpicker*/
+    $('.yearpicker, .choose-year').datepicker({
+        changeYear: true,
+        showButtonPanel: true,
+        dateFormat: 'yy',
+        onClose: function(dateText, inst) {
+            var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+            $(this).datepicker('setDate', new Date(year, 1));
+        }
+    });
+    $(".yearpicker, .choose-year").focus(function () {
+        $(".ui-datepicker-calendar, .ui-datepicker-current, .ui-datepicker-title span").hide();
+    });
 });
 
 /*-------this is a function which change blocks place-------*/
@@ -306,3 +335,5 @@ function screenWidthDetection() {
         menuBurgerInner.classList.remove('active__menu-burger');
     }
 }
+
+/*-------------------------------------------*/

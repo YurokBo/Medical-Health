@@ -1,12 +1,13 @@
 let gulp = require('gulp'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
-    uglify = require('gulp-uglify'),
+    uglify = require('gulp-uglify-es').default,
     concat = require('gulp-concat'),
     rename = require("gulp-rename"),
     del = require('del'),
     autoprefixer = require('gulp-autoprefixer'),
-    imagemin = require('gulp-imagemin');
+    imagemin = require('gulp-imagemin'),
+    babel = require('gulp-babel');
 
 gulp.task('clean', async function () {
     del.sync('dist/')
@@ -28,7 +29,7 @@ gulp.task('css', async function () {
         'node_modules/normalize.css/normalize.css',
         'node_modules/swiper/css/swiper.min.css',
         'node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
-        /*'node_modules/owl.carousel/dist/assets/owl.theme.default.min.css',*/
+        'node_modules/js-datepicker/dist/datepicker.min.css',
     ])
         .pipe(concat('_libs.scss'))
         .pipe(gulp.dest('app/scss'))
@@ -49,9 +50,13 @@ gulp.task('js', async function () {
     return gulp.src([
         'node_modules/swiper/js/swiper.min.js',
         'node_modules/owl.carousel/dist/owl.carousel.min.js',
+        'node_modules/js-datepicker/dist/datepicker.min.js',
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(gulp.dest('app/js'))
         .pipe(browserSync.reload({stream: true}));
 });
