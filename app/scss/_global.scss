@@ -15,7 +15,7 @@ body {
   /*font-family: 'TrajanPro3-Regular';*/
   font-family: 'Circe-Regular';
   font-weight: 400;
-  @include adaptiv-font(26, 20);
+  font-size: 24px;
   letter-spacing: 0.010em;
   color: $txt-color;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -66,7 +66,7 @@ button {
 .default-title {
   font-family: 'TrajanPro3-Regular';
   font-weight: 400;
-  @include adaptiv-font(46, 35);
+  font-size: 45px;
   line-height: 1.43em;
   letter-spacing: 0.002em;
   color: $default-title-color;
@@ -75,7 +75,7 @@ button {
   span {
     font-family: 'WildernessTypeface-Regular';
     font-weight: 400;
-    @include adaptiv-font(145, 92);
+    font-size: 140px;
     line-height: .30em;
     letter-spacing: 0.003em;
     color: $default-span-color;
@@ -88,7 +88,7 @@ button {
 .default-txt {
   font-family: 'Circe-Regular';
   font-weight: 400;
-  @include adaptiv-font(25, 21);
+  font-size: 24px;
   line-height: 1.61em;
   color: $txt-color;
   letter-spacing: -0.0078em;
@@ -286,7 +286,7 @@ button {
 
 /*    пустой блок, чтобы вытащить основной контент из-под шапки   */
 .content {
-  padding-top: 152.5px;
+  padding-top: 152px;
 }
 
 

@@ -6,7 +6,7 @@
 
 /*-------------header--------------*/
 .header {
-  padding: 32px 0 23.5px 0;
+  padding: 31px 0 22px;
   background-color: #fff;
   z-index: 1000;
 
@@ -17,8 +17,7 @@
 }
 
 .header__container {
-  max-width: 1379px;
-  padding: 0 5px;
+  max-width: 1370px;
   width: 100%;
   margin: 0 auto;
 }
@@ -65,7 +64,7 @@
   a {
     font-family: 'MuseoSansCyrl-Medium';
     font-weight: 600;
-    @include adaptiv-font(22, 22);
+    font-size: 22px;
     line-height: 1em;
     color: $txt-color;
     text-transform: uppercase;
@@ -87,7 +86,7 @@
 
   a:first-child {
     position: relative;
-    @include adaptiv-font(20, 20);
+    font-size: 18px;
     line-height: 1em;
     letter-spacing: -0.056em;
     color: $txt-color;
@@ -109,12 +108,12 @@
     font-family: 'MuseoSansCyrl-Bold';
     font-weight: 700;
     padding: 0 14px 0 35px;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
 
     &::before {
       content: "\f100";
       left: 2px;
-      @include adaptiv-font(24, 20);
+      font-size: 22px;
     }
   }
 }
@@ -124,11 +123,11 @@
     font-family: 'MuseoSansCyrl-Medium';
     font-weight: 600;
     padding: 0 0 0 17px;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
 
     &::before {
       content: "\f101";
-      @include adaptiv-font(22, 20);
+      font-size: 22px;
       left: 14px;
     }
   }
@@ -138,7 +137,7 @@
 .header__login-btn {
   font-family: 'Circe-Bold';
   font-weight: 700;
-  @include adaptiv-font(20, 20);
+  font-size: 20px;
   color: $nav-btn-color;
   letter-spacing: -0.001em;
   line-height: 1.02em;
@@ -175,10 +174,10 @@
 /*----------------helping-hand--------------------*/
 .quality,
 .helping-hand {
-  max-width: 1680px;
+  //max-width: 1680px;
   width: 100%;
   margin: 0 auto;
-  padding: 179px 0 131px;
+  padding: 174px 0 127.67px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -195,7 +194,7 @@
 }
 
 .quality__container {
-  max-width: 560px;
+  max-width: 579px;
   width: 100%;
   margin: 0 auto;
 }
@@ -209,7 +208,7 @@
 .quality__title {
   font-family: 'TrajanPro3-Regular';
   font-weight: 400;
-  @include adaptiv-font(81, 44);
+  font-size: 77px;
   line-height: 1.36em;
   letter-spacing: .015em;
   text-transform: uppercase;
@@ -240,7 +239,7 @@
   display: block;
   font-family: 'WildernessTypeface-Regular';
   font-weight: 400;
-  @include adaptiv-font(175, 100);
+  font-size: 166px;
   line-height: .5em;
   letter-spacing: 0.003em;
   padding-bottom: 129px;
@@ -249,8 +248,8 @@
 .quality__btn,
 .helping-hand__btn {
   a {
-    padding: 22px 39px 19px;
-    @include adaptiv-font(24, 24);
+    padding: 20.34px 38.59px 17.34px;
+    font-size: 24px;
 
     &:active {
       color: #AE7669;
@@ -258,7 +257,6 @@
       border-radius: 8.5px;
     }
   }
-
 }
 
 /*---------about---------*/
@@ -267,8 +265,8 @@
 }
 
 .about__container {
-  max-width: 1230px;
-  width: 100%;
+  width: 1230px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -280,8 +278,6 @@
 .about__title {
   max-width: 431px;
   width: 100%;
-  @include adaptiv-font(46, 35);
-  letter-spacing: 0.009em;
 }
 
 .about__info {
@@ -294,7 +290,6 @@
     line-height: 1.38em;
   }
 }
-
 
 /*---------------services------------------*/
 /*---------------care-services------------------*/
@@ -315,7 +310,7 @@
 
 .services__title,
 .care-services__title {
-  @include adaptiv-font(43, 35);
+  font-size: 40px;
   text-transform: capitalize;
   letter-spacing: -0.024em;
   padding: 0 0 40px 0;
@@ -456,19 +451,13 @@
   }
 }
 
-.care-services__content-item {
-  .services__content-items-bottom {
-
-  }
-}
-
 /*-------------we-can------------*/
 .we-can {
   padding: 94.5px 0 102px;
 }
 
 .we-can__container {
-  max-width: 1231px;
+  max-width: 1230px;
   width: 100%;
   margin: 0 auto;
 }
@@ -486,8 +475,9 @@
 }
 
 .we-can__title {
-  padding: 0 118px 80px 0;
-  @include adaptiv-font(37, 36);
+  padding: 0 118px 0 0;
+  margin-bottom: 80px;
+  font-size: 36px;
   line-height: 1.47em;
   letter-spacing: -0.015em;
   text-transform: capitalize;
@@ -501,6 +491,8 @@
 
 .we-can__text {
   line-height: 1.50em;
+  font-family: 'Circe-Bold';
+  font-weight: 700;
 }
 
 .we-can__items {
@@ -527,7 +519,7 @@
 .we-can__item-number {
   font-family: 'Trajan Pro Regular';
   font-weight: 400;
-  @include adaptiv-font(78, 45);
+  font-size: 73px;
   line-height: 1.23em;
   letter-spacing: 0.0001em;
   color: $item-number-color;
@@ -542,15 +534,15 @@
 .we-can__item-text {
   font-family: 'Circe-Bold';
   font-weight: 700;
-  @include adaptiv-font(20, 19);
+  font-size: 20px;
+  line-height: 1.14em;
   letter-spacing: 0.001em;
 }
-
 
 /*-----------------helping-------------------*/
 .helping {
   padding: 205px 0 210px;
-  max-width: 1680px;
+  // max-width: 1680px;
   width: 100%;
   margin: 0 auto;
   background-image: url("../img/helping-bg.jpg");
@@ -560,7 +552,7 @@
 }
 
 .helping__container {
-  max-width: 1231px;
+  max-width: 1230px;
   width: 100%;
   margin: 0 auto;
 }
@@ -572,7 +564,7 @@
 
 .helping__title {
   padding: 0 0 38px 0;
-  @include adaptiv-font(35, 35);
+  font-size: 36px;
   line-height: 1.7em;
   letter-spacing: 0.019em;
   text-transform: capitalize;
@@ -580,12 +572,12 @@
 
 .helping__btn {
   a {
-    padding: 17px 50.4px 15.5px;
+    padding: 18.34px 52.03px 15.34px;
     border: 2px solid $btn-bg-color;
     color: $btn-title-color;
     background-color: $nav-btn-bg;
     letter-spacing: -0.038em;
-    @include adaptiv-font(25, 24);
+    font-size: 24px;
 
     &:active {
       color: #FFFFFF;
@@ -593,7 +585,6 @@
     }
   }
 }
-
 
 /*----------------choose------------------*/
 .choose {
@@ -610,7 +601,7 @@
 
 .choose__container,
 .questioner__container {
-  max-width: 1356px;
+  max-width: 1370px;
   width: 100%;
   margin: 0 auto;
 }
@@ -626,9 +617,10 @@
 .questioner__title,
 .advocacy-choose__title,
 .partner-choose__title {
-  padding: 0 95px 39px 0;
+  padding: 0 95px 0 0;
+  margin-bottom: 42px;
   text-align: center;
-  @include adaptiv-font(40, 36);
+  font-size: 40px;
   line-height: 1.5em;
   letter-spacing: 0.01em;
 }
@@ -692,7 +684,7 @@
 .Q-A-questioner__content-answer,
 .partner-choose__content-question,
 .partner-choose__content-answer {
-  @include adaptiv-font(25, 22);
+  font-size: 24px;
   padding: 0 0 0 63px;
   position: relative;
 
@@ -703,7 +695,7 @@
     text-transform: uppercase;
     font-family: 'TrajanPro3-Regular';
     font-weight: 400;
-    @include adaptiv-font(45, 39);
+    font-size: 40px;
     line-height: 1.13em;
     color: $item-number-color;
   }
@@ -731,7 +723,6 @@
   line-height: 1.49em;
   letter-spacing: -.013em
 }
-
 
 .advocacy-choose__content-item,
 .partner-choose__content-item {
@@ -783,7 +774,7 @@
 }
 
 .form__container {
-  max-width: 1374px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
 }
@@ -805,33 +796,31 @@
 }
 
 .form__title {
-  @include adaptiv-font(40, 36);
+  font-size: 40px;
   letter-spacing: 0.013em;
   line-height: 1.45em;
   text-transform: capitalize;
-  padding: 0 0 42px 0;
+  margin: 0 0 37px 0;
 }
 
 .form__text {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
   line-height: 1.5em;
   letter-spacing: -0.006em;
 }
 
 .form__box {
-  max-width: 803px;
+  max-width: 730px;
   width: 100%;
-  padding: 13px 72px 0 0;
+  padding: 13px 0 0 0;
 
   label,
   input,
   textarea {
-    width: 100%;
+    display: block;
     outline: none;
     border: none;
-  }
-
-  label + label {
-    padding-left: 15px;
   }
 
   input,
@@ -839,7 +828,7 @@
     padding: 10px 11px 7px 24px;
     font-family: 'Circe-Regular';
     font-weight: 400;
-    @include adaptiv-font(20, 20);
+    font-size: 20px;
     line-height: 1.4em;
     letter-spacing: .006em;
 
@@ -854,45 +843,84 @@
 
   .form__box-group {
     width: 100%;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    input,
+    textarea {
+      display: block;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 37px;
+    }
   }
 
-  input[placeholder="Name"] {
+  #name {
     max-width: 210px;
     width: 100%;
+
+    input[placeholder="Name"] {
+      width: 100%;
+      display: block;
+    }
   }
 
-  input[placeholder="Address"] {
+  #address {
     max-width: 316px;
     width: 100%;
+
+    input[placeholder="Address"] {
+      width: 100%;
+      display: block;
+    }
   }
 
-  input[placeholder="DOB"] {
+  #dob {
     max-width: 163px;
     width: 100%;
+
+    input[placeholder="DOB"] {
+      width: 100%;
+      display: block;
+    }
   }
 
-  input[placeholder="Email"] {
+  #email {
     max-width: 389px;
     width: 100%;
+
+    input[placeholder="Email"] {
+      width: 100%;
+    }
   }
 
-  input[placeholder="Phone Number"] {
+  #phone-number {
     max-width: 320px;
     width: 100%;
+
+    input[placeholder="Phone Number"] {
+      width: 100%;
+    }
   }
 
-  label {
+  #your-message {
+    width: 100%;
     textarea {
       outline: none;
       resize: none;
-      width: 99.93%;
+      width: 100%;
+      display: block;
       min-height: 108px;
       padding-top: 11px;
-      margin-bottom: 10px;
     }
   }
+
 }
 
 /*--------------partner--------------*/
@@ -901,7 +929,7 @@
 }
 
 .partner__container {
-  max-width: 1275px;
+  max-width: 1270px;
   width: 100%;
   margin: 0 auto;
 }
@@ -909,7 +937,7 @@
 .partner__title {
   text-align: center;
   letter-spacing: -0.037em;
-  @include adaptiv-font(44, 35);
+  font-size: 40px;
   padding: 0 0 36px 0;
 }
 
@@ -963,19 +991,18 @@
 .footer {
   padding: 62px 0 45.3px;
   background-color: $footer-bg;
-  @include adaptiv-font(20, 19);
+  font-size: 20px;
   line-height: 1.55em;
 }
 
 .footer__container {
-  max-width: 1237px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
 
 .footer__inner {
   display: flex;
-  padding-left: 33px;
 }
 
 .footer__logo {
@@ -1024,7 +1051,7 @@
 .footer__phones-title {
   font-family: 'Circe-Bold';
   font-weight: 700;
-  @include adaptiv-font(26, 21);
+  font-size: 24px;
   line-height: 1em;
   letter-spacing: -0.023em;
   color: $txt-color;
@@ -1033,7 +1060,7 @@
 
 
 .footer__contacts {
-  max-width: 328px;
+  max-width: 315px;
   width: 100%;
   //line-height: 1.7em;
   letter-spacing: -0.001em;
@@ -1053,7 +1080,7 @@
 }
 
 .footer__phones {
-  max-width: 305px;
+  max-width: 328px;
   width: 100%;
   line-height: 1.38em;
   letter-spacing: -0.045em;;
@@ -1067,7 +1094,7 @@
     a {
       font-family: 'Circe-Bold';
       font-weight: 700;
-      @include adaptiv-font(17, 17);
+      font-size: 18px;
       letter-spacing: 0.04em;
       position: relative;
       padding-left: 7px;
@@ -1101,14 +1128,14 @@
     font-weight: 600;
     padding: 0 0 18px 42px;
     position: relative;
-    @include adaptiv-font(25, 25);
+    font-size: 24px;
     line-height: 1.22em;
     letter-spacing: -0.02em;
     color: $txt-color;
 
     &::before {
       content: "\f101";
-      @include adaptiv-font(28, 28);
+      font-size: 28px;
       left: 0;
       font-family: "Flaticon";
       color: $nav-icon-color;
@@ -2919,8 +2946,6 @@
 .apply-now__submit_captcha-form {
   max-width: 269px;
   width: 100%;
-
-  height: 198px; //temporary!!!!!!s
 }
 
 .apply-now__submit_captcha-info {
@@ -2937,6 +2962,68 @@
     }
   }
 }
+
+.captcha__show-block {
+  margin-bottom: 21px;
+}
+
+.captcha__img {
+  height: 79px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.captcha__refresh {
+  font-size: 18px;
+  line-height: 1.6em;
+  color: #AC8478;
+  cursor: pointer;
+  display: inline-block;
+
+  background: 0 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #AC8478 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=#AC8478, GradientType=0);
+  background-repeat: repeat-x;
+  background-position: 0 84%;
+  background-size: 1.5px 1.5px;
+}
+
+.captcha__input-block {
+
+  label,
+  input {
+    display: block;
+  }
+
+  label {
+    font-size: 20px;
+    line-height: 1.37em;
+
+    margin-bottom: 12px;
+  }
+
+  input {
+    width: 100%;
+    border: 2px solid #EFCCBF;
+    font-family: 'Circe-Regular';
+    font-weight: 400;
+    color: #565656;
+    font-size: 20px;
+    line-height: 1.6em;
+    padding: 5px 24px;
+
+    &:hover {
+      border: 2px solid #AC8478;
+    }
+
+    &:focus {
+      border: 2px solid #AC8478;
+    }
+  }
+}
+
 
 .submit__btn {
   font-size: 24px;
@@ -4824,10 +4911,8 @@ th {
       color: #ffffff;
       background: #ae7669;
     }
-
   }
 }
-
 
 
 @import "media";

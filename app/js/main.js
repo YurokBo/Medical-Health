@@ -14,17 +14,18 @@ $(function () {
             0: {
                 items: 1
             },
-            650: {
+            511: {
+                items: 2
+            },
+            690: {
                 items: 2
             },
             970: {
                 items: 3
             },
-            1250: {
+
+            1330: {
                 items: 4
-            },
-            1300: {
-                items: 5
             }
         }
     });
@@ -331,7 +332,7 @@ window.addEventListener("resize", () => {
 
 function screenWidthDetection() {
     const menuBurgerInner = document.querySelector('.menu-burger__inner');
-    if (window.matchMedia("(min-width: 1355px)").matches) {
+    if (window.matchMedia("(min-width: 1240px)").matches) {
         menuBurgerInner.classList.remove('active__menu-burger');
     }
 }

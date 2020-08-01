@@ -69,8 +69,6 @@
 </header>
 <div class="content"></div>
 
-<div class="content"></div>
-
 <section class="search-form">
     <div class="search-form__container">
         <div class="search-form__inner">
@@ -607,7 +605,8 @@
                         <div class="apply-now__submit-container">
                             <div class="apply-now__submit_date">
                                 <label for="submission-date">Submission Date</label>
-                                <input type="text" name="submission-date" id="submission-date" placeholder="Submission Date">
+                                <input type="text" name="submission-date" id="submission-date"
+                                       placeholder="Submission Date">
                             </div>
                             <div class="apply-now__submit_load-resume-form">
                                 <form class="load-resume">
@@ -641,7 +640,22 @@
                                 </div>
                             </div>
                             <div class="apply-now__submit_captcha">
-                                <div class="apply-now__submit_captcha-form"></div>
+                                <div class="apply-now__submit_captcha-form">
+                                    <div class="captcha__show-block">
+                                        <div class="captcha__img">
+                                            <!--<img src="captcha.php" alt="captcha" id="captcha-img">-->
+                                            <img src="img/captcha-img.png" alt="captcha-img">
+                                        </div>
+                                        <div id="captcha__refresh" class="captcha__refresh">Refresh</div>
+                                    </div>
+
+                                    <div class="captcha__input-block">
+                                        <label for="captcha-input" class="captcha__label">Enter the text you see above:</label>
+                                        <input type="text" id="captcha-input" name="captcha-input"
+                                               required="required" autocomplete="off" class="captcha__input">
+                                    </div>
+
+                                </div>
                                 <div class="apply-now__submit_captcha-info" data-da="apply-now__submit_captcha,0,480">
                                     <p>
                                         I understand that this application is not a contract, offer, or promise of
