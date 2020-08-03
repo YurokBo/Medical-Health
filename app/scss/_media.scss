@@ -1,10 +1,17 @@
+@media screen and (max-width: 1500px) {
+  .featured-job__container {
+    max-width: 304px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .header__container,
   .about__container,
   .we-can__container,
   .helping__container,
   .choose__container,
-  .questioner__container {
+  .questioner__container,
+  .apply-now__container {
     max-width: 1170px;
   }
 
@@ -15,6 +22,88 @@
     max-width: 500px;
     width: 100%;
   }
+
+  .apply-now__application-info-title-container,
+  .apply-now__emergency-contact-title-container,
+  .apply-now__present-previous-employment-title-container,
+  .apply-now__previous-employment-title-container,
+  .apply-now__educational-background-title-container,
+  .apply-now__professional-qualifications-title-container,
+  .apply-now__professional-reference-title-container,
+  .apply-now__submit-title-container,
+  .apply-now__emergency-contact-inner,
+  .apply-now__professional-reference-inner,
+  .apply-now__personal-info-inner,
+  .apply-now__application-info-inner,
+  .apply-now__present-previous-employment-inner,
+  .apply-now__previous-employment-inner,
+  .apply-now__educational-background-inner,
+  .apply-now__professional-qualifications-inner,
+  .apply-now__submit-container {
+    max-width: 970px;
+  }
+  .apply-now__emergency-contact-inner,
+  .apply-now__professional-reference-inner,
+  .apply-now__personal-info-inner,
+  .apply-now__application-info-inner,
+  .apply-now__present-previous-employment-inner,
+  .apply-now__previous-employment-inner,
+  .apply-now__educational-background-inner,
+  .apply-now__professional-qualifications-inner {
+    flex-wrap: wrap;
+  }
+
+  .apply-now__personal-info-left,
+  .apply-now__present-previous-employment-top_left,
+  .apply-now__previous-employment-top_left {
+    margin-bottom: 7px;
+  }
+  .apply-now__application-info-left {
+    margin-bottom: 13px;
+  }
+
+  .apply-now__emergency-contact-inner,
+  .apply-now__professional-reference-inner {
+    .apply-now__emergency-contact-top,
+    .apply-now__emergency-contact-bottom,
+    .apply-now__professional-reference-top,
+    .apply-now__professional-reference-bottom {
+      margin-bottom: 13px;
+      label {
+        margin-bottom: 13px;
+      }
+
+      span {
+
+        line-height: 1.26em;
+      }
+    }
+  }
+  .apply-now__emergency-contact-inner {
+    .apply-now__emergency-contact-top {
+      margin-bottom: 13px;
+    }
+  }
+
+  .apply-now__present-previous-employment-middle,
+  .apply-now__previous-employment-middle,
+  .apply-now__educational-background-bottom {
+    .apply-now__present-previous-employment-middle_left,
+    .apply-now__previous-employment-middle_left,
+    .apply-now__educational-background-bottom_left {
+      margin-bottom: 7px;
+    }
+  }
+
+  .apply-now__submit_confirm-info_text {
+    max-width: 900px;
+  }
+
+  .apply-now__submit_captcha-info {
+    max-width: 603px;
+  }
+
+
 }
 
 @media screen and (max-width: 1330px) {
@@ -41,6 +130,14 @@
   .we-can__container,
   .helping__container {
 
+  }
+
+  .what-is-family__container,
+  .search-form__container,
+  .interested-in__container,
+  .become__container,
+  .vacancy__container {
+    max-width: 1000px;
   }
 
   .footer__inner {
@@ -75,6 +172,19 @@
   .choose__title {
     padding: 0;
   }
+
+  .search-form__inner {
+    padding: 0;
+  }
+
+  .search-form__inner {
+    form {
+      label {
+        max-width: 318px;
+      }
+    }
+  }
+
 }
 
 @media screen and (min-width: 1240px) {
@@ -405,7 +515,8 @@
   .choose__container,
   .questioner__container,
   .services__container,
-  .care-services__container {
+  .care-services__container,
+  .apply-now__container {
     max-width: 870px;
   }
 
@@ -597,6 +708,34 @@
       }
     }
   }
+
+  .apply-now__application-info-title-container,
+  .apply-now__emergency-contact-title-container,
+  .apply-now__present-previous-employment-title-container,
+  .apply-now__previous-employment-title-container,
+  .apply-now__educational-background-title-container,
+  .apply-now__professional-qualifications-title-container,
+  .apply-now__professional-reference-title-container,
+  .apply-now__submit-title-container,
+  .apply-now__emergency-contact-inner,
+  .apply-now__professional-reference-inner,
+  .apply-now__personal-info-inner,
+  .apply-now__application-info-inner,
+  .apply-now__present-previous-employment-inner,
+  .apply-now__previous-employment-inner,
+  .apply-now__educational-background-inner,
+  .apply-now__professional-qualifications-inner,
+  .apply-now__submit-container {
+    max-width: 670px;
+  }
+
+  .apply-now__submit_confirm-info_text {
+    max-width: 600px;
+  }
+
+  .apply-now__submit_captcha-info {
+    max-width: 366px;
+  }
 }
 
 @media screen and (max-width: 1110px) {
@@ -656,11 +795,16 @@
 
 @media screen and (max-width: 1024px) {
   .partner__container,
-  .form__container {
+  .form__container,
+  .what-is-family__container,
+  .search-form__container,
+  .interested-in__container,
+  .become__container,
+  .vacancy__container {
     max-width: 870px;
   }
 
-  .footer__container{
+  .footer__container {
     max-width: 414px;
   }
 
@@ -782,7 +926,25 @@
     font-size: 22px;
   }
 
+  /*---------search-form------------*/
+  .search-form {
+    padding: 37px 0;
+  }
 
+  .search-form__inner {
+    padding: 0;
+
+    form {
+      flex-direction: column;
+      label {
+        max-width: 100%;
+      }
+    }
+
+    label + label {
+      margin-top: 18px;
+    }
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -805,7 +967,12 @@
   .helping__container,
   .choose__container,
   .form__container,
-  .partner__container {
+  .partner__container,
+  .what-is-family__container,
+  .search-form__container,
+  .interested-in__container,
+  .become__container,
+  .vacancy__container {
     max-width: 670px;
   }
 
@@ -929,6 +1096,454 @@
       letter-spacing: 0.01em;
     }
   }
+
+  /*    apply-now   */
+  .apply-now {
+    padding: 104px 0 108px;
+    background: rgba(241, 227, 222, 0.5);
+  }
+
+  .apply-now__container {
+    max-width: 414px;
+  }
+
+  .apply-now__title-box {
+    padding-left: 0;
+    margin-bottom: 101px;
+    text-align: center;
+  }
+
+  .apply-now__title {
+    font-size: 38px;
+  }
+
+  .apply-now__for {
+    font-size: 22px;
+
+    .apply-now__position-name {
+      display: block;
+
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .apply-now__personal-info,
+  .apply-now__application-info,
+  .apply-now__emergency-contact,
+  .apply-now__present-previous-employment,
+  .apply-now__previous-employment,
+  .apply-now__educational-background,
+  .apply-now__professional-qualifications,
+  .apply-now__professional-reference {
+    margin-bottom: 82px;
+  }
+
+  .apply-now__personal-info-title-box,
+  .apply-now__application-info-title-box,
+  .apply-now__emergency-contact-title-box,
+  .apply-now__present-previous-employment-title-box,
+  .apply-now__previous-employment-title-box,
+  .apply-now__educational-background-title-box,
+  .apply-now__professional-qualifications-title-box,
+  .apply-now__professional-reference-title-box,
+  .apply-now__submit-title-box {
+    padding: 13.67px 0;
+    margin-bottom: 56px;
+    font-size: 22px;
+  }
+
+  .apply-now__application-info-title-container,
+  .apply-now__emergency-contact-title-container,
+  .apply-now__present-previous-employment-title-container,
+  .apply-now__previous-employment-title-container,
+  .apply-now__educational-background-title-container,
+  .apply-now__professional-qualifications-title-container,
+  .apply-now__professional-reference-title-container,
+  .apply-now__submit-title-container {
+    max-width: 350px;
+    padding-left: 12px;
+  }
+
+
+  .apply-now__personal-info-inner,
+  .apply-now__application-info-inner,
+  .apply-now__emergency-contact-inner,
+  .apply-now__professional-reference-inner {
+    max-width: 370px;
+    display: block;
+
+
+    .apply-now__personal-info-left,
+    .apply-now__personal-info-right,
+    .apply-now__application-info-left,
+    .apply-now__application-info-right,
+    .apply-now__emergency-contact-top,
+    .apply-now__emergency-contact-bottom,
+    .apply-now__professional-reference-top,
+    .apply-now__professional-reference-bottom {
+      margin-bottom: 20px;
+
+      label {
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+      }
+
+      input {
+        font-size: 18px;
+        padding: 14.67px 8px 14.67px 32px;
+
+        &::placeholder {
+          visibility: visible;
+        }
+      }
+
+      input[name="zip"] {
+        max-width: 370px;
+      }
+
+    }
+
+    .apply-now__application-info-left,
+    .apply-now__application-info-right {
+      label {
+        margin-bottom: 20px;
+      }
+
+      span {
+        letter-spacing: -0.02em;
+        line-height: 1.16em;
+        max-width: 370px;
+      }
+    }
+  }
+
+  .apply-now__personal-info-left {
+    margin-bottom: 20px;
+  }
+
+  .apply-now__personal-info-inner {
+    .apply-now__personal-info-left,
+    .apply-now__personal-info-right {
+      span {
+        display: none;
+      }
+    }
+  }
+
+  .apply-now__application-info-left {
+    margin-bottom: 20px;
+
+    label {
+      &:nth-child(1),
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7) {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .apply-now__application-info-right {
+    label {
+      &:nth-child(1),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(7) {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .employment-desired,
+  .authorized-to-work,
+  .convicted-crime,
+  .US-citizen,
+  .smoke-tobacco {
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+    margin-bottom: 20px;
+
+    br {
+      display: none;
+    }
+
+    span {
+      margin-bottom: 18px;
+      display: block;
+    }
+  }
+
+  .apply-now__emergency-contact-inner,
+  .apply-now__professional-reference-inner {
+    .apply-now__emergency-contact-top,
+    .apply-now__emergency-contact-bottom,
+    .apply-now__professional-reference-top,
+    .apply-now__professional-reference-bottom {
+      label {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .apply-now__present-previous-employment-inner,
+  .apply-now__previous-employment-inner,
+  .apply-now__educational-background-inner,
+  .apply-now__professional-qualifications-bottom {
+    max-width: 370px;
+
+    label {
+      display: block;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    span {
+      display: none;
+    }
+
+    input {
+      font-size: 18px;
+      padding: 14.67px 8px 14.67px 32px;
+
+      &::placeholder {
+        visibility: visible;
+      }
+    }
+
+    input[name="zip"],
+    input[name="supervisor-name"] {
+      max-width: 370px;
+    }
+
+    .apply-now__present-previous-employment-top,
+    .apply-now__present-previous-employment-middle,
+    .apply-now__previous-employment-top,
+    .apply-now__previous-employment-middle,
+    .apply-now__educational-background-bottom {
+      display: block;
+      margin-bottom: 20px;
+
+      .apply-now__present-previous-employment-top_left,
+      .apply-now__present-previous-employment-top_right,
+      .apply-now__present-previous-employment-middle_left,
+      .apply-now__present-previous-employment-middle_right,
+      .apply-now__previous-employment-top_left,
+      .apply-now__previous-employment-top_right,
+      .apply-now__previous-employment-middle_left,
+      .apply-now__previous-employment-middle_right,
+      .apply-now__educational-background-bottom_left,
+      .apply-now__educational-background-bottom_right {
+        max-width: 370px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .apply-now__present-previous-employment-bottom,
+    .apply-now__previous-employment-bottom,
+    .apply-now__educational-background-top {
+      max-width: 370px;
+      width: 100%;
+
+      input {
+        max-width: 370px;
+      }
+
+      span {
+        display: none;
+      }
+    }
+
+    .apply-now__educational-background-top {
+      margin-bottom: 20px;
+    }
+  }
+  .apply-now__present-previous-employment-top_left,
+  .apply-now__present-previous-employment-middle_left,
+  .apply-now__previous-employment-top_left,
+  .apply-now__previous-employment-middle_left,
+  .apply-now__educational-background-bottom_left {
+    margin-bottom: 20px;
+  }
+
+  .apply-now__professional-qualifications-inner {
+    max-width: 370px;
+
+    label {
+      display: block;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    span {
+      display: none;
+    }
+
+    .apply-now__professional-qualifications-top {
+      margin-bottom: 20px;
+
+      label {
+        margin: 0;
+        height: 167px;
+      }
+
+      textarea {
+
+        max-width: 370px;
+        height: 100%;
+        padding: 18px 22px 10px 32px;
+        font-size: 18px;
+        white-space: normal;
+
+        &:last-child {
+          display: none;
+        }
+
+        &::placeholder {
+          visibility: visible;
+        }
+      }
+
+    }
+
+    .apply-now__professional-qualifications-bottom {
+      input {
+        font-size: 18px;
+        padding: 14.67px 8px 14.67px 32px;
+
+        &::placeholder {
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  /*    load resume form    */
+  .apply-now__submit-container {
+    max-width: 414px;
+  }
+
+  .apply-now__submit_date {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 46px;
+
+    font-size: 18px;
+
+    label {
+      visibility: hidden;
+      height: 0;
+      font-size: 0;
+    }
+
+    input {
+      font-size: 18px;
+      padding: 14.67px 8px 14.67px 32px;
+      width: 370px;
+      margin: 0 auto;
+      display: block;
+
+      &::placeholder {
+        visibility: visible;
+      }
+    }
+  }
+
+  .apply-now__submit_load-resume-form {
+    margin-bottom: 56px;
+
+    padding-left: 22px;
+  }
+
+  .load-resume__description {
+    font-size: 18px;
+    letter-spacing: -.01em;
+
+    margin-bottom: 30px;
+  }
+
+  .load-resume__btn-box {
+    margin-bottom: 22px;
+  }
+
+  .load-resume__label {
+    font-size: 18px;
+    padding: 12px 33.33px 10.34px;
+  }
+
+  .apply-now__submit_confirm-info_box {
+    margin-bottom: 57px;
+    padding-left: 22px;
+  }
+
+  .apply-now__submit_confirm-info_text {
+    max-width: 329px;
+    font-size: 18px;
+  }
+
+  .apply-now__submit_confirm-info_checkbox {
+    .confirm-info__label {
+      &:before {
+        top: 6px;
+      }
+
+      &:after {
+        top: 6px;
+      }
+    }
+  }
+
+  .apply-now__submit_captcha {
+    display: block;
+
+    margin-bottom: 56px;
+  }
+
+  .apply-now__submit_captcha-form {
+    max-width: 258px;
+  }
+
+  .apply-now__submit_captcha-info {
+    font-size: 18px;
+    max-width: 414px;
+    margin-bottom: 48px;
+
+    p {
+      &:first-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .captcha__input-block {
+    label {
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+  }
+
+  .submit__btn {
+    padding: 16.84px 78.2px;
+  }
 }
 
 @media screen and (max-width: 840px) {
@@ -950,8 +1565,35 @@
     padding: 0 50px;
   }
 
-  .about__container {
+  .about__container,
+  .if-family__container,
+  .join__container {
     max-width: 480px;
+  }
+
+  .if-family {
+    padding: 265px 0 107px;
+    background-image: url('../img/family-bg-mobile.jpg');
+  }
+
+  .if-family__title {
+    padding: 0 0 174px;
+    span {
+      top: 143px;
+    }
+  }
+
+  .join {
+    padding: 177px 0 111px;
+    background-image: url('../img/join-bg-mobile.jpg');
+  }
+
+  .join__title {
+    span {
+      width: 310px;
+      margin: 0 auto;
+      top: 156px;
+    }
   }
 }
 
@@ -962,7 +1604,12 @@
   .helping__container,
   .choose__container,
   .form__container,
-  .partner__container {
+  .partner__container,
+  .what-is-family__container,
+  .search-form__container,
+  .interested-in__container,
+  .become__container,
+  .vacancy__container {
     max-width: 480px;
   }
 
@@ -1121,6 +1768,10 @@
       margin-bottom: 33px;
     }
   }
+
+  .featured-job .owl-carousel .owl-nav .owl-prev {
+    left: -70px;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -1151,8 +1802,17 @@
   .helping__container,
   .choose__container,
   .form__container,
-  .partner__container {
+  .partner__container,
+  .what-is-family__container,
+  .join__container,
+  .become__container,
+  .become__container,
+  .become-job-search__container,
+  .vacancy__container {
     max-width: 414px;
+  }
+  .search-form__container {
+    max-width: 370px;
   }
 
   .quality__title,
@@ -1251,6 +1911,110 @@
     max-width: 370px;
     width: 100%;
     margin: 0 auto;
+  }
+
+  /*------------index about------------*/
+  /*-------if-family-------*/
+  .if-family__container {
+    max-width: 330px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .if-family__title {
+    line-height: 1.59em;
+    span {
+      font-size: 107px;
+      color: #AC8478;
+      left: 0;
+      right: 0;
+      top: 125px;
+      transform: rotate(0);
+    }
+  }
+
+  .what-is-family__info {
+
+    .what-is-family__text {
+      line-height: 1.6em;
+    }
+    p + p {
+      margin-top: 25px;
+    }
+  }
+
+  .join__title {
+    font-size: 48px;
+    line-height: 1.5em;
+    padding-bottom: 224px;
+
+    span {
+      font-size: 150px;
+      line-height: 1.04em;
+      right: -40px;
+      top: 130px;
+    }
+  }
+
+  /*--------interested-in----------*/
+  .interested-in {
+    padding: 104px 0 103px;
+  }
+
+  .interested-in__container {
+    max-width: 414px;
+  }
+
+  /*--------become-------------*/
+  .become {
+    padding: 102px 0 99px;
+  }
+
+  .become__info,
+  .become-job-search__info {
+    padding-right: 22px;
+  }
+
+  .become__checkbox,
+  .become-job-search__checkbox {
+    padding-right: 30px;
+
+    ul {
+      li {
+        background-position: 0 5px;
+        line-height: 1.44em;
+        }
+
+      li + li {
+        margin-top: 18px;
+      }
+    }
+  }
+
+
+  /*------vacancy--------*/
+  .vacancy {
+    padding: 98px 0 48px;
+  }
+
+  .vacancy__list {
+    max-width: 414px;
+    padding: 0 0 0 46px;
+  }
+  .vacancy__responsibility-info,
+  .vacancy__requirement-info {
+    padding: 12px 0 0 38px;
+  }
+  .vacancy__btn {
+    text-align: center;
+
+    a {
+      font-size: 20px;
+      padding: 15px 30px;
+    }
+  }
+  .vacancy__responsibility-title {
+    font-size: 22px;
   }
 }
 
@@ -1414,7 +2178,6 @@
   }
 
 
-
   /*----------------choose------------------*/
   /*----------------questioner------------------*/
   .choose,
@@ -1527,6 +2290,7 @@
     padding: 98px 0 87px;
     text-align: center;
   }
+
   .partner__title {
     text-align: center;
     letter-spacing: -0.001em;
@@ -1546,7 +2310,6 @@
   .partner .owl-carousel .owl-nav .owl-next {
     right: 34px;
   }
-
 
 
   /*-------------home-care---------------*/
@@ -1613,6 +2376,7 @@
   .what-is-skilled__info {
     padding-right: 41px;
   }
+
   .what-is-transportation__info {
     padding-right: 47px;
   }
@@ -1639,6 +2403,7 @@
   .advantages-transportation__title {
     padding: 0 0 50px 0;
   }
+
   .advantages__info {
     padding-right: 6px;
   }
@@ -1698,6 +2463,7 @@
       }
     }
   }
+
   .advantages__checkbox {
     flex-direction: column;
 
@@ -1732,6 +2498,7 @@
       }
     }
   }
+
   /*---------how-much-----------*/
   .how-much__inner,
   .how-much-skilled__inner,
@@ -1775,6 +2542,7 @@
   .skilled-care__title {
     padding: 0 0 76px 0;
   }
+
   .skilled-care__txt {
     display: block;
     padding: 0 0 104px 0;
@@ -1798,6 +2566,7 @@
     padding: 164px 0 120px;
     background-image: url("../img/transportation-bg-mobile.jpg");
   }
+
   .transportation__content {
     padding: 0;
   }
@@ -1877,39 +2646,15 @@
     padding: 272px 0 129px;
     background-image: url('../img/philanthropy-bg-mobile.jpg');
   }
-  /*------------index about------------*/
-  /*-------if-family-------*/
-  .if-family {
-    padding: 269px 0 108px;
-    background-image: url('../img/family-bg-mobile.jpg');
-  }
 
-  .if-family__container,
-  .what-is-family__container {
-    max-width: 414px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .if-family__title {
-    padding: 0 0 178px;
-
-    span {
-      font-size: 107px;
-      color: #AC8478;
-      left: 0;
-      right: 0;
-      top: 118px;
-      transform: rotate(0);
-    }
-  }
 
   .what-is-family {
     padding: 104px 0 103px;
   }
 
   .what-is-family__title {
-    padding: 0 0 43px;
+    margin: 0 0 43px;
+    padding: 0;
   }
 
   /*----------policy-------*/
@@ -1982,139 +2727,15 @@
     }
   }
 
-  /*------------index__Career--------------*/
-  .join {
-    padding: 177px 0 111px;
-    background-image: url('../img/join-bg-mobile.jpg');
-  }
-  .join__title {
-    font-size: 48px;
-    line-height: 1.5em;
-    padding-bottom: 224px;
 
-    span {
-      font-size: 150px;
-      line-height: 1.04em;
-      right: -40px;
-      top: 130px;
-    }
-  }
 
-  /*---------search-form------------*/
-  .search-form {
-    padding: 37px 0;
-  }
-  .search-form__container {
-    max-width: 370px;
-  }
 
-  .search-form__inner {
-    padding: 0;
-
-    form {
-      flex-direction: column;
-    }
-
-    label + label {
-      margin-top: 18px;
-    }
-  }
-
-  /*--------interested-in----------*/
-  .interested-in {
-    padding: 104px 0 103px;
-  }
-
-  .interested-in__container {
-    max-width: 414px;
-  }
-  .interested-in__title {
-    padding: 0 73px 47px;
-  }
-
-  /*--------become-------------*/
-  .become {
-    padding: 102px 0 99px;
-  }
-
-  .become__container,
-  .become-job-search__container {
-    max-width: 413px;
-  }
-
-  .become__info,
-  .become-job-search__info {
-    padding-right: 22px;
-  }
-
-  .become__checkbox,
-  .become-job-search__checkbox {
-    padding-right: 30px;
-
-    ul {
-      li {
-        line-height: 1.44em;
-
-        &:first-child {
-          img {
-            top: 10%;
-          }
-        }
-
-        &:nth-child(2),
-        &:nth-child(6),
-        &:nth-child(7) {
-          img {
-            top: 27%;
-          }
-        }
-
-        &:nth-child(8),
-        &:nth-child(9) {
-          img {
-            top: 16%;
-          }
-        }
-      }
-
-      li + li {
-        margin-top: 16px;
-      }
-    }
-  }
-
-  /*------vacancy--------*/
-  .vacancy {
-    padding: 98px 0 48px;
-  }
-
-  .vacancy__container {
-    max-width: 414px;
-  }
-  .vacancy__list {
-    max-width: 414px;
-    padding: 0 0 0 46px;
-  }
-  .vacancy__responsibility-info,
-  .vacancy__requirement-info {
-    padding: 12px 0 0 38px;
-  }
-  .vacancy__btn {
-    text-align: center;
-
-    a {
-      font-size: 20px;
-      padding: 15px 30px;
-    }
-  }
 
   /*------featured------*/
   .featured-job {
     padding: 46px 0 107px;
   }
-  .featured-job__container {
-    max-width: 414px;
-  }
+
 
   /*----------index__Career Job Search---------*/
   /*----------index__Career Job Details---------*/
@@ -2955,452 +3576,7 @@
     font-size: 18px;
   }
 
-  /*    apply-now   */
-  .apply-now {
-    padding: 104px 0 108px;
-    background: rgba(241, 227, 222, 0.5);
-  }
 
-  .apply-now__container {
-    max-width: 414px;
-  }
-
-  .apply-now__title-box {
-    padding-left: 0;
-    margin-bottom: 101px;
-    text-align: center;
-  }
-
-  .apply-now__title {
-    font-size: 38px;
-  }
-
-  .apply-now__for {
-    font-size: 22px;
-
-    .apply-now__position-name {
-      display: block;
-
-      &:first-child {
-        margin-right: 0;
-      }
-    }
-  }
-
-  .apply-now__personal-info,
-  .apply-now__application-info,
-  .apply-now__emergency-contact,
-  .apply-now__present-previous-employment,
-  .apply-now__previous-employment,
-  .apply-now__educational-background,
-  .apply-now__professional-qualifications,
-  .apply-now__professional-reference {
-    margin-bottom: 82px;
-  }
-
-  .apply-now__personal-info-title-box,
-  .apply-now__application-info-title-box,
-  .apply-now__emergency-contact-title-box,
-  .apply-now__present-previous-employment-title-box,
-  .apply-now__previous-employment-title-box,
-  .apply-now__educational-background-title-box,
-  .apply-now__professional-qualifications-title-box,
-  .apply-now__professional-reference-title-box,
-  .apply-now__submit-title-box {
-    padding: 13.67px 0;
-    margin-bottom: 56px;
-    font-size: 22px;
-  }
-
-  .apply-now__application-info-title-container,
-  .apply-now__emergency-contact-title-container,
-  .apply-now__present-previous-employment-title-container,
-  .apply-now__previous-employment-title-container,
-  .apply-now__educational-background-title-container,
-  .apply-now__professional-qualifications-title-container,
-  .apply-now__professional-reference-title-container,
-  .apply-now__submit-title-container {
-    max-width: 350px;
-    padding-left: 12px;
-  }
-
-
-  .apply-now__personal-info-inner,
-  .apply-now__application-info-inner,
-  .apply-now__emergency-contact-inner,
-  .apply-now__professional-reference-inner {
-    max-width: 370px;
-    display: block;
-
-
-    .apply-now__personal-info-left,
-    .apply-now__personal-info-right,
-    .apply-now__application-info-left,
-    .apply-now__application-info-right,
-    .apply-now__emergency-contact-top,
-    .apply-now__emergency-contact-bottom,
-    .apply-now__professional-reference-top,
-    .apply-now__professional-reference-bottom {
-
-      label {
-        margin-bottom: 20px;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-      }
-
-      input {
-        font-size: 18px;
-        padding: 14.67px 8px 14.67px 32px;
-
-        &::placeholder {
-          visibility: visible;
-        }
-      }
-
-      input[name="zip"] {
-        max-width: 370px;
-      }
-
-    }
-
-    .apply-now__application-info-left,
-    .apply-now__application-info-right {
-      label {
-        margin-bottom: 20px;
-      }
-
-      span {
-        letter-spacing: -0.02em;
-        line-height: 1.16em;
-        max-width: 370px;
-      }
-    }
-  }
-
-  .apply-now__personal-info-left {
-    margin-bottom: 20px;
-  }
-
-  .apply-now__personal-info-inner {
-    .apply-now__personal-info-left,
-    .apply-now__personal-info-right {
-      span {
-        display: none;
-      }
-    }
-  }
-
-  .apply-now__application-info-left {
-    margin-bottom: 20px;
-
-    label {
-      &:nth-child(1),
-      &:nth-child(5),
-      &:nth-child(6),
-      &:nth-child(7) {
-        span {
-          display: none;
-        }
-      }
-    }
-  }
-
-  .apply-now__application-info-right {
-    label {
-      &:nth-child(1),
-      &:nth-child(3),
-      &:nth-child(4),
-      &:nth-child(5),
-      &:nth-child(7) {
-        span {
-          display: none;
-        }
-      }
-    }
-  }
-
-  .employment-desired,
-  .authorized-to-work,
-  .convicted-crime,
-  .US-citizen,
-  .smoke-tobacco {
-    flex-direction: column;
-    align-items: start;
-    padding: 0;
-    margin-bottom: 20px;
-
-    br {
-      display: none;
-    }
-
-    span {
-      margin-bottom: 18px;
-      display: block;
-    }
-  }
-
-  .apply-now__emergency-contact-inner,
-  .apply-now__professional-reference-inner {
-    .apply-now__emergency-contact-top,
-    .apply-now__emergency-contact-bottom,
-    .apply-now__professional-reference-top,
-    .apply-now__professional-reference-bottom {
-      label {
-        span {
-          display: none;
-        }
-      }
-    }
-  }
-
-  .apply-now__present-previous-employment-inner,
-  .apply-now__previous-employment-inner,
-  .apply-now__educational-background-inner,
-  .apply-now__professional-qualifications-bottom {
-    max-width: 370px;
-
-    label {
-      display: block;
-      margin-bottom: 20px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    span {
-      display: none;
-    }
-
-    input {
-      font-size: 18px;
-      padding: 14.67px 8px 14.67px 32px;
-
-      &::placeholder {
-        visibility: visible;
-      }
-    }
-
-    input[name="zip"],
-    input[name="supervisor-name"] {
-      max-width: 370px;
-    }
-
-
-    .apply-now__present-previous-employment-top,
-    .apply-now__present-previous-employment-middle,
-    .apply-now__previous-employment-top,
-    .apply-now__previous-employment-middle,
-    .apply-now__educational-background-bottom {
-      display: block;
-      margin-bottom: 20px;
-
-      .apply-now__present-previous-employment-top_left,
-      .apply-now__present-previous-employment-top_right,
-      .apply-now__present-previous-employment-middle_left,
-      .apply-now__present-previous-employment-middle_right,
-      .apply-now__previous-employment-top_left,
-      .apply-now__previous-employment-top_right,
-      .apply-now__previous-employment-middle_left,
-      .apply-now__previous-employment-middle_right,
-      .apply-now__educational-background-bottom_left,
-      .apply-now__educational-background-bottom_right {
-        max-width: 370px;
-      }
-    }
-
-    .apply-now__present-previous-employment-bottom,
-    .apply-now__previous-employment-bottom,
-    .apply-now__educational-background-top {
-      max-width: 370px;
-      width: 100%;
-
-      input {
-        max-width: 370px;
-      }
-
-      span {
-        display: none;
-      }
-    }
-
-    .apply-now__educational-background-top {
-      margin-bottom: 20px;
-    }
-  }
-  .apply-now__present-previous-employment-top_left,
-  .apply-now__present-previous-employment-middle_left,
-  .apply-now__previous-employment-top_left,
-  .apply-now__previous-employment-middle_left,
-  .apply-now__educational-background-bottom_left {
-    margin-bottom: 20px;
-  }
-
-  .apply-now__professional-qualifications-inner {
-    max-width: 370px;
-
-    label {
-      display: block;
-      margin-bottom: 20px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    span {
-      display: none;
-    }
-
-    .apply-now__professional-qualifications-top {
-      margin-bottom: 20px;
-
-      label {
-        margin: 0;
-        height: 167px;
-      }
-
-      textarea {
-
-        max-width: 370px;
-        height: 100%;
-        padding: 18px 22px 10px 32px;
-        font-size: 18px;
-        white-space: normal;
-
-        &:last-child {
-          display: none;
-        }
-
-        &::placeholder {
-          visibility: visible;
-        }
-      }
-
-    }
-
-    .apply-now__professional-qualifications-bottom {
-      input {
-        font-size: 18px;
-        padding: 14.67px 8px 14.67px 32px;
-
-        &::placeholder {
-          visibility: visible;
-        }
-      }
-    }
-  }
-
-  /*    load resume form    */
-  .apply-now__submit-container {
-    max-width: 414px;
-  }
-
-  .apply-now__submit_date {
-    display: block;
-    max-width: 100%;
-    margin-bottom: 46px;
-
-    font-size: 18px;
-
-    label {
-      visibility: hidden;
-      height: 0;
-      font-size: 0;
-    }
-
-    input {
-      font-size: 18px;
-      padding: 14.67px 8px 14.67px 32px;
-      width: 370px;
-      margin: 0 auto;
-      display: block;
-
-      &::placeholder {
-        visibility: visible;
-      }
-    }
-  }
-
-  .apply-now__submit_load-resume-form {
-    margin-bottom: 56px;
-
-    padding-left: 22px;
-  }
-
-  .load-resume__description {
-    font-size: 18px;
-    letter-spacing: -.01em;
-
-    margin-bottom: 30px;
-  }
-
-  .load-resume__btn-box {
-    margin-bottom: 22px;
-  }
-
-  .load-resume__label {
-    font-size: 18px;
-    padding: 12px 33.33px 10.34px;
-  }
-
-  .apply-now__submit_confirm-info_box {
-    margin-bottom: 57px;
-    padding-left: 22px;
-  }
-
-  .apply-now__submit_confirm-info_text {
-    max-width: 329px;
-    font-size: 18px;
-  }
-
-  .apply-now__submit_confirm-info_checkbox {
-    .confirm-info__label {
-      &:before {
-        top: 6px;
-      }
-
-      &:after {
-        top: 6px;
-      }
-    }
-  }
-
-  .apply-now__submit_captcha {
-    display: block;
-
-    margin-bottom: 56px;
-  }
-
-  .apply-now__submit_captcha-form {
-    max-width: 258px;
-  }
-
-  .apply-now__submit_captcha-info {
-    font-size: 18px;
-    max-width: 414px;
-    margin-bottom: 48px;
-
-    p {
-      &:first-child {
-        margin-bottom: 30px;
-      }
-    }
-  }
-
-  .captcha__input-block {
-    label {
-      font-size: 18px;
-      margin-bottom: 7px;
-    }
-  }
-
-  .submit__btn {
-    padding: 16.84px 78.2px;
-  }
 }
 
 @media screen and (max-width: 470px) {
@@ -3414,6 +3590,14 @@
   .helping {
     background: linear-gradient(0, #f1e3de 54%, rgba(255, 255, 255, 0.1) 100%), url(../img/helping-bg.jpg) no-repeat top right -66px;
     background-size: 186%;
+  }
+
+  .featured-job .owl-carousel .owl-nav .owl-prev {
+    left: -30px;
+  }
+
+  .featured-job .owl-carousel .owl-nav .owl-next {
+    right: -30px;
   }
 }
 
@@ -3499,8 +3683,18 @@
   .choose__container,
   .form__container,
   .partner__container,
-  .footer__container {
+  .footer__container,
+  .what-is-family__container,
+  .join__container,
+  .become__container,
+  .vacancy__container,
+  .apply-now__container {
     max-width: 310px;
+  }
+
+  .search-form__container,
+  .interested-in__container {
+    max-width: 290px;
   }
 
   .header__phone-icon,
@@ -3584,6 +3778,46 @@
       }
     }
   }
+
+  .join__title {
+    span {
+      width: 210px;
+      transform: rotate(0deg);
+    }
+  }
+
+  .featured-job .owl-carousel .owl-nav .owl-prev,
+  .featured-job .owl-carousel .owl-nav .owl-next {
+    display: none;
+  }
+
+  .apply-now__application-info-title-container,
+  .apply-now__emergency-contact-title-container,
+  .apply-now__present-previous-employment-title-container,
+  .apply-now__previous-employment-title-container,
+  .apply-now__educational-background-title-container,
+  .apply-now__professional-qualifications-title-container,
+  .apply-now__professional-reference-title-container,
+  .apply-now__submit-title-container,
+  .apply-now__emergency-contact-inner,
+  .apply-now__professional-reference-inner,
+  .apply-now__personal-info-inner,
+  .apply-now__application-info-inner,
+  .apply-now__present-previous-employment-inner,
+  .apply-now__previous-employment-inner,
+  .apply-now__educational-background-inner,
+  .apply-now__professional-qualifications-inner,
+  .apply-now__submit-container {
+    max-width: 300px;
+  }
+
+  .apply-now__submit_confirm-info_text {
+    max-width: 240px;
+  }
+
+  .apply-now__submit_captcha-info {
+    max-width: 280px;
+  }
 }
 
 @media screen and (max-width: 387px) {
@@ -3660,6 +3894,15 @@
 
   .choose__content-left .choose__content-item:nth-child(2) .choose__content-question {
     padding-right: 0;
+  }
+
+  .if-family__container {
+    max-width: 300px;
+  }
+  .if-family__title {
+    span {
+      top: 143px;
+    }
   }
 }
 

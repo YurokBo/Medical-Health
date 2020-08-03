@@ -1380,6 +1380,12 @@
   padding: 199px 0 131px;
   background-image: url('../img/family-bg.jpg');
 }
+.if-family__container,
+.join__container {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .policy {
   padding: 255px 0 130px;
@@ -1442,7 +1448,7 @@
 .Q-A__title,
 .our-partners__title,
 .join__title {
-  @include adaptiv-font(46, 42);
+  font-size: 45px;
   text-transform: uppercase;
   color: $home-care__title;
   line-height: 1.23em;
@@ -1589,7 +1595,7 @@
 .vacancy__title,
 .featured-job__title {
   text-align: center;
-  @include adaptiv-font(40, 35);
+  font-size: 40px;
   line-height: 1.13em;
   padding: 0 0 30px 0;
 }
@@ -1671,7 +1677,6 @@
 .pest-advantages__checkbox,
 .Q-A-questioner__advantages-checkbox,
 .what-is-choices__advantages-checkbox,
-.become__checkbox,
 .become-job-search__checkbox {
   li {
     position: relative;
@@ -1861,7 +1866,6 @@
   }
 }
 
-.become__checkbox,
 .become-job-search__checkbox {
   ul {
     li:first-child {
@@ -1982,7 +1986,7 @@
 }
 
 .vacancy__item {
-  display: none;
+  //display: none; //
   padding: 28px 0 60px;
 }
 
@@ -2007,9 +2011,6 @@
 }
 
 .featured-job__carousel {
-  /*.item {
-    width: 370px !important;
-  }*/
 
   .item__title {
     font-family: 'Circe-Bold';
@@ -2028,6 +2029,7 @@
     font-size: 20px;
     line-height: 1.4em;
     margin-bottom: 9px;
+    overflow: hidden;
   }
 
   .item__read-more {
@@ -2530,6 +2532,7 @@
   .apply-now__previous-employment-middle,
   .apply-now__educational-background-bottom {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 7px;
 
@@ -3379,7 +3382,8 @@
   font-size: 24px;
 }
 
-.my-account-submit-time-sheet__content-list {
+.my-account-submit-time-sheet__content-list,
+.become__checkbox {
   padding: 0 110px 0 49px;
   margin-bottom: 40px;
 
@@ -3397,6 +3401,14 @@
       font-family: 'Circe-Bold';
       font-weight: 700;
     }
+  }
+}
+.become__checkbox {
+  padding: 0;
+  li {
+    padding-left: 43px;
+    line-height: 1.96em;
+    background-position: 0 13px;
   }
 }
 

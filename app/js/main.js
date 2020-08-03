@@ -1,15 +1,14 @@
 $(function () {
-    let owlPartner = $(".partner .partner__carousel"),
-        owlJobs = $(".featured-job .featured-job__carousel");
+    let owlPartner = $(".partner .partner__carousel");
 
     owlPartner.owlCarousel({
         loop: true,
         nav: true,
         dots: false,
         navText: ["<img src='img/chevron.png'>", "<img src='img/chevron.png'>"],
-        autoplay: false,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
         responsive: {
             0: {
                 items: 1
@@ -23,9 +22,8 @@ $(function () {
             970: {
                 items: 3
             },
-
             1330: {
-                items: 4
+                items: 5
             }
         }
     });
@@ -39,23 +37,24 @@ $(function () {
         e.preventDefault();
     });
 
-    owlJobs.owlCarousel({
+    $(".featured-job .featured-job__carousel").owlCarousel({
         loop: true,
         items: 3,
         nav: true,
         dots: false,
         navText: ["<img src='img/chevron.png'>", "<img src='img/chevron.png'>"],
-        autoplay: false,
-        autoplayTimeout: 5000,
+        autoplay: true,
+        autoplayTimeout: 2000,
         autoplayHoverPause: false,
-        margin: 10,
+        margin: 80,
         responsive: {
             0: {
                 items: 1
             },
-            1200: {
+            1500: {
                 items: 3
-            }
+            },
+
         }
     });
 
