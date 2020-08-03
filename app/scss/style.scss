@@ -911,6 +911,7 @@
 
   #your-message {
     width: 100%;
+
     textarea {
       outline: none;
       resize: none;
@@ -1380,6 +1381,7 @@
   padding: 199px 0 131px;
   background-image: url('../img/family-bg.jpg');
 }
+
 .if-family__container,
 .join__container {
   max-width: 680px;
@@ -1391,6 +1393,11 @@
   padding: 255px 0 130px;
   background-image: url('../img/policy-bg.jpg');
 }
+.policy__container {
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .Q-A {
   padding: 228px 0 147px;
@@ -1400,6 +1407,12 @@
 .our-partners {
   padding: 243px 0 192px;
   background-image: url('../img/our-partners-bg.jpg');
+}
+
+.our-partners__container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .join {
@@ -1426,11 +1439,8 @@
   max-width: 1230px;
   width: 100%;
   margin: 0 auto;
-
-  .Q-A__content {
-    padding: 0 190px;
-  }
 }
+
 
 .transportation__content {
   padding: 0 115px;
@@ -1503,6 +1513,7 @@
 
 .Q-A__title {
   padding: 0 0 125px;
+  line-height: 1.2em;
 }
 
 .our-partners__title {
@@ -1629,10 +1640,14 @@
     margin-top: 40px;
   }
 
-  p:first-child {
+  p:first-child,
+  p:last-child {
     margin-top: 0;
   }
 
+  p:nth-child(2){
+    margin-bottom: 10px;
+  }
 }
 
 /*-----------advantages--------------*/
@@ -1674,10 +1689,7 @@
 }
 
 .advantages__checkbox,
-.pest-advantages__checkbox,
-.Q-A-questioner__advantages-checkbox,
-.what-is-choices__advantages-checkbox,
-.become-job-search__checkbox {
+.pest-advantages__checkbox {
   li {
     position: relative;
     padding: 0 0 0 43px;
@@ -1740,6 +1752,11 @@
   padding-left: 55px;
 
   ul {
+
+    li {
+      line-height: 1.96em;
+    }
+
     a {
       display: inline;
       line-height: 1.1em;
@@ -1821,6 +1838,12 @@
   text-align: center;
 }
 
+.coming-soon__container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .coming-soon__title {
   text-transform: capitalize;
 }
@@ -1866,15 +1889,6 @@
   }
 }
 
-.become-job-search__checkbox {
-  ul {
-    li:first-child {
-      img {
-        top: 25%;
-      }
-    }
-  }
-}
 
 /*---------vacancy----------*/
 .vacancy {
@@ -3383,7 +3397,10 @@
 }
 
 .my-account-submit-time-sheet__content-list,
-.become__checkbox {
+.become__checkbox,
+.become-job-search__checkbox,
+.what-is-choices__advantages-checkbox,
+.Q-A-questioner__advantages-checkbox {
   padding: 0 110px 0 49px;
   margin-bottom: 40px;
 
@@ -3403,13 +3420,21 @@
     }
   }
 }
-.become__checkbox {
+
+.become__checkbox,
+.become-job-search__checkbox {
   padding: 0;
+
   li {
     padding-left: 43px;
     line-height: 1.96em;
     background-position: 0 13px;
   }
+}
+
+.Q-A-questioner__advantages-checkbox {
+  margin-top: 10px;
+  padding: 0 0 0 64px;
 }
 
 
@@ -4346,7 +4371,7 @@
 }
 
 .account__content-info {
-  display: none;
+  //display: none;   //temporary
 }
 
 .account__content-info-active {

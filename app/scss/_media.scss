@@ -69,6 +69,7 @@
     .apply-now__professional-reference-top,
     .apply-now__professional-reference-bottom {
       margin-bottom: 13px;
+
       label {
         margin-bottom: 13px;
       }
@@ -136,7 +137,15 @@
   .search-form__container,
   .interested-in__container,
   .become__container,
-  .vacancy__container {
+  .vacancy__container,
+  .job-details__container,
+  .job-search-result__container,
+  .become-job-search__container,
+  .what-is-choices__container,
+  .partner-choose__container,
+  .coming-soon__container,
+  .Q-A__container,
+  .Q-A-questioner__container {
     max-width: 1000px;
   }
 
@@ -516,7 +525,9 @@
   .questioner__container,
   .services__container,
   .care-services__container,
-  .apply-now__container {
+  .apply-now__container,
+  .my-account-submit-time-sheet__container,
+  .need-care-form__container {
     max-width: 870px;
   }
 
@@ -555,7 +566,6 @@
       padding-right: 0;
     }
   }
-
 
   .services {
     padding: 96px 0 109px;
@@ -800,7 +810,15 @@
   .search-form__container,
   .interested-in__container,
   .become__container,
-  .vacancy__container {
+  .vacancy__container,
+  .job-details__container,
+  .job-search-result__container,
+  .become-job-search__container,
+  .what-is-choices__container,
+  .partner-choose__container,
+  .coming-soon__container,
+  .Q-A__container,
+  .Q-A-questioner__container {
     max-width: 870px;
   }
 
@@ -936,6 +954,7 @@
 
     form {
       flex-direction: column;
+
       label {
         max-width: 100%;
       }
@@ -972,12 +991,23 @@
   .search-form__container,
   .interested-in__container,
   .become__container,
-  .vacancy__container {
+  .vacancy__container,
+  .job-details__container,
+  .job-search-result__container,
+  .become-job-search__container,
+  .my-account-submit-time-sheet__container,
+  .need-care-form__container,
+  .what-is-choices__container,
+  .partner-choose__container,
+  .coming-soon__container,
+  .Q-A__container,
+  .Q-A-questioner__container {
     max-width: 670px;
   }
 
   .about__title {
     margin-bottom: 25px;
+
     span {
       top: 58.5%;
     }
@@ -1000,7 +1030,7 @@
 
   .helping {
     padding: 367px 0 117px;
-    background-image:  url('../img/helping-bg-mobile.jpg');
+    background-image: url('../img/helping-bg-mobile.jpg');
     background-position: center top 40px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1165,7 +1195,6 @@
     max-width: 350px;
     padding-left: 12px;
   }
-
 
   .apply-now__personal-info-inner,
   .apply-now__application-info-inner,
@@ -1547,7 +1576,9 @@
 }
 
 @media screen and (max-width: 840px) {
-
+  .policy__container {
+    max-width: 480px;
+  }
 
   .care-services__content-items {
     padding: 0 110px;
@@ -1578,6 +1609,7 @@
 
   .if-family__title {
     padding: 0 0 174px;
+
     span {
       top: 143px;
     }
@@ -1609,7 +1641,17 @@
   .search-form__container,
   .interested-in__container,
   .become__container,
-  .vacancy__container {
+  .vacancy__container,
+  .job-details__container,
+  .job-search-result__container,
+  .become-job-search__container,
+  .my-account-submit-time-sheet__container,
+  .need-care-form__container,
+  .what-is-choices__container,
+  .partner-choose__container,
+  .coming-soon__container,
+  .Q-A__container,
+  .Q-A-questioner__container {
     max-width: 480px;
   }
 
@@ -1641,6 +1683,22 @@
       margin-top: 20px;
     }
   }
+
+  .my-account-submit-time-sheet__content-list {
+    padding-right: 0;
+  }
+
+  .what-is-choices__advantages-checkbox {
+    padding: 0 0 0 49px;
+
+    li {
+      a {
+        word-wrap: break-word;
+      }
+    }
+  }
+
+
 }
 
 @media screen and (max-width: 660px) {
@@ -1649,7 +1707,8 @@
     padding: 0 30px;
   }
 
-  .quality__container {
+  .quality__container,
+  .our-partners__container {
     max-width: 480px;
   }
 
@@ -1787,6 +1846,7 @@
 
   .default-title {
     font-size: 36px;
+
     span {
       font-size: 100px;
     }
@@ -1808,9 +1868,24 @@
   .become__container,
   .become__container,
   .become-job-search__container,
-  .vacancy__container {
+  .vacancy__container,
+  .job-details__container,
+  .job-search-result__container,
+  .become-job-search__container,
+  .my-account-submit-time-sheet__container,
+  .need-care-form__container,
+  .transfer-now__container,
+  .our-partners__container,
+  .what-is-choices__container,
+  .partner-choose__container,
+  .policy__container,
+  .coming-soon__container,
+  .Q-A__container,
+  .Q-A-questioner__container {
     max-width: 414px;
   }
+
+
   .search-form__container {
     max-width: 370px;
   }
@@ -1853,7 +1928,8 @@
 
   .we-can__title {
     margin-bottom: 55px;
-     span {
+
+    span {
       margin-top: 10px;
     }
   }
@@ -1923,6 +1999,7 @@
 
   .if-family__title {
     line-height: 1.59em;
+
     span {
       font-size: 107px;
       color: #AC8478;
@@ -1938,6 +2015,7 @@
     .what-is-family__text {
       line-height: 1.6em;
     }
+
     p + p {
       margin-top: 25px;
     }
@@ -1981,9 +2059,10 @@
 
     ul {
       li {
+        font-size: 22px;
         background-position: 0 5px;
         line-height: 1.44em;
-        }
+      }
 
       li + li {
         margin-top: 18px;
@@ -2016,6 +2095,265 @@
   .vacancy__responsibility-title {
     font-size: 22px;
   }
+
+  /*------------job-details--------------*/
+  .job-details {
+    padding: 104px 0;
+  }
+
+  .job-details__item-description {
+    .job-details__item-responsibility {
+      font-size: 22px;
+    }
+  }
+
+  .job-details__item-responsibility-title,
+  .job-details__item-responsibility-info,
+  .job-details__item-requirement-title,
+  .job-details__item-requirement-info {
+    font-size: 22px;
+  }
+
+  .job-details__item-btn-box {
+    margin: 0 auto;
+  }
+
+  .job-details__item-responsibility-info,
+  .job-details__item-requirement-info {
+    padding: 12px 22px 0 63px;;
+  }
+
+
+  /*----------index__Career Job Search---------*/
+  /*----------index__Career Job Details---------*/
+  .job-search-result {
+    padding: 104px 0 48px;
+  }
+
+  .job-search-result__title,
+  .job-details__title {
+    font-size: 28px;
+    line-height: 1.1em;
+    margin-bottom: 54px;
+    text-align: center;
+  }
+
+  .job-search-result__subtitle,
+  .job-details__subtitle {
+    font-size: 22px;
+    line-height: 1.44em;
+    margin-bottom: 37px;
+  }
+  .job-details__subtitle {
+    text-align: center;
+  }
+
+  .job-search-result__item {
+    padding-bottom: 38px;
+    max-width: 414px;
+  }
+
+  .job-search-result__item + .job-search-result__item {
+    padding-top: 26px;
+  }
+
+  .job-search-result__item-title {
+
+    a {
+      font-size: 22px;
+
+      &:active {
+        color: #ae7669;
+        background: 0 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #ae7669 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr= #ae7669, GradientType=0);
+        background-repeat: repeat-x;
+        background-position: 0 87%;
+        background-size: 1px 1px;
+      }
+    }
+  }
+
+  .become-job-search {
+    padding: 48px 0 95px;
+  }
+
+
+  /*    index__my-account-submit-time-sheet    */
+  .my-account-submit-time-sheet {
+    padding: 123px 0 108px;
+  }
+
+  .my-account-submit-time-sheet__container {
+    max-width: 414px;
+  }
+
+  .my-account-submit-time-sheet__title-box {
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  .my-account-submit-time-sheet__title {
+    font-size: 28px;
+  }
+
+  .my-account-submit-time-sheet__content {
+    padding-left: 0;
+  }
+
+  .my-account-submit-time-sheet__content-text {
+    margin-bottom: 8px;
+    font-size: 22px;
+  }
+
+  .my-account-submit-time-sheet__content-list {
+    padding: 0;
+    margin-bottom: 40px;
+
+    ul {
+      font-size: 22px;
+    }
+
+    li {
+      padding-left: 46px;
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .my-account-submit-time-sheet__btn {
+    margin-left: 0;
+    text-align: center;
+
+    a {
+      padding: 6px 35px;
+    }
+  }
+
+  /*   index__need care form   */
+  /*   index__transfer-now   */
+  .need-care-form {
+    padding: 52px 0 108px;
+  }
+  .transfer-now {
+    padding: 14px 0 108px;
+  }
+
+  .need-care-form__title-box,
+  .transfer-now__title-box {
+    margin-bottom: 52px;
+    max-width: 414px;
+    text-align: center;
+    padding: 37px 0 22px;
+  }
+
+  .transfer-now__title-box {
+    padding: 37px 0 210px;
+    max-width: 414px;
+    width: 100%;
+    margin-bottom: 125px;
+  }
+
+  .need-care-form__title,
+  .transfer-now__title {
+    font-size: 28px;
+    line-height: 1.37em;
+
+    br {
+      display: block;
+    }
+  }
+
+  .transfer-now__title {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 157px;
+  }
+  .transfer-now__text {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 194px;
+    font-size: 22px;
+  }
+
+  .need-care-form__inner,
+  .transfer-now__inner {
+    max-width: 370px;
+    margin: 0 auto;
+    text-align: center;
+
+    label {
+      margin-bottom: 20px;
+    }
+
+    input {
+      padding: 13px 24px;
+    }
+  }
+
+  .what-is-choices {
+    padding: 74px 0 91px;
+  }
+
+  .what-is-choices__advantages-checkbox {
+    padding-left: 0;
+
+    ul {
+      li {
+        line-height: 1.5em;
+        padding: 0 0 0 37px;
+
+        img {
+          top: 25%;
+        }
+      }
+
+      a {
+        font-size: 20px;
+        letter-spacing: -.01em;
+      }
+
+      li + li {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  /*----------policy-------*/
+  .policy {
+    padding: 259px 0 113px;
+    background-image: url('../img/policy-bg-mobile.jpg');
+  }
+
+  .policy__title {
+    line-height: 1.6em;
+    padding: 0;
+    margin-bottom: 176px;
+  }
+
+
+  /*------Q-A------*/
+  .Q-A {
+    padding: 219px 0 107px;
+    background-image: url(../img/q&a-bg-mobile.jpg);
+  }
+
+  .Q-A__title {
+    line-height: 1.4em;
+    padding-bottom: 133px;
+  }
+
+  .Q-A-questioner__advantages-checkbox {
+    ul {
+      font-size: 22px;
+    }
+  }
+
+
 }
 
 @media screen and (max-width: 480px) {
@@ -2657,36 +2995,6 @@
     padding: 0;
   }
 
-  /*----------policy-------*/
-  .policy {
-    padding: 259px 0 113px;
-    background-image: url('../img/policy-bg-mobile.jpg');
-  }
-
-  /*------Q-A------*/
-  .Q-A {
-    padding: 219px 0 107px;
-    background-image: url(../img/q&a-bg-mobile.jpg);
-  }
-  .Q-A__container {
-    max-width: 414px;
-  }
-  .Q-A__container .Q-A__content {
-    padding: 0;
-  }
-  .Q-A__title {
-
-    p {
-      display: block;
-
-      &:last-child {
-        letter-spacing: -0.04em;
-      }
-    }
-  }
-  .Q-A-questioner__container {
-    max-width: 434px;
-  }
 
   /*----------partners---------*/
   .our-partners {
@@ -2695,206 +3003,14 @@
   }
   .our-partners__title {
     padding: 0 0 197px;
+    line-height: 1.46em;
   }
-  .what-is-choices {
-    padding: 74px 0 91px;
-  }
-  .what-is-choices__container,
-  .partner-choose__container {
-    max-width: 414px;
-  }
-  .what-is-choices__advantages-checkbox {
-    padding-left: 0;
-
-    ul {
-      li {
-        line-height: 1.5em;
-        padding: 0 0 0 37px;
-
-        img {
-          top: 25%;
-        }
-      }
-
-      a {
-        font-size: 20px;
-        letter-spacing: -.01em;
-      }
-
-      li + li {
-        margin-top: 10px;
-      }
-    }
-  }
-
-
-
-
 
   /*------featured------*/
   .featured-job {
     padding: 46px 0 107px;
   }
 
-
-  /*----------index__Career Job Search---------*/
-  /*----------index__Career Job Details---------*/
-  .job-search-result {
-    padding: 104px 0 48px;
-  }
-
-  .job-search-result__container {
-    max-width: 414px;
-  }
-
-  .job-search-result__title,
-  .job-details__title {
-    font-size: 28px;
-    line-height: 1.1em;
-    margin-bottom: 54px;
-    text-align: center;
-  }
-
-  .job-search-result__subtitle,
-  .job-details__subtitle {
-    font-size: 22px;
-    line-height: 1.44em;
-    margin-bottom: 37px;
-  }
-  .job-details__subtitle {
-    text-align: center;
-  }
-
-  .job-search-result__item {
-    padding-bottom: 38px;
-    max-width: 414px;
-  }
-
-  .job-search-result__item + .job-search-result__item {
-    padding-top: 26px;
-  }
-
-  .job-search-result__item-title {
-
-    a {
-      font-size: 22px;
-
-      &:active {
-        color: #ae7669;
-        background: 0 0;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #ae7669 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr= #ae7669, GradientType=0);
-        background-repeat: repeat-x;
-        background-position: 0 87%;
-        background-size: 1px 1px;
-      }
-    }
-  }
-
-  .become-job-search {
-    padding: 48px 0 95px;
-  }
-
-
-  /*------------job-details--------------*/
-  .job-details {
-    padding: 104px 0;
-  }
-
-  .job-details__container {
-    max-width: 414px;
-  }
-
-  .job-details__item-description {
-    .job-details__item-responsibility {
-      font-size: 22px;
-    }
-  }
-
-  .job-details__item-responsibility-title,
-  .job-details__item-responsibility-info,
-  .job-details__item-requirement-title,
-  .job-details__item-requirement-info {
-    font-size: 22px;
-  }
-
-  .job-details__item-btn-box {
-    margin: 0 auto;
-  }
-
-  .job-details__item-responsibility-info,
-  .job-details__item-requirement-info {
-    padding: 12px 22px 0 63px;;
-  }
-
-
-  /*   index__need care form   */
-  /*   index__transfer-now   */
-  .need-care-form {
-    padding: 52px 0 108px;
-  }
-  .transfer-now {
-    padding: 14px 0 108px;
-  }
-
-  .need-care-form__container,
-  .transfer-now__container {
-    max-width: 414px;
-  }
-
-  .need-care-form__title-box,
-  .transfer-now__title-box {
-    margin-bottom: 52px;
-    max-width: 414px;
-    text-align: center;
-    padding: 37px 0 22px;
-  }
-
-  .transfer-now__title-box {
-    padding: 37px 0 210px;
-    max-width: 414px;
-    width: 100%;
-    margin-bottom: 125px;
-  }
-
-  .need-care-form__title,
-  .transfer-now__title {
-    font-size: 28px;
-    line-height: 1.37em;
-
-    br {
-      display: block;
-    }
-  }
-
-  .transfer-now__title {
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 157px;
-  }
-  .transfer-now__text {
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 194px;
-    font-size: 22px;
-  }
-
-  .need-care-form__inner,
-  .transfer-now__inner {
-    max-width: 370px;
-    margin: 0 auto;
-    text-align: center;
-
-    label {
-      margin-bottom: 20px;
-    }
-
-    input {
-      padding: 13px 24px;
-    }
-  }
 
   /*   index__need-care-thanks   */
   /*   index__transfer-now-thanks   */
@@ -3008,60 +3124,6 @@
       a {
         padding: 13.34px 60.78px 13px;
       }
-    }
-  }
-
-
-  /*    index__my-account-submit-time-sheet    */
-  .my-account-submit-time-sheet {
-    padding: 123px 0 108px;
-  }
-
-  .my-account-submit-time-sheet__container {
-    max-width: 414px;
-  }
-
-  .my-account-submit-time-sheet__title-box {
-    margin-bottom: 45px;
-    text-align: center;
-  }
-
-  .my-account-submit-time-sheet__title {
-    font-size: 28px;
-  }
-
-  .my-account-submit-time-sheet__content {
-    padding-left: 0;
-  }
-
-  .my-account-submit-time-sheet__content-text {
-    margin-bottom: 8px;
-    font-size: 22px;
-  }
-
-  .my-account-submit-time-sheet__content-list {
-    padding: 0;
-    margin-bottom: 40px;
-
-    ul {
-      font-size: 22px;
-    }
-
-    li {
-      padding-left: 46px;
-
-      span {
-        display: block;
-      }
-    }
-  }
-
-  .my-account-submit-time-sheet__btn {
-    margin-left: 0;
-    text-align: center;
-
-    a {
-      padding: 6px 35px;
     }
   }
 
@@ -3654,7 +3716,6 @@
   }
 
 
-
   .about__inner {
     padding: 0 10px;
   }
@@ -3688,7 +3749,23 @@
   .join__container,
   .become__container,
   .vacancy__container,
-  .apply-now__container {
+  .apply-now__container,
+  .job-details__container,
+  .job-search-result__container,
+  .become-job-search__container,
+  .my-account-register__container,
+  .my-account-sign-in__container,
+  .my-account-submit-time-sheet__container,
+  .need-care-form__container,
+  .transfer-now__container,
+  .need-care-thanks__container,
+  .our-partners__container,
+  .what-is-choices__container,
+  .partner-choose__container,
+  .policy__container,
+  .coming-soon__container,
+  .Q-A__container,
+  .Q-A-questioner__container {
     max-width: 310px;
   }
 
@@ -3714,9 +3791,10 @@
 
   .we-can__item {
     margin: 0 auto;
+
     &:nth-child(1),
     &:nth-child(2),
-    &:nth-child(3){
+    &:nth-child(3) {
       margin-bottom: 32px;
     }
   }
@@ -3765,13 +3843,14 @@
   }
 
   .footer__phones {
-    padding: 0 ;
+    padding: 0;
     max-width: 100%;
     top: 30px;
 
     ul {
       a {
         display: inline-block;
+
         &::after {
           width: 100%;
         }
@@ -3817,6 +3896,41 @@
 
   .apply-now__submit_captcha-info {
     max-width: 280px;
+  }
+
+  .job-details__item-btn-box {
+    display: block;
+  }
+
+  .job-details__item-btn-apply {
+    margin-bottom: 40px;
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+
+  .job-details__item-responsibility-info,
+  .job-details__item-requirement-info {
+    padding-left: 20px;
+  }
+
+  .my-account-register__btn-group,
+  .my-account-sign-in__btn-group {
+    display: block;
+  }
+
+  .my-account-register__form-btn,
+  .my-account-sign-in__form-btn {
+    margin-bottom: 40px;
+  }
+
+  .need-care-thanks__title-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .policy__title {
+    word-break: break-word;
   }
 }
 
