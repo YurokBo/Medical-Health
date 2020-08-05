@@ -200,7 +200,7 @@
 }
 
 .helping-hand__container {
-  max-width: 100%;
+  max-width: 1060px;
   width: 100%;
   margin: 0 auto;
 }
@@ -221,7 +221,7 @@
 .helping-hand__title {
   font-family: 'TrajanPro3-Regular';
   font-weight: 400;
-  @include adaptiv-font(45, 26);
+  font-size: 45px;
   line-height: 1.23em;
   letter-spacing: 0.002em;
   color: #FFFFFF;
@@ -242,7 +242,7 @@
   font-size: 166px;
   line-height: .5em;
   letter-spacing: 0.003em;
-  padding-bottom: 129px;
+  margin-bottom: 129px;
 }
 
 .quality__btn,
@@ -335,6 +335,7 @@
   min-height: 497px;
 }
 
+
 .care-services__content-items-top,
 .care-services__content-items-bottom {
   display: flex;
@@ -379,13 +380,15 @@
     display: block;
   }
 
-  &:active {
+  &:active,
+  &:hover {
     transform: scale(1.04);
     box-shadow: 0px 3px 30px $services-item-border;
   }
 }
 
-.services__content-item {
+.services__content-item,
+.care-services__content-item {
 
   &:nth-child(2) {
     padding: 39px 68px 16px 67px;
@@ -446,8 +449,21 @@
     }
   }
 
+}
+
+.services__content-item {
   &:last-child {
     padding: 99px 41px 16px 38px;
+  }
+}
+
+.care-services__content-item {
+  &:nth-child(5) {
+    margin-left: 145px;
+  }
+
+  &:nth-child(7) {
+    margin-right: 145px;
   }
 }
 
@@ -618,11 +634,16 @@
 .advocacy-choose__title,
 .partner-choose__title {
   padding: 0 95px 0 0;
-  margin-bottom: 42px;
   text-align: center;
   font-size: 40px;
   line-height: 1.5em;
   letter-spacing: 0.01em;
+  text-transform: capitalize;
+}
+
+.questioner__title {
+  margin-bottom: 45px;
+  padding-right: 0;
 }
 
 .advocacy-choose__title,
@@ -917,7 +938,7 @@
       resize: none;
       width: 100%;
       display: block;
-      min-height: 108px;
+      min-height: 107px;
       padding-top: 11px;
     }
   }
@@ -1393,6 +1414,7 @@
   padding: 255px 0 130px;
   background-image: url('../img/policy-bg.jpg');
 }
+
 .policy__container {
   max-width: 760px;
   width: 100%;
@@ -1421,16 +1443,20 @@
 }
 
 .home-care__container,
-.skilled-care__container,
-.transportation__container,
 .advocacy__container {
   max-width: 1110px;
   width: 100%;
   margin: 0 auto;
 }
 
+.transportation__container {
+  max-width: 870px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .pest-control__container {
-  max-width: 100%;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
 }
@@ -1441,9 +1467,17 @@
   margin: 0 auto;
 }
 
+.philanthropy__container,
+.urgent-care__container {
+  max-width: 414px;
+  width: 100%;
+  margin: 0 auto;
+}
 
-.transportation__content {
-  padding: 0 115px;
+.skilled-care__container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .home-care__title,
@@ -1524,12 +1558,12 @@
   display: inline;
 }
 
-.home-care__btn {
-  margin: 59px 0 0 0;
+.home-care__info {
+  margin: 0 0 59px 0;
 }
 
 .skilled-care__info {
-  padding: 0 30px;
+  padding: 0 60px;
 }
 
 .skilled-care__txt {
@@ -1546,12 +1580,11 @@
 }
 
 .pest-control__info {
-  padding: 0 0 59px;
+  margin: 0 0 59px;
 }
 
-.transportation__txt {
-  display: block;
-  padding: 0 0 65px 0;
+.transportation__info {
+  margin: 0 0 65px 0;
 }
 
 
@@ -1567,7 +1600,6 @@
 }
 
 .what-is__container,
-.what-is-skilled__container,
 .what-is-transportation__container,
 .what-is-advocacy__container,
 .what-is-pest__container {
@@ -1576,6 +1608,7 @@
   margin: 0 auto;
 }
 
+.what-is-skilled__container,
 .what-is-advocacy__container,
 .what-is-pest__container,
 .what-is-family__container,
@@ -1609,6 +1642,10 @@
   font-size: 40px;
   line-height: 1.13em;
   padding: 0 0 30px 0;
+}
+
+.how-much-transportation__title {
+  letter-spacing: -.03em;
 }
 
 .what-is-transportation__title {
@@ -1645,7 +1682,7 @@
     margin-top: 0;
   }
 
-  p:nth-child(2){
+  p:nth-child(2) {
     margin-bottom: 10px;
   }
 }
@@ -1661,9 +1698,14 @@
 }
 
 .advantages__container,
-.advantages-transportation__container,
 .pest-advantages__container {
-  max-width: 1225px;
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.advantages-transportation__container {
+  max-width: 1155px;
   width: 100%;
   margin: 0 auto;
 }
@@ -1681,57 +1723,15 @@
   text-transform: capitalize;
 }
 
-.advantages__info-text,
+.advantages__info {
+  margin-bottom: 30px;
+}
+
 .advantages__info-text {
-  &:last-child {
-    padding: 30px 0 30px;
-  }
-}
+  display: block;
 
-.advantages__checkbox,
-.pest-advantages__checkbox {
-  li {
-    position: relative;
-    padding: 0 0 0 43px;
-    line-height: 1.96em;
-    letter-spacing: -0.009em;
-
-    img {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-}
-
-.advantages-transportation__checkbox {
-  padding-right: 86px;
-
-  li {
-    position: relative;
-    padding: 0 0 0 43px;
-    line-height: 1.5em;
-
-    img {
-      position: absolute;
-      left: 0;
-      top: 25%;
-      transform: translateY(-50%);
-    }
-
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(3) {
-      padding-right: 47px;
-    }
-
-    &:nth-child(4) {
-      img {
-        top: 47%;
-        transform: translateY(-50%);
-      }
-    }
+  &:first-child {
+    margin-bottom: 40px;
   }
 }
 
@@ -1793,9 +1793,13 @@
 .how-much-skilled__container,
 .how-much-transportation__container,
 .how-much-advocacy__container {
-  max-width: 1206px;
+  max-width: 1230px;
   width: 100%;
   margin: 0 auto;
+}
+
+.how-much-transportation__container {
+  max-width: 1170px;
 }
 
 .how-much-skilled__inner,
@@ -1824,12 +1828,6 @@
 /*--------------questioner-------------*/
 .questioner__container {
   padding: 107px 0 97px;
-}
-
-.questioner__title {
-  &:last-child {
-    display: none;
-  }
 }
 
 /*-------urgent care coming soon--------------*/
@@ -2839,28 +2837,6 @@
   margin-bottom: 22px;
 }
 
-.load-resume__btn-box {
-  margin-bottom: 12px;
-}
-
-.load-resume__label {
-  font-family: 'Circe-Bold';
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.14em;
-  color: $btn-title-color;
-
-  border: 2px solid #AE7669;
-  border-radius: 8.52398px;
-
-  padding: 5.3px 29.3px 3.7px;
-
-  &:hover,
-  &:active {
-    background-color: $btn-bg-color;
-    color: #FFFFFF;
-  }
-}
 
 .load-resume__formats-accepted {
   font-size: 16px;
@@ -2882,16 +2858,19 @@
   line-height: 1.5em;
 }
 
-.apply-now__submit_confirm-info_checkbox {
+.apply-now__submit_confirm-info_checkbox,
+.upload-delete-check-list__item_checkbox {
   position: relative;
 
-  .confirm-info__input {
+  .confirm-info__input,
+  .upload-delete-check-list__input {
     -webkit-appearance: none;
     appearance: none;
     left: 0;
   }
 
-  .confirm-info__label {
+  .confirm-info__label,
+  .upload-delete-check-list__label {
 
     font-size: 20px;
     cursor: pointer;
@@ -2937,21 +2916,24 @@
       transition: opacity .1s;
 
       position: absolute;
-      top: 1px;
+      top: 0;
       left: 0;
       transform: translate(0, 0);
       z-index: 2;
     }
   }
 
-  .confirm-info__input:checked + .confirm-info__label:before {
+  .confirm-info__input:checked + .confirm-info__label:before,
+  .upload-delete-check-list__input:checked + .upload-delete-check-list__label:before {
     border-color: #AC8478;
   }
 
-  .confirm-info__input:checked + .confirm-info__label:after {
+  .confirm-info__input:checked + .confirm-info__label:after,
+  .upload-delete-check-list__input:checked + .upload-delete-check-list__label:after {
     opacity: 1;
   }
 }
+
 
 .apply-now__submit_captcha {
   display: flex;
@@ -3400,7 +3382,10 @@
 .become__checkbox,
 .become-job-search__checkbox,
 .what-is-choices__advantages-checkbox,
-.Q-A-questioner__advantages-checkbox {
+.Q-A-questioner__advantages-checkbox,
+.advantages__checkbox,
+.advantages-transportation__checkbox,
+.pest-advantages__checkbox {
   padding: 0 110px 0 49px;
   margin-bottom: 40px;
 
@@ -3422,7 +3407,9 @@
 }
 
 .become__checkbox,
-.become-job-search__checkbox {
+.become-job-search__checkbox,
+.advantages__checkbox,
+.pest-advantages__checkbox {
   padding: 0;
 
   li {
@@ -3432,9 +3419,31 @@
   }
 }
 
+.advantages__checkbox {
+  margin-bottom: 0;
+}
+
 .Q-A-questioner__advantages-checkbox {
   margin-top: 10px;
   padding: 0 0 0 64px;
+}
+
+.advantages-transportation__checkbox {
+  padding: 0;
+
+  li {
+    padding-left: 44px;
+    line-height: 1.5em;
+    background-position: 0 5px;
+  }
+
+  li {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 
@@ -4381,6 +4390,114 @@
 .account__content-item + .account__content-item {
   margin-top: 14px;
 }
+
+.account__upload-delete-check-list {
+
+  .account__upload-delete-check-list_title {
+    margin-bottom: 10px;
+  }
+  ul {
+    max-width: 821px;
+    width: 100%;
+  }
+
+  li {
+    background: none;
+    font-size: 24px;
+  }
+
+  li + li {
+    margin-top: 3px;
+  }
+
+  .upload-delete-check-list__item_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .upload-delete-check-list__item_checkbox {
+    .upload-delete-check-list__label {
+      padding-left: 40px;
+      font-size: 24px;
+
+      &:before {
+        top: 47%;
+        transform: translate(0, -50%);
+        width: 20px;
+        height: 20px;
+      }
+
+      &:after {
+        top: 46%;
+        transform: translate(0, -52%);
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .upload-delete-check-list__item_btn-box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 173px;
+    width: 100%;
+  }
+}
+
+.delete__btn-box {
+  button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+
+    font-family: 'Circe-Regular';
+    font-weight: 400;
+    font-size: 22px;
+    color: #AC8478;
+    text-transform: capitalize;
+
+    padding: 0;
+
+    &:hover,
+    &:active {
+      /*----------underline------------*/
+      background: 0 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #AC8478 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=#AC8478, GradientType=0);
+      background-repeat: repeat-x;
+      background-position: 0 94%;
+      background-size: 1px 1px;
+      text-decoration: none;
+    }
+  }
+}
+
+.upload__btn-box {
+  .upload__label {
+    font-family: 'Circe-Regular';
+    font-weight: 400;
+    font-size: 22px;
+    color: #AC8478;
+    text-transform: capitalize;
+    line-height: 1.09em;
+
+    &:hover,
+    &:active {
+      /*----------underline------------*/
+      background: 0 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #AC8478 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=#AC8478, GradientType=0);
+      background-repeat: repeat-x;
+      background-position: 0 84%;
+      background-size: 1px 1px;
+      text-decoration: none;
+    }
+  }
+}
+
+
 
 
 /*   index__my-account-create-timesheet   */

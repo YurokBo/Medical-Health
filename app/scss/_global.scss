@@ -295,3 +295,49 @@ button {
 .ui-timepicker-standard {
   font-size: 16px;
 }
+
+/*    upload    */
+.load-resume__btn-box {
+  margin-bottom: 12px;
+}
+
+.load-resume__label,
+.load-id__label,
+.load-PPD-test__label,
+.load-DHS-certification__label,
+.load-100-questions__label,
+.load-photo__label,
+.submit-100-questions__label {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.14em;
+  color: $btn-title-color;
+
+  border: 2px solid #AE7669;
+  border-radius: 8.52398px;
+
+  &:hover,
+  &:active {
+    background-color: $btn-bg-color;
+    color: #FFFFFF;
+  }
+}
+.load-resume__label {
+  padding: 5.3px 29.3px 3.7px;
+}
+
+.load-id__label,
+.load-PPD-test__label,
+.load-DHS-certification__label {
+  padding: 4.5px 50.36px;
+}
+.load-100-questions__label {
+  padding: 4.5px 37.77px;
+}
+.load-photo__label {
+  padding: 4.5px 21.31px;
+}
+.submit-100-questions__label {
+  padding: 4.5px 51.55px;
+}

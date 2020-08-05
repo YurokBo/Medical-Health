@@ -108,7 +108,9 @@
 }
 
 @media screen and (max-width: 1330px) {
-  .form__container {
+  .form__container,
+  .partner__container,
+  .pest-control__container {
     max-width: 1000px;
   }
 
@@ -120,8 +122,10 @@
     margin-bottom: 45px;
   }
 
-  .partner__container {
-    max-width: 1000px;
+  .pest-control__info {
+    p {
+      display: inline;
+    }
   }
 }
 
@@ -145,7 +149,16 @@
   .partner-choose__container,
   .coming-soon__container,
   .Q-A__container,
-  .Q-A-questioner__container {
+  .Q-A-questioner__container,
+  .what-is-advocacy__container,
+  .advantages__container,
+  .advocacy-choose__container,
+  .how-much-advocacy__container,
+  .how-much__container,
+  .what-is-pest__container,
+  .pest-advantages__container,
+  .what-is-skilled__container,
+  .how-much-skilled__container {
     max-width: 1000px;
   }
 
@@ -192,6 +205,10 @@
         max-width: 318px;
       }
     }
+  }
+
+  .how-much-advocacy__info {
+    padding: 0;
   }
 
 }
@@ -527,7 +544,16 @@
   .care-services__container,
   .apply-now__container,
   .my-account-submit-time-sheet__container,
-  .need-care-form__container {
+  .need-care-form__container,
+  .advocacy__container,
+  .home-care__container,
+  .what-is__container,
+  .what-is-transportation__container,
+  .advantages-transportation__container,
+  .how-much-transportation__container,
+  .skilled-care__container,
+  .transfer-now__container,
+  .transfer-now-thanks__container {
     max-width: 870px;
   }
 
@@ -579,13 +605,15 @@
     line-height: 1.52em;
   }
 
-  .services__content-items {
+  .services__content-items,
+  .care-services__content-items {
     justify-content: space-between;
     min-height: 0;
     font-size: 22px;
   }
 
-  .services__content-item {
+  .services__content-item,
+  .care-services__content-item {
     max-width: 182px;
     min-height: 158px;
     letter-spacing: 0.03em;
@@ -674,8 +702,20 @@
       margin-bottom: 33px;
     }
 
+
+  }
+  .services__content-item {
     &:last-child {
       padding: 88px 20px 16px 20px;
+    }
+  }
+  .care-services__content-item {
+    &:nth-child(5) {
+      margin-left: 120px;
+    }
+
+    &:nth-child(7) {
+      margin-right: 120px;
     }
   }
 
@@ -746,36 +786,17 @@
   .apply-now__submit_captcha-info {
     max-width: 366px;
   }
-}
 
-@media screen and (max-width: 1110px) {
-
-  .care-services__content-items {
-    padding: 0 260px;
+  .skilled-care__info {
+    padding: 0;
   }
-  .care-services__content-items-bottom {
-    max-width: 100%;
-
-    .care-services__content-item {
-      &:last-child {
-        margin: 0 auto;
-      }
-    }
-  }
-  .care-services__content-item {
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(3),
-    &:nth-child(4),
-    &:nth-child(5),
-    &:nth-child(6) {
-      margin-bottom: 30px;
-    }
-  }
-
 }
 
 @media screen and (max-width: 1100px) {
+
+  .helping-hand__container {
+    max-width: 870px;
+  }
 
   .footer__inner {
     flex-direction: column;
@@ -797,12 +818,6 @@
   }
 }
 
-@media screen and (max-width: 1076px) {
-  .care-services__content-items {
-    padding: 0 233px;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .partner__container,
   .form__container,
@@ -818,16 +833,22 @@
   .partner-choose__container,
   .coming-soon__container,
   .Q-A__container,
-  .Q-A-questioner__container {
+  .Q-A-questioner__container,
+  .what-is-advocacy__container,
+  .advantages__container,
+  .advocacy-choose__container,
+  .how-much-advocacy__container,
+  .how-much__container,
+  .pest-control__container,
+  .what-is-pest__container,
+  .pest-advantages__container,
+  .what-is-skilled__container,
+  .how-much-skilled__container {
     max-width: 870px;
   }
 
   .footer__container {
     max-width: 414px;
-  }
-
-  .care-services__content-items {
-    padding: 0 200px;
   }
 
   /*------------------footer-------------------*/
@@ -964,21 +985,13 @@
       margin-top: 18px;
     }
   }
-}
 
-@media screen and (max-width: 960px) {
-  .care-services__content-items {
-    padding: 0 170px;
+  .advantages__checkbox {
+    display: block;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .care-services__content-items {
-    padding: 0 140px;
-  }
-}
-
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 910px) {
   .header__container,
   .about__container,
   .services__container,
@@ -1001,7 +1014,30 @@
   .partner-choose__container,
   .coming-soon__container,
   .Q-A__container,
-  .Q-A-questioner__container {
+  .Q-A-questioner__container,
+  .helping-hand__container,
+  .care-services__container,
+  .advocacy__container,
+  .what-is-advocacy__container,
+  .advantages__container,
+  .advocacy-choose__container,
+  .how-much-advocacy__container,
+  .home-care__container,
+  .what-is__container,
+  .questioner__container,
+  .how-much__container,
+  .transportation__container,
+  .what-is-transportation__container,
+  .advantages-transportation__container,
+  .how-much-transportation__container,
+  .pest-control__container,
+  .what-is-pest__container,
+  .pest-advantages__container,
+  .skilled-care__container,
+  .what-is-skilled__container,
+  .how-much-skilled__container,
+  .transfer-now__container,
+  .transfer-now-thanks__container {
     max-width: 670px;
   }
 
@@ -1016,6 +1052,20 @@
   .services__content-item {
     &:last-child {
       display: none;
+    }
+
+    &:nth-child(7) {
+      margin: 0 auto;
+    }
+
+    &:nth-child(5),
+    &:nth-child(6) {
+      margin-bottom: 33px;
+    }
+  }
+  .care-services__content-item {
+    &:nth-child(5) {
+      margin-left: 0;
     }
 
     &:nth-child(7) {
@@ -1092,7 +1142,12 @@
     #phone-number {
       max-width: 100%;
     }
+    #your-message {
 
+      textarea {
+        min-height: 160px;
+      }
+    }
 
     label {
       textarea {
@@ -1126,6 +1181,7 @@
       letter-spacing: 0.01em;
     }
   }
+
 
   /*    apply-now   */
   .apply-now {
@@ -1536,7 +1592,7 @@
       }
 
       &:after {
-        top: 6px;
+        top: 4px;
       }
     }
   }
@@ -1573,6 +1629,14 @@
   .submit__btn {
     padding: 16.84px 78.2px;
   }
+
+  .how-much-advocacy__info {
+    text-align: center;
+  }
+
+  .questioner__title {
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 840px) {
@@ -1580,21 +1644,9 @@
     max-width: 480px;
   }
 
-  .care-services__content-items {
-    padding: 0 110px;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .care-services__content-items {
-    padding: 0 80px;
-  }
 }
 
 @media screen and (max-width: 720px) {
-  .care-services__content-items {
-    padding: 0 50px;
-  }
 
   .about__container,
   .if-family__container,
@@ -1629,7 +1681,7 @@
   }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 710px) {
   .header__container,
   .services__container,
   .we-can__container,
@@ -1651,7 +1703,30 @@
   .partner-choose__container,
   .coming-soon__container,
   .Q-A__container,
-  .Q-A-questioner__container {
+  .Q-A-questioner__container,
+  .helping-hand__container,
+  .care-services__container,
+  .advocacy__container,
+  .what-is-advocacy__container,
+  .advantages__container,
+  .advocacy-choose__container,
+  .how-much-advocacy__container,
+  .home-care__container,
+  .what-is__container,
+  .questioner__container,
+  .how-much__container,
+  .transportation__container,
+  .what-is-transportation__container,
+  .advantages-transportation__container,
+  .how-much-transportation__container,
+  .pest-control__container,
+  .what-is-pest__container,
+  .pest-advantages__container,
+  .skilled-care__container,
+  .what-is-skilled__container,
+  .how-much-skilled__container,
+  .transfer-now__container,
+  .transfer-now-thanks__container {
     max-width: 480px;
   }
 
@@ -1659,7 +1734,8 @@
     padding: 0 10px;
   }
 
-  .services__content-items {
+  .services__content-items,
+  .care-services__content-items {
     max-width: 414px;
     width: 100%;
     margin: 0 auto;
@@ -1698,23 +1774,11 @@
     }
   }
 
-
-}
-
-@media screen and (max-width: 660px) {
-
-  .care-services__content-items {
-    padding: 0 30px;
-  }
-
-  .quality__container,
-  .our-partners__container {
-    max-width: 480px;
-  }
-
-  .quality__title,
   .helping-hand__title {
-    font-size: 65px;
+    line-height: 1.4em;
+    letter-spacing: .003em;
+    padding-bottom: 8px;
+    font-size: 38px;
 
     span {
       padding-right: 0;
@@ -1726,116 +1790,48 @@
     font-size: 136px;
   }
 
+  .questioner__content {
+    padding-right: 0;
+    display: block;
+  }
+
+  .choose__content-left,
+  .choose__content-right,
+  .questioner__content-left,
+  .questioner__content-right {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .how-much__info-text {
+    &:nth-child(1),
+    &:nth-child(2) {
+      display: inline;
+    }
+  }
 }
 
-@media screen and (max-width: 617px) {
-  .care-services__content-items {
-    padding: 0 14px;
+@media screen and (max-width: 660px) {
+
+  .quality__container,
+  .our-partners__container {
+    max-width: 480px;
   }
+
+  .quality__title {
+    font-size: 65px;
+
+    span {
+      padding-right: 0;
+    }
+  }
+
+
 }
 
 @media screen and (max-width: 590px) {
-
-  .care-services__content-item {
-    max-width: 182px;
-    min-height: 158px;
-    letter-spacing: 0.03em;
-    padding: 26px 28px 5px 27px;
-
-    img {
-      max-width: 69px;
-      width: 100%;
-      margin-bottom: 5px;
-    }
-
-    span {
-      display: block;
-    }
-
-    &:nth-child(2) {
-      padding: 26px 28px 5px 27px;
-
-      img {
-        max-width: 51px;
-        margin-bottom: 10px;
-      }
-    }
-
-    &:nth-child(3) {
-      padding: 31px 16px 5px 18px;
-      line-height: 1.1em;
-      letter-spacing: .0074em;
-
-      img {
-        max-width: 92px;
-        margin-bottom: 6px;
-      }
-    }
-
-    &:nth-child(4) {
-      padding: 31px 26px 5px 21px;
-      line-height: 1.3em;
-      letter-spacing: .014em;
-
-      img {
-        max-width: 57px;
-        margin-bottom: 12px;
-      }
-    }
-
-    &:nth-child(5) {
-      padding: 19px 25px 5px 27px;
-      line-height: 1.12em;
-      letter-spacing: .001em;
-
-      img {
-        max-width: 65px;
-        margin-bottom: 11px;
-      }
-    }
-
-    &:nth-child(6) {
-      padding: 28px 30px 5px 28px;
-      line-height: 1.42em;
-      letter-spacing: .02em;
-
-      img {
-        max-width: 58px;
-        margin-bottom: 14px;
-      }
-    }
-
-    &:nth-child(7) {
-      padding: 26px 32px 5px 30px;
-      line-height: 1.42em;
-      letter-spacing: .02em;
-      margin: 0 auto;
-
-      img {
-        max-width: 65px;
-        margin-bottom: 9px;
-      }
-    }
-
-
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(3),
-    &:nth-child(4),
-    &:nth-child(5),
-    &:nth-child(6) {
-      margin-bottom: 33px;
-    }
-  }
-
   .featured-job .owl-carousel .owl-nav .owl-prev {
     left: -70px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .care-services__content-items {
-    padding: 0 50px;
   }
 }
 
@@ -1881,17 +1877,39 @@
   .policy__container,
   .coming-soon__container,
   .Q-A__container,
-  .Q-A-questioner__container {
+  .Q-A-questioner__container,
+  .helping-hand__container,
+  .care-services__container,
+  .quality__container,
+  .advocacy__container,
+  .what-is-advocacy__container,
+  .advantages__container,
+  .advocacy-choose__container,
+  .how-much-advocacy__container,
+  .home-care__container,
+  .what-is__container,
+  .questioner__container,
+  .how-much__container,
+  .transportation__container,
+  .what-is-transportation__container,
+  .advantages-transportation__container,
+  .how-much-transportation__container,
+  .pest-control__container,
+  .what-is-pest__container,
+  .pest-advantages__container,
+  .skilled-care__container,
+  .what-is-skilled__container,
+  .how-much-skilled__container,
+  .transfer-now__container,
+  .transfer-now-thanks__container {
     max-width: 414px;
   }
-
 
   .search-form__container {
     max-width: 370px;
   }
 
-  .quality__title,
-  .helping-hand__title {
+  .quality__title {
     line-height: 1.4em;
     letter-spacing: .003em;
     padding-bottom: 8px;
@@ -2353,10 +2371,6 @@
     }
   }
 
-
-}
-
-@media screen and (max-width: 480px) {
   /*----------quality------------*/
   /*----------helping-hand------------*/
   .quality,
@@ -2369,11 +2383,15 @@
 
   .helping-hand {
     position: relative;
-    padding: 236px 0 107.7px;
+    padding: 234px 0 115px;
     background-image: url("../img/helping-hand-bg-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .helping-hand__title {
+    font-size: 28px;
   }
 
   .default-btn {
@@ -2383,138 +2401,117 @@
     }
   }
 
-
-  /*------------services--------------*/
-  .services,
-  .care-services {
-    padding: 96px 0 109px;
+  .quality__subtitle,
+  .helping-hand__subtitle {
+    font-size: 110px;
+    margin-bottom: 97px;
   }
 
-  .services__container {
-    max-width: 414px;
+
+  /*--------------advocacy--------------*/
+  .advocacy {
+    padding: 146px 0 103px;
+    background-image: url("../img/advocacy-bg-mobile.jpg");
   }
 
-  .services__title {
-    padding: 0 0 35px 0;
-    letter-spacing: 0.001em;
+  .advocacy__title {
+    padding: 0 0 58px 0;
   }
 
-  .services__txt {
-    line-height: 1.52em;
-
-    &:last-child {
-      padding: 0 55px 0 50px;
-    }
+  /*----------what-is---------*/
+  .what-is,
+  .what-is-skilled,
+  .what-is-transportation,
+  .what-is-advocacy,
+  .what-is-pest {
+    padding: 93.34px 0;
   }
 
-  .services__content-items {
-    max-width: 397.57px;
+  .what-is__title,
+  .what-is-skilled__title,
+  .what-is-transportation__title {
+    padding: 0 68px 29px;
+    line-height: 1.33em;
   }
+  .what-is-transportation__title {
+    padding: 0 0 29px;
 
-  .care-services__txt {
-    &:last-child {
-      padding: 0 47px;
-    }
-  }
-
-  .services__content-item {
-    max-width: 182px;
-    min-height: 158px;
-    letter-spacing: 0.03em;
-    padding: 26px 28px 5px 27px;
-
-    img {
-      max-width: 69px;
-      width: 100%;
-      margin-bottom: 5px;
-    }
-
-    span {
+    p {
       display: block;
     }
+  }
 
-    &:nth-child(2) {
-      padding: 26px 28px 5px 27px;
+  .what-is__info {
+    padding-right: 41px;
+  }
 
-      img {
-        max-width: 51px;
-        margin-bottom: 10px;
-      }
-    }
+  .what-is-transportation__info {
+    padding-right: 47px;
+  }
 
-    &:nth-child(3) {
-      padding: 31px 16px 5px 18px;
-      line-height: 1.1em;
-      letter-spacing: .0074em;
+  /*------------advantages------------*/
+  .advantages,
+  .advantages-transportation,
+  .pest-advantages {
+    padding: 101px 0;
+  }
 
-      img {
-        max-width: 92px;
-        margin-bottom: 6px;
-      }
-    }
+  .pest-advantages__content {
+    max-width: 421px;
+    width: 100%;
+    margin: 0 auto;
+  }
 
-    &:nth-child(4) {
-      padding: 31px 26px 5px 21px;
-      line-height: 1.3em;
-      letter-spacing: .014em;
+  .advantages__title,
+  .advantages-transportation__title {
+    padding: 0 0 49px 0;
+  }
 
-      img {
-        max-width: 57px;
-        margin-bottom: 12px;
-      }
-    }
-
-    &:nth-child(5) {
-      padding: 19px 25px 5px 27px;
-      line-height: 1.12em;
-      letter-spacing: .001em;
-
-      img {
-        max-width: 65px;
-        margin-bottom: 11px;
-      }
-    }
-
-    &:nth-child(6) {
-      padding: 28px 30px 5px 28px;
-      line-height: 1.42em;
-      letter-spacing: .02em;
-
-      img {
-        max-width: 58px;
-        margin-bottom: 14px;
-      }
-    }
-
-    &:nth-child(7) {
-      padding: 26px 32px 5px 30px;
-      line-height: 1.42em;
-      letter-spacing: .02em;
-      margin: 0 auto;
-
-      img {
-        max-width: 65px;
-        margin-bottom: 9px;
-      }
-    }
-
-
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(3),
-    &:nth-child(4),
-    &:nth-child(5),
-    &:nth-child(6) {
-      margin-bottom: 33px;
+  .advantages__checkbox,
+  .advantages-transportation__checkbox {
+    li {
+      letter-spacing: -.0034em;
+      font-size: 22px;
+      background-position: 0 9px;
     }
   }
 
-  .services__content-item {
-    &:last-child {
-      display: none;
+  .advantages__info {
+    margin-bottom: 13px;
+    padding-right: 6px;
+  }
+
+  .advantages__info-text {
+    display: block;
+
+    &:first-child {
+      margin-bottom: 10px;
     }
   }
 
+
+  .advantages-transportation__checkbox {
+    padding-right: 0;
+
+    li + li {
+      padding-top: 14px;
+    }
+  }
+
+  .pest-advantages__checkbox {
+    padding-right: 42px;
+
+    li {
+      font-size: 22px;
+      line-height: 1.44em;
+      margin-bottom: 17px;
+      background-position: 0 3px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 
   /*----------------choose------------------*/
   /*----------------questioner------------------*/
@@ -2526,16 +2523,6 @@
 
   .advocacy-choose {
     padding: 102px 0 100px;
-  }
-
-  .questioner__title {
-    &:first-child {
-      display: none;
-    }
-
-    &:last-child {
-      display: block;
-    }
   }
 
   .questioner__title {
@@ -2623,32 +2610,6 @@
     padding: 0 30px 0 63px;
   }
 
-  /*----------partner------------------*/
-  .partner {
-    padding: 98px 0 87px;
-    text-align: center;
-  }
-
-  .partner__title {
-    text-align: center;
-    letter-spacing: -0.001em;
-    padding: 0 0 36px 0;
-  }
-
-  .partner__carousel {
-    .item {
-      width: 255px !important;
-    }
-  }
-
-  .partner .owl-carousel .owl-nav .owl-prev {
-    left: 31px;
-  }
-
-  .partner .owl-carousel .owl-nav .owl-next {
-    right: 34px;
-  }
-
 
   /*-------------home-care---------------*/
   .home-care {
@@ -2660,191 +2621,25 @@
     text-align: center;
   }
 
-  .home-care__content {
-    padding: 0 59px;
-  }
-
   .home-care__title {
     text-transform: uppercase;
     color: $home-care__title;
     line-height: 1.3em;
     padding: 0 0 75px 0;
+    font-size: 44px;
   }
 
   .home-care__txt {
-    display: block;
-    padding: 0 0 104px 0;
-
     &:last-child {
       display: none;
     }
   }
 
-  /*----------what-is---------*/
-  .what-is,
-  .what-is-skilled,
-  .what-is-transportation,
-  .what-is-advocacy,
-  .what-is-pest {
-    padding: 93.34px 0;
-  }
-
-  .what-is__inner,
-  .what-is-skilled__inner,
-  .what-is-transportation__inner,
-  .what-is-advocacy__inner {
-    padding: 0 32px 0 34px;
-  }
-
-  .what-is__title,
-  .what-is-skilled__title,
-  .what-is-transportation__title {
-    padding: 0 68px 29px;
-    line-height: 1.33em;
-  }
-  .what-is-transportation__title {
-    padding: 0 0 29px;
-
-    p {
-      display: block;
-    }
-  }
-
-  .what-is__info,
-  .what-is-skilled__info {
-    padding-right: 41px;
-  }
-
-  .what-is-transportation__info {
-    padding-right: 47px;
-  }
-
-  /*------------advantages------------*/
-  .advantages,
-  .advantages-transportation,
-  .pest-advantages {
-    padding: 101px 0;
-  }
-
-  .advantages__content,
-  .advantages-transportation__content {
-    padding: 0 33px;
-  }
-
-  .pest-advantages__content {
-    max-width: 421px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .advantages__title,
-  .advantages-transportation__title {
-    padding: 0 0 50px 0;
-  }
-
-  .advantages__info {
-    padding-right: 6px;
-  }
-
-  .advantages__info-text {
-    display: inline;
-
-    &:last-child {
-      display: block;
-    }
-  }
-
-  .advantages__checkbox,
-  .advantages-transportation__checkbox {
-    li {
-      letter-spacing: -.0034em;
-    }
-  }
-
-  .advantages-transportation__checkbox {
-    padding-right: 0;
-
-    li + li {
-      padding-top: 14px;
-    }
-
-    li {
-      position: relative;
-      line-height: 1.44em;
-
-      img {
-        position: absolute;
-        left: 0;
-        top: 13%;
-        transform: translateY(-50%);
-      }
-
-      &:nth-child(1),
-      &:nth-child(2),
-      &:nth-child(3) {
-        padding-right: 0;
-      }
-
-      &:nth-child(2),
-      &:nth-child(4) {
-        img {
-          top: 28%;
-          transform: translateY(-50%);
-        }
-      }
-
-      &:nth-child(3) {
-        img {
-          top: 21%;
-          transform: translateY(-50%);
-        }
-      }
-    }
-  }
-
-  .advantages__checkbox {
-    flex-direction: column;
-
-    .advantages__checkbox-right {
-      li:nth-child(9) {
-        img {
-          top: 26%
-        }
-      }
-    }
-  }
-
-  .pest-advantages__checkbox {
-    padding-right: 42px;
-
-    li {
-      img {
-        top: 25%;
-      }
-
-      &:nth-child(2),
-      &:nth-child(3) {
-        img {
-          top: 17%;
-        }
-      }
-
-      &:nth-child(4) {
-        img {
-          top: 13%;
-        }
-      }
-    }
+  .home-care__info {
+    margin: 0 0 104px 0;
   }
 
   /*---------how-much-----------*/
-  .how-much__inner,
-  .how-much-skilled__inner,
-  .how-much-transportation__inner {
-    padding: 0 33px;
-  }
-
-  .how-much__info-text,
   .how-much-skilled__info-text,
   .how-much-transportation__info-text {
     display: inline;
@@ -2855,15 +2650,9 @@
     }
   }
 
-  .how-much-skilled__inner,
   .how-much-transportation__inner {
     .how-much__title {
       display: block;
-    }
-
-    .how-much-transportation__title,
-    .how-much-skilled__title {
-      display: none;
     }
   }
   .how-much-advocacy__inner {
@@ -2871,37 +2660,9 @@
     width: 100%;
   }
 
-  /*--------skilled-care----------*/
-  .skilled-care {
-    background-image: url("../img/skilled-care-bg-mobile.jpg");
-    padding: 180px 0 108px;
-  }
-
-  .skilled-care__title {
-    padding: 0 0 76px 0;
-  }
-
-  .skilled-care__txt {
-    display: block;
-    padding: 0 0 104px 0;
-
-    &:first-child,
-    &:last-child {
-      display: none;
-    }
-  }
-
-  .skilled-care__content {
-    padding: 0 37px;
-  }
-
-  .skilled-care__info {
-    padding: 0 20px;
-  }
-
   /*-----------transportation-----------------*/
   .transportation {
-    padding: 164px 0 120px;
+    padding: 158px 0 114px;
     background-image: url("../img/transportation-bg-mobile.jpg");
   }
 
@@ -2910,41 +2671,31 @@
   }
   .transportation__title {
     padding: 0 0 78px 0;
-  }
-  .transportation__txt {
-    padding: 0 0 90px 0;
+    line-height: 1.3em;
   }
 
-  /*--------------advocacy--------------*/
-  .advocacy {
-    padding: 146px 0 103px;
-    background-image: url("../img/advocacy-bg-mobile.jpg");
+  .transportation__info {
+    padding: 0;
+    margin-bottom: 110px;
   }
 
-  .advocacy__title {
-    padding: 0 0 58px 0;
-  }
-
-  .advocacy__info {
-    padding: 0 55px 75px;
-  }
 
   /*-------------pest control----------------------*/
   .pest-control {
     background-image: url('../img/pest-control-bg-mobile.jpg');
-    padding: 150px 0 104px;
+    padding: 160px 0 111px;
   }
   .pest-control__title {
     padding-bottom: 72px;
+    line-height: 1.3em;
   }
 
   .pest-control__info {
-    max-width: 414px;
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 88px;
+    margin-bottom: 88px;
 
     .pest-control__txt {
+      display: block;
+
       &:nth-child(1),
       &:nth-child(4),
       &:nth-child(5) {
@@ -2966,25 +2717,57 @@
     padding-right: 15px;
   }
 
+
+  /*-------philanthropy--------------*/
+  .philanthropy {
+    padding: 278px 0 116px;
+    background-image: url('../img/philanthropy-bg-mobile.jpg');
+  }
+
+  .philanthropy__title {
+    padding: 0 0 208px;
+    font-size: 38px;
+  }
+
+
+  /*--------skilled-care----------*/
+  .skilled-care {
+    background-image: url("../img/skilled-care-bg-mobile.jpg");
+    padding: 180px 0 106px;
+  }
+
+  .skilled-care__title {
+    padding: 0 0 76px 0;
+    font-size: 44px;
+  }
+
+  .skilled-care__txt {
+    display: block;
+    padding: 0 0 102px 0;
+
+    &:first-child,
+    &:last-child {
+      display: none;
+    }
+  }
+
+  .skilled-care__info {
+    padding: 0 20px;
+  }
+
+
   /*-------urgent care--------------*/
   .urgent-care {
     padding: 300px 0 130px;
     background-image: url('../img/urgent-care-bg-mobile.png');
   }
   .urgent-care__title {
-    padding: 0 0 175px;
+    padding: 0 0 185px;
   }
 
   .coming-soon {
     padding: 179px 0 150px;
   }
-
-  /*-------philanthropy--------------*/
-  .philanthropy {
-    padding: 272px 0 129px;
-    background-image: url('../img/philanthropy-bg-mobile.jpg');
-  }
-
 
   .what-is-family {
     padding: 104px 0 103px;
@@ -2993,22 +2776,6 @@
   .what-is-family__title {
     margin: 0 0 43px;
     padding: 0;
-  }
-
-
-  /*----------partners---------*/
-  .our-partners {
-    padding: 250px 0 108px;
-    background-image: url('../img/our-partners-bg-mobile.jpg');
-  }
-  .our-partners__title {
-    padding: 0 0 197px;
-    line-height: 1.46em;
-  }
-
-  /*------featured------*/
-  .featured-job {
-    padding: 46px 0 107px;
   }
 
 
@@ -3041,7 +2808,7 @@
       font-size: 22px;
       position: relative;
       top: 60px;
-      top: 60px;
+      padding: 0 30px;
     }
 
     br {
@@ -3054,6 +2821,192 @@
   }
   .transfer-now-thanks__title-box {
     padding: 0 70px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .quality {
+    background-size: 215%;
+  }
+
+  /*------------services--------------*/
+  .services,
+  .care-services {
+    padding: 96px 0 109px;
+  }
+
+  .services__container {
+    max-width: 414px;
+  }
+
+  .services__title {
+    padding: 0 0 35px 0;
+    letter-spacing: 0.001em;
+  }
+
+  .services__txt {
+    line-height: 1.52em;
+
+    &:last-child {
+      padding: 0 55px 0 50px;
+    }
+  }
+
+  .services__content-items,
+  .care-services__content-items {
+    max-width: 397.57px;
+  }
+
+  .services__txt,
+  .care-services__txt {
+    &:last-child {
+      padding: 0 47px;
+    }
+  }
+
+  .services__content-item,
+  .care-services__content-item {
+    max-width: 182px;
+    min-height: 158px;
+    letter-spacing: 0.03em;
+    padding: 26px 28px 5px 27px;
+
+    img {
+      max-width: 69px;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+
+    span {
+      display: block;
+    }
+
+    &:nth-child(2) {
+      padding: 26px 28px 5px 27px;
+
+      img {
+        max-width: 51px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &:nth-child(3) {
+      padding: 31px 16px 5px 18px;
+      line-height: 1.1em;
+      letter-spacing: .0074em;
+
+      img {
+        max-width: 92px;
+        margin-bottom: 6px;
+      }
+    }
+
+    &:nth-child(4) {
+      padding: 31px 26px 5px 21px;
+      line-height: 1.3em;
+      letter-spacing: .014em;
+
+      img {
+        max-width: 57px;
+        margin-bottom: 12px;
+      }
+    }
+
+    &:nth-child(5) {
+      padding: 19px 25px 5px 27px;
+      line-height: 1.12em;
+      letter-spacing: .001em;
+      margin: 0 auto;
+
+      img {
+        max-width: 65px;
+        margin-bottom: 11px;
+      }
+    }
+
+    &:nth-child(6) {
+      padding: 28px 30px 5px 28px;
+      line-height: 1.42em;
+      letter-spacing: .02em;
+
+      img {
+        max-width: 58px;
+        margin-bottom: 14px;
+      }
+    }
+
+    &:nth-child(7) {
+      padding: 26px 32px 5px 30px;
+      line-height: 1.42em;
+      letter-spacing: .02em;
+      margin: 0 auto;
+
+      img {
+        max-width: 65px;
+        margin-bottom: 9px;
+      }
+    }
+
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      margin-bottom: 33px;
+    }
+  }
+
+  .services__content-item {
+    &:last-child {
+      display: none;
+    }
+  }
+
+  /*----------partner------------------*/
+  .partner {
+    padding: 98px 0 87px;
+    text-align: center;
+  }
+
+  .partner__title {
+    text-align: center;
+    letter-spacing: -0.001em;
+    padding: 0 0 36px 0;
+  }
+
+  .partner__carousel {
+    .item {
+      width: 255px !important;
+    }
+  }
+
+  .partner .owl-carousel .owl-nav .owl-prev {
+    left: 31px;
+  }
+
+  .partner .owl-carousel .owl-nav .owl-next {
+    right: 34px;
+  }
+
+  /*----------partners---------*/
+  .our-partners {
+    padding: 250px 0 108px;
+    background-image: url('../img/our-partners-bg-mobile.jpg');
+  }
+  .our-partners__title {
+    padding: 0 0 197px;
+    line-height: 1.46em;
+  }
+
+  /*------featured------*/
+  .featured-job {
+    padding: 46px 0 107px;
   }
 
   /*  index__my-account-sign-in  */
@@ -3670,9 +3623,6 @@
     background-size: 230%;
   }
 
-  .care-services__content-items {
-    padding: 0 10px;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -3686,29 +3636,6 @@
   .services__txt:last-child,
   .care-services__txt:last-child {
     padding: 0;
-  }
-
-  .care-services__content-items {
-    padding: 0 34px;
-  }
-
-  .care-services__content-item {
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(3),
-    &:nth-child(4),
-    &:nth-child(5),
-    &:nth-child(6),
-    &:nth-child(7) {
-      margin-bottom: 33px;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-  }
-  .care-services__content-items-bottom .care-services__content-item:last-child {
-    margin: 0;
   }
 
   .we-can__title span {
@@ -3765,7 +3692,33 @@
   .policy__container,
   .coming-soon__container,
   .Q-A__container,
-  .Q-A-questioner__container {
+  .Q-A-questioner__container,
+  .helping-hand__container,
+  .care-services__container,
+  .quality__container,
+  .advocacy__container,
+  .what-is-advocacy__container,
+  .advocacy-choose__container,
+  .how-much-advocacy__container,
+  .home-care__container,
+  .what-is__container,
+  .advantages__container,
+  .questioner__container,
+  .how-much__container,
+  .transportation__container,
+  .what-is-transportation__container,
+  .advantages-transportation__container,
+  .how-much-transportation__container,
+  .pest-control__container,
+  .what-is-pest__container,
+  .pest-advantages__container,
+  .philanthropy__container,
+  .skilled-care__container,
+  .what-is-skilled__container,
+  .how-much-skilled__container,
+  .urgent-care__container,
+  .transfer-now__container,
+  .transfer-now-thanks__container {
     max-width: 310px;
   }
 
@@ -3785,8 +3738,14 @@
     max-width: 200px;
   }
 
-  .services__content-item {
+  .quality {
+    background-size: 250%;
+  }
+
+  .services__content-item,
+  .care-services__content-item {
     margin: 0 auto;
+
   }
 
   .we-can__item {
@@ -3932,6 +3891,72 @@
   .policy__title {
     word-break: break-word;
   }
+
+  .helping-hand__title {
+    font-size: 24px;
+  }
+
+  .quality__subtitle,
+  .helping-hand__subtitle {
+    font-size: 100px;
+  }
+
+  .quality__title {
+    letter-spacing: -0.08em;
+  }
+
+  .what-is__title {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .what-is__info {
+    padding: 0;
+  }
+
+  .questioner__title {
+    padding: 0 0 37px;
+    line-height: 1.21em;
+    letter-spacing: 0.001em;
+  }
+
+  .transportation__title {
+    letter-spacing: -.12em;
+  }
+
+  .what-is-transportation__title {
+    letter-spacing: -.07em;
+  }
+  .what-is-transportation__info {
+    padding-right: 0;
+  }
+
+  .pest-advantages__checkbox {
+    padding-right: 0;
+  }
+
+  .philanthropy__title {
+    font-size: 36px;
+    letter-spacing: -.05em;
+  }
+
+  .skilled-care__info {
+     padding: 0;
+  }
+
+  .what-is-skilled__title {
+    padding: 0 0 29px;
+  }
+
+  .transfer-now-thanks__text {
+    font-size: 22px;
+    position: relative;
+    top: 60px;
+    padding: 0;
+  }
+  .transfer-now-thanks__title-box {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 387px) {
@@ -3942,6 +3967,11 @@
   .helping__title {
     padding: 0 0 105px;
   }
+
+  .quality {
+    background-size: 280%;
+  }
+
 }
 
 @media screen and (max-width: 383px) {
@@ -3952,7 +3982,7 @@
 
 @media screen and (max-width: 373px) {
   .quality {
-    background-size: 250%;
+    background-size: 310%;
   }
 }
 
@@ -3992,10 +4022,6 @@
     max-width: 205px;
   }
 
-  .quality__title {
-    letter-spacing: -.08em;
-  }
-
   .choose__content {
     padding: 0 5px;
   }
@@ -4022,7 +4048,7 @@
 
 @media screen and (max-width: 334px) {
   .quality {
-    background-size: 265%;
+    background-size: 365%;
   }
 }
 

@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
-    <title>Medical Health - My account</title>
+    <title>Meridius Health - My account</title>
 
     <link rel="stylesheet" href="libs/all.min.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -242,7 +242,10 @@
                                 <li>
                                     <span class="account__valid-id_title">Must provide valid ID and Social Security Card</span>
                                     <div class="account__valid-id_btn">
-                                        <a href="#">Upload</a>
+                                        <div class="load-id__btn-box">
+                                            <input type="file" class="load-id__input hide" id="load-id">
+                                            <label for="load-id" class="load-id__label">Upload</label>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -339,8 +342,12 @@
                                 <li>
                                     <span class="account__PPD-test_title">2-Step PPD test or Chest X-ray</span>
                                     <div class="account__PPD-test_btn">
-                                        <a href="#">Upload</a>
+                                        <div class="load-PPD-test__btn-box">
+                                            <input type="file" class="load-PPD-test__input hide" id="load-PPD-test">
+                                            <label for="load-PPD-test" class="load-PPD-test__label">Upload</label>
+                                        </div>
                                     </div>
+
                                 </li>
                                 <li class="account__DHS-certification">
                                     <span class="account__DHS-certification_title">DHS Direct Care Worker Certification </span>
@@ -357,7 +364,10 @@
                                         </li>
                                     </ul>
                                     <div class="account__DHS-certification_btn">
-                                        <a href="#">Upload</a>
+                                        <div class="load-DHS-certification__btn-box">
+                                            <input type="file" class="load-DHS-certification__input hide" id="load-DHS-certification">
+                                            <label for="load-DHS-certification" class="load-DHS-certification__label">Upload</label>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="account__100-questions">
@@ -368,14 +378,20 @@
                                         Download a Copy of the Exam
                                     </p>
                                     <div class="account__100-questions_btn-download">
-                                        <a href="#">Download</a>
+                                        <div class="load-100-questions__btn-box">
+                                            <input type="file" class="load-100-questions__input hide" id="load-100-questions">
+                                            <label for="load-100-questions" class="load-100-questions__label">Download</label>
+                                        </div>
                                     </div>
                                     <p class="default-txt">
                                         “Submit Answer Sheet” to show that it has been completed and
                                         then mail in the physical copy.
                                     </p>
                                     <div class="account__100-questions_btn-submit">
-                                        <a href="#">Submit</a>
+                                        <div class="submit-100-questions__btn-box">
+                                            <input type="submit" class="submit-100-questions__input hide" id="submit-100-questions">
+                                            <label for="submit-100-questions" class="submit-100-questions__label">Submit</label>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="account__submit-picture">
@@ -407,16 +423,181 @@
                                             <span>Step Three:  </span>
                                             <p class="default-txt">Upload you photo here:</p>
                                             <div class="steps__btn">
-                                                <a href="#">Upload Photo</a>
+                                                <div class="load-photo__btn-box">
+                                                    <input type="file" class="load-photo__input hide" id="load-photo">
+                                                    <label for="load-photo" class="load-photo__label">Upload Photo</label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="">
-                                    <span class="">
+                                <li class="account__upload-delete-check-list">
+                                    <span class="account__upload-delete-check-list_title">
                                        Please ensure that all of the documents listed below are uploaded to your file.
                                         Employees are not permitted to start services without all items.
                                     </span>
+                                    <ul class="upload-delete-check-list">
+                                        <li class="upload-delete-check-list__item">
+                                            <form class="upload-delete-check-list__item_form">
+                                                <div class="upload-delete-check-list__item_checkbox">
+                                                    <input type="checkbox" id="valid-id" name="valid-id"
+                                                           class="upload-delete-check-list__input">
+                                                    <label for="valid-id" class="upload-delete-check-list__label">
+                                                        Valid ID
+                                                    </label>
+                                                </div>
+                                                <div class="upload-delete-check-list__item_btn-box">
+                                                    <div class="delete__btn-box">
+                                                        <button class="delete__btn">delete</button>
+                                                    </div>
+                                                    <div class="upload__btn-box">
+                                                        <input type="file" class="upload__input hide" id="upload__valid-id">
+                                                        <label for="upload__valid-id" class="upload__label">Upload</label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li class="upload-delete-check-list__item">
+                                            <form class="upload-delete-check-list__item_form">
+                                                <div class="upload-delete-check-list__item_checkbox">
+                                                    <input type="checkbox" id="social-security-card" name="valid-id"
+                                                           class="upload-delete-check-list__input">
+                                                    <label for="social-security-card" class="upload-delete-check-list__label">
+                                                        Social Security Card
+                                                    </label>
+                                                </div>
+                                                <div class="upload-delete-check-list__item_btn-box">
+                                                    <div class="delete__btn-box">
+                                                        <button class="delete__btn">delete</button>
+                                                    </div>
+                                                    <div class="upload__btn-box">
+                                                        <input type="file" class="upload__input hide" id="upload__social-security-card">
+                                                        <label for="upload__social-security-card" class="upload__label">Upload</label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li class="upload-delete-check-list__item">
+                                            <form class="upload-delete-check-list__item_form">
+                                                <div class="upload-delete-check-list__item_checkbox">
+                                                    <input type="checkbox" id="PPD-test" name="valid-id"
+                                                           class="upload-delete-check-list__input">
+                                                    <label for="PPD-test" class="upload-delete-check-list__label">
+                                                        2-Step PPD test or Chest X-ray
+                                                    </label>
+                                                </div>
+                                                <div class="upload-delete-check-list__item_btn-box">
+                                                    <div class="delete__btn-box">
+                                                        <button class="delete__btn">delete</button>
+                                                    </div>
+                                                    <div class="upload__btn-box">
+                                                        <input type="file" class="upload__input hide" id="upload__PPD-test">
+                                                        <label for="upload__PPD-test" class="upload__label">Upload</label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li class="upload-delete-check-list__item">
+                                            <form class="upload-delete-check-list__item_form">
+                                                <div class="upload-delete-check-list__item_checkbox">
+                                                    <input type="checkbox" id="DHS-certification" name="valid-id"
+                                                           class="upload-delete-check-list__input">
+                                                    <label for="DHS-certification" class="upload-delete-check-list__label">
+                                                        DHS Direct Care Worker Certification
+                                                    </label>
+                                                </div>
+                                                <div class="upload-delete-check-list__item_btn-box">
+                                                    <div class="delete__btn-box">
+                                                        <button class="delete__btn">delete</button>
+                                                    </div>
+                                                    <div class="upload__btn-box">
+                                                        <input type="file" class="upload__input hide" id="upload__DHS-certification">
+                                                        <label for="upload__DHS-certification" class="upload__label">Upload</label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li class="upload-delete-check-list__item">
+                                            <form class="upload-delete-check-list__item_form">
+                                                <div class="upload-delete-check-list__item_checkbox">
+                                                    <input type="checkbox" id="100-question" name="valid-id"
+                                                           class="upload-delete-check-list__input">
+                                                    <label for="100-question" class="upload-delete-check-list__label">
+                                                        100 question competency exam answer sheet
+                                                    </label>
+                                                </div>
+                                                <div class="upload-delete-check-list__item_btn-box">
+                                                    <div class="delete__btn-box">
+                                                        <button class="delete__btn">delete</button>
+                                                    </div>
+                                                    <div class="upload__btn-box">
+                                                        <input type="file" class="upload__input hide" id="upload__100-question">
+                                                        <label for="upload__100-question" class="upload__label">Upload</label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li class="upload-delete-check-list__item">
+                                            <form class="upload-delete-check-list__item_form">
+                                                <div class="upload-delete-check-list__item_checkbox">
+                                                    <input type="checkbox" id="photo-id" name="valid-id"
+                                                           class="upload-delete-check-list__input">
+                                                    <label for="photo-id" class="upload-delete-check-list__label">
+                                                        Photo for ID badge
+                                                    </label>
+                                                </div>
+                                                <div class="upload-delete-check-list__item_btn-box">
+                                                    <div class="delete__btn-box">
+                                                        <button class="delete__btn">delete</button>
+                                                    </div>
+                                                    <div class="upload__btn-box">
+                                                        <input type="file" class="upload__input hide" id="upload__photo-id">
+                                                        <label for="upload__photo-id" class="upload__label">Upload</label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li class="upload-delete-check-list__item">
+                                            <form class="upload-delete-check-list__item_form">
+                                                <div class="upload-delete-check-list__item_checkbox">
+                                                    <input type="checkbox" id="insurance-card" name="valid-id"
+                                                           class="upload-delete-check-list__input">
+                                                    <label for="insurance-card" class="upload-delete-check-list__label">
+                                                        Current health insurance card (if applicable)
+                                                    </label>
+                                                </div>
+                                                <div class="upload-delete-check-list__item_btn-box">
+                                                    <div class="delete__btn-box">
+                                                        <button class="delete__btn">delete</button>
+                                                    </div>
+                                                    <div class="upload__btn-box">
+                                                        <input type="file" class="upload__input hide" id="upload__insurance-card">
+                                                        <label for="upload__insurance-card" class="upload__label">Upload</label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li class="upload-delete-check-list__item">
+                                            <form class="upload-delete-check-list__item_form">
+                                                <div class="upload-delete-check-list__item_checkbox">
+                                                    <input type="checkbox" id="other-licenses" name="valid-id"
+                                                           class="upload-delete-check-list__input">
+                                                    <label for="other-licenses" class="upload-delete-check-list__label">
+                                                        Other licenses (if applicable)
+                                                    </label>
+                                                </div>
+                                                <div class="upload-delete-check-list__item_btn-box">
+                                                    <div class="delete__btn-box">
+                                                        <button class="delete__btn">delete</button>
+                                                    </div>
+                                                    <div class="upload__btn-box">
+                                                        <input type="file" class="upload__input hide" id="upload__other-licenses">
+                                                        <label for="upload__other-licenses" class="upload__label">Upload</label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
