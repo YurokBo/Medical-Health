@@ -197,6 +197,7 @@ button {
   top: 0;
   //left: 0;
   cursor: pointer;
+  z-index: 1;
 
   span {
     position: absolute;
@@ -216,10 +217,22 @@ button {
     opacity: 1;
   }
 
-  span.plus-active {
-    opacity: 0;
-    transition: all .2s;
+
+}
+.vacancy__list-title_active,
+.apply-now_title-active {
+  .active-passive {
+    .plus {
+      opacity: 0;
+      transition: all .5s;
+    }
   }
+}
+.apply-now_title-active + .active-passive{
+      .plus {
+        opacity: 0;
+        transition: all .5s;
+      }
 }
 
 

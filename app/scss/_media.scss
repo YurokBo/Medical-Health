@@ -11,7 +11,8 @@
   .helping__container,
   .choose__container,
   .questioner__container,
-  .apply-now__container {
+  .apply-now__container,
+  .account__container {
     max-width: 1170px;
   }
 
@@ -39,7 +40,9 @@
   .apply-now__previous-employment-inner,
   .apply-now__educational-background-inner,
   .apply-now__professional-qualifications-inner,
-  .apply-now__submit-container {
+  .apply-now__submit-container,
+  .account__content-item-title-box_container,
+  .account__content-item_container {
     max-width: 970px;
   }
   .apply-now__emergency-contact-inner,
@@ -104,6 +107,15 @@
     max-width: 603px;
   }
 
+  .account__form {
+    .account__form-content {
+      display: block;
+    }
+
+    .account__form-left {
+      margin-bottom: 7px;
+    }
+  }
 
 }
 
@@ -1174,17 +1186,6 @@
     }
   }
 
-  .apply-now__personal-info,
-  .apply-now__application-info,
-  .apply-now__emergency-contact,
-  .apply-now__present-previous-employment,
-  .apply-now__previous-employment,
-  .apply-now__educational-background,
-  .apply-now__professional-qualifications,
-  .apply-now__professional-reference {
-    margin-bottom: 82px;
-  }
-
   .apply-now__personal-info-title-box,
   .apply-now__application-info-title-box,
   .apply-now__emergency-contact-title-box,
@@ -1195,7 +1196,7 @@
   .apply-now__professional-reference-title-box,
   .apply-now__submit-title-box {
     padding: 13.67px 0;
-    margin-bottom: 56px;
+    margin-bottom: 16px;
     font-size: 22px;
   }
 

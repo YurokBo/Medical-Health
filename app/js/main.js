@@ -84,7 +84,7 @@ $(function () {
         changeYear: true,
         showButtonPanel: true,
         dateFormat: 'yy',
-        onClose: function(dateText, inst) {
+        onClose: function (dateText, inst) {
             var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
             $(this).datepicker('setDate', new Date(year, 1));
         }
@@ -251,7 +251,7 @@ document.addEventListener('click', e => {
     closeMenu(e, menuBurgerInner);
     scrollUp(e);
     activePlus(e);
-    //activeAccount(e);
+    activeAccount(e);
 });
 
 function openMenu(e, elem) {
@@ -288,40 +288,34 @@ function scrollUp(e) {
     });
 }
 
-function activePlus(e) {
-    const vacancyList = e.target.closest('.vacancy__list');
 
-    if (!vacancyList) {
+const vacancyListTitle = document.querySelectorAll('.vacancy__list-title'),
+    vacancyItem = document.querySelectorAll('.vacancy__item'),
+    accountContentTitle = document.querySelectorAll('.apply-now_title-box .apply-now_title'),
+    accountContentInfo = document.querySelectorAll('.hide__apply-now');
+
+function activePlus(e) {
+    const targetNum = [...vacancyListTitle].indexOf(e.target);
+
+
+    if (targetNum === -1) {
         return;
     }
 
-    if (vacancyList) {
-        const vacancyPlus = vacancyList.querySelector('.plus'),
-            vacancyItem = vacancyList.querySelector('.vacancy__item');
-        vacancyPlus.classList.toggle('plus-active');
-        vacancyItem.classList.toggle('vacancy__item-active');
-    }
+    e.target.classList.toggle('apply-now_title-box vacancy__list-title_active');
+    vacancyItem[targetNum].classList.toggle('vacancy__item-active');
 
 }
 
-/*function activeAccount(e) {
-    const accountContentItem = e.target.closest('.account__content-item');
-
-        accountContentItemTitleBox = target.closest('.account__content-item-title-box');
-
-    if (!target) {
+function activeAccount(e) {
+    const targetNumAccountContentTitle = [...accountContentTitle].indexOf(e.target);
+    if (targetNumAccountContentTitle === -1) {
         return;
     }
 
-    if (target) {
-
-        const plus = accountContentItem.querySelector('.plus'),
-        accountContentInfo = accountContentItem.querySelector('.account__content-info');
-
-        plus.classList.add('plus-active');
-        accountContentInfo.classList.add('account__content-info-active');
-    }
-}*/
+    e.target.classList.toggle('apply-now_title-active');
+    accountContentInfo[targetNumAccountContentTitle].classList.toggle('visible__apply-now');
+}
 
 window.addEventListener("resize", () => {
 

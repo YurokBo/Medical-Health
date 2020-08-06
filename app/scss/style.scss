@@ -1905,15 +1905,11 @@
   margin-bottom: 40px;
 }
 
-.vacancy__list-title {
-  padding: 0 0 22px;
-}
 
 .vacancy__list {
   max-width: 770px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 0 0 51px;
   border-bottom: 1.5px solid #AC8478;;
   position: relative;
 
@@ -1926,7 +1922,7 @@
   }
 }
 
-.vacancy__name,
+.vacancy__list-title,
 .vacancy__responsibility-title,
 .vacancy__requirement-title,
 .job-details__item-responsibility-title,
@@ -1936,6 +1932,12 @@
   font-size: 24px;
   line-height: 1.13em;
   text-transform: uppercase;
+}
+
+.vacancy__list-title {
+  padding: 0 0 22px 49px;
+  position: relative;
+  text-transform: none;
 }
 
 .job-details__item-responsibility-title,
@@ -1999,13 +2001,21 @@
   margin-bottom: 52px;
 }
 
+.vacancy__item_inner {
+  padding: 28px 0 60px 49px;
+}
+
 .vacancy__item {
-  //display: none; //
-  padding: 28px 0 60px;
+  /*display: none;*/
+  max-height: 0;
+  transition: max-height .2s ease-in;
+  overflow: hidden;
 }
 
 .vacancy__item-active {
-  display: block;
+  height: auto;
+  max-height: 2000px;
+  transition: max-height .5s ease-out;
 }
 
 .vacancy__list + .vacancy__list {
@@ -2275,7 +2285,7 @@
 .apply-now__educational-background,
 .apply-now__professional-qualifications,
 .apply-now__professional-reference {
-  margin-bottom: 77px;
+  //margin-bottom: 77px;
 }
 
 .apply-now__personal-info-title-box,
@@ -2294,7 +2304,7 @@
   color: #AC8478;
   padding: 4.5px 0;
   background-color: rgba(239, 204, 191, 0.5);
-  margin-bottom: 30px;
+  margin-bottom: 14px;
 }
 
 .apply-now__application-info-title-container,
@@ -2402,6 +2412,10 @@
       line-height: 1.16em;
     }
   }
+}
+
+.apply-now__personal-info-inner {
+  padding: 23px 0 72px;
 }
 
 .apply-now__emergency-contact-inner,
@@ -2695,6 +2709,28 @@
       }
     }
   }
+}
+
+.hide__apply-now {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s, padding-top .5s, padding-bottom .5s ;
+
+}
+.visible__apply-now {
+  height: 100%;
+  max-height: 10000px;
+  transition: max-height .5s, padding-top .5s, padding-bottom .5s ;
+  overflow: hidden;
+  padding: 23px 0 72px;
+}
+
+.apply-now__submit-inner.visible__apply-now {
+  padding-bottom: 0;
+}
+.account__change-data_form-box.visible__apply-now {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .employment-desired,
@@ -3601,8 +3637,11 @@
   color: #AC8478;
 }
 
-.account__content-info {
-  padding: 60px 0 114px;
+.account__content-info.hide__apply-now {
+  padding: 0;
+}
+.account__content-info.visible__apply-now {
+  padding: 60px 0 95px;
 }
 
 .account__content-item_container {
@@ -4379,14 +4418,6 @@
 
 .news__content {
   font-size: 24px;
-}
-
-.account__content-info {
-  //display: none;   //temporary
-}
-
-.account__content-info-active {
-  display: block;
 }
 
 .account__content-item + .account__content-item {
