@@ -1017,6 +1017,7 @@
   background-color: $footer-bg;
   font-size: 20px;
   line-height: 1.55em;
+
 }
 
 .footer__container {
@@ -2714,13 +2715,14 @@
 .hide__apply-now {
   max-height: 0;
   overflow: hidden;
-  transition: max-height .5s, padding-top .5s, padding-bottom .5s ;
+  transition: max-height .5s, padding-top .5s, padding-bottom .5s;
 
 }
+
 .visible__apply-now {
   height: 100%;
   max-height: 10000px;
-  transition: max-height .5s, padding-top .5s, padding-bottom .5s ;
+  transition: max-height .5s, padding-top .5s, padding-bottom .5s;
   overflow: hidden;
   padding: 23px 0 72px;
 }
@@ -2728,10 +2730,63 @@
 .apply-now__submit-inner.visible__apply-now {
   padding-bottom: 0;
 }
+
 .account__change-data_form-box.visible__apply-now {
   padding-top: 0;
   padding-bottom: 0;
 }
+
+.account__content-info.hide__apply-now {
+  .account__content-item_container {
+
+    max-height: 0;
+    height: 0;
+  }
+
+  .account__before-start-list {
+    max-height: 0;
+    height: 0;
+
+    ul {
+      max-height: 0;
+      height: 0;
+
+      li {
+        max-height: 0;
+        height: 0;
+      }
+    }
+  }
+
+}
+
+.account__content-info.visible__apply-now {
+  .account__content-item_container {
+    height: auto;
+    max-height: 100%;
+    transition: max-height .5s, padding-top .5s, padding-bottom .5s;
+    padding-left: 0;
+  }
+
+  .account__before-start-list {
+    height: auto;
+    max-height: 100%;
+    transition: max-height .5s, padding-top .5s, padding-bottom .5s;
+
+    ul {
+      height: auto;
+      max-height: 100%;
+      transition: max-height .5s, padding-top .5s, padding-bottom .5s;
+
+      li {
+        height: auto;
+        max-height: 100%;
+        transition: max-height .5s, padding-top .5s, padding-bottom .5s;
+      }
+    }
+  }
+}
+
 
 .employment-desired,
 .authorized-to-work,
@@ -3640,6 +3695,7 @@
 .account__content-info.hide__apply-now {
   padding: 0;
 }
+
 .account__content-info.visible__apply-now {
   padding: 60px 0 95px;
 }
@@ -3737,10 +3793,6 @@
     background: #AE7669;
     color: #ffffff;
   }
-}
-
-.account__change-data-form {
-
 }
 
 .account__change-data_title-box {
@@ -3891,6 +3943,7 @@
 }
 
 .account__before-start-list {
+
   ul {
 
   }
@@ -3900,6 +3953,7 @@
   }
 
   li {
+
     list-style: none;
     background: url("../img/check.png") no-repeat 0 8px;
     padding-left: 50px;
@@ -4324,7 +4378,7 @@
   }
 
   a {
-    display: inline-block;
+    display: inline;
     color: #AE7669;
     white-space: normal;
 
@@ -4385,7 +4439,7 @@
     }
 
     a {
-      display: inline-block;
+      display: inline;
       color: #AE7669;
       white-space: normal;
       letter-spacing: .001em;
@@ -4410,9 +4464,6 @@
       }
     }
 
-    br {
-      display: none;
-    }
   }
 }
 
@@ -4428,7 +4479,9 @@
 
   .account__upload-delete-check-list_title {
     margin-bottom: 10px;
+    line-height: 1.45em;
   }
+
   ul {
     max-width: 821px;
     width: 100%;
@@ -4531,8 +4584,6 @@
 }
 
 
-
-
 /*   index__my-account-create-timesheet   */
 .table-timesheet {
   padding: 117px 0 114px;
@@ -4547,6 +4598,10 @@
 
 .table-timesheet__title-box {
   margin-bottom: 57px;
+
+  br {
+    display: none;
+  }
 }
 
 .table-timesheet__title {
@@ -4559,7 +4614,7 @@
 }
 
 .table-timesheet__content {
-
+  //display: block;
 }
 
 /*------table-------*/
@@ -4684,7 +4739,8 @@ th {
   height: 84px;
 }
 
-.table__time-visit {
+.table__time-visit,
+.table__time-visit_content {
   font-family: 'Circe-Regular';
   font-weight: 400;
   font-size: 16px;
@@ -5101,5 +5157,379 @@ th {
   }
 }
 
+/*    table-timesheet__btn-box    */
+.table-timesheet__btn-box {
+  padding: 59px 0 45px;
+  display: none;
+}
+
+.table-timesheet__btn-box_inner {
+  max-width: 327px;
+  width: 100%;
+  margin: 0 auto;
+
+  a {
+    width: 100%;
+    text-align: center;
+    padding: 15.67px 0;
+
+    border: 2px solid #AE7669;
+    border-radius: 8.52398px;
+
+    font-family: 'Circe-Bold';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.14em;
+
+
+    color: #AE7669;
+
+    &:hover,
+    &:active {
+      background: #AE7669;
+      color: #ffffff;
+    }
+  }
+
+}
+
+.able-timesheet__btn_create-timesheet {
+  a {
+    background: rgba(239, 204, 191, 0.5);
+  }
+}
+
+.able-timesheet__btn_history,
+.able-timesheet__btn_back {
+  a {
+    background: rgba(249, 237, 228, 0.35);
+  }
+}
+
+.able-timesheet__btn_create-timesheet,
+.able-timesheet__btn_history {
+  margin-bottom: 19px;
+}
+
+/*    table-mobile    */
+.table-mobile__content-table {
+  padding: 0;
+  margin: 11px 0 23px;
+}
+
+.table-mobile__date-cell_inner {
+  //height: 175px;
+}
+
+.table-mobile__date {
+  padding: 0;
+  width: 143px;
+  font-size: 12px;
+  text-align: center;
+
+  .period__mobile {
+    margin-bottom: 10px;
+
+    input {
+      width: 42px;
+      letter-spacing: -.1em;
+    }
+  }
+
+  .week-hours__mobile {
+    font-size: 14px;
+    padding: 8.4px 0;
+    background: rgba(241, 227, 222, 0.5);
+    margin-bottom: 10px;
+
+    input {
+      background-color: transparent;
+      width: 20px;
+    }
+  }
+
+  .year__mobile {
+    margin-bottom: 10px;
+  }
+
+  input {
+    font-size: 12px;
+  }
+
+  .table__date-visit_title {
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+
+  .table__date-visit_form {
+    input {
+      padding: 10px 32px 8.67px 8px;
+    }
+  }
+}
+
+.table-mobile__time-visit {
+  padding-top: 6px;
+
+  .table__visit-number {
+
+    margin-bottom: 11px;
+
+  }
+
+  .table__visit-time-in,
+  .table__visit-time-out {
+    margin-bottom: 3px;
+
+    input {
+      padding: 8px 24px 5.87px 7px;
+    }
+
+    span {
+      margin-bottom: 0;
+    }
+
+  }
+
+}
+
+.table-mobile__date-cell {
+  width: 145px;
+  text-align: center;
+
+  .period__mobile {
+    margin-bottom: 10px;
+  }
+}
+
+
+.table__back-btn-box {
+
+  a {
+    border: 2px solid #AE7669;
+    border-radius: 8px;
+
+    font-family: 'Circe-Bold';
+    font-weight: 700;
+    font-size: 20px;
+    color: #AE7669;
+
+    padding: 5.04px 45.21px;
+
+    &:hover,
+    &:active {
+      background: #AE7669;
+      color: #ffffff;
+    }
+  }
+}
+
+/*    search-box-mobile     */
+.search-box-mobile {
+  .search-box__content {
+    flex-direction: column;
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .search-box__title-box {
+    margin-bottom: 37px;
+  }
+
+  .search-box__search-year,
+  .search-box__search-week-from,
+  .search-box__search-week-to {
+    max-width: 100%;
+
+    input {
+      font-size: 20px;
+      padding: 5px 8px 5px 22px;
+    }
+  }
+
+  .search-box__search-year,
+  .search-box__search-week-from {
+    margin-bottom: 16px;
+  }
+
+  .search-box__search-week-to {
+    margin-bottom: 43px;
+  }
+
+  .search-box__btn-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-box__btn-ok {
+    margin-right: 34px;
+
+    button {
+      padding: 14.34px 66.69px 12px;
+    }
+  }
+
+  .search-box__btn-back {
+    a {
+      padding: 14.34px 60.83px 12px;
+    }
+  }
+}
+
+/*    archive-period    */
+.table-timesheet-mobile {
+  .table-timesheet-mobile__title-box {
+    padding: 36px 10px 10px;
+  }
+}
+
+
+.archive-period,
+.archive-day {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.6em;
+  margin-bottom: 21px;
+}
+
+.archive-total-week-hours {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+/*    archive-period__table   */
+.archive-period__inner {
+  max-width: 407px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.archive-period__table {
+  border: 2px solid #AC8478;
+
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  line-height: 1.6em;
+  color: #AC8478;
+
+  li {
+    border-bottom: 2px solid #AC8478;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.archive-period__table-tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.archive-period__day {
+  border-right: 2px solid #AC8478;
+  padding: 12px 12px 12px 18px;
+  width: 163px;
+  min-height: 62px;
+
+  font-size: 22px;
+
+  background: rgba(241, 227, 222, 0.5);
+}
+
+.archive-period__date {
+  font-size: 20px;
+}
+
+.archive-period__details-btn-box {
+  padding-right: 9px;
+  a {
+    font-size: 20px;
+
+    background: rgba(239, 204, 191, 0.5);
+    border: 2px solid #AC8478;
+    border-radius: 8.52398px;
+
+    padding: 0.5px 17.8px;
+
+    &:hover,
+    &:active {
+      color: #ffffff;
+      background: #AE7669;
+    }
+  }
+}
+
+.weekend-day {
+  background: #EFDDD6;
+}
+
+/*    archive-day   */
+.table-timesheet__title-box.table-timesheet-mobile__archive-day {
+  padding: 46px 0;
+}
+
+.archive-day{
+  margin-bottom: 0;
+}
+
+.table-mobile__date_archive-day {
+  padding-top: 30px;
+}
+
+.week-hours__mobile.week-hours__mobile_archive-day {
+  margin-bottom: 37px;
+}
+
+.employee-name-archive,
+.participant-name-archive {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+.table__date-visit_form_archive,
+.time-visit-in-archive,
+.time-visit-out-archive{
+  border: 2px solid #EFCCBF;
+  min-height: 36px;
+  padding: 5px 25px 0 0;
+}
+
+.archive-day-date,
+.time-visit-in-archive,
+.time-visit-out-archive {
+  font-family: 'Circe-Bold';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #AC8478;
+}
+
+.mobile__container {
+  max-width: 414px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.table-timesheet__title-box-mobile {
+  text-align: center;
+  padding: 12px 0;
+  margin-bottom: 66px;
+  background-image: url(../img/my-account-logo-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  br {
+    display: block;
+  }
+}
 
 @import "media";
