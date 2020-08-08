@@ -242,8 +242,34 @@ $(function () {
 
 document.addEventListener('scroll', () => {
     const scrollBtn = document.querySelector('.scrollUp');
+
     window.scrollY > 713 ? scrollBtn.classList.add('scrollUp__show') : scrollBtn.classList.remove('scrollUp__show');
+
+    scrollHeader();
+
 });
+
+/*      функция вызывается при скролле экрана и создает анимацию шапки     */
+/*      если экран уже 1240px - она не сработает        */
+function scrollHeader () {
+    const header = document.querySelector('.header'),
+        content = document.querySelector('.content');
+
+    if (window.innerWidth < 1241 ) {
+        return;
+    } else {
+        if (scrollY >= 0) {
+            header.classList.add('scroll__header');
+            content.classList.add('scroll__content');
+        }
+
+        if (scrollY === 0) {
+            header.classList.remove('scroll__header');
+            content.classList.remove('scroll__content');
+        }
+    }
+
+}
 
 document.addEventListener('click', e => {
     const menuBurgerInner = document.querySelector('.menu-burger__inner');
@@ -325,9 +351,12 @@ window.addEventListener("resize", () => {
 
 function screenWidthDetection() {
     const menuBurgerInner = document.querySelector('.menu-burger__inner');
+    const header = document.querySelector('.header'),
+        content = document.querySelector('.content');
     if (window.matchMedia("(min-width: 1240px)").matches) {
         menuBurgerInner.classList.remove('active__menu-burger');
     }
+
 }
 
 /*-------------------------------------------*/

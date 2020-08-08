@@ -6,6 +6,8 @@
 
 /*-------------header--------------*/
 .header {
+  transition: .3s all;
+
   padding: 31px 0 22px;
   background-color: #fff;
   z-index: 1000;
@@ -5530,6 +5532,48 @@ th {
   br {
     display: block;
   }
+}
+
+/*    scroll header   */
+.scroll__header {
+  padding: 22px 0;
+
+  .header__phone-phone,
+  .header__login-txt {
+    //display: none;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    transition: .3s all;
+  }
+
+  .header__menu {
+    padding-top: 13px;
+
+    a{
+      font-size: 20px;
+    }
+  }
+
+  .header__logo {
+    max-width: 250px;
+  }
+
+  .header__phone-btn {
+    padding: 16px 33px 13px 28px;
+    font-size: 18px;
+  }
+
+  .header__login-btn {
+    padding: 16px 19px 13px 17px;
+    font-size: 18px;
+  }
+}
+
+.content.scroll__content {
+  padding-top: 108.2px;
+  transition: .1s all;
 }
 
 @import "media";
