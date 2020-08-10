@@ -328,7 +328,7 @@ function activePlus(e) {
         return;
     }
 
-    e.target.classList.toggle('apply-now_title-box vacancy__list-title_active');
+    e.target.classList.toggle('vacancy__list-title_active');
     vacancyItem[targetNum].classList.toggle('vacancy__item-active');
 
 }
