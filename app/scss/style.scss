@@ -117,6 +117,13 @@
       left: 2px;
       font-size: 22px;
     }
+
+    &:hover,
+    &:active {
+      &::before {
+        transform: rotate(15deg) translateY(-8.5px);
+      }
+    }
   }
 }
 
@@ -126,11 +133,30 @@
     font-weight: 600;
     padding: 0 0 0 17px;
     margin-bottom: 22px;
+    position: relative;
 
     &::before {
       content: "\f101";
       font-size: 22px;
       left: 14px;
+    }
+
+
+    &:hover,
+    &:active {
+      margin-bottom: 21px;
+      &::before {
+        transform: scale(1.1) translateY(-7.5px);
+      }
+      &:after {
+        position:relative;
+        display: block;
+        border-bottom: 1px solid #565656;
+        content: '';
+        bottom: -3.5px;
+        right: -32px;
+        width: 89px;
+      }
     }
   }
 }
@@ -253,10 +279,13 @@
     padding: 20.34px 38.59px 17.34px;
     font-size: 24px;
 
-    &:active {
+    &:active,
+    &:hover {
       color: #AE7669;
       background-color: #F8E3DB;
       border-radius: 8.5px;
+
+      animation: none;
     }
   }
 }
@@ -5450,6 +5479,7 @@ th {
 
 .archive-period__details-btn-box {
   padding-right: 9px;
+
   a {
     font-size: 20px;
 
@@ -5476,7 +5506,7 @@ th {
   padding: 46px 0;
 }
 
-.archive-day{
+.archive-day {
   margin-bottom: 0;
 }
 
@@ -5498,7 +5528,7 @@ th {
 
 .table__date-visit_form_archive,
 .time-visit-in-archive,
-.time-visit-out-archive{
+.time-visit-out-archive {
   border: 2px solid #EFCCBF;
   min-height: 36px;
   padding: 5px 25px 0 0;
@@ -5551,7 +5581,7 @@ th {
   .header__menu {
     padding-top: 13px;
 
-    a{
+    a {
       font-size: 20px;
     }
   }

@@ -55,7 +55,8 @@ button {
     border-radius: 8px;
     padding: 22px 43px 19px;
 
-    &:active {
+    &:active,
+    &:hover{
       color: #AE7669;
       background-color: #F8E3DB;
       border-radius: 8.5px;
@@ -219,6 +220,7 @@ button {
 
 
 }
+
 .vacancy__list-title_active,
 .apply-now_title-active {
   .active-passive {
@@ -228,11 +230,12 @@ button {
     }
   }
 }
-.apply-now_title-active + .active-passive{
-      .plus {
-        opacity: 0;
-        transition: all .5s;
-      }
+
+.apply-now_title-active + .active-passive {
+  .plus {
+    opacity: 0;
+    transition: all .5s;
+  }
 }
 
 
@@ -337,6 +340,7 @@ button {
     color: #FFFFFF;
   }
 }
+
 .load-resume__label {
   padding: 5.3px 29.3px 3.7px;
 }
@@ -346,12 +350,16 @@ button {
 .load-DHS-certification__label {
   padding: 4.5px 50.36px;
 }
+
 .load-100-questions__label {
   padding: 4.5px 37.77px;
 }
+
 .load-photo__label {
   padding: 4.5px 21.31px;
 }
+
 .submit-100-questions__label {
   padding: 4.5px 51.55px;
 }
+

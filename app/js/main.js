@@ -1,3 +1,5 @@
+'use strong';
+
 $(function () {
     let owlPartner = $(".partner .partner__carousel");
 
@@ -258,12 +260,12 @@ function scrollHeader () {
     if (window.innerWidth < 1241 ) {
         return;
     } else {
-        if (scrollY >= 0) {
+        if (scrollY) {
             header.classList.add('scroll__header');
             content.classList.add('scroll__content');
         }
 
-        if (scrollY === 0) {
+        if (!scrollY) {
             header.classList.remove('scroll__header');
             content.classList.remove('scroll__content');
         }
@@ -317,7 +319,7 @@ function scrollUp(e) {
 
 const vacancyListTitle = document.querySelectorAll('.vacancy__list-title'),
     vacancyItem = document.querySelectorAll('.vacancy__item'),
-    accountContentTitle = document.querySelectorAll('.apply-now_title-box .apply-now_title'),
+    accountContentTitle = document.querySelectorAll('.apply-now_title-box  .apply-now_title  '),
     accountContentInfo = document.querySelectorAll('.hide__apply-now');
 
 function activePlus(e) {
@@ -333,14 +335,18 @@ function activePlus(e) {
 
 }
 
+
 function activeAccount(e) {
     const targetNumAccountContentTitle = [...accountContentTitle].indexOf(e.target);
+
     if (targetNumAccountContentTitle === -1) {
         return;
     }
 
+
     e.target.classList.toggle('apply-now_title-active');
     accountContentInfo[targetNumAccountContentTitle].classList.toggle('visible__apply-now');
+
 }
 
 window.addEventListener("resize", () => {
@@ -353,6 +359,7 @@ function screenWidthDetection() {
     const menuBurgerInner = document.querySelector('.menu-burger__inner');
     const header = document.querySelector('.header'),
         content = document.querySelector('.content');
+
     if (window.matchMedia("(min-width: 1240px)").matches) {
         menuBurgerInner.classList.remove('active__menu-burger');
     }
