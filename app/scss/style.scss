@@ -2149,6 +2149,9 @@
     transform: rotate(180deg);
   }
 }
+.owl-carousel .owl-nav.disabled {
+  display: block !important;
+}
 
 /*----------index__Career Job Search---------*/
 /*----------index__Career Job Details---------*/
