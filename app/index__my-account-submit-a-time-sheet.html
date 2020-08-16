@@ -28,7 +28,9 @@
             </ul>
         </nav>
         <div class="menu-burger__login">
-            <a href="#" class="menu-burger__login-txt">My account</a>
+            <div class="menu-burger__login-btn">
+                <a href="#" class="menu-burger__login-txt">My account</a>
+            </div>
         </div>
         <div class="menu-burger__btn-group">
             <a href="#" class="menu-burger__phone-btn">Need Care ?</a>
@@ -98,10 +100,13 @@
                 </ul>
             </div>
             <div class="my-account-submit-time-sheet__btn">
-                <a href="#">
-                    Submit
-                    <span>TIME SHEET</span>
-                </a>
+
+                <label for="submit-time-sheet" class="load-time-sheet__label">
+                        <span>Submit</span>
+                        <span>TIME SHEET</span>
+                </label>
+                <input type="file" id="submit-time-sheet" name="submit-time-sheet" class="load-time-sheet__input hide">
+
             </div>
         </div>
     </div>

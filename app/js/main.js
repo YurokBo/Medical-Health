@@ -7,7 +7,7 @@ $(function () {
         loop: true,
         nav: true,
         dots: false,
-        navText: ["<img src='img/chevron.png'>", "<img src='img/chevron.png'>"],
+        navText: ['<img src="/img/chevron.png" alt="Nav button">', '<img src="/img/chevron.png" alt="Nav button">'],
         autoplay: true,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
@@ -44,7 +44,7 @@ $(function () {
         items: 3,
         nav: true,
         dots: false,
-        navText: ["<img src='img/chevron.png'>", "<img src='img/chevron.png'>"],
+        navText: ['<img src="/img/chevron.png" alt="Nav button">', '<img src="/img/chevron.png" alt="Nav button">'],
         autoplay: true,
         autoplayTimeout: 2000,
         autoplayHoverPause: false,
@@ -61,39 +61,51 @@ $(function () {
     });
 
     /*datapicker*/
-    $(".datepicker, .periodpicker").datepicker({
-        dateFormat: 'y/mm/dd'
-    });
-    $(".choose-week-from, .choose-week-to").datepicker({
-        dateFormat: 'y.mm.dd'
-    });
+    let datepickers = $(".datepicker, .periodpicker");
+    if ( datepickers.length ) {
+        datepickers.datepicker({
+            dateFormat: 'y/mm/dd'
+        });
+    }
+    let choose_week = $(".choose-week-from, .choose-week-to");
+    if ( choose_week.length ) {
+        choose_week.datepicker({
+            dateFormat: 'y.mm.dd'
+        });
+    }
 
     /*timepicker*/
-    $('.time-visit').timepicker({
-        timeFormat: 'HH:mm p',
-        interval: 15,
-        minTime: '00:00',
-        maxTime: '23:45',
-        /*defaultTime: '11',*/
-        startTime: '00:15',
-        dynamic: false,
-        dropdown: true,
-        scrollbar: true
-    });
+    let time_visit = $('.time-visit');
+    if ( time_visit.length ) {
+        time_visit.timepicker({
+            timeFormat: 'HH:mm p',
+            interval: 15,
+            minTime: '00:00',
+            maxTime: '23:45',
+            /*defaultTime: '11',*/
+            startTime: '00:15',
+            dynamic: false,
+            dropdown: true,
+            scrollbar: true
+        });
+    }
 
     /*yearpicker*/
-    $('.yearpicker, .choose-year').datepicker({
-        changeYear: true,
-        showButtonPanel: true,
-        dateFormat: 'yy',
-        onClose: function (dateText, inst) {
-            var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
-            $(this).datepicker('setDate', new Date(year, 1));
-        }
-    });
-    $(".yearpicker, .choose-year").focus(function () {
-        $(".ui-datepicker-calendar, .ui-datepicker-current, .ui-datepicker-title span").hide();
-    });
+    let year_picker = $('.yearpicker, .choose-year');
+    if ( year_picker.length ) {
+        year_picker.datepicker({
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'yy',
+            onClose: function (dateText, inst) {
+                var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+                $(this).datepicker('setDate', new Date(year, 1));
+            }
+        });
+        year_picker.focus(function () {
+            $(".ui-datepicker-calendar, .ui-datepicker-current, .ui-datepicker-title span").hide();
+        });
+    }
 });
 
 /*-------this is a function which change blocks place-------*/
@@ -244,11 +256,8 @@ $(function () {
 
 document.addEventListener('scroll', () => {
     const scrollBtn = document.querySelector('.scrollUp');
-
     window.scrollY > 713 ? scrollBtn.classList.add('scrollUp__show') : scrollBtn.classList.remove('scrollUp__show');
-
     scrollHeader();
-
 });
 
 /*      функция вызывается при скролле экрана и создает анимацию шапки     */
@@ -270,7 +279,6 @@ function scrollHeader () {
             content.classList.remove('scroll__content');
         }
     }
-
 }
 
 document.addEventListener('click', e => {
@@ -319,22 +327,27 @@ function scrollUp(e) {
 
 const vacancyListTitle = document.querySelectorAll('.vacancy__list-title'),
     vacancyItem = document.querySelectorAll('.vacancy__item'),
-    accountContentTitle = document.querySelectorAll('.apply-now_title-box  .apply-now_title  '),
+    accountContentTitle = document.querySelectorAll('.apply-now_title-box .apply-now_title'),
     accountContentInfo = document.querySelectorAll('.hide__apply-now');
 
 function activePlus(e) {
-    const targetNum = [...vacancyListTitle].indexOf(e.target);
-
-
+    let targetNum = [...vacancyListTitle].indexOf(e.target);
+    let title = e.target;
+    const plusBtn = e.target.classList.contains('active-passive');
     if (targetNum === -1) {
-        return;
+        //if (e.target.contains('active-passive')) {
+        if (plusBtn) {
+            title = e.target.closest('.vacancy__list-title');
+            targetNum = [...vacancyListTitle].indexOf(title);
+        } else {
+            return;
+        }
     }
 
-    e.target.classList.toggle('vacancy__list-title_active');
+    title.classList.toggle('vacancy__list-title_active');
     vacancyItem[targetNum].classList.toggle('vacancy__item-active');
 
 }
-
 
 function activeAccount(e) {
     const targetNumAccountContentTitle = [...accountContentTitle].indexOf(e.target);
@@ -342,7 +355,6 @@ function activeAccount(e) {
     if (targetNumAccountContentTitle === -1) {
         return;
     }
-
 
     e.target.classList.toggle('apply-now_title-active');
     accountContentInfo[targetNumAccountContentTitle].classList.toggle('visible__apply-now');
@@ -363,7 +375,6 @@ function screenWidthDetection() {
     if (window.matchMedia("(min-width: 1240px)").matches) {
         menuBurgerInner.classList.remove('active__menu-burger');
     }
-
 }
 
 /*-------------------------------------------*/

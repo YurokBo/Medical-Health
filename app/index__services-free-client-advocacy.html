@@ -28,7 +28,9 @@
             </ul>
         </nav>
         <div class="menu-burger__login">
-            <a href="#" class="menu-burger__login-txt">My account</a>
+            <div class="menu-burger__login-btn">
+                <a href="#" class="menu-burger__login-txt">My account</a>
+            </div>
         </div>
         <div class="menu-burger__btn-group">
             <a href="#" class="menu-burger__phone-btn">Need Care ?</a>
@@ -76,10 +78,11 @@
                 free client advocAcy
             </h1>
             <div class="advocacy__info">
-                <p class="advocacy__txt default-txt">
-                    All the services found on this website are possible through Home and Community Based Services
-                    (HCBS). This is a state- funded program for aging adults and individuals with disabilities.
-                </p>
+                <div class="advocacy__txt default-txt">
+                    <p>All the services found on this website are possible through Home and Community Based Services
+                        (HCBS). This is </p>
+                    <p>a state- funded program for aging adults and individuals with disabilities.</p>
+                </div>
             </div>
             <div class="advocacy__btn default-btn">
                 <a href="#">Transfer NOW</a>
@@ -98,14 +101,18 @@
                 What Is free client advocacy?
             </h2>
             <div class="what-is-advocacy__info">
-                <p class="what-is-advocacy__text default-txt">
-                    Meridius Health represents the helping hand to the most vulnerable in our community, by connecting
-                    them with different State-funded programs that they might qualify for. We want to promote powerful
-                    stories of individuals and the collective needs of the community to state representatives to make
-                    informed legislative decisions that impact communities across the state. Our staff and volunteers
-                    work at the local, regional level to promote access to affordable, quality health care for people
-                    with chronic, debilitating or life-threatening illnesses.
-                </p>
+                <div class="what-is-advocacy__text default-txt">
+                    <p>Meridius Health represents the helping hand to the most vulnerable in our community, by connecting
+                        them with</p>
+                    <p>different State-funded programs that they might qualify for. We want to promote powerful
+                        stories of individuals and the</p>
+                    <p>collective needs of the community to state representatives to make
+                        informed legislative decisions that impact</p>
+                    <p>communities across the state. Our staff and volunteers
+                        work at the local, regional level to promote access to affordable, </p>
+                    <p>quality health care for people
+                        with chronic, debilitating or life-threatening illnesses.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -118,18 +125,19 @@
                 How we can help
             </h2>
             <div class="advantages__info">
-                <p class="advantages__info-text default-txt">
-                    Are you confused about the process? Overwhelmed?
-                    We can help with that!
-                </p>
-                <p class="advantages__info-text default-txt">
-                    Meridius Health offers an array of client advocacy to get you or your loved ones into the program
-                    and can facilitate all the paperwork and communications. We know that life can be overwhelming, and
-                    we want to help make this easier.
-                </p>
-                <p class="advantages__info-text default-txt">
-                    Here are some examples of the benefits through HCBS:
-                </p>
+                <div class="advantages__info-text default-txt">
+                    <p>Are you confused about the process? Overwhelmed?</p><br>
+                    <p>We can help with that!</p>
+                </div>
+                <div class="advantages__info-text default-txt">
+                    <p>Meridius Health offers an array of client advocacy to get you or your loved ones into the program
+                        and can facilitate all</p>
+                    <p>the paperwork and communications. We know that life can be overwhelming, and
+                        we want to help make this easier.</p>
+                </div>
+                <div class="advantages__info-text default-txt">
+                    <p>Here are some examples of the benefits through HCBS:</p>
+                </div>
             </div>
             <div class="advantages__checkbox">
                 <div class="advantages__checkbox-left">
@@ -215,21 +223,21 @@
         </h2>
         <div class="advocacy-choose__content">
             <div class="advocacy-choose__content-item">
-                <p class="advocacy-choose__content-question default-txt">
+                <div class="advocacy-choose__content-question default-txt">
                     <span>q.</span> Do you have a long term condition or disability ? <br>
                     (long term is considered a cap diction that will last last longer than 6 month)
-                </p>
-                <p class="advocacy-choose__content-question default-txt">
+                </div>
+                <div class="advocacy-choose__content-question default-txt">
                     <span>q.</span> Do you make LESS than $2,163 dollars per month ?
-                </p>
-                <p class="advocacy-choose__content-question default-txt">
+                </div>
+                <div class="advocacy-choose__content-question default-txt">
                     <span>q.</span> Do you have LESS than $8,000 dollars of countable resources ? (savings,
                     checking, stocks or bonds)
-                </p>
-                <p class="advocacy-choose__content-answer default-txt">
-                    <span>a.</span> You may be eligible for services. Let us help you start an application through
-                    the Independent Enrollment Broker (IEB) today!
-                </p>
+                </div>
+                <div class="advocacy-choose__content-answer default-txt">
+                    <span>a.</span> <p>You may be eligible for services. Let us help you start an application through</p>
+                    <p>the Independent Enrollment Broker (IEB) today!</p>
+                </div>
             </div>
             <div class="advocacy-choose__content-links">
                 <a href="#" class="advocacy-choose__content-link ">IEB website</a>
@@ -264,38 +272,62 @@
                     Care request:
                 </div>
                 <div class="form__text default-txt">
-                    Let us know what we can do to help
-                    in meeting the needs and goals of your loved one.
+                    <p>Let us know what we can do to help</p>
+                    <p>in meeting the needs and goals <br> of your</p>
+                    <p>loved one.</p>
                 </div>
 
             </div>
             <div class="form__box">
-                <form>
+                <form id="order-form" class="form-horizontal" action="site/order" method="post">
+                    <input type="hidden" name="_csrf"
+                           value="60REyHqcCH6isLbJccWOEAkROazHyfbwMDxBgOM_1uuoAwuAIt1yCZHU_fADq_dFa1Ba3IH5oIYAamzwpkqJnw==">
                     <div class="form__box-group">
-                        <label id="name">
-                            <input type="text" placeholder="Name">
-                        </label>
-                        <label id="address">
-                            <input type="text" placeholder="Address">
-                        </label>
-                        <label id="dob">
-                            <input type="text" placeholder="DOB">
-                        </label>
+                        <div class="input-name-wrap">
+                            <label class=" field-orderform-username required">
+                                <input type="text" id="orderform-username" class="form-control"
+                                       name="OrderForm[username]" placeholder="Name" aria-required="true">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
+                        <div class="input-address-wrap">
+                            <label class=" field-orderform-address">
+                                <input type="text" id="orderform-address" class="form-control" name="OrderForm[address]"
+                                       placeholder="Address">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
+                        <div class="input-dob-wrap">
+                            <label class=" field-orderform-dob">
+                                <input type="text" id="orderform-dob" class="form-control" name="OrderForm[dob]"
+                                       placeholder="DOB">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
                     </div>
                     <div class="form__box-group">
-                        <label id="email">
-                            <input type="text" placeholder="Email">
-                        </label>
-                        <label id="phone-number">
-                            <input type="text" placeholder="Phone Number">
-                        </label>
+                        <div class="input-email-wrap">
+                            <label class=" field-orderform-email">
+                                <input type="email" id="orderform-email" class="form-control" name="OrderForm[email]"
+                                       placeholder="Email">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
+                        <div class="input-phone-wrap">
+                            <label class=" field-orderform-phone required">
+                                <input type="tel" id="orderform-phone" class="form-control" name="OrderForm[phone]"
+                                       placeholder="Phone Number"
+                                       data-inputmask="&#039;mask&#039;: &#039;+1 999 999-99-99&#039;"
+                                       aria-required="true">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
                     </div>
-                    <div class="form__box-group">
-                        <label id="your-message">
-                            <textarea placeholder="Your message"></textarea>
-                        </label>
+                    <div class="form__box-group last">
+                        <div class="input-message-wrap">
+                            <label class=" field-orderform-body">
+                                <textarea id="orderform-body" class="form-control" name="OrderForm[body]" rows="7"
+                                          placeholder="Your message"></textarea>
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
                     </div>
-                    <button class="form__btn">send</button>
+                    <button class="form__btn" type="submit" id="order-form-btn">Send</button>
+
                 </form>
             </div>
         </div>

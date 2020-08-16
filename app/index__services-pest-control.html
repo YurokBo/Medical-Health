@@ -28,7 +28,9 @@
             </ul>
         </nav>
         <div class="menu-burger__login">
-            <a href="#" class="menu-burger__login-txt">My account</a>
+            <div class="menu-burger__login-btn">
+                <a href="#" class="menu-burger__login-txt">My account</a>
+            </div>
         </div>
         <div class="menu-burger__btn-group">
             <a href="#" class="menu-burger__phone-btn">Need Care ?</a>
@@ -114,13 +116,14 @@
                 What Is Home Care?
             </h2>
             <div class="what-is-pest__info">
-                <p class="what-is-pest__text default-txt">
-                    Pest control is the regulation or management of a species defined as a pest. In homes and urban
-                    environments, pests
-                    are rodents, birds, insects and other organisms that share the habitat with humans, and that feed on
-                    and damage possessions. Control of these pests is attempted through exclusion, repulsion, physical
-                    removal or chemical means.
-                </p>
+                <div class="what-is-pest__text default-txt">
+                    <p>Pest control is the regulation or management of a species defined as a pest. In homes and urban
+                        environments, pests</p>
+                    <p>are rodents, birds, insects and other organisms that share the habitat with humans, and that feed on
+                        and damage</p>
+                    <p>possessions. Control of these pests is attempted through exclusion, repulsion, physical
+                        removal or chemical means.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -133,10 +136,11 @@
                 How we can help
             </h2>
             <div class="pest-advantages__info">
-                <p class="advantages__info-text default-txt">
-                    Don’t let pests overrun your home! Meridius Health provides top-quality services to treat the inside
-                    of your home and develop a customized plan for protection.
-                </p>
+                <div class="advantages__info-text default-txt">
+                    <p>Don’t let pests overrun your home! Meridius Health provides top-quality services to treat the inside
+                        of your home</p>
+                    <p>and develop a customized plan for protection.</p>
+                </div>
             </div>
             <div class="pest-advantages__checkbox">
                 <ul>
@@ -158,13 +162,13 @@
                 </ul>
             </div>
             <div class="pest-advantages__info">
-                <p class="pest-advantages__info-text default-txt">
-                    Treatment is applied only after your property has been thoroughly assessed and we have discussed a
-                    specific plan
-                    of attack with you—we want you to be 100% confident in the service you are getting and aware of the
-                    treatments
-                    we are applying.
-                </p>
+                <div class="pest-advantages__info-text default-txt">
+                    <p>Treatment is applied only after your property has been thoroughly assessed and we have discussed a
+                        specific plan</p>
+                    <p>of attack with you—we want you to be 100% confident in the service you are getting and aware of the
+                        treatments</p>
+                    <p>we are applying.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -177,21 +181,19 @@
                 How Much Does Pest Control Cost?
             </h2>
             <div class="how-much__info">
-                <p class="how-much__info-text default-txt">
-                    All services are at zero cost to you and your family.
-                </p>
-                <p class="how-much__info-text default-txt">
-                    How is this possible? Pennsylvania’s Office of Long-Term Living (OLTL) has several programs to help
-                    people
-                    with disabilities to stay in their home and community. These Medicaid-funded programs are available
-                    depending
-                    on age, physical disability, and other factors.
-                    There is a step-by-step process to help OLTL decide if someone
-                    is to get services from one of these programs.
-                </p>
-                <p class="how-much__info-text default-txt">
-                    Call us today to help you get started on the application.
-                </p>
+                <div class="how-much__info-text default-txt">
+                    <p>All services are at zero cost to you and your family.</p>
+                    <p>How is this possible? Pennsylvania’s Office of Long-Term Living (OLTL) has several programs to help
+                        people</p>
+                    <p>with disabilities to stay in their home and community. These Medicaid-funded programs are available
+                        depending</p>
+                    <p>on age, physical disability, and other factors.
+                        There is a step-by-step process to help OLTL decide if someone</p>
+                    <p>is to get services from one of these programs.</p>
+                </div>
+                <div class="how-much__info-text default-txt">
+                    <p>Call us today to help you get started on the application.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -206,38 +208,62 @@
                     Care request:
                 </div>
                 <div class="form__text default-txt">
-                    Let us know what we can do to help
-                    in meeting the needs and goals of your loved one.
+                    <p>Let us know what we can do to help</p>
+                    <p>in meeting the needs and goals <br> of your</p>
+                    <p>loved one.</p>
                 </div>
 
             </div>
             <div class="form__box">
-                <form>
+                <form id="order-form" class="form-horizontal" action="site/order" method="post">
+                    <input type="hidden" name="_csrf"
+                           value="60REyHqcCH6isLbJccWOEAkROazHyfbwMDxBgOM_1uuoAwuAIt1yCZHU_fADq_dFa1Ba3IH5oIYAamzwpkqJnw==">
                     <div class="form__box-group">
-                        <label id="name">
-                            <input type="text" placeholder="Name">
-                        </label>
-                        <label id="address">
-                            <input type="text" placeholder="Address">
-                        </label>
-                        <label id="dob">
-                            <input type="text" placeholder="DOB">
-                        </label>
+                        <div class="input-name-wrap">
+                            <label class=" field-orderform-username required">
+                                <input type="text" id="orderform-username" class="form-control"
+                                       name="OrderForm[username]" placeholder="Name" aria-required="true">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
+                        <div class="input-address-wrap">
+                            <label class=" field-orderform-address">
+                                <input type="text" id="orderform-address" class="form-control" name="OrderForm[address]"
+                                       placeholder="Address">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
+                        <div class="input-dob-wrap">
+                            <label class=" field-orderform-dob">
+                                <input type="text" id="orderform-dob" class="form-control" name="OrderForm[dob]"
+                                       placeholder="DOB">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
                     </div>
                     <div class="form__box-group">
-                        <label id="email">
-                            <input type="text" placeholder="Email">
-                        </label>
-                        <label id="phone-number">
-                            <input type="text" placeholder="Phone Number">
-                        </label>
+                        <div class="input-email-wrap">
+                            <label class=" field-orderform-email">
+                                <input type="email" id="orderform-email" class="form-control" name="OrderForm[email]"
+                                       placeholder="Email">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
+                        <div class="input-phone-wrap">
+                            <label class=" field-orderform-phone required">
+                                <input type="tel" id="orderform-phone" class="form-control" name="OrderForm[phone]"
+                                       placeholder="Phone Number"
+                                       data-inputmask="&#039;mask&#039;: &#039;+1 999 999-99-99&#039;"
+                                       aria-required="true">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
                     </div>
-                    <div class="form__box-group">
-                        <label id="your-message">
-                            <textarea placeholder="Your message"></textarea>
-                        </label>
+                    <div class="form__box-group last">
+                        <div class="input-message-wrap">
+                            <label class=" field-orderform-body">
+                                <textarea id="orderform-body" class="form-control" name="OrderForm[body]" rows="7"
+                                          placeholder="Your message"></textarea>
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
                     </div>
-                    <button class="form__btn">send</button>
+                    <button class="form__btn" type="submit" id="order-form-btn">Send</button>
+
                 </form>
             </div>
         </div>

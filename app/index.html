@@ -28,7 +28,9 @@
             </ul>
         </nav>
         <div class="menu-burger__login">
-            <a href="#" class="menu-burger__login-txt">My account</a>
+            <div class="menu-burger__login-btn">
+                <a href="#" class="menu-burger__login-txt">My account</a>
+            </div>
         </div>
         <div class="menu-burger__btn-group">
             <a href="#" class="menu-burger__phone-btn">Need Care ?</a>
@@ -103,7 +105,7 @@
                     excellence, and reliability.</p>
                 <p class="about__text default-txt">
                     With years of experience in the home health field, we are proud
-                    to serve and be welcomed into thousands of homes to help
+                    to serve and be welcomed into thousands of homes to help <br>
                     our clients enjoy safe, independent, and fulfilling lives.
                 </p>
             </div>
@@ -159,7 +161,7 @@
                     <img src="img/philantropy.png" alt="">
                     <span>Philanthropy</span>
                 </a>
-                <a href="#" class="services__content-item">
+                <a href="#" class="services__content-item last-item">
                     <span>Read more ></span>
                 </a>
             </div>
@@ -242,52 +244,61 @@
         <div class="choose__content">
             <div class="choose__content-left">
                 <div class="choose__content-item">
-                    <p class="choose__content-question default-txt">
+                    <div class="choose__content-question default-txt">
                         <span>q.</span> As a caregiver, can I choose my own schedule?
-                    </p>
-                    <p class="choose__content-answer default-txt">
-                        <span>a.</span> We offer flexible schedules for most
-                        of our non-skilled caregiving roles. Whether you are looking for full-time employment or PRN,
-                        we try our hardest to accommodate your schedule with the needs and desires of the client.
-                    </p>
+                    </div>
+                    <div class="choose__content-answer default-txt">
+                        <span>a.</span>
+                        <p>We offer flexible schedules for most</p>
+                        <p>of our non-skilled caregiving roles. Whether you</p>
+                        <p>are looking for full-time employment or PRN,</p>
+                        <p>we try our hardest to accommodate your schedule </p>
+                        <p>with the needs and desires of the client.</p>
+                    </div>
                 </div>
                 <div class="choose__content-item">
-                    <p class="choose__content-question default-txt">
+                    <div class="choose__content-question default-txt">
                         <span>q.</span> When can we start services if my loved one is already on the waiver program?
-                    </p>
-                    <p class="choose__content-answer default-txt">
-                        <span>a.</span> Individuals already participating with Community Health Choices (CHC) or OLTL
-                        Waiver programs
-                        may start as soon as 24h from the time of transfer with Meridius Health or when we receive <br>
-                        the Service Authorization from the members
-                        insurance plan.
-                    </p>
+                    </div>
+                    <div class="choose__content-answer default-txt">
+                        <span>a.</span>
+                        <p>Individuals already participating with Community</p>
+                        <p>Health Choices (CHC) or OLTL Waiver programs</p>
+                        <p>may start as soon as 24h from the time of transfer</p>
+                        <p>with Meridius Health or when we receive</p>
+                        <p>the Service Authorization from the members</p>
+                        <p>insurance plan.</p>
+                    </div>
                 </div>
             </div>
             <div class="choose__content-right">
                 <div class="choose__content-item">
-                    <p class="choose__content-question default-txt">
+                    <div class="choose__content-question default-txt">
                         <span>q.</span> Is Meridius Health contracted with Community
                         Health Choices?
-                    </p>
-                    <p class="choose__content-answer default-txt">
-                        <span>a.</span> Yes! Meridius is a contracted provider with every Managed Care Organization
-                        under CHC, including
-                        Keystone First, Amerihealth Caritas, PA Health
-                        and Wellness, and UPMC. We also participate <br>
-                        with OLTL Home and Community Based Services (HCBS) under OBRA and ACT 150 waivers
-                    </p>
+                    </div>
+                    <div class="choose__content-answer default-txt">
+                        <span>a.</span>
+                        <p>Yes! Meridius is a contracted provider with every</p>
+                        <p>Managed Care Organization under CHC, including</p>
+                        <p>Keystone First, Amerihealth Caritas, PA Health</p>
+                        <p>and Wellness, and UPMC. We also participate</p>
+                        <p>with OLTL Home and Community Based Services</p>
+                        <p>(HCBS) under OBRA and ACT 150 waivers</p>
+                    </div>
                 </div>
                 <div class="choose__content-item">
-                    <p class="choose__content-question default-txt">
+                    <div class="choose__content-question default-txt">
                         <span>q.</span> Does Meridius Health offer any benefits for their employees?
-                    </p>
-                    <p class="choose__content-answer default-txt">
-                        <span>a.</span> Yes! All our employees are eligible for free healthcare, that will include
-                        dental and vision at an additional cost. We also offer employee funded 401k, free life insurance
-                        up to
-                        $10,000.00 per full time employee, highest pay rate in your area.
-                    </p>
+                    </div>
+                    <div class="choose__content-answer default-txt">
+                        <span>a.</span>
+                        <p>Yes! All our employees are eligible for free </p>
+                        <p>healthcare, that will include dental and vision </p>
+                        <p>at an additional cost. We also offer employee funded </p>
+                        <p>401k, free life insurance up to $10,000.00 </p>
+                        <p>per full time employee, highest pay rate in your area.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -303,38 +314,62 @@
                     Care request:
                 </div>
                 <div class="form__text default-txt">
-                    Let us know what we can do to help
-                    in meeting the needs and goals of your loved one.
+                    <p>Let us know what we can do to help</p>
+                    <p>in meeting the needs and goals <br> of your</p>
+                    <p>loved one.</p>
                 </div>
 
             </div>
             <div class="form__box">
-                <form>
+                <form id="order-form" class="form-horizontal" action="site/order" method="post">
+                    <input type="hidden" name="_csrf"
+                           value="60REyHqcCH6isLbJccWOEAkROazHyfbwMDxBgOM_1uuoAwuAIt1yCZHU_fADq_dFa1Ba3IH5oIYAamzwpkqJnw==">
                     <div class="form__box-group">
-                        <label id="name">
-                            <input type="text" placeholder="Name">
-                        </label>
-                        <label id="address">
-                            <input type="text" placeholder="Address">
-                        </label>
-                        <label id="dob">
-                            <input type="text" placeholder="DOB">
-                        </label>
+                        <div class="input-name-wrap">
+                            <label class=" field-orderform-username required">
+                                <input type="text" id="orderform-username" class="form-control"
+                                       name="OrderForm[username]" placeholder="Name" aria-required="true">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
+                        <div class="input-address-wrap">
+                            <label class=" field-orderform-address">
+                                <input type="text" id="orderform-address" class="form-control" name="OrderForm[address]"
+                                       placeholder="Address">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
+                        <div class="input-dob-wrap">
+                            <label class=" field-orderform-dob">
+                                <input type="text" id="orderform-dob" class="form-control" name="OrderForm[dob]"
+                                       placeholder="DOB">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
                     </div>
                     <div class="form__box-group">
-                        <label id="email">
-                            <input type="text" placeholder="Email">
-                        </label>
-                        <label id="phone-number">
-                            <input type="text" placeholder="Phone Number">
-                        </label>
+                        <div class="input-email-wrap">
+                            <label class=" field-orderform-email">
+                                <input type="email" id="orderform-email" class="form-control" name="OrderForm[email]"
+                                       placeholder="Email">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
+                        <div class="input-phone-wrap">
+                            <label class=" field-orderform-phone required">
+                                <input type="tel" id="orderform-phone" class="form-control" name="OrderForm[phone]"
+                                       placeholder="Phone Number"
+                                       data-inputmask="&#039;mask&#039;: &#039;+1 999 999-99-99&#039;"
+                                       aria-required="true">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
                     </div>
-                    <div class="form__box-group">
-                        <label id="your-message">
-                            <textarea placeholder="Your message"></textarea>
-                        </label>
+                    <div class="form__box-group last">
+                        <div class="input-message-wrap">
+                            <label class=" field-orderform-body">
+                                <textarea id="orderform-body" class="form-control" name="OrderForm[body]" rows="7"
+                                          placeholder="Your message"></textarea>
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
                     </div>
-                    <button class="form__btn">send</button>
+                    <button class="form__btn" type="submit" id="order-form-btn">Send</button>
+
                 </form>
             </div>
         </div>

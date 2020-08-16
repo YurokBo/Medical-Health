@@ -119,6 +119,13 @@
     }
   }
 
+  .choose__content-item,
+  .questioner__content-item {
+    p {
+      display: inline;
+    }
+  }
+
 }
 
 @media screen and (max-width: 1330px) {
@@ -223,6 +230,19 @@
 
   .how-much-advocacy__info {
     padding: 0;
+  }
+
+  .what-is-pest__info,
+  .how-much__info,
+  .what-is-family__info,
+  .pest-advantages__content,
+  .what-is-advocacy__info,
+  .advantages__info,
+  .Q-A-questioner__content,
+  .what-is-choices__info {
+    p {
+      display: inline;
+    }
   }
 
 }
@@ -424,7 +444,7 @@
     a {
       font-family: 'MuseoSansCyrl-Medium';
       font-weight: 600;
-      padding: 18px 18px 27px 29px;
+      padding: 20px 18px 25px 29px;
       position: relative;
       letter-spacing: 0.1em;
       width: 100%;
@@ -435,7 +455,7 @@
         font-family: "Flaticon";
         color: $burger-menu-nav-color;
         font-size: 26px;
-        left: 29%;
+        left: 0;
         top: 46%;
         transform: translateY(-50%);
         position: absolute;
@@ -448,11 +468,11 @@
         &::after {
           content: "";
           position: absolute;
-          width: 27%;
+
           height: 1.5px;
           background-color: #714D47;
           bottom: 22px;
-          left: 51%;
+          left: 53%;
           transform: translateX(-50%);
         }
 
@@ -540,6 +560,7 @@
   .scrollUp__show {
     display: block;
     transition: .5s;
+    height: 0;
   }
 
   .footer__container {
@@ -746,12 +767,13 @@
       }
     }
   }
-  .services__content-item {
-    &:last-child {
+  .read-more {
       padding: 88px 20px 16px 20px;
-    }
   }
 
+  .questioner__content {
+    padding-right: 0;
+  }
   .choose__content-question,
   .choose__content-answer,
   .questioner__content-question,
@@ -769,7 +791,7 @@
   .choose__content-right,
   .questioner__content-left,
   .questioner__content-right {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
   }
 
@@ -895,6 +917,20 @@
       .upload-delete-check-list__item {
         padding-left: 0;
       }
+    }
+  }
+
+  .what-is-transportation__text {
+    p {
+      display: inline;
+    }
+  }
+
+  .advantages-transportation__checkbox,
+  .how-much-transportation__info-text,
+  .advocacy__info {
+    p {
+      display: inline;
     }
   }
 }
@@ -1158,10 +1194,8 @@
     }
   }
 
-  .services__content-item {
-    &:last-child {
+  .last-item {
       display: none;
-    }
   }
 
 
@@ -1193,10 +1227,14 @@
 
   .form__content {
     text-align: center;
-    padding: 33px 69px 43px;
+    padding: 33px 80px 43px;
     background-position: top 0 center;
     background-size: 86%;
     margin: 0 auto;
+
+    br {
+      display: block;
+    }
   }
 
   .form__title {
@@ -1205,8 +1243,11 @@
   }
 
   .form__text {
-    letter-spacing: 0.018em;
     line-height: 1.6em;
+
+    p {
+      display: inline;
+    }
   }
 
   .form__box {
@@ -1222,15 +1263,15 @@
       margin-bottom: 19px;
     }
 
-    #name,
-    #address,
-    #dob,
-    #email,
-    #phone-number {
+    .input-name-wrap, #orderform-username,
+    .input-address-wrap, #orderform-address,
+    .input-dob-wrap, #orderform-dob,
+    .input-email-wrap, #orderform-email,
+    .input-phone-wrap, #orderform-phone {
       max-width: 100%;
     }
 
-    #your-message {
+    .input-message-wrap, #orderform-body {
 
       textarea {
         min-height: 160px;
@@ -1816,6 +1857,19 @@
   .activate-adp__content .activate-adp__registration-process_info {
     padding-left: 30px;
   }
+
+  .skilled-care__txt {
+    p {
+      display: inline;
+    }
+  }
+
+  .advocacy-choose__content-answer,
+  .partner-choose__content-answer {
+    p {
+      display: inline;
+    }
+  }
 }
 
 @media screen and (max-width: 840px) {
@@ -2006,6 +2060,10 @@
       letter-spacing: -.029em;
     }
   }
+
+  .form__content {
+    padding: 33px 53px 43px;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -2022,7 +2080,6 @@
       padding-right: 0;
     }
   }
-
 
 }
 
@@ -2119,10 +2176,6 @@
     }
   }
 
-  .quality__subtitle {
-    padding-bottom: 118px;
-    font-size: 110px;
-  }
 
   /*-------------about------------*/
   .about {
@@ -2136,6 +2189,9 @@
 
   .about__info p:nth-child(2) {
     padding-right: 33px;
+    br {
+      display: none;
+    }
   }
 
   /*----------we-can-------------*/
@@ -2562,6 +2618,10 @@
   .Q-A__title {
     line-height: 1.4em;
     padding-bottom: 133px;
+
+    br {
+      display: block;
+    }
   }
 
   .Q-A-questioner__advantages-checkbox {
@@ -2600,12 +2660,14 @@
     }
   }
 
-  .quality__subtitle,
   .helping-hand__subtitle {
     font-size: 110px;
     margin-bottom: 97px;
   }
-
+  .quality__subtitle {
+    font-size: 110px;
+    margin-bottom: 119px;
+  }
 
   /*--------------advocacy--------------*/
   .advocacy {
@@ -2681,13 +2743,14 @@
   }
 
   .advantages__info-text {
-    display: block;
+    br {
+      display: block;
+    }
 
     &:first-child {
       margin-bottom: 10px;
     }
   }
-
 
   .advantages-transportation__checkbox {
     padding-right: 0;
@@ -2941,11 +3004,14 @@
   }
 
   .skilled-care__txt {
-    display: block;
-    padding: 0 0 102px 0;
 
-    &:first-child,
-    &:last-child {
+    margin: 0 0 102px 0;
+
+    p:first-child,
+    p:last-child {
+      display: none;
+    }
+    span {
       display: none;
     }
   }
@@ -3799,7 +3865,7 @@
   }
 
   .quality {
-    background: linear-gradient(0, #d3bab3 45%, rgba(255, 255, 255, 0.1) 58%), url(../img/quality-bg.jpg) no-repeat top;
+    background: linear-gradient(0, #d3bab3 52%, rgba(255, 255, 255, 0.1) 88%), url(../img/quality-bg.jpg) no-repeat top;
     background-size: 223%;
   }
 }
@@ -3881,10 +3947,6 @@
 
   .header__logo {
     max-width: 200px;
-  }
-
-  .quality {
-    background-size: 250%;
   }
 
   .services__content-item,
@@ -4137,21 +4199,12 @@
     padding: 0 0 105px;
   }
 
-  .quality {
-    background-size: 280%;
-  }
 
 }
 
 @media screen and (max-width: 383px) {
   .partner__carousel .item {
     width: 155px !important;
-  }
-}
-
-@media screen and (max-width: 373px) {
-  .quality {
-    background-size: 310%;
   }
 }
 
@@ -4214,10 +4267,3 @@
     }
   }
 }
-
-@media screen and (max-width: 334px) {
-  .quality {
-    background-size: 365%;
-  }
-}
-

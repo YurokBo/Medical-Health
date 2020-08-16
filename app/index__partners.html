@@ -28,7 +28,9 @@
             </ul>
         </nav>
         <div class="menu-burger__login">
-            <a href="#" class="menu-burger__login-txt">My account</a>
+            <div class="menu-burger__login-btn">
+                <a href="#" class="menu-burger__login-txt">My account</a>
+            </div>
         </div>
         <div class="menu-burger__btn-group">
             <a href="#" class="menu-burger__phone-btn">Need Care ?</a>
@@ -82,7 +84,6 @@
     </div>
 </section>
 
-
 <section class="what-is-choices">
     <div class="scrollUp">
         <a title="up"></a>
@@ -93,14 +94,15 @@
                 What is Community Health Choices?
             </h2>
             <div class="what-is-choices__info">
-                <p class="what-is-choices__text default-txt">
-                    COMMUNITY HEALTHCHOICES (CHC) is Pennsylvania’s managed care program for individuals with physical
-                    disabilities — serving more people in communities, giving them the opportunity to work, spend more
-                    time with their families, and experience an overall better quality of life.
-                </p>
-                <p class="what-is-choices__text default-txt">
-                    Meet the Managed Care Organizations (MCOs):
-                </p>
+                <div class="what-is-choices__text default-txt">
+                    <p>COMMUNITY HEALTHCHOICES (CHC) is Pennsylvania’s managed care program for individuals with physical</p>
+                    <p>disabilities — serving more people in communities, giving them the opportunity to work, spend more
+                        time with their </p>
+                    <p>families, and experience an overall better quality of life.</p>
+                </div>
+                <div class="what-is-choices__text default-txt">
+                    <p>Meet the Managed Care Organizations (MCOs):</p>
+                </div>
                 <div class="what-is-choices__advantages-checkbox">
                     <ul>
                         <li>
@@ -129,13 +131,14 @@
                         </li>
                     </ul>
                 </div>
-                <p class="what-is-choices__text default-txt">
-                    If you are a participant of Home and Community Based Services (HCBS), you get to be a part of a
-                    Managed Care Organization! This is great because your care is handled by a specialized team all in
-                    one place.
-                    Call Meridius Health today and we can help with your application for services into HCBS,
-                    at no cost to you or your loved ones.
-                </p>
+                <div class="what-is-choices__text default-txt">
+                    <p>If you are a participant of Home and Community Based Services (HCBS), you get to be a part of a
+                        Managed Care </p>
+                    <p>Organization! This is great because your care is handled by a specialized team all in
+                        one place.</p>
+                    <p>Call Meridius Health today and we can help with your application for services into HCBS,</p>
+                    <p>at no cost to you or your loved ones.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -148,25 +151,26 @@
         </h2>
         <div class="partner-choose__content">
             <div class="partner-choose__content-item">
-                <p class="partner-choose__content-question default-txt">
-                    <span>q.</span> Do you have a long term condition or disability ? <br>
-                    (long term is considered a cap diction that will last last longer than 6 month)
-                </p>
-                <p class="partner-choose__content-question default-txt">
-                    <span>q.</span> Do you make LESS than $2,163 dollars per month ?
-                </p>
-                <p class="partner-choose__content-question default-txt">
-                    <span>q.</span> Do you have LESS than $8,000 dollars of countable resources ? (savings,
-                    checking, stocks or bonds)
-                </p>
-                <p class="partner-choose__content-answer default-txt">
-                    <span>a.</span> You may be eligible for services. Let us help you start an application through
-                    the Independent Enrollment Broker (IEB) today!
-                </p>
+                <div class="partner-choose__content-question default-txt">
+                    <span>q.</span> <p>Do you have a long term condition or disability ?</p> <br>
+                    <p>(long term is considered a cap diction that will last last longer than 6 month)</p>
+                </div>
+                <div class="partner-choose__content-question default-txt">
+                    <span>q.</span> <p>Do you make LESS than $2,163 dollars per month ?</p>
+                </div>
+                <div class="partner-choose__content-question default-txt">
+                    <span>q.</span> <p>Do you have LESS than $8,000 dollars of countable resources ? (savings,
+                    checking, stocks or bonds)</p>
+                </div>
+                <div class="partner-choose__content-answer default-txt">
+                    <span>a.</span> <p>You may be eligible for services. Let us help you start an application through</p>
+                    <p>the Independent Enrollment Broker (IEB) today!</p>
+                </div>
             </div>
             <div class="partner-choose__content-links">
-                <a href="#" class="partner-choose__content-link ">IEB website</a>
-                <a href="#" class="partner-choose__content-link">Document from IEB website with steps for
+                <a href="https://www.paieb.com" class="partner-choose__content-link ">IEB website</a>
+                <a href="https://www.paieb.com/doc/StepsToApply.pdf" class="partner-choose__content-link">Document from
+                    IEB website with steps for
                     application</a>
             </div>
         </div>
@@ -182,38 +186,62 @@
                     Care request:
                 </div>
                 <div class="form__text default-txt">
-                    Let us know what we can do to help
-                    in meeting the needs and goals of your loved one.
+                    <p>Let us know what we can do to help</p>
+                    <p>in meeting the needs and goals <br> of your</p>
+                    <p>loved one.</p>
                 </div>
 
             </div>
             <div class="form__box">
-                <form>
+                <form id="order-form" class="form-horizontal" action="site/order" method="post">
+                    <input type="hidden" name="_csrf"
+                           value="60REyHqcCH6isLbJccWOEAkROazHyfbwMDxBgOM_1uuoAwuAIt1yCZHU_fADq_dFa1Ba3IH5oIYAamzwpkqJnw==">
                     <div class="form__box-group">
-                        <label id="name">
-                            <input type="text" placeholder="Name">
-                        </label>
-                        <label id="address">
-                            <input type="text" placeholder="Address">
-                        </label>
-                        <label id="dob">
-                            <input type="text" placeholder="DOB">
-                        </label>
+                        <div class="input-name-wrap">
+                            <label class=" field-orderform-username required">
+                                <input type="text" id="orderform-username" class="form-control"
+                                       name="OrderForm[username]" placeholder="Name" aria-required="true">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
+                        <div class="input-address-wrap">
+                            <label class=" field-orderform-address">
+                                <input type="text" id="orderform-address" class="form-control" name="OrderForm[address]"
+                                       placeholder="Address">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
+                        <div class="input-dob-wrap">
+                            <label class=" field-orderform-dob">
+                                <input type="text" id="orderform-dob" class="form-control" name="OrderForm[dob]"
+                                       placeholder="DOB">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
                     </div>
                     <div class="form__box-group">
-                        <label id="email">
-                            <input type="text" placeholder="Email">
-                        </label>
-                        <label id="phone-number">
-                            <input type="text" placeholder="Phone Number">
-                        </label>
+                        <div class="input-email-wrap">
+                            <label class=" field-orderform-email">
+                                <input type="email" id="orderform-email" class="form-control" name="OrderForm[email]"
+                                       placeholder="Email">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
+                        <div class="input-phone-wrap">
+                            <label class=" field-orderform-phone required">
+                                <input type="tel" id="orderform-phone" class="form-control" name="OrderForm[phone]"
+                                       placeholder="Phone Number"
+                                       data-inputmask="&#039;mask&#039;: &#039;+1 999 999-99-99&#039;"
+                                       aria-required="true">
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
                     </div>
-                    <div class="form__box-group">
-                        <label id="your-message">
-                            <textarea placeholder="Your message"></textarea>
-                        </label>
+                    <div class="form__box-group last">
+                        <div class="input-message-wrap">
+                            <label class=" field-orderform-body">
+                                <textarea id="orderform-body" class="form-control" name="OrderForm[body]" rows="7"
+                                          placeholder="Your message"></textarea>
+                                <p class="help-block help-block-error form-validation"></p>
+                            </label></div>
                     </div>
-                    <button class="form__btn">send</button>
+                    <button class="form__btn" type="submit" id="order-form-btn">Send</button>
+
                 </form>
             </div>
         </div>

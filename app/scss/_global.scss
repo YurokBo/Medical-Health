@@ -230,8 +230,7 @@ button {
     }
   }
 }
-
-.apply-now_title-active + .active-passive {
+.apply-now_title-active + .active-passive{
   .plus {
     opacity: 0;
     transition: all .5s;
@@ -363,3 +362,7 @@ button {
   padding: 4.5px 51.55px;
 }
 
+.invalid-feedback {
+  font-size: 1.25rem;
+  color: $btn-title-color;
+}

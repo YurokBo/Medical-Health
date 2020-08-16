@@ -5,6 +5,10 @@
 @import "mixins";
 
 /*-------------header--------------*/
+.scrollUp {
+  display: none;
+}
+
 .header {
   transition: .3s all;
 
@@ -90,7 +94,6 @@
     position: relative;
     font-size: 18px;
     line-height: 1em;
-    letter-spacing: -0.056em;
     color: $txt-color;
 
     &::before {
@@ -113,15 +116,19 @@
     margin-bottom: 22px;
 
     &::before {
-      content: "\f100";
+      content: "";
+      background-image: url("../img/phone-icon.png");
+      background-repeat: no-repeat;
+      height: 22px;
+      width: 22px;
+      display: block;
       left: 2px;
-      font-size: 22px;
     }
 
     &:hover,
     &:active {
       &::before {
-        transform: rotate(15deg) translateY(-8.5px);
+        transform: rotate(15deg) translateY(-9.5px);
       }
     }
   }
@@ -130,32 +137,37 @@
 .header__login {
   .header__login-txt {
     font-family: 'MuseoSansCyrl-Medium';
-    font-weight: 600;
+    font-weight: 500;
     padding: 0 0 0 17px;
     margin-bottom: 22px;
     position: relative;
 
     &::before {
-      content: "\f101";
-      font-size: 22px;
+      content: "";
+      background-image: url("../img/avatar-icon.png");
+      background-repeat: no-repeat;
+      height: 22.31px;
+      width: 16.91px;
+      display: block;
       left: 14px;
     }
-
 
     &:hover,
     &:active {
       margin-bottom: 21px;
+
       &::before {
-        transform: scale(1.1) translateY(-7.5px);
+        transform: scale(1.1) translateY(-11.5px);
       }
+
       &:after {
-        position:relative;
+        position: relative;
         display: block;
         border-bottom: 1px solid #565656;
         content: '';
         bottom: -3.5px;
-        right: -32px;
-        width: 89px;
+        right: -26px;
+        width: 102px;
       }
     }
   }
@@ -284,7 +296,6 @@
       color: #AE7669;
       background-color: #F8E3DB;
       border-radius: 8.5px;
-
       animation: none;
     }
   }
@@ -484,21 +495,11 @@
 
 }
 
-.services__content-item {
-  &:last-child {
-    padding: 99px 41px 16px 38px;
-  }
+.last-item {
+  padding: 99px 41px 16px 38px;
+  color: #AE7669;
 }
 
-.care-services__content-item {
-  /*&:nth-child(5) {
-    margin-left: 145px;
-  }
-
-  &:nth-child(7) {
-    margin-right: 145px;
-  }*/
-}
 
 /*-------------we-can------------*/
 .we-can {
@@ -648,9 +649,14 @@
   padding: 0 0 109px;
 }
 
-.choose__container,
+.choose__container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .questioner__container {
-  max-width: 1370px;
+  max-width: 1347px;
   width: 100%;
   margin: 0 auto;
 }
@@ -666,17 +672,18 @@
 .questioner__title,
 .advocacy-choose__title,
 .partner-choose__title {
-  padding: 0 95px 0 0;
   text-align: center;
   font-size: 40px;
   line-height: 1.5em;
   letter-spacing: 0.01em;
   text-transform: capitalize;
+  margin-bottom: 42px;
 }
 
 .questioner__title {
   margin-bottom: 45px;
   padding-right: 0;
+  letter-spacing: -.024em;
 }
 
 .advocacy-choose__title,
@@ -688,31 +695,18 @@
 .questioner__content {
   display: flex;
   justify-content: space-between;
-  padding-right: 52px;
+}
+
+.questioner__content {
+  padding-right: 30px;
 }
 
 .choose__content-left,
 .choose__content-right,
 .questioner__content-left,
 .questioner__content-right {
-  max-width: 580px;
+  max-width: 586px;
   width: 100%;
-}
-
-.choose__content-right,
-.questioner__content-right {
-  max-width: 604px;
-
-  .choose__content-item,
-  .questioner__content-item {
-    &:nth-child(1) {
-      padding-right: 24px;
-    }
-
-    &:nth-child(2) {
-      padding-right: 8px;
-    }
-  }
 }
 
 .advocacy-choose__content,
@@ -846,7 +840,11 @@
   background-size: auto;
   background-repeat: no-repeat;
   padding-left: 73px;
-  padding-right: 88px;
+  padding-right: 75px;
+
+  br {
+    display: none;
+  }
 }
 
 .form__title {
@@ -879,7 +877,7 @@
 
   input,
   textarea {
-    padding: 10px 11px 7px 24px;
+    padding: 10px 11px 8px 24px;
     font-family: 'Circe-Regular';
     font-weight: 400;
     font-size: 20px;
@@ -905,18 +903,18 @@
       display: block;
     }
 
-    &:nth-child(1),
-    &:nth-child(2) {
-      margin-bottom: 20px;
-    }
-
+    &:nth-child(2),
     &:nth-child(3) {
-      margin-bottom: 37px;
+      margin-bottom: 20px;
     }
   }
 
-  #name {
-    max-width: 210px;
+  .last {
+    margin-bottom: 37px;
+  }
+
+  .input-name-wrap, #orderform-username {
+    max-width: 210.12px;
     width: 100%;
 
     input[placeholder="Name"] {
@@ -925,8 +923,8 @@
     }
   }
 
-  #address {
-    max-width: 316px;
+  .input-address-wrap, #orderform-address {
+    max-width: 316.19px;
     width: 100%;
 
     input[placeholder="Address"] {
@@ -935,8 +933,8 @@
     }
   }
 
-  #dob {
-    max-width: 163px;
+  .input-dob-wrap, #orderform-dob {
+    max-width: 165.08px;
     width: 100%;
 
     input[placeholder="DOB"] {
@@ -945,8 +943,8 @@
     }
   }
 
-  #email {
-    max-width: 389px;
+  .input-email-wrap, #orderform-email {
+    max-width: 390.23px;
     width: 100%;
 
     input[placeholder="Email"] {
@@ -954,7 +952,7 @@
     }
   }
 
-  #phone-number {
+  .input-phone-wrap, #orderform-phone {
     max-width: 320px;
     width: 100%;
 
@@ -963,7 +961,7 @@
     }
   }
 
-  #your-message {
+  .input-message-wrap, #orderform-body {
     width: 100%;
 
     textarea {
@@ -971,7 +969,7 @@
       resize: none;
       width: 100%;
       display: block;
-      min-height: 107px;
+      height: 107px;
       padding-top: 11px;
     }
   }
@@ -1040,7 +1038,6 @@
   display: block;
   width: 84%;
 }
-
 
 /*------------footer---------------*/
 .footer {
@@ -1177,17 +1174,16 @@
 }
 
 .footer__login {
-  padding: 0 0 26px 0;
 
   a {
     font-family: 'MuseoSansCyrl-Medium';
     font-weight: 600;
-    padding: 0 0 18px 42px;
+    padding: 0 0 0 42px;
     position: relative;
     font-size: 24px;
     line-height: 1.22em;
-    letter-spacing: -0.02em;
     color: $txt-color;
+    margin-bottom: 38px;
 
     &::before {
       content: "\f101";
@@ -1197,6 +1193,25 @@
       color: $nav-icon-color;
       position: absolute;
       top: 0;
+    }
+
+    &:hover,
+    &:active {
+      margin-bottom: 37px;
+
+      &::before {
+        transform: scale(1.1);
+      }
+
+      &:after {
+        position: relative;
+        display: block;
+        border-bottom: 1px solid #565656;
+        content: '';
+        bottom: -1.5px;
+        right: 0;
+        width: 122px;
+      }
     }
   }
 }
@@ -1292,9 +1307,11 @@
   background-color: $burger-menu-login-bg;
   margin: 0 0 10px 0;
 
-  /*&:active {
-    background-color: black;
-  }*/
+  .menu-burger__login-btn {
+    max-width: 215px;
+    width: 100%;
+    margin: 0 auto;
+  }
 
   a {
     font-family: 'MuseoSansCyrl-Medium';
@@ -1317,7 +1334,7 @@
       &::after {
         content: "";
         position: absolute;
-        width: 113px;
+        width: 154px;
         height: 2px;
         background-color: $txt-color;
         bottom: 15px;
@@ -1478,7 +1495,7 @@
 
 .home-care__container,
 .advocacy__container {
-  max-width: 1110px;
+  max-width: 1170px;
   width: 100%;
   margin: 0 auto;
 }
@@ -1581,7 +1598,11 @@
 
 .Q-A__title {
   padding: 0 0 125px;
-  line-height: 1.2em;
+  line-height: 1.5em;
+
+  br {
+    display: none;
+  }
 }
 
 .our-partners__title {
@@ -1601,12 +1622,7 @@
 }
 
 .skilled-care__txt {
-  display: inline;
-
-  &:last-child {
-    display: block;
-    padding: 0 0 59px 0;
-  }
+  margin: 0 0 59px 0;
 }
 
 .transportation__info {
@@ -1701,22 +1717,22 @@
 }
 
 .what-is-family__info {
-  p + p {
+  div + div {
     margin-top: 40px;
   }
 }
 
 .what-is-choices__info {
-  p {
+  div {
     margin-top: 40px;
   }
 
-  p:first-child,
-  p:last-child {
+  div:first-child,
+  div:last-child {
     margin-top: 0;
   }
 
-  p:nth-child(2) {
+  divFZ:nth-child(2) {
     margin-bottom: 10px;
   }
 }
@@ -1759,6 +1775,10 @@
 
 .advantages__info {
   margin-bottom: 30px;
+
+  br {
+    display: none;
+  }
 }
 
 .advantages__info-text {
@@ -1860,7 +1880,7 @@
 }
 
 /*--------------questioner-------------*/
-.questioner__container {
+.questioner {
   padding: 107px 0 97px;
 }
 
@@ -1970,6 +1990,7 @@
   padding: 0 0 22px 49px;
   position: relative;
   text-transform: none;
+  cursor: pointer;
 }
 
 .job-details__item-responsibility-title,
@@ -3573,9 +3594,15 @@
 
 .my-account-submit-time-sheet__btn {
   margin-left: 100px;
+  max-width: 170px;
+  width: 100%;
 
-  a {
+  .load-time-sheet__label{
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
     font-family: 'Circe-Bold';
     font-weight: 700;
     font-size: 20px;
@@ -3584,17 +3611,12 @@
     background: rgba(249, 237, 228, 0.35);
     border: 2px solid #AE7669;
     border-radius: 8.52398px;
-    padding: 6px 25px;
+    padding: 6.5px 5px;
 
     &:hover,
     &:active {
       background: #AE7669;
       color: #FFFFFF;
-    }
-
-    span {
-      display: block;
-      text-transform: uppercase;
     }
   }
 }
