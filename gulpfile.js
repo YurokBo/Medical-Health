@@ -27,7 +27,6 @@ gulp.task('scss', function () {
 gulp.task('css', async function () {
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
-        'node_modules/swiper/css/swiper.min.css',
         'node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
         'node_modules/js-datepicker/dist/datepicker.min.css',
     ])
@@ -41,16 +40,10 @@ gulp.task('html', function () {
         .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('script', function () {
-    return gulp.src('app/js/**/*.js')
-        .pipe(browserSync.reload({stream: true}));
-});
 
-gulp.task('js', async function () {
+gulp.task('js', function () {
     return gulp.src([
-        'node_modules/swiper/js/swiper.min.js',
         'node_modules/owl.carousel/dist/owl.carousel.min.js',
-        'node_modules/js-datepicker/dist/datepicker.min.js',
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
@@ -58,6 +51,11 @@ gulp.task('js', async function () {
             presets: ['@babel/env']
         }))
         .pipe(gulp.dest('app/js'))
+        .pipe(browserSync.reload({stream: true}));
+});
+
+gulp.task('script', function () {
+    return gulp.src('app/js/**/*.js')
         .pipe(browserSync.reload({stream: true}));
 });
 
@@ -69,7 +67,7 @@ gulp.task('browser-sync', async function () {
     });
 });
 
-gulp.task('export', function () {
+gulp.task('export', async function () {
     let buildHTML = gulp.src('app/**/*.html')
         .pipe(gulp.dest('dist/'));
 

@@ -1,4 +1,4 @@
-$maxWidth: 1920;
+$maxWidth: 510;
 @mixin adaptiv-font($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $maxWidth: $maxWidth - 320;

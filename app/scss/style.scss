@@ -1716,6 +1716,12 @@
   padding: 0 0 49px;
 }
 
+.what-is-family__title {
+  br {
+    display: none;
+  }
+}
+
 .what-is-family__info {
   div + div {
     margin-top: 40px;
@@ -1732,7 +1738,7 @@
     margin-top: 0;
   }
 
-  divFZ:nth-child(2) {
+  div:nth-child(2) {
     margin-bottom: 10px;
   }
 }
@@ -3050,8 +3056,6 @@
       display: block;
 
       background-color: #F8F1EE;
-      border: 3px solid #AC8478;
-      border-radius: 3px;
 
       background-image: url('../img/check-comply.png');
       width: 26px;
